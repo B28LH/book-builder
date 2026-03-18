@@ -11,6 +11,7 @@ import argparse
 from pathlib import Path
 
 from book_builder.adapter.populate import PopulationOptions, run_population
+from book_builder.create_book_structure import main as generate_structure_main
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -22,17 +23,17 @@ def build_parser() -> argparse.ArgumentParser:
         default="auto",
         help="Default is auto: inspect Book Structure resources and dispatch by source type",
     )
-    parser.add_argument("--book-csv", type=Path, default=Path("input/Book Structure.csv"))
+    parser.add_argument("--book-csv", type=Path, default=Path("book_info/Book Structure.csv"))
     parser.add_argument(
         "--toc-csv",
         type=Path,
-        default=Path("input/stax-toc.csv"),
+        default=Path("book_info/stax-toc.csv"),
         help="CNXML TOC CSV, or explicit TOC CSV when running a single PreTeXt resource",
     )
     parser.add_argument("--reference", type=Path, default=Path("reference"))
     parser.add_argument("--workspace-root", type=Path, default=Path("."))
-    parser.add_argument("--open-textbooks-csv", type=Path, default=Path("input/Open Textbooks.csv"))
-    parser.add_argument("--enriched-toc-output", type=Path, default=Path("input/stax-toc.enriched.csv"))
+    parser.add_argument("--open-textbooks-csv", type=Path, default=Path("book_info/Open Textbooks.csv"))
+    parser.add_argument("--enriched-toc-output", type=Path, default=Path("book_info/stax-toc.enriched.csv"))
     parser.add_argument("--resource", type=str, default=None, help="Resource abbreviation for PreTeXt exports, e.g. ORCCA")
     parser.add_argument("--limit", type=int, default=None, help="Limit number of Book Structure rows processed")
     parser.add_argument("--no-copy-images", action="store_true")
@@ -44,6 +45,12 @@ def main() -> None:
     """Run the CLI entry point."""
     parser = build_parser()
     args = parser.parse_args()
+    
+    source_dir = Path(".") / "source"
+    reference_dir = Path(".") / "reference"
+    if not source_dir.exists() or not reference_dir.exists():
+        print("[INFO]: Generating Stucture")
+        generate_structure_main()
 
     enriched_toc_output = args.enriched_toc_output if args.source_format in {"auto", "cnxml"} else None
     result = run_population(
