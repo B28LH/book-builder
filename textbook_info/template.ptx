@@ -1,0 +1,201 @@
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>TITLE</title>
+    <objectives component="outcomes">
+        <introduction>
+            <p>
+            <dl>
+                <li>
+                    <title>Strand</title>
+                    <p>
+                        [X.0 Strand] (1.0 Numbers and Algebra)
+                    </p>
+                </li>
+                <li>
+                    <title>Sub-Strand</title>
+                    <p>
+                        [X.Y Substrand] (1.1 Real Numbers)
+                    </p>
+                </li>
+                <li>
+                    <title>Specific Learning Outcomes</title> 
+                    <p>
+                        [Learning Outcome] (Classify whole numbers as odd, even, prime and composite in different situations)
+                    </p>
+                </li>
+                <li component="lesson-plan">
+                    <title>Grade Level</title>
+                    <p>
+                        11
+                    </p>
+                </li>
+                <li component="lesson-plan">
+                    <title>Estimated Duration</title>
+                    <p>
+                        40 minutes
+                    </p>
+                </li>
+            </dl>
+            </p>
+        </introduction>
+    </objectives>
+
+    <!-- [LP] Add guidance on activity -->
+
+    <!-- <axiom component="lesson-plan">
+            <title>Problem-Solving and Discovery</title>
+            <dl>
+                <li>
+                    <title>Suggested Time</title>
+                    <p>
+                        XX minutes
+                    </p>
+                </li>
+                <li>
+                    <title>Objective</title>
+                    <p>
+                        XXX
+                    </p>
+                </li>
+                <li>
+                    <title>Teacher's Role</title>
+                    <p>
+                        XXX
+                    </p>
+                </li>
+            </dl>
+        </axiom> -->
+
+    <!-- Add Activity -->
+
+    <!-- <activity>
+        <statement>
+        </statement>
+    </activity> -->
+
+    <!-- [LP] Add guidance on structured lesson plan-->
+
+    <!-- <axiom component="lesson-plan">
+        <title>Structured Instruction</title>
+        <p>
+            <dl>
+            <li>
+                <title>Suggested Time</title>
+                <p>
+                    XX minutes
+                </p>
+            </li>
+            <li>
+                <title>Objective</title>
+                <p>
+                    To formalize the concepts and properties learners discovered in the anchor task.
+                </p>
+            </li>
+            </dl>
+        </p>
+        <paragraphs>
+            <title>Key Takeaways &amp; Teacher Connection</title>
+            <ol>
+                <li>
+                    <p>
+                        <alert>Connecting to Learner Work:</alert> XXXX
+                    </p>
+                </li>
+            </ol>
+        </paragraphs>
+    </axiom> -->
+
+    <!-- Add insight / key takeaway directly related to activity / learner experience -->
+
+    <!-- <insight>
+    </insight> -->
+
+    <!-- Add further instruction (not in a block) to develop ideas as needed -->
+
+    <xi:include href="../lesson-plan-templates/example-intro.ptx" />
+
+    <!-- Add at least 3 examples -->
+
+    <!-- <example>
+        <statement>
+        </statement>
+        <solution>
+        </solution>
+    </example>
+
+    <example>
+        <statement>
+        </statement>
+        <solution>
+        </solution>
+    </example>
+
+    <example>
+        <statement>
+        </statement>
+        <solution>
+        </solution>
+    </example> -->
+
+    <xi:include href="../lesson-plan-templates/assessment-intro.ptx" />
+
+    <!-- If STACK questions are included, uncomment this: -->
+
+    <!-- <xi:include href="../lesson-plan-templates/checkpoint.ptx" /> -->
+
+    <!-- Add STACK exercises if made -->
+
+    <!-- Add static exercises -->
+
+    <!-- <exercises>
+        <exercise>
+            <statement>   
+
+            </statement>   
+            <solution>
+
+            </solution>             
+        </exercise>        
+    </exercises> -->
+
+    <!-- [LP] Add information on how to differentiate  -->
+
+    <!-- <axiom component="lesson-plan">
+        <title>Differentiation</title>
+
+        <table>
+            <title>Differentiation</title>
+            <tabular halign="left">
+                <row header="yes" bottom="minor">
+                    <cell>Learner Group</cell>
+                    <cell>Strategy &amp; Learning Experience</cell>
+                    <cell></cell>
+                </row>
+                <row>
+                    <cell>Struggling Learners (Support)</cell>
+                    <cell>
+                        XXXX
+                    </cell>
+                    <cell></cell>
+                </row>
+                <row>
+                    <cell>On-Level Learners (Core)</cell>
+                    <cell>
+                        <line>The core lesson activities as described above.</line>
+                    </cell>
+                    <cell></cell>
+                </row>
+                <row>
+                    <cell>Advanced Learners (Challenge)</cell>
+                    <cell>
+                        XXXX
+                    </cell>
+                    <cell></cell>
+                </row>
+            </tabular>
+        </table>
+    </axiom> -->
+
+    <xi:include href="../lesson-plan-templates/assessment-methods.ptx" />
+
+    <xi:include href="../lesson-plan-templates/reflection.ptx"/>
+</section>

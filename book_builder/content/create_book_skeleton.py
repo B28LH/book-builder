@@ -18,7 +18,6 @@ Expected CSV columns:
 
 from __future__ import annotations
 
-import argparse
 import csv
 import shutil
 from collections import defaultdict
@@ -84,7 +83,67 @@ def unique_section_filename(base_slug: str, seen: dict[str, int]) -> str:
     return f"sec-{base_slug}-{idx + 1}.ptx"
 
 
-def render_section_file(section_id: str, section_title: str, summary: str, objectives: list[str]) -> str:
+def load_source_section_template() -> str:
+    """Load source section template from textbook_info/template.ptx."""
+    template_path = Path(__file__).resolve().parents[2] / "textbook_info" / "template.ptx"
+    template = template_path.read_text(encoding="utf-8")
+
+    # Normalize opening tag so generated files have section ids.
+    return template.replace(
+        '<subsection xmlns:xi="http://www.w3.org/2001/XInclude">',
+        "__SECTION_OPEN__",
+        1,
+    )
+
+
+def format_objectives_markup(objectives: list[str]) -> str:
+    lines = []
+    if not objectives:
+        return "TODO: add learning objective."
+    elif len(objectives) == 1:
+            lines.append(f"{escape(objectives[0])}")
+    else:
+        lines.append("    <ul>")
+        for lo in objectives:
+            lines.append(f"      <li>{escape(lo)}</li>")
+        lines.append("    </ul>")
+    return "\n                        ".join(lines)
+
+
+def render_source_section_file(
+    section_id: str,
+    section_title: str,
+    strand_title: str,
+    strand_number: int,
+    chapter_title: str,
+    chapter_number_within_strand: int,
+    objectives: list[str],
+) -> str:
+    """Render source section files using textbook_info/template.ptx structure."""
+    strand_text = f"{strand_number}.0 {escape(strand_title)}"
+    substrand_text = (
+        f"{strand_number}.{chapter_number_within_strand} {escape(chapter_title)}"
+    )
+
+    rendered = load_source_section_template()
+    rendered = rendered.replace(
+        "__SECTION_OPEN__",
+        f'<section xml:id="{section_id}" xmlns:xi="http://www.w3.org/2001/XInclude">',
+        1,
+    )
+    rendered = rendered.replace("<title>TITLE</title>", f"<title>{escape(section_title)}</title>", 1)
+    rendered = rendered.replace("[X.0 Strand] (1.0 Numbers and Algebra)", strand_text, 1)
+    rendered = rendered.replace("[X.Y Substrand] (1.1 Real Numbers)", substrand_text, 1)
+    rendered = rendered.replace(
+        "[Learning Outcome] (Classify whole numbers as odd, even, prime and composite in different situations)",
+        format_objectives_markup(objectives),
+        1,
+    )
+
+    return '<?xml version="1.0" encoding="utf-8"?>\n\n' + rendered.rstrip() + "\n"
+
+
+def render_reference_section_file(section_id: str, section_title: str, summary: str, objectives: list[str]) -> str:
     title_xml = escape(section_title)
     summary_comment = sanitize_comment(summary) if summary else ""
 
@@ -100,25 +159,22 @@ def render_section_file(section_id: str, section_title: str, summary: str, objec
         lines.append(f"  <!-- Content summary: {summary_comment} -->")
         lines.append("")
 
-    lines.extend(
-        [
-            "  <objectives>",
-            "    <ul>",
-        ]
-    )
+    lines.append("  <objectives>")
 
     if objectives:
-        for lo in objectives:
-            lines.append(f"      <li>{escape(lo)}</li>")
-    else:
-        lines.append("      <li>TODO: add learning objective.</li>")
+        if len(objectives) == 1:
+            lines.append(f" {escape(objectives[0])}")
+        else:
+            lines.append("    <ul>")
+            for lo in objectives:
+                lines.append(f"      <li>{escape(lo)}</li>")
+            lines.append("    </ul>")
 
     lines.extend(
         [
-            "    </ul>",
             "  </objectives>",
             "",
-            "  <!-- Add <insight> here -->"
+            "  <!-- Add <insight> here -->",
             "  <!-- TODO: add section content. -->",
             "</section>",
             "",
@@ -164,6 +220,20 @@ def build_chapter_folder_map(structure: dict[str, dict[str, list[SectionRow]]]) 
     return chapter_folders
 
 
+def build_numbering_maps(
+    structure: dict[str, dict[str, list[SectionRow]]],
+) -> tuple[dict[str, int], dict[tuple[str, str], int]]:
+    strand_numbers: dict[str, int] = {}
+    chapter_numbers_within_strand: dict[tuple[str, str], int] = {}
+
+    for strand_index, (strand, chapters) in enumerate(structure.items(), start=1):
+        strand_numbers[strand] = strand_index
+        for chapter_index, chapter in enumerate(chapters.keys(), start=1):
+            chapter_numbers_within_strand[(strand, chapter)] = chapter_index
+
+    return strand_numbers, chapter_numbers_within_strand
+
+
 def render_content_file(
     structure: dict[str, dict[str, list[SectionRow]]],
     chapter_folders: dict[tuple[str, str], str],
@@ -196,8 +266,13 @@ def render_content_file(
     return "\n".join(lines)
 
 
-def generate(structure: dict[str, dict[str, list[SectionRow]]], source_dir: Path) -> None:
+def generate(
+    structure: dict[str, dict[str, list[SectionRow]]],
+    source_dir: Path,
+    use_source_template: bool,
+) -> None:
     chapter_folders = build_chapter_folder_map(structure)
+    strand_numbers, chapter_numbers_within_strand = build_numbering_maps(structure)
 
     for strand, chapters in structure.items():
         for chapter_title, sections in chapters.items():
@@ -220,10 +295,25 @@ def generate(structure: dict[str, dict[str, list[SectionRow]]], source_dir: Path
                 section_id = section_filename.removesuffix(".ptx")
                 section_path = chapter_dir / section_filename
 
-                section_path.write_text(
-                    render_section_file(section_id, sec.title, sec.summary, sec.objectives),
-                    encoding="utf-8",
-                )
+                if use_source_template:
+                    section_text = render_source_section_file(
+                        section_id=section_id,
+                        section_title=sec.title,
+                        strand_title=strand,
+                        strand_number=strand_numbers[strand],
+                        chapter_title=chapter_title,
+                        chapter_number_within_strand=chapter_numbers_within_strand[(strand, chapter_title)],
+                        objectives=sec.objectives,
+                    )
+                else:
+                    section_text = render_reference_section_file(
+                        section_id=section_id,
+                        section_title=sec.title,
+                        summary=sec.summary,
+                        objectives=sec.objectives,
+                    )
+
+                section_path.write_text(section_text, encoding="utf-8")
                 chapter_section_files.append(section_filename)
 
             chapter_file = chapter_dir / f"ch-{chapter_slug}.ptx"
@@ -246,32 +336,7 @@ def copy_supporting_book_files(from_dir: Path, to_dir: Path) -> None:
             shutil.copy2(src, dst)
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Generate empty PreTeXt structure files from Book Structure CSV")
-    parser.add_argument(
-        "--csv",
-        type=Path,
-        default=Path("textbook_info/Book Structure.csv"),
-        help="Path to the Book Structure CSV",
-    )
-    parser.add_argument(
-        "--source",
-        type=Path,
-        default=Path("source"),
-        help="Path to the PreTeXt source directory",
-    )
-    parser.add_argument(
-        "--reference",
-        type=Path,
-        default=Path("reference"),
-        help="Path to the generated reference directory",
-    )
-    args = parser.parse_args()
-
-    csv_path = args.csv.resolve()
-    source_dir = args.source.resolve()
-    reference_dir = args.reference.resolve()
-
+def main(csv_path, source_dir, reference_dir) -> None:
     if not csv_path.exists():
         raise FileNotFoundError(f"CSV file not found: {csv_path}")
     if not source_dir.exists():
@@ -283,8 +348,8 @@ def main() -> None:
     if not structure:
         raise ValueError("No valid strand/chapter/section rows were found in the CSV")
 
-    generate(structure, source_dir)
-    generate(structure, reference_dir)
+    generate(structure, source_dir, use_source_template=True)
+    generate(structure, reference_dir, use_source_template=False)
     copy_supporting_book_files(source_dir, reference_dir)
 
     chapter_count = sum(len(chapters) for chapters in structure.values())
@@ -293,7 +358,3 @@ def main() -> None:
     print(f"Wrote content include file: {source_dir / 'content.ptx'}")
     print(f"Generated {chapter_count} chapter folders and {section_count} section files in {reference_dir}")
     print(f"Wrote content include file: {reference_dir / 'content.ptx'}")
-
-
-if __name__ == "__main__":
-    main()

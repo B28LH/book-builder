@@ -14,12 +14,32 @@ import argparse
 import sys
 from pathlib import Path
 
-from . import add_labels, namespace, objectives, resources, syllabus_tables
+from . import add_labels, namespace, objectives, resources, syllabus_tables, create_book_skeleton
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Content utility commands")
     sub = parser.add_subparsers(dest="command")
+    
+    skeleton = sub.add_parser("skeleton", help="generate empty PreTeXt structure files from Book Structure CSV")
+    skeleton.add_argument(
+        "--csv",
+        type=Path,
+        default=Path("textbook_info/Book Structure.csv"),
+        help="Path to the Book Structure CSV",
+    )
+    skeleton.add_argument(
+        "--source",
+        type=Path,
+        default=Path("source"),
+        help="Path to the PreTeXt source directory",
+    )
+    skeleton.add_argument(
+        "--reference",
+        type=Path,
+        default=Path("reference"),
+        help="Path to the generated reference directory",
+    )
 
     add_obj = sub.add_parser("add-objectives", help="insert objectives blocks into PTX files")
     add_obj.add_argument(
@@ -124,8 +144,10 @@ def main(argv: list[str] | None = None) -> None:
     if not args.command:
         parser.print_help()
         sys.exit(1)
-
-    if args.command == "add-objectives":
+        
+    if args.command == "skeleton":
+        create_book_skeleton.main(args.csv.resolve(), args.source.resolve(), args.reference.resolve())
+    elif args.command == "add-objectives":
         objectives.cmd_add_objectives(links_csv_path=args.links_csv, source_dir=args.source_dir)
     elif args.command == "add-resources":
         resources.cmd_add_resources(links_csv_path=args.links_csv, source_dir=args.source_dir)

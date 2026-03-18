@@ -1,14 +1,10 @@
-"""Reporting and validation helpers.
-
-This module collects the various audit/validation routines that were
-previously scattered across standalone scripts.  All functions are pure
-(save for writing to a sheet) and accept explicit path arguments so they can
-be tested.
+"""Reporting and validation helpers to check that paths exist where they should, and to find unreferenced PDFs.
 """
 from __future__ import annotations
 import os
 import re
 import csv
+import argparse
 from pathlib import Path
 from typing import Iterable, Tuple, List, Dict, Any
 
@@ -201,3 +197,16 @@ def save_id_mapping(id_mapping: Dict[str, str], output_path: Path) -> None:
         for expected, actual in sorted(id_mapping.items()):
             f.write(f"{expected},{actual}\n")
     print(f"\nID mapping saved to: {output_path}")
+    
+    
+def cmd_audit_pdfs(_: argparse.Namespace) -> None:
+    print("audit-pdfs: starting")
+    base = Path(".")
+    unref = find_unreferenced_pdfs(base)
+    if unref:
+        print("Unreferenced PDFs:")
+        for path in unref:
+            print(path)
+    else:
+        print("All PDFs are referenced.")
+    print("audit-pdfs: done")

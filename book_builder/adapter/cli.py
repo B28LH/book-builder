@@ -11,7 +11,7 @@ import argparse
 from pathlib import Path
 
 from book_builder.adapter.populate import PopulationOptions, run_population
-from book_builder.content.create_book_structure import main as generate_structure_main
+from book_builder.content import create_book_skeleton
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -50,7 +50,7 @@ def main() -> None:
     reference_dir = Path(".") / "reference"
     if not source_dir.exists() or not reference_dir.exists():
         print("[INFO]: Generating Stucture")
-        generate_structure_main()
+        create_book_skeleton.main(args.csv.resolve(), source_dir, reference_dir)
 
     enriched_toc_output = args.enriched_toc_output if args.source_format in {"auto", "cnxml"} else None
     result = run_population(

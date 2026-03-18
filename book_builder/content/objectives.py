@@ -1,8 +1,9 @@
 """Support routines for inserting "objectives" blocks into PTX text.
 
-These functions mirror the behaviour of `helpers/add_objectives.py` but are
-written in a pure, testable style.  The module does *not* read or write files.
-Higher‑level code can call `insert_objectives` repeatedly over rows from the
+This should not be needed if `create_book_skeleton.py' is used to create the skeleton
+
+The module does *not* read or write files.
+Higher-level code can call `insert_objectives` repeatedly over rows from the
 links CSV.
 """
 from __future__ import annotations
