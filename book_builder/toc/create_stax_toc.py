@@ -215,7 +215,7 @@ def export_toc(collection_file: Path, modules_root: Path, output_file: Path, wor
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Export a collection table of contents to CSV.")
-    parser.add_argument("--collection", type=Path, required=True, help="Path to a *.collection.xml file")
+    parser.add_argument("collection", type=Path, help="Path to a *.collection.xml file")
     parser.add_argument(
         "--modules-root",
         type=Path,
@@ -223,10 +223,10 @@ def main() -> None:
         help="Path to the modules directory (defaults to sibling modules/ next to the collection)",
     )
     parser.add_argument(
-        "--output",
+        "--output-name",
         type=Path,
         default=None,
-        help="CSV output path (defaults to input/<collection-name>-toc.csv under the workspace root)",
+        help="CSV output path (defaults to reference_tocs/<collection-name>-toc.csv under the workspace root)",
     )
     parser.add_argument(
         "--workspace-root",
@@ -239,8 +239,14 @@ def main() -> None:
     collection_file = args.collection.resolve()
     workspace_root = args.workspace_root.resolve() if args.workspace_root else collection_file.parents[2]
     modules_root = args.modules_root.resolve() if args.modules_root else (collection_file.parents[1] / "modules")
+    if not args.output_name:
+        args.output_name = f"{collection_basename(collection_file)}-toc.csv"
 
-    output_file = args.output.resolve() if args.output else (Path(".") / "input" / f"{collection_basename(collection_file)}-toc.csv")
+    output_folder = Path(".") / "reference_tocs"
+    if not output_folder.exists():
+        output_folder.mkdir(parents=True, exist_ok=True)
+        
+    output_file = output_folder / args.output_name
 
     export_toc(collection_file, modules_root, output_file, workspace_root)
     print(f"Wrote TOC CSV: {output_file}")

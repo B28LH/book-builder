@@ -23,17 +23,17 @@ def build_parser() -> argparse.ArgumentParser:
         default="auto",
         help="Default is auto: inspect Book Structure resources and dispatch by source type",
     )
-    parser.add_argument("--book-csv", type=Path, default=Path("book_info/Book Structure.csv"))
+    parser.add_argument("--book-csv", type=Path, default=Path("textbook_info/Book Structure.csv"))
     parser.add_argument(
         "--toc-csv",
         type=Path,
-        default=Path("book_info/stax-toc.csv"),
+        default=Path("reference_tocs/stax-toc.csv"),
         help="CNXML TOC CSV, or explicit TOC CSV when running a single PreTeXt resource",
     )
     parser.add_argument("--reference", type=Path, default=Path("reference"))
     parser.add_argument("--workspace-root", type=Path, default=Path("."))
-    parser.add_argument("--open-textbooks-csv", type=Path, default=Path("book_info/Open Textbooks.csv"))
-    parser.add_argument("--enriched-toc-output", type=Path, default=Path("book_info/stax-toc.enriched.csv"))
+    parser.add_argument("--open-textbooks-csv", type=Path, default=Path("textbook_info/Open Textbooks.csv"))
+    parser.add_argument("--enriched-toc-output", type=Path, default=Path("reference_tocs/stax-toc.enriched.csv"))
     parser.add_argument("--resource", type=str, default=None, help="Resource abbreviation for PreTeXt exports, e.g. ORCCA")
     parser.add_argument("--limit", type=int, default=None, help="Limit number of Book Structure rows processed")
     parser.add_argument("--no-copy-images", action="store_true")

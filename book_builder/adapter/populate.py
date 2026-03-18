@@ -51,10 +51,10 @@ class PopulationOptions:
     """Runtime options controlling one population run."""
     source_format: Literal["auto", "cnxml", "pretext"]
     workspace_root: Path = Path(".")
-    book_csv: Path = Path("book_info/Book Structure.csv")
-    toc_csv: Path = Path("book_info/stax-toc.csv")
+    book_csv: Path = Path("textbook_info/Book Structure.csv")
+    toc_csv: Path = Path("reference_tocs/stax-toc.csv")
     reference_dir: Path = Path("reference")
-    open_textbooks_csv: Path = Path("book_info/Open Textbooks.csv")
+    open_textbooks_csv: Path = Path("textbook_info/Open Textbooks.csv")
     enriched_toc_output: Path | None = None
     resource: str | None = None
     limit: int | None = None
@@ -77,7 +77,7 @@ def _load_inputs(options: PopulationOptions) -> tuple[Path, pd.DataFrame, pd.Dat
     workspace_root = options.workspace_root.resolve()
     book_csv = resolve_input_path(workspace_root, options.book_csv)
     toc_csv_arg = options.toc_csv
-    if options.source_format == "pretext" and options.resource and toc_csv_arg == Path("book_info/stax-toc.csv"):
+    if options.source_format == "pretext" and options.resource and toc_csv_arg == Path("reference_tocs/stax-toc.csv"):
         toc_csv_arg = _discover_pretext_toc_csv(workspace_root, options.resource) or toc_csv_arg
     toc_csv = resolve_input_path(workspace_root, toc_csv_arg)
     reference_dir = resolve_input_path(workspace_root, options.reference_dir)
@@ -253,7 +253,7 @@ def _count_book_rows(book_df: pd.DataFrame, limit: int | None = None) -> int:
 
 def _discover_pretext_toc_csv(workspace_root: Path, resource: str) -> Path | None:
     """Best-effort discovery of a resource-specific PreTeXt TOC CSV."""
-    input_dir = workspace_root / "book_info"
+    input_dir = workspace_root / "reference_tocs"
     resource_key = text_or_empty(resource).lower()
     direct_match = input_dir / f"{resource_key}-toc.csv"
     if direct_match.exists():
@@ -271,7 +271,7 @@ def _discover_pretext_toc_csv(workspace_root: Path, resource: str) -> Path | Non
 
 def _discover_pretext_legacy_map_csv(workspace_root: Path, resource: str) -> Path | None:
     """Best-effort discovery of a resource-specific legacy ID map CSV."""
-    input_dir = workspace_root / "book_info"
+    input_dir = workspace_root / "reference_tocs"
     resource_key = text_or_empty(resource).lower()
 
     direct_matches = [
@@ -341,7 +341,7 @@ def _run_auto_population(options: PopulationOptions) -> PopulationResult:
         toc_csv = _discover_pretext_toc_csv(workspace_root, resource)
         if toc_csv is None:
             warnings.append(
-                f"Skipping PreTeXt resource '{resource}': no TOC CSV found at input/{resource.lower()}-toc.csv"
+                f"Skipping PreTeXt resource '{resource}': no TOC CSV found at book_info/{resource.lower()}-toc.csv"
             )
             continue
 
@@ -382,7 +382,7 @@ def _run_cnxml_population(
     """Run the CNXML conversion/injection flow."""
     chapter_folder_map = build_chapter_folder_map(book_df)
     known_ids = collect_project_xml_ids(reference_dir, workspace_root / "source")
-    scoped_id_registry = ScopedIdRegistry.load(workspace_root / "book_info" / "cnxml-scoped-id-map.json", known_ids)
+    scoped_id_registry = ScopedIdRegistry.load(workspace_root / "reference_tocs" / "cnxml-scoped-id-map.json", known_ids)
 
     processed = 0
     matched = 0
@@ -526,7 +526,7 @@ def _run_pretext_population(
     """Run the PreTeXt conversion/injection flow."""
     chapter_folder_map = build_chapter_folder_map(book_df)
     known_ids = collect_project_xml_ids(reference_dir, workspace_root / "source")
-    scoped_id_registry = ScopedIdRegistry.load(workspace_root / "book_info" / "cnxml-scoped-id-map.json", known_ids)
+    scoped_id_registry = ScopedIdRegistry.load(workspace_root / "reference_tocs" / "cnxml-scoped-id-map.json", known_ids)
 
     processed = 0
     matched = 0

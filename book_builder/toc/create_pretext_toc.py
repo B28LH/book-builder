@@ -389,12 +389,6 @@ def export_toc(
     return len(rows)
 
 
-def default_output_path(root_file: Path) -> Path:
-    """Return the default TOC CSV path next to the supplied root file."""
-
-    return root_file.with_name(f"{root_file.stem}-toc.csv")
-
-
 def default_mapping_path(toc_file: Path) -> Path:
     """Return the default ID-mapping CSV path next to *toc_file*.
 
@@ -420,10 +414,10 @@ def main() -> None:
         help="Path to the starting PreTeXt/PTX file, such as orcca.ptx",
     )
     parser.add_argument(
-        "--output",
+        "--output-name",
         type=Path,
         default=None,
-        help="Output CSV path (defaults to <root-stem>-toc.csv beside the root file)",
+        help="Output CSV name (defaults to <root-stem>-toc.csv)",
     )
     parser.add_argument(
         "--relative-to",
@@ -447,15 +441,25 @@ def main() -> None:
         help="Path for the ID-mapping CSV (defaults to <stem>-id-mapping.csv beside the TOC output)",
     )
     args = parser.parse_args()
+    
+    if not args.output_name:
+        args.output_name = f"{args.root.stem}-toc.csv"
+
+    output_folder = Path(".") / "reference_tocs"
+    if not output_folder.exists():
+        output_folder.mkdir(parents=True, exist_ok=True)
+        
+    output_file = output_folder / args.output_name
 
     root_file = args.root.resolve()
     if not root_file.exists():
         raise FileNotFoundError(f"Root file not found: {root_file}")
 
     relative_to = args.relative_to.resolve() if args.relative_to else root_file.parent
-    output_file = args.output.resolve() if args.output else default_output_path(root_file)
     resource_name = args.resource_name if args.resource_name else root_file.stem.upper()
     mapping_file = args.mapping_output.resolve() if args.mapping_output else None
+    
+
 
     row_count = export_toc(
         root_file=root_file,

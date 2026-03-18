@@ -250,7 +250,7 @@ def main() -> None:
     parser.add_argument(
         "--csv",
         type=Path,
-        default=Path("book_info/Book Structure.csv"),
+        default=Path("textbook_info/Book Structure.csv"),
         help="Path to the Book Structure CSV",
     )
     parser.add_argument(
