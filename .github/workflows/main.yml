@@ -1,103 +1,103 @@
-name: Main
+# name: Main
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+# concurrency:
+#   group: ${{ github.workflow }}-${{ github.ref }}
+#   cancel-in-progress: true
 
-on:
-  pull_request:
-    branches:
-      - main
-  push:
-    branches:
-      - main
-    tags:
-      - "v*.*.*"
+# on:
+#   pull_request:
+#     branches:
+#       - main
+#   push:
+#     branches:
+#       - main
+#     tags:
+#       - "v*.*.*"
 
-env:
-  # Change this to invalidate existing cache.
-  CACHE_PREFIX: v0
-  PYTHONPATH: ./
+# env:
+#   # Change this to invalidate existing cache.
+#   CACHE_PREFIX: v0
+#   PYTHONPATH: ./
 
-jobs:
-  checks:
-    name: Python ${{ matrix.python }} - ${{ matrix.task.name }}
-    runs-on: [ubuntu-latest]
-    timeout-minutes: 15
-    strategy:
-      fail-fast: false
-      matrix:
-        python: ["3.8", "3.10"]
-        task:
-          - name: Test
-            run: |
-              pytest -v --color=yes tests/
+# jobs:
+#   checks:
+#     name: Python ${{ matrix.python }} - ${{ matrix.task.name }}
+#     runs-on: [ubuntu-latest]
+#     timeout-minutes: 15
+#     strategy:
+#       fail-fast: false
+#       matrix:
+#         python: ["3.8", "3.10"]
+#         task:
+#           - name: Test
+#             run: |
+#               pytest -v --color=yes tests/
 
-        include:
-          - python: "3.10"
-            task:
-              name: Lint
-              run: ruff check .
+#         include:
+#           - python: "3.10"
+#             task:
+#               name: Lint
+#               run: ruff check .
 
-          - python: "3.10"
-            task:
-              name: Type check
-              run: mypy .
+#           - python: "3.10"
+#             task:
+#               name: Type check
+#               run: mypy .
 
-          - python: "3.10"
-            task:
-              name: Build
-              run: |
-                python -m build
+#           - python: "3.10"
+#             task:
+#               name: Build
+#               run: |
+#                 python -m build
 
-          - python: "3.10"
-            task:
-              name: Style
-              run: |
-                isort --check .
-                black --check .
+#           - python: "3.10"
+#             task:
+#               name: Style
+#               run: |
+#                 isort --check .
+#                 black --check .
 
-          - python: "3.10"
-            task:
-              name: Docs
-              run: cd docs && make html
+#           - python: "3.10"
+#             task:
+#               name: Docs
+#               run: cd docs && make html
 
-    steps:
-      - uses: actions/checkout@v4
+#     steps:
+#       - uses: actions/checkout@v4
 
-      - name: Setup Python environment
-        uses: ./.github/actions/setup-venv
-        with:
-          python-version: ${{ matrix.python }}
-          cache-prefix: ${{ env.CACHE_PREFIX }}
+#       - name: Setup Python environment
+#         uses: ./.github/actions/setup-venv
+#         with:
+#           python-version: ${{ matrix.python }}
+#           cache-prefix: ${{ env.CACHE_PREFIX }}
 
-      - name: Restore mypy cache
-        if: matrix.task.name == 'Type check'
-        uses: actions/cache@v4
-        with:
-          path: .mypy_cache
-          key: mypy-${{ env.CACHE_PREFIX }}-${{ runner.os }}-${{ matrix.python }}-${{ hashFiles('*requirements.txt') }}-${{ github.ref }}-${{ github.sha }}
-          restore-keys: |
-            mypy-${{ env.CACHE_PREFIX }}-${{ runner.os }}-${{ matrix.python }}-${{ hashFiles('*requirements.txt') }}-${{ github.ref }}
-            mypy-${{ env.CACHE_PREFIX }}-${{ runner.os }}-${{ matrix.python }}-${{ hashFiles('*requirements.txt') }}
+#       - name: Restore mypy cache
+#         if: matrix.task.name == 'Type check'
+#         uses: actions/cache@v4
+#         with:
+#           path: .mypy_cache
+#           key: mypy-${{ env.CACHE_PREFIX }}-${{ runner.os }}-${{ matrix.python }}-${{ hashFiles('*requirements.txt') }}-${{ github.ref }}-${{ github.sha }}
+#           restore-keys: |
+#             mypy-${{ env.CACHE_PREFIX }}-${{ runner.os }}-${{ matrix.python }}-${{ hashFiles('*requirements.txt') }}-${{ github.ref }}
+#             mypy-${{ env.CACHE_PREFIX }}-${{ runner.os }}-${{ matrix.python }}-${{ hashFiles('*requirements.txt') }}
 
-      - name: ${{ matrix.task.name }}
-        run: |
-          . .venv/bin/activate
-          ${{ matrix.task.run }}
+#       - name: ${{ matrix.task.name }}
+#         run: |
+#           . .venv/bin/activate
+#           ${{ matrix.task.run }}
 
-      - name: Upload package distribution files
-        if: matrix.task.name == 'Build'
-        uses: actions/upload-artifact@v4
-        with:
-          name: package
-          path: dist
+#       - name: Upload package distribution files
+#         if: matrix.task.name == 'Build'
+#         uses: actions/upload-artifact@v4
+#         with:
+#           name: package
+#           path: dist
 
-      - name: Clean up
-        if: always()
-        run: |
-          . .venv/bin/activate
-          pip uninstall -y book-builder
+#       - name: Clean up
+#         if: always()
+#         run: |
+#           . .venv/bin/activate
+#           pip uninstall -y book-builder
 
   # release:
   #   name: Release

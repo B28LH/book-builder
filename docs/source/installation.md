@@ -25,3 +25,30 @@ Then run
 ```bash
 pip install -e .
 ```
+
+## Installing development dependencies
+
+If you plan to run tests, linting, or docs builds:
+
+```bash
+pip install -e .[dev]
+```
+
+## Verify installation
+
+Run a quick help check for the main workflows:
+
+```bash
+python -m book_builder.create_book_structure --help
+python -m book_builder.adapter.cli --help
+```
+
+## Optional: local docs build
+
+From the repository root:
+
+```bash
+make docs
+```
+
+This starts an auto-reloading Sphinx build for `docs/source/`.
