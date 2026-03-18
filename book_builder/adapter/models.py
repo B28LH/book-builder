@@ -149,14 +149,22 @@ LICENSE_URL_MAP = {
 }
 
 
-def local_name(tag: str) -> str:
-	"""Return XML local name from a namespaced tag."""
+def local_name(tag: object) -> str:
+	"""Return XML local name from a namespaced tag.
+
+	With `lxml`, comment/processing-instruction nodes expose non-string tag
+	values (e.g. cython callables). Those should be treated as non-structural.
+	"""
+	if not isinstance(tag, str):
+		return ""
 	return tag.split("}", 1)[-1]
 
 
 def text_or_empty(value: object) -> str:
 	"""Return stripped string value or empty string for null/NaN values."""
-	if value is None or pd.isna(value):
+	if value is None:
+		return ""
+	if isinstance(value, float) and pd.isna(value):
 		return ""
 	return str(value).strip()
 

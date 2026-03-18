@@ -15,7 +15,7 @@ from dataclasses import dataclass
 from pathlib import Path
 import random
 import string
-import xml.etree.ElementTree as ET
+import lxml.etree as ET
 
 
 XI_NAMESPACE = "http://www.w3.org/2001/XInclude"

@@ -11,12 +11,12 @@ import copy
 import random
 import re
 import string
-import xml.etree.ElementTree as ET
+import lxml.etree as ET
 
 from slugify import slugify
 
 try:
-    from lxml import etree as LET
+    import lxml.etree as LET
 except Exception:  # pragma: no cover - optional runtime dependency
     LET = None
 
@@ -50,6 +50,8 @@ ID_ELIGIBLE_TAGS = {
     "ol",
     "ul",
 }
+
+XML_ID_ATTR = "{http://www.w3.org/XML/1998/namespace}id"
 
 _ID_CHARS = string.digits + string.ascii_lowercase + string.ascii_uppercase
 
@@ -355,10 +357,11 @@ def prefix_ids_and_refs(
             id_map[raw_id] = mapped
         used_ids.add(mapped)
 
-        if "{http://www.w3.org/XML/1998/namespace}id" in node.attrib:
-            node.attrib["{http://www.w3.org/XML/1998/namespace}id"] = mapped
+        if XML_ID_ATTR in node.attrib:
+            node.attrib[XML_ID_ATTR] = mapped
         elif "xml:id" in node.attrib:
-            node.attrib["xml:id"] = mapped
+            node.attrib[XML_ID_ATTR] = mapped
+            del node.attrib["xml:id"]
         elif "id" in node.attrib:
             node.attrib["id"] = mapped
 
@@ -378,7 +381,7 @@ def prefix_ids_and_refs(
 
         per_tag_counter[tag] = per_tag_counter.get(tag, 0) + 1
         synthetic_key = f"{scoped_prefix}:{tag}:{per_tag_counter[tag]}"
-        node.attrib["xml:id"] = _short_id(synthetic_key, tag)
+        node.attrib[XML_ID_ATTR] = _short_id(synthetic_key, tag)
 
         if license_name and not text_or_empty(node.attrib.get("license")):
             node.attrib["license"] = license_name

@@ -12,7 +12,7 @@ import copy
 import random
 import re
 import string
-import xml.etree.ElementTree as ET
+import lxml.etree as ET
 from pathlib import Path
 
 from book_builder.adapter.cnxml_shared import (

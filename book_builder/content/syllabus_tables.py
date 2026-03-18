@@ -10,11 +10,19 @@ Both functions operate on row data (list of dicts) and a base directory and
 produce a PTX string which the caller can write to a file.
 """
 from __future__ import annotations
+import argparse
 import os
 import csv
 from pathlib import Path
 from collections import OrderedDict
 from typing import Iterable, Dict, List, Tuple
+
+from ..helpers import csvtools
+
+
+# paths to CSV caches
+AUTOMATIC_LINKS_PATH = csvtools.cached_file("Automatic Links.csv")
+LEARNING_OUTCOMES_PATH = csvtools.cached_file("Learning Outcomes.csv")
 
 
 def get_xml_id(section_filecase, subsection_filecase, subsubsection_filecase):
@@ -270,3 +278,152 @@ def generate_lo_coverage_ptx(
     lines.append('</appendix>')
     output_path.write_text('\n'.join(lines), encoding='utf-8')
     print(f"Generated: {output_path}")
+
+
+def cmd_generate_syllabus(
+    *,
+    links_csv_path: Path | str | None = None,
+    source_dir: Path | str = Path("source"),
+    output_path: Path | str | None = None,
+) -> None:
+    print("generate-syllabus: starting")
+    rows = csvtools.read_links_csv(path=links_csv_path or AUTOMATIC_LINKS_PATH)
+    source_root = Path(source_dir)
+    output_file = Path(output_path) if output_path is not None else source_root / "syllabus-alignment.ptx"
+    data = parse_links(rows, source_root)
+    generate_syllabus_ptx(data, output_file)
+    print("generate-syllabus: done")
+
+
+def cmd_generate_lo(
+    *,
+    links_csv_path: Path | str | None = None,
+    outcomes_csv_path: Path | str | None = None,
+    output_path: Path | str | None = None,
+) -> None:
+    print("generate-lo: starting")
+
+    lo_rows: list[dict[str, str]] = []
+    lo_path = Path(outcomes_csv_path) if outcomes_csv_path is not None else LEARNING_OUTCOMES_PATH
+    if not lo_path.is_file():
+        print(f"generate-lo: no learning outcomes CSV found at {lo_path}")
+    else:
+        print(f"generate-lo: reading outcomes from {lo_path}")
+        with lo_path.open(encoding="utf-8-sig") as f:
+            reader = csv.DictReader(f)
+            lo_rows = [row for row in reader]
+
+    print(f"generate-lo: read {len(lo_rows)} learning outcomes rows")
+
+    rows = csvtools.read_links_csv(path=links_csv_path or AUTOMATIC_LINKS_PATH)
+    fmv = parse_file_matching_validated(rows)
+    lo_data = parse_learning_outcomes(lo_rows)
+    print(f"generate-lo: generated lo_data with {sum(len(v) for d in lo_data.values() for v in d.values())} entries")
+
+    out_path = Path(output_path) if output_path is not None else Path("source") / "lo-coverage-table.ptx"
+    generate_lo_coverage_ptx(lo_data, fmv, out_path)
+    print("generate-lo: done")
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description="Generate syllabus and learning-outcomes PTX tables")
+    sub = parser.add_subparsers(dest="command")
+
+    syllabus = sub.add_parser("generate-syllabus", help="create syllabus-alignment.ptx from CSV data")
+    syllabus.add_argument(
+        "--links-csv",
+        type=Path,
+        default=AUTOMATIC_LINKS_PATH,
+        help="Path to Automatic Links CSV",
+    )
+    syllabus.add_argument(
+        "--source-dir",
+        type=Path,
+        default=Path("source"),
+        help="Root source directory used for PTX paths",
+    )
+    syllabus.add_argument(
+        "--output",
+        type=Path,
+        default=Path("source") / "syllabus-alignment.ptx",
+        help="Output PTX file path",
+    )
+
+    lo = sub.add_parser("generate-lo", help="create lo-coverage-table.ptx from CSV and outcome data")
+    lo.add_argument(
+        "--links-csv",
+        type=Path,
+        default=AUTOMATIC_LINKS_PATH,
+        help="Path to Automatic Links CSV",
+    )
+    lo.add_argument(
+        "--outcomes-csv",
+        type=Path,
+        default=LEARNING_OUTCOMES_PATH,
+        help="Path to Learning Outcomes CSV",
+    )
+    lo.add_argument(
+        "--output",
+        type=Path,
+        default=Path("source") / "lo-coverage-table.ptx",
+        help="Output PTX file path",
+    )
+
+    both = sub.add_parser("syllabus-tables", help="generate both syllabus and LO coverage tables")
+    both.add_argument("--links-csv", type=Path, default=AUTOMATIC_LINKS_PATH, help="Path to Automatic Links CSV")
+    both.add_argument(
+        "--outcomes-csv",
+        type=Path,
+        default=LEARNING_OUTCOMES_PATH,
+        help="Path to Learning Outcomes CSV",
+    )
+    both.add_argument("--source-dir", type=Path, default=Path("source"), help="Root source directory")
+    both.add_argument(
+        "--syllabus-output",
+        type=Path,
+        default=Path("source") / "syllabus-alignment.ptx",
+        help="Syllabus output PTX path",
+    )
+    both.add_argument(
+        "--lo-output",
+        type=Path,
+        default=Path("source") / "lo-coverage-table.ptx",
+        help="Learning outcomes output PTX path",
+    )
+
+    return parser
+
+
+def main(argv: list[str] | None = None) -> None:
+    parser = build_parser()
+    args = parser.parse_args(argv)
+
+    if args.command == "generate-syllabus":
+        cmd_generate_syllabus(
+            links_csv_path=args.links_csv,
+            source_dir=args.source_dir,
+            output_path=args.output,
+        )
+    elif args.command == "generate-lo":
+        cmd_generate_lo(
+            links_csv_path=args.links_csv,
+            outcomes_csv_path=args.outcomes_csv,
+            output_path=args.output,
+        )
+    elif args.command == "syllabus-tables":
+        cmd_generate_syllabus(
+            links_csv_path=args.links_csv,
+            source_dir=args.source_dir,
+            output_path=args.syllabus_output,
+        )
+        cmd_generate_lo(
+            links_csv_path=args.links_csv,
+            outcomes_csv_path=args.outcomes_csv,
+            output_path=args.lo_output,
+        )
+    else:
+        parser.print_help()
+
+
+if __name__ == "__main__":
+    main()

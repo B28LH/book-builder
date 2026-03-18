@@ -6,7 +6,7 @@ for all supported source formats through one public API: `run_population()`.
 
 from __future__ import annotations
 
-import xml.etree.ElementTree as ET
+import lxml.etree as ET
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Literal

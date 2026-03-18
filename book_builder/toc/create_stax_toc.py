@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import argparse
 import csv
-import xml.etree.ElementTree as ET
+import lxml.etree as ET
 from pathlib import Path
 
 NS = {

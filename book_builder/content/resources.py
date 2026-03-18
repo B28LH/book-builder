@@ -5,9 +5,18 @@ The functions here encapsulate the mutation logic that was previously buried in
 be unit‑tested independently.
 """
 from __future__ import annotations
+import argparse
+from pathlib import Path
 from typing import Optional, Tuple
 
+import pandas as pd
+
 from book_builder.helpers.text import detect_newline
+from ..helpers import csvtools
+
+
+# path to the automatic links CSV; use cached location
+AUTOMATIC_LINKS_PATH = csvtools.cached_file("Automatic Links.csv")
 
 
 # ------------------------------------------------------------------
@@ -177,3 +186,77 @@ def upgrade_lesson_only_resource_boxes(
             pieces.append(block)
             i = end_close
     return "".join(pieces), upgraded
+
+
+def cmd_add_resources(*, links_csv_path: Path | None = None, source_dir: Path | str = Path("source")) -> None:
+    """Insert or upgrade lesson-plan resource boxes in PTX files."""
+    print("add-resources: starting")
+    csv_path = links_csv_path or AUTOMATIC_LINKS_PATH
+    source_root = Path(source_dir)
+
+    df = pd.read_csv(csv_path, encoding="utf-8")
+    added = 0
+    removed = 0
+    upgraded = 0
+    onlylesson = 0
+
+    for row in df.to_dict(orient="records"):
+        if row.get("PTX Exists") != "YES" or row.get("Lesson Plan Exists") != "YES":
+            continue
+
+        ptx_rel = row.get("PTX Path", "").strip()
+        if not ptx_rel:
+            continue
+
+        lesson_plan = f"lesson_plans/{row.get('Lesson Plan Path', '').strip()}"
+        step = None
+        if row.get("Step By Step Guide Exists") == "YES":
+            step = f"lesson_plans/{row.get('Step By Step Guide Path', '').strip()}"
+
+        path = source_root / ptx_rel
+        content_text = path.read_text(encoding="utf-8")
+        orig = content_text
+
+        content_text, removed_count = remove_old_resource_boxes(content_text)
+        removed += removed_count
+
+        content_text, upgraded_count = upgrade_lesson_only_resource_boxes(content_text, lesson_plan, step)
+        upgraded += upgraded_count
+
+        new_content = insert_axiom_if_missing(content_text, lesson_plan, step)
+        if new_content is not None:
+            content_text = new_content
+            added += 1
+            if step is None:
+                onlylesson += 1
+
+        if content_text != orig:
+            path.write_text(content_text, encoding="utf-8")
+
+    print(
+        f"resources added: {added}, only lesson: {onlylesson}, "
+        f"removed old: {removed}, upgraded: {upgraded}"
+    )
+    print("add-resources: done")
+
+
+def main(argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser(description="Insert/upgrade resource boxes in PTX files")
+    parser.add_argument(
+        "--links-csv",
+        type=Path,
+        default=AUTOMATIC_LINKS_PATH,
+        help="Path to Automatic Links CSV (default: textbook_info/Automatic Links.csv)",
+    )
+    parser.add_argument(
+        "--source-dir",
+        type=Path,
+        default=Path("source"),
+        help="Root source directory for PTX paths (default: source)",
+    )
+    args = parser.parse_args(argv)
+    cmd_add_resources(links_csv_path=args.links_csv, source_dir=args.source_dir)
+
+
+if __name__ == "__main__":
+    main()

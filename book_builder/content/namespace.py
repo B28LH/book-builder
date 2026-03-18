@@ -7,6 +7,8 @@ pure and can be run over any string.
 """
 
 from __future__ import annotations
+import argparse
+from pathlib import Path
 import re
 
 NAMESPACE_ATTR = 'xmlns:xi="http://www.w3.org/2001/XInclude"'
@@ -47,3 +49,30 @@ def process_file(path: str | Path) -> int:
     if count > 0 and updated != orig:
         p.write_text(updated, encoding="utf-8")
     return count
+
+
+def cmd_namespace(*, source_dir: Path | str = Path("source")) -> None:
+    """Add `xmlns:xi` to subsection/subsubsection tags across PTX files."""
+    print("namespace: starting")
+    source_root = Path(source_dir)
+    count = 0
+    for path in source_root.rglob("*.ptx"):
+        count += process_file(path)
+    print(f"Updated {count} tags.")
+    print("namespace: done")
+
+
+def main(argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser(description="Add xmlns:xi to subsection/subsubsection PTX tags")
+    parser.add_argument(
+        "--source-dir",
+        type=Path,
+        default=Path("source"),
+        help="Directory to process (default: source)",
+    )
+    args = parser.parse_args(argv)
+    cmd_namespace(source_dir=args.source_dir)
+
+
+if __name__ == "__main__":
+    main()

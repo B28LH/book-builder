@@ -7,7 +7,7 @@ so they can be inserted into local reference sections.
 from __future__ import annotations
 
 import copy
-import xml.etree.ElementTree as ET
+import lxml.etree as ET
 from pathlib import Path
 
 from slugify import slugify

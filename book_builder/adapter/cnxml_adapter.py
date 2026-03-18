@@ -7,7 +7,7 @@ provides a stable adapter function used by the unified population pipeline.
 from __future__ import annotations
 
 import copy
-import xml.etree.ElementTree as ET
+import lxml.etree as ET
 from pathlib import Path
 
 from slugify import slugify

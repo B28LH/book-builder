@@ -11,7 +11,7 @@ import argparse
 from pathlib import Path
 
 from book_builder.adapter.populate import PopulationOptions, run_population
-from book_builder.create_book_structure import main as generate_structure_main
+from book_builder.content.create_book_structure import main as generate_structure_main
 
 
 def build_parser() -> argparse.ArgumentParser:

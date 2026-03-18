@@ -10,11 +10,14 @@ from __future__ import annotations
 import os
 import re
 import shutil
-import xml.etree.ElementTree as ET
+import lxml.etree as ET
 from pathlib import Path
 
 
-def local(tag: str) -> str:
+def local(tag: object) -> str:
+    """Return local element name; ignore non-element lxml nodes."""
+    if not isinstance(tag, str):
+        return ""
     return tag.split("}", 1)[-1]
 
 

@@ -118,6 +118,7 @@ def render_section_file(section_id: str, section_title: str, summary: str, objec
             "    </ul>",
             "  </objectives>",
             "",
+            "  <!-- Add <insight> here -->"
             "  <!-- TODO: add section content. -->",
             "</section>",
             "",

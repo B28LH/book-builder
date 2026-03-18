@@ -6,10 +6,17 @@ Higher‑level code can call `insert_objectives` repeatedly over rows from the
 links CSV.
 """
 from __future__ import annotations
+import argparse
+from pathlib import Path
 from typing import List, Dict
 
 from book_builder.helpers.text import detect_newline, indent_of_line
 import pandas as pd
+from ..helpers import csvtools
+
+
+# path to the automatic links CSV; use cached location
+AUTOMATIC_LINKS_PATH = csvtools.cached_file("Automatic Links.csv")
 
 
 # -------------------------------------------------------------
@@ -145,3 +152,69 @@ def insert_objectives(
 
     insert_pos = title_index + len("</title>")
     return content[:insert_pos] + newline + block + content[insert_pos:]
+
+
+def cmd_add_objectives(*, links_csv_path: Path | None = None, source_dir: Path | str = Path("source")) -> None:
+    """Insert objectives blocks into PTX files listed in the links CSV."""
+    csv_path = links_csv_path or AUTOMATIC_LINKS_PATH
+    source_root = Path(source_dir)
+
+    df = pd.read_csv(csv_path, encoding="utf-8", na_filter=False)
+    numbering = build_numbering(df)
+    chap_map = numbering["chapter_num"]
+    sec_map = numbering["section_num"]
+
+    added = 0
+    skipped = 0
+
+    for row in df.to_dict(orient="records"):
+        if row.get("PTX Exists") != "YES":
+            continue
+
+        ptx_rel = row.get("PTX Path", "").strip()
+        chapter = (row.get("Chapter") or "").strip()
+        section = (row.get("Section") or "").strip()
+        if not chapter or not section or not ptx_rel:
+            continue
+
+        los = [row.get(f"LO {i}", "").strip() for i in range(1, 5) if row.get(f"LO {i}")]
+        los = [lo for lo in los if lo]
+        if not los:
+            continue
+
+        ch_num = chap_map.get(chapter, "?.0")
+        sec_num = sec_map.get((chapter, section), "?.?")
+        path = source_root / ptx_rel
+        text = path.read_text(encoding="utf-8")
+
+        new = insert_objectives(text, chapter, section, ch_num, sec_num, los)
+        if new is not None:
+            path.write_text(new, encoding="utf-8")
+            added += 1
+        else:
+            skipped += 1
+
+    print(f"objectives added: {added}, skipped-existing: {skipped}")
+    print("add-objectives: done")
+
+
+def main(argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser(description="Insert objectives blocks into PTX files")
+    parser.add_argument(
+        "--links-csv",
+        type=Path,
+        default=AUTOMATIC_LINKS_PATH,
+        help="Path to Automatic Links CSV (default: textbook_info/Automatic Links.csv)",
+    )
+    parser.add_argument(
+        "--source-dir",
+        type=Path,
+        default=Path("source"),
+        help="Root source directory for PTX paths (default: source)",
+    )
+    args = parser.parse_args(argv)
+    cmd_add_objectives(links_csv_path=args.links_csv, source_dir=args.source_dir)
+
+
+if __name__ == "__main__":
+    main()
