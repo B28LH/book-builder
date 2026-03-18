@@ -1,0 +1,1046 @@
+original_id,new_id,node_type,node_title,source_path
+orcca,ORCCARkvKXFEUIT,book,Open Resources for Community College Algebra,orcca.ptx
+frontmatter,ORCCAq2V6jZE9ow,frontmatter,Frontmatter,frontmatter.ptx
+,ORCCAQ9hfMMkXtY,acknowledgement,Acknowledgement,frontmatter.ptx
+preface-to-all,ORCCA89EzjUiXno,preface,To All,frontmatter.ptx
+,ORCCAroY9Kf58nG,paragraphs,"HTML, PDF, and print",frontmatter.ptx
+,ORCCA1tlh8tZRtS,paragraphs,Copying Content,frontmatter.ptx
+,ORCCAplZX5YoUvE,paragraphs,Accessibility,frontmatter.ptx
+,ORCCA2pY8KhcKv0,paragraphs,Tablets and Smartphones,frontmatter.ptx
+,ORCCARXbaW9dIml,paragraphs,for Online Homework,frontmatter.ptx
+,ORCCAHmRSOscm8G,paragraphs,Odd Answers,frontmatter.ptx
+,ORCCAR9VHFJJHg2,paragraphs,Interactive and Static Examples,frontmatter.ptx
+,ORCCAawwU20puyE,paragraphs,Reading Questions,frontmatter.ptx
+,ORCCAfnCQjCKr7s,paragraphs,Alternative Video Lessons,frontmatter.ptx
+part-linear-equations-and-lines,ORCCAKXtbIA6wwK,part,Linear Equations and Lines,orcca.ptx
+chapter-variables-expressions-equations-and-inequalities,ORCCAtSPX0Fl70e,chapter,"Variables, Expressions, Equations, and Inequalities",chapter-variables-expressions-equations-and-inequalities.ptx
+,ORCCA2eKfoQx42j,introduction,Introduction,chapter-variables-expressions-equations-and-inequalities.ptx
+section-variables-and-evaluating-expressions,ORCCAsI65eCrAfx,section,Variables and Evaluating Expressions,section-variables-and-evaluating-expressions.ptx
+,ORCCAc9Z6vm4j6w,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCAh4HeaQFCqB,subsection,Introduction to Variables,section-variables-and-evaluating-expressions.ptx
+,ORCCAgTxQz6OMck,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCAWfWPdsWTjH,subsection,Algebraic Expressions,section-variables-and-evaluating-expressions.ptx
+,ORCCA3eEDSuPCcR,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCA9SXbQpjECS,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCAeon01VgE40,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCAXmPRSfEXfo,subsection,"Evaluating Expressions with Exponents, Absolute Value, and Radicals",section-variables-and-evaluating-expressions.ptx
+,ORCCAnXVGfa0XsI,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+subsection-evaluating-expressions-with-negative-numbers,ORCCAZ0bCj1KpWR,subsection,Evaluating Expressions with Negative Numbers,section-variables-and-evaluating-expressions.ptx
+,ORCCArS70oyLKea,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCAm7bREECGAT,exercises,,section-variables-and-evaluating-expressions.ptx
+,ORCCAeph27fzFg3,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCAvh7xcTUx3S,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCAtrEYcWejEJ,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCAmSyt5LgY4g,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCASttfURHenC,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCAbf86VBdOOD,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCAcnjPSRjlph,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCAkiNBY67iPS,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCAUQdphcEULE,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCAjoVZijnJKd,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCAkC6Vl8Y5hl,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCAFY1L22p7US,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCAIsMPDSe9g8,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCA83t1xibFMu,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+,ORCCAd19QE5yZQ9,introduction,Introduction,section-variables-and-evaluating-expressions.ptx
+section-combining-like-terms,ORCCAXLqNAYJcXe,section,Combining Like Terms,section-combining-like-terms.ptx
+,ORCCAc8R9RAh2D1,introduction,Introduction,section-combining-like-terms.ptx
+,ORCCAtpfMOCPWtJ,subsection,Identifying Terms,section-combining-like-terms.ptx
+,ORCCAdYmVbyITgs,subsection,Combining Like Terms,section-combining-like-terms.ptx
+,ORCCAoQxOTkASKF,introduction,Introduction,section-combining-like-terms.ptx
+,ORCCAmaBkd207PQ,subsection,Applications,section-combining-like-terms.ptx
+,ORCCAipIeU9Jh5B,exercises,,section-combining-like-terms.ptx
+,ORCCATj9AbJKBSa,introduction,Introduction,section-combining-like-terms.ptx
+,ORCCASLuPKdJgKz,introduction,Introduction,section-combining-like-terms.ptx
+,ORCCATZobwtouQV,introduction,Introduction,section-combining-like-terms.ptx
+,ORCCAjR6cNeh0cw,introduction,Introduction,section-combining-like-terms.ptx
+,ORCCA8PoxFLrQnP,introduction,Introduction,section-combining-like-terms.ptx
+,ORCCAyvrArx8PNg,introduction,Introduction,section-combining-like-terms.ptx
+,ORCCAXhOtIGUWyc,introduction,Introduction,section-combining-like-terms.ptx
+,ORCCAhyGRtkdJ66,introduction,Introduction,section-combining-like-terms.ptx
+,ORCCAEKkQaeOmHh,introduction,Introduction,section-combining-like-terms.ptx
+section-comparison-symbols-and-notation-for-intervals,ORCCA7uVdYovVZ8,section,Comparison Symbols and Notation for Intervals,section-comparison-symbols-and-notation-for-intervals.ptx
+,ORCCAKLxkcrpJdT,introduction,Introduction,section-comparison-symbols-and-notation-for-intervals.ptx
+,ORCCAjKOGHiYYTQ,subsection,Comparison Symbols,section-comparison-symbols-and-notation-for-intervals.ptx
+,ORCCAo86ZFESwHY,introduction,Introduction,section-comparison-symbols-and-notation-for-intervals.ptx
+,ORCCA5XnFp5HXII,subsection,Set-Builder and Interval Notation,section-comparison-symbols-and-notation-for-intervals.ptx
+,ORCCAYIJknMhek8,introduction,Introduction,section-comparison-symbols-and-notation-for-intervals.ptx
+,ORCCAAl5CyKOHFJ,introduction,Introduction,section-comparison-symbols-and-notation-for-intervals.ptx
+,ORCCAv8r1KLq9tP,exercises,,section-comparison-symbols-and-notation-for-intervals.ptx
+,ORCCAHEegFXQjcE,introduction,Introduction,section-comparison-symbols-and-notation-for-intervals.ptx
+,ORCCAN9Af4py3Mm,introduction,Introduction,section-comparison-symbols-and-notation-for-intervals.ptx
+,ORCCAjFgOt3qKVT,introduction,Introduction,section-comparison-symbols-and-notation-for-intervals.ptx
+,ORCCAhNNoneWUQH,introduction,Introduction,section-comparison-symbols-and-notation-for-intervals.ptx
+,ORCCA6c18bvoF3A,introduction,Introduction,section-comparison-symbols-and-notation-for-intervals.ptx
+,ORCCAegdAjYCzlE,introduction,Introduction,section-comparison-symbols-and-notation-for-intervals.ptx
+,ORCCAhkqcWfw0Gc,introduction,Introduction,section-comparison-symbols-and-notation-for-intervals.ptx
+,ORCCA6N3ZC0zqud,introduction,Introduction,section-comparison-symbols-and-notation-for-intervals.ptx
+,ORCCALNVSD6U6ob,introduction,Introduction,section-comparison-symbols-and-notation-for-intervals.ptx
+,ORCCAIYSuGTJmpn,introduction,Introduction,section-comparison-symbols-and-notation-for-intervals.ptx
+section-equations-inequalities-and-solutions,ORCCAwyxpzFZdDd,section,"Equations, Inequalities, and Solutions",section-equations-inequalities-and-solutions.ptx
+,ORCCAGRggqU119l,introduction,Introduction,section-equations-inequalities-and-solutions.ptx
+,ORCCACwLK5ukqJ8,subsection,"Equations, Inequalities, and Solutions",section-equations-inequalities-and-solutions.ptx
+,ORCCAOpGrLM7QfK,subsection,Checking Possible Solutions,section-equations-inequalities-and-solutions.ptx
+,ORCCAiW6lvaUo4R,subsection,More Applications,section-equations-inequalities-and-solutions.ptx
+,ORCCAoBDKK55yUX,introduction,Introduction,section-equations-inequalities-and-solutions.ptx
+,ORCCAycfCixTZVV,subsection,Linear Equations,section-equations-inequalities-and-solutions.ptx
+,ORCCAYyQLDzber5,exercises,,section-equations-inequalities-and-solutions.ptx
+,ORCCA1Tvwb4G5l8,introduction,Introduction,section-equations-inequalities-and-solutions.ptx
+,ORCCA8p5vf8CAQk,introduction,Introduction,section-equations-inequalities-and-solutions.ptx
+,ORCCAJCxZCFsRdD,introduction,Introduction,section-equations-inequalities-and-solutions.ptx
+,ORCCAuOk4MjLXQw,introduction,Introduction,section-equations-inequalities-and-solutions.ptx
+,ORCCAATAh8aHJLz,introduction,Introduction,section-equations-inequalities-and-solutions.ptx
+,ORCCAdhMGhGhRMV,introduction,Introduction,section-equations-inequalities-and-solutions.ptx
+,ORCCAGDIIo5OzOx,introduction,Introduction,section-equations-inequalities-and-solutions.ptx
+section-solving-one-step-equations,ORCCApIqQ7k4jFT,section,Solving One-Step Equations,section-solving-one-step-equations.ptx
+,ORCCAhpfXpjT26t,introduction,Introduction,section-solving-one-step-equations.ptx
+,ORCCAFbDAEzjwNH,subsection,Imagine Filling in the Blanks,section-solving-one-step-equations.ptx
+subsection-balancing,ORCCAEG05lCB1xp,subsection,The Basic Principle of Algebra,section-solving-one-step-equations.ptx
+,ORCCAD6oTgtLyvN,subsection,Solving One-Step Equations and Stating Solution Sets,section-solving-one-step-equations.ptx
+,ORCCAwyFhVyMv4T,subsection,Equations with Fractions,section-solving-one-step-equations.ptx
+,ORCCAcsxjciKZrS,exercises,,section-solving-one-step-equations.ptx
+,ORCCAs5UAnYXMdy,introduction,Introduction,section-solving-one-step-equations.ptx
+,ORCCAeho5tf2Yd1,introduction,Introduction,section-solving-one-step-equations.ptx
+,ORCCAKIS1h1LNi3,introduction,Introduction,section-solving-one-step-equations.ptx
+,ORCCAvrF7i2thdd,introduction,Introduction,section-solving-one-step-equations.ptx
+,ORCCANcajARUm2K,introduction,Introduction,section-solving-one-step-equations.ptx
+,ORCCAJ3h6Dq2Zpm,introduction,Introduction,section-solving-one-step-equations.ptx
+,ORCCAbUiysdw6vo,introduction,Introduction,section-solving-one-step-equations.ptx
+,ORCCAcn1HvbhEd1,introduction,Introduction,section-solving-one-step-equations.ptx
+section-solving-one-step-inequalities,ORCCAH1XfAtAFqj,section,Solving One-Step Inequalities,section-solving-one-step-inequalities.ptx
+,ORCCALRVHXjqqPw,introduction,Introduction,section-solving-one-step-inequalities.ptx
+,ORCCAuzrPbdOm6c,subsection,Solving Linear Inequalities,section-solving-one-step-inequalities.ptx
+,ORCCANEVZvFArLq,subsection,Negation,section-solving-one-step-inequalities.ptx
+,ORCCAdS542HZt3l,exercises,,section-solving-one-step-inequalities.ptx
+,ORCCAIMMDFncnHI,introduction,Introduction,section-solving-one-step-inequalities.ptx
+section-algebraic-properties-and-simplifying-expressions,ORCCAUrPAKmsz7r,section,Algebraic Properties and Simplifying Expressions,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCA8xEEonwjWv,introduction,Introduction,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAdYR8e5EXvq,subsection,Identities and Inverses,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAOdb3RGFn6W,subsection,Algebraic Properties,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAqO7IrkRAhX,paragraphs,Commutative Property,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAPvhOOLOkfy,paragraphs,Associative Property,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCACKeonhC5RG,paragraphs,Distributive Property,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAKoboXeXiuk,paragraphs,Summary of Algebraic Properties,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAPzOx3J6LHu,introduction,Introduction,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAVc0h0RuwOY,subsection,"Applying the Commutative, Associative, and Distributive Properties",section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCALQyYZUekLv,paragraphs,Like Terms,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAxo2Y1tk6hR,introduction,Introduction,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAsUtH656m85,paragraphs,Adding Expressions,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAoiFTQbgqC2,introduction,Introduction,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAUITzN2YWg1,subsection,The Role of the Order of Operations,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAHfDUvIiJsh,introduction,Introduction,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAAmKrviRfT2,exercises,,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAmev0k2tLfL,introduction,Introduction,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAPgodz1klyo,introduction,Introduction,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAZXaAwNiMaF,introduction,Introduction,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAQbN7BtgJzc,introduction,Introduction,section-algebraic-properties-and-simplifying-expressions.ptx
+,ORCCAkt5eKzsJCu,introduction,Introduction,section-algebraic-properties-and-simplifying-expressions.ptx
+section-modeling-with-equations-and-inequalities,ORCCAJr81HIk3Xc,section,Modeling with Equations and Inequalities,section-modeling-with-equations-and-inequalities.ptx
+,ORCCAFZ4cpBU0S5,introduction,Introduction,section-modeling-with-equations-and-inequalities.ptx
+,ORCCA7EsZ17GXJO,subsection,Translating Phrases into Algebraic Expressions and Equations/Inequalities,section-modeling-with-equations-and-inequalities.ptx
+subsection-rate-models,ORCCA07XXgWh901,subsection,Rate Models,section-modeling-with-equations-and-inequalities.ptx
+,ORCCAxfYfHgWSKn,subsection,Percent Applications,section-modeling-with-equations-and-inequalities.ptx
+,ORCCALr5REgJU7u,subsection,Inequalities in Modeling,section-modeling-with-equations-and-inequalities.ptx
+,ORCCACISg72VPUp,exercises,,section-modeling-with-equations-and-inequalities.ptx
+,ORCCAGDbYPWSWcl,introduction,Introduction,section-modeling-with-equations-and-inequalities.ptx
+,ORCCACcWMUXWFSb,introduction,Introduction,section-modeling-with-equations-and-inequalities.ptx
+,ORCCA1fG25ajUXb,introduction,Introduction,section-modeling-with-equations-and-inequalities.ptx
+,ORCCA032InFQ3o3,introduction,Introduction,section-modeling-with-equations-and-inequalities.ptx
+,ORCCAa5FL5twHUI,introduction,Introduction,section-modeling-with-equations-and-inequalities.ptx
+review-variables-expressions-and-equations,ORCCAPXkcwYTIwL,section,"Variables, Expressions, and Equations Chapter Review",review-variables-expressions-and-equations.ptx
+,ORCCAbml7oyh7id,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAqpSbeOyZ76,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAo3xv3v559v,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAWPYfvI9I4K,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCADz2yWfssEZ,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCASrlFFlTweC,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAwI9uQEUjMF,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAwAZFY1y2jt,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCALp6ECtv10M,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCALt1f9CnBWO,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAtLyy26P9bO,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCA1LPD6Nss5z,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAB89d0sUSlh,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAEEdXxO9oXO,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCA8VUjTbGd9C,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAlAT3IPEQ1A,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAnuuj4mL6X9,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAlxhi9nSzlb,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAx3QMPmuHoZ,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAFd0mdeZod5,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAhQf6NG6LZL,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAAJdptEr6Hi,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCA6DyvH9jI1n,exercises,Review Exercises for,review-variables-expressions-and-equations.ptx
+,ORCCASv3YKuLBzl,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCA6Ra4OQiEIN,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAn6FcpZhdPp,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAIPOMCKJFFU,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAZiPvRfRCVK,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAvEIzFUiyWY,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCANpeWIktOtE,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAyGDlmjhjzm,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCArrK4WfG1QA,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAkZO0lCguJB,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAu1THhY88dF,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCA8pk1LehFmF,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAUGwN4SL935,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAVwGyVM7PVN,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAANGmhjP1Yi,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCA4L7DAXpydT,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAzKveIFvmno,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAKAkHF1TIvX,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAuUEnsEWPwr,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAjkBDrcWVd4,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAzgSSGl9MC7,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAjgU3zryWRU,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAI1IvsepDeL,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAmhv0kQXztR,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCApugxlY8HCP,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCAV8fMWH3pdT,introduction,Introduction,review-variables-expressions-and-equations.ptx
+,ORCCA3G4DdhlxAC,introduction,Introduction,review-variables-expressions-and-equations.ptx
+chapter-linear-equations-and-inequalities,ORCCA9V4kGuulDs,chapter,Linear Equations and Inequalities,chapter-linear-equations-and-inequalities.ptx
+,ORCCA5gQNBB6Mwb,introduction,Introduction,chapter-linear-equations-and-inequalities.ptx
+section-solving-multistep-linear-equations,ORCCA4z9AAU7oad,section,Solving Multistep Linear Equations,section-solving-multistep-linear-equations.ptx
+,ORCCAeJmauVZr1B,introduction,Introduction,section-solving-multistep-linear-equations.ptx
+,ORCCAESLn9QHejZ,subsection,Solving Two-Step Equations,section-solving-multistep-linear-equations.ptx
+,ORCCAwfaSR1xqNJ,subsection,Solving Multistep Linear Equations,section-solving-multistep-linear-equations.ptx
+,ORCCASsxdvBVMwm,subsection,Revisiting Applications,section-solving-multistep-linear-equations.ptx
+,ORCCAAeHHFYDRXH,subsection,"Differentiating between Simplifying Expressions, Evaluating Expressions and Solving Equations",section-solving-multistep-linear-equations.ptx
+,ORCCA37gZSarSV2,exercises,,section-solving-multistep-linear-equations.ptx
+,ORCCA9NMY1nIK3X,introduction,Introduction,section-solving-multistep-linear-equations.ptx
+,ORCCA0RsGyF5awQ,introduction,Introduction,section-solving-multistep-linear-equations.ptx
+,ORCCAAsiAB4SxBL,introduction,Introduction,section-solving-multistep-linear-equations.ptx
+,ORCCA1jX18GEUIi,introduction,Introduction,section-solving-multistep-linear-equations.ptx
+,ORCCA6uB2TrVAGP,introduction,Introduction,section-solving-multistep-linear-equations.ptx
+section-solving-multistep-linear-inequalities,ORCCAn8Bfw4J17E,section,Solving Multistep Linear Inequalities,section-solving-multistep-linear-inequalities.ptx
+,ORCCA5FgWH45XxQ,introduction,Introduction,section-solving-multistep-linear-inequalities.ptx
+,ORCCAHhhrIPsL5Q,subsection,Solving Multistep Inequalities,section-solving-multistep-linear-inequalities.ptx
+,ORCCAjgn7srSjLv,subsection,Applications,section-solving-multistep-linear-inequalities.ptx
+,ORCCAXSPgvWd6Rj,exercises,,section-solving-multistep-linear-inequalities.ptx
+,ORCCA0mmswQphAi,introduction,Introduction,section-solving-multistep-linear-inequalities.ptx
+,ORCCAQFXjxICHxU,introduction,Introduction,section-solving-multistep-linear-inequalities.ptx
+,ORCCAlvebXdelzN,introduction,Introduction,section-solving-multistep-linear-inequalities.ptx
+,ORCCAu4nHNJro1I,introduction,Introduction,section-solving-multistep-linear-inequalities.ptx
+,ORCCAuMarnaTFmJ,introduction,Introduction,section-solving-multistep-linear-inequalities.ptx
+,ORCCAh2EFzLmR6M,introduction,Introduction,section-solving-multistep-linear-inequalities.ptx
+,ORCCA1LKBhRMrRN,introduction,Introduction,section-solving-multistep-linear-inequalities.ptx
+,ORCCAHr35wM7Eei,introduction,Introduction,section-solving-multistep-linear-inequalities.ptx
+section-equations-and-inequalities-with-fractions,ORCCAoY9RfmfuNF,section,Equations and Inequalities with Fractions,section-equations-and-inequalities-with-fractions.ptx
+,ORCCApAs3pqGV9T,introduction,Introduction,section-equations-and-inequalities-with-fractions.ptx
+subsection-eliminating-denominators,ORCCAxBPTGwFhy3,subsection,Eliminating Denominators,section-equations-and-inequalities-with-fractions.ptx
+,ORCCA5fBWfUUfn5,subsection,Proportional Equations,section-equations-and-inequalities-with-fractions.ptx
+,ORCCAH1bQGytSsF,subsection,Solving Inequalities with Fractions,section-equations-and-inequalities-with-fractions.ptx
+,ORCCALJXsxEj5Wf,exercises,,section-equations-and-inequalities-with-fractions.ptx
+,ORCCA5rRydeMllr,introduction,Introduction,section-equations-and-inequalities-with-fractions.ptx
+,ORCCAtEM8Oh1EWu,introduction,Introduction,section-equations-and-inequalities-with-fractions.ptx
+,ORCCAhwE9OBA4gf,introduction,Introduction,section-equations-and-inequalities-with-fractions.ptx
+section-special-solution-sets,ORCCAlYJDdtWD2y,section,Special Solution Sets,section-special-solution-sets.ptx
+,ORCCAjHrWpMrCYB,introduction,Introduction,section-special-solution-sets.ptx
+,ORCCAK7av3aC90U,subsection,Special Solution Sets,section-special-solution-sets.ptx
+,ORCCA47982U7J9A,subsection,Further Examples,section-special-solution-sets.ptx
+,ORCCA1a2p1iprg0,exercises,,section-special-solution-sets.ptx
+,ORCCAKBOddWDxIJ,introduction,Introduction,section-special-solution-sets.ptx
+,ORCCAo4OGGpbXiH,introduction,Introduction,section-special-solution-sets.ptx
+section-isolating-a-linear-variable,ORCCAtlxqeTj1A6,section,Isolating a Linear Variable,section-isolating-a-linear-variable.ptx
+,ORCCASFhtf6IVuO,introduction,Introduction,section-isolating-a-linear-variable.ptx
+,ORCCAZ03LRG0zrI,subsection,Solving for a Variable,section-isolating-a-linear-variable.ptx
+,ORCCAx6Uijit8jY,exercises,,section-isolating-a-linear-variable.ptx
+,ORCCAGkYt2yF38d,introduction,Introduction,section-isolating-a-linear-variable.ptx
+,ORCCAT35SwKoF6E,introduction,Introduction,section-isolating-a-linear-variable.ptx
+,ORCCA2AlhnizlYG,introduction,Introduction,section-isolating-a-linear-variable.ptx
+,ORCCA9BErvieubn,introduction,Introduction,section-isolating-a-linear-variable.ptx
+,ORCCAoK4FQxpt72,introduction,Introduction,section-isolating-a-linear-variable.ptx
+,ORCCAwqmChBTYKk,introduction,Introduction,section-isolating-a-linear-variable.ptx
+,ORCCAAXINO4CNZJ,introduction,Introduction,section-isolating-a-linear-variable.ptx
+review-linear-equations-and-inequalities,ORCCA0HObnyYfV8,section,Linear Equations and Inequalities Chapter Review,review-linear-equations-and-inequalities.ptx
+,ORCCAd7ryUd19k7,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCA7Iheu8wcpY,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCAPZ6DLJ6Ng2,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCAqZZDDl9wiM,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCA6hTnfabVUa,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCAUogL0tlhkk,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCAMoS0iktmQH,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCAnsNUPS5fCf,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCArM3RcE8QIC,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCAufWx4rlBni,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCAx2v5LMZABW,exercises,Review Exercises for,review-linear-equations-and-inequalities.ptx
+,ORCCA7iyrdCtHGn,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCAeldLi0sGa7,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCAFneOXGdteh,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCADhhMAAoBQ1,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCAtYJ1IqPCrO,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCAywfi7Id7WL,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCAj0Hon33ubk,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCAeLZ0PgoeRM,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCAHKSodsQgOG,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+,ORCCAo9iXM0Y4Uz,introduction,Introduction,review-linear-equations-and-inequalities.ptx
+chapter-graphing-lines,ORCCA5hHUoFkjo6,chapter,Graphing Lines,chapter-graphing-lines.ptx
+,ORCCAb9OZEOhCK0,introduction,Introduction,chapter-graphing-lines.ptx
+section-cartesian-coordinates,ORCCArFuCmkmzMu,section,Cartesian Coordinates,section-cartesian-coordinates.ptx
+,ORCCAGmNWo7FUH8,introduction,Introduction,section-cartesian-coordinates.ptx
+,ORCCAuV4iZSITxc,exercises,,section-cartesian-coordinates.ptx
+,ORCCAls8zm5cc0Z,introduction,Introduction,section-cartesian-coordinates.ptx
+,ORCCAK1SBTtnaqK,introduction,Introduction,section-cartesian-coordinates.ptx
+,ORCCAaur5MTIozJ,introduction,Introduction,section-cartesian-coordinates.ptx
+,ORCCA56ft3Am7Y1,introduction,Introduction,section-cartesian-coordinates.ptx
+section-graphing-equations,ORCCAJf0tCIqZFo,section,Graphing Equations,section-graphing-equations.ptx
+,ORCCAZjK3Ow45FP,introduction,Introduction,section-graphing-equations.ptx
+,ORCCArX1Kp5XcEm,exercises,,section-graphing-equations.ptx
+,ORCCAQ4z12qfB70,introduction,Introduction,section-graphing-equations.ptx
+,ORCCAbGjAtAwc63,introduction,Introduction,section-graphing-equations.ptx
+,ORCCAj3gEgctoUO,introduction,Introduction,section-graphing-equations.ptx
+section-exploring-two-variable-data-and-rate-of-change,ORCCAowP6B8dkTy,section,Exploring Two-Variable Data and Rate of Change,section-exploring-two-variable-data-and-rate-of-change.ptx
+,ORCCAR8yC1y81ui,introduction,Introduction,section-exploring-two-variable-data-and-rate-of-change.ptx
+,ORCCAStyZSun838,subsection,Modeling data with two variables,section-exploring-two-variable-data-and-rate-of-change.ptx
+,ORCCAOTeiLzVQln,subsection,Patterns in Tables,section-exploring-two-variable-data-and-rate-of-change.ptx
+,ORCCALMOz15OV9O,subsection,Rate of Change,section-exploring-two-variable-data-and-rate-of-change.ptx
+,ORCCAWut7w5lrZd,exercises,,section-exploring-two-variable-data-and-rate-of-change.ptx
+,ORCCAB6QrwFcz9m,introduction,Introduction,section-exploring-two-variable-data-and-rate-of-change.ptx
+,ORCCAaqMkMLlvlf,introduction,Introduction,section-exploring-two-variable-data-and-rate-of-change.ptx
+,ORCCA88G7DOFccH,introduction,Introduction,section-exploring-two-variable-data-and-rate-of-change.ptx
+,ORCCAKzKd3YHm7o,introduction,Introduction,section-exploring-two-variable-data-and-rate-of-change.ptx
+,ORCCAzuLkSw2QHR,introduction,Introduction,section-exploring-two-variable-data-and-rate-of-change.ptx
+section-slope,ORCCAC4O522R0Hb,section,Slope,section-slope.ptx
+,ORCCAjXuC4idxYf,introduction,Introduction,section-slope.ptx
+,ORCCAGsqnTZPnX3,subsection,What is slope?,section-slope.ptx
+subsection-comparing-slopes,ORCCAdPG75txBo0,subsection,Comparing Slopes,section-slope.ptx
+,ORCCAhQyuIJAB4D,introduction,Introduction,section-slope.ptx
+,ORCCANBG9XAiMVT,subsection,Finding Slope by Two Given Points,section-slope.ptx
+,ORCCAX9azcpCKgu,exercises,,section-slope.ptx
+,ORCCA90XbwHDVAi,introduction,Introduction,section-slope.ptx
+,ORCCANBUVAGbHYe,introduction,Introduction,section-slope.ptx
+,ORCCAflDkiudDOR,introduction,Introduction,section-slope.ptx
+,ORCCAKo4s91qMa5,introduction,Introduction,section-slope.ptx
+,ORCCAFhtSrxG9h2,introduction,Introduction,section-slope.ptx
+section-slope-intercept-form,ORCCAUqf7bhmk56,section,Slope-Intercept Form,section-slope-intercept-form.ptx
+,ORCCA3Is5Jkn77X,introduction,Introduction,section-slope-intercept-form.ptx
+,ORCCAjpOfRV0LsQ,subsection,Slope-Intercept Definition,section-slope-intercept-form.ptx
+,ORCCAiHlNpZPmkk,introduction,Introduction,section-slope-intercept-form.ptx
+,ORCCAZlPvFRGLwC,subsection,Graphing Slope-Intercept Equations,section-slope-intercept-form.ptx
+,ORCCArGKH6MSvZj,subsection,Writing a Slope-Intercept Equation Given a Graph,section-slope-intercept-form.ptx
+,ORCCAQKif94NtL6,subsection,Writing a Slope-Intercept Equation Given Two Points,section-slope-intercept-form.ptx
+,ORCCAfZodHHwnmA,subsection,Modeling with Slope-Intercept Form,section-slope-intercept-form.ptx
+,ORCCAIGmDPckTxz,exercises,,section-slope-intercept-form.ptx
+,ORCCA80QClTd6fX,introduction,Introduction,section-slope-intercept-form.ptx
+,ORCCA33hE7vruam,introduction,Introduction,section-slope-intercept-form.ptx
+,ORCCA3xH7c34cSz,introduction,Introduction,section-slope-intercept-form.ptx
+,ORCCAk7r7Nmvyuj,introduction,Introduction,section-slope-intercept-form.ptx
+section-point-slope-form,ORCCA6oWhYFXx8D,section,Point-Slope Form,section-point-slope-form.ptx
+,ORCCA3RxPWZs55K,introduction,Introduction,section-point-slope-form.ptx
+,ORCCAie8ZmTVzIX,subsection,Point-Slope Motivation and Definition,section-point-slope-form.ptx
+,ORCCAzZUs51f570,subsection,Using Two Points to Build a Linear Equation,section-point-slope-form.ptx
+,ORCCAoVkTCHvxmJ,subsection,Recognizing Point-Slope Form,section-point-slope-form.ptx
+,ORCCALFUOGf4zyd,exercises,,section-point-slope-form.ptx
+,ORCCAABQPNZqIwR,introduction,Introduction,section-point-slope-form.ptx
+,ORCCAhI6BvvklBH,introduction,Introduction,section-point-slope-form.ptx
+,ORCCABBOiwLXlEi,introduction,Introduction,section-point-slope-form.ptx
+,ORCCAdlYtHNN3KH,introduction,Introduction,section-point-slope-form.ptx
+,ORCCA9g3F8DZV4H,introduction,Introduction,section-point-slope-form.ptx
+,ORCCAXPyHgLhb48,introduction,Introduction,section-point-slope-form.ptx
+section-standard-form,ORCCAFGIrfXypY9,section,Standard Form,section-standard-form.ptx
+,ORCCAx7778vSZm8,introduction,Introduction,section-standard-form.ptx
+,ORCCAV8EzBJXBSU,subsection,Standard Form Definition,section-standard-form.ptx
+,ORCCAPpkHa2dxuV,subsection,The Importance of x- and y-Intercepts,section-standard-form.ptx
+,ORCCAjokYxmI73t,introduction,Introduction,section-standard-form.ptx
+subsection-transforming-between-standard-form-and-slope-intercept-form,ORCCAsAOuPh4NQ4,subsection,Transforming between Standard Form and Slope-Intercept Form,section-standard-form.ptx
+,ORCCAw2uqStktq9,exercises,,section-standard-form.ptx
+,ORCCAwfnCAqVXTd,introduction,Introduction,section-standard-form.ptx
+,ORCCAL8OVUlorSd,introduction,Introduction,section-standard-form.ptx
+,ORCCAvWLH60xThg,introduction,Introduction,section-standard-form.ptx
+,ORCCA6fJ5mQ8P59,introduction,Introduction,section-standard-form.ptx
+,ORCCAwV5gRhJ37I,introduction,Introduction,section-standard-form.ptx
+section-geometry-of-lines,ORCCAfp4qSGd99m,section,Geometry of Lines,section-geometry-of-lines.ptx
+,ORCCAndggFIY1dF,introduction,Introduction,section-geometry-of-lines.ptx
+,ORCCAKf7uJGVV15,subsection,Horizontal Lines and Vertical Lines,section-geometry-of-lines.ptx
+subsection-parallel-lines,ORCCAXcVg11glps,subsection,Parallel Lines,section-geometry-of-lines.ptx
+,ORCCAV1BRIfXNVj,subsection,Perpendicular Lines,section-geometry-of-lines.ptx
+,ORCCAwKEoG5gAmJ,exercises,,section-geometry-of-lines.ptx
+,ORCCAo2qRsLvl4x,introduction,Introduction,section-geometry-of-lines.ptx
+,ORCCAJeAAHywbsM,introduction,Introduction,section-geometry-of-lines.ptx
+,ORCCAzeuatbvZug,introduction,Introduction,section-geometry-of-lines.ptx
+,ORCCAJApJNqzZIb,introduction,Introduction,section-geometry-of-lines.ptx
+,ORCCAcN5kZIusiD,introduction,Introduction,section-geometry-of-lines.ptx
+,ORCCAsBytTROpZP,introduction,Introduction,section-geometry-of-lines.ptx
+,ORCCArg6O3Yq03v,introduction,Introduction,section-geometry-of-lines.ptx
+section-strategies-for-graphing-lines,ORCCAR8uDIbekYI,section,Strategies for Graphing Lines,section-strategies-for-graphing-lines.ptx
+,ORCCAtDiJbUMzVO,introduction,Introduction,section-strategies-for-graphing-lines.ptx
+,ORCCAO5rYoVXvbW,subsection,Graphing Lines in Slope-Intercept Form,section-strategies-for-graphing-lines.ptx
+,ORCCAkbpZh17kma,subsection,Graphing Lines in Point-Slope Form,section-strategies-for-graphing-lines.ptx
+,ORCCA5OY7prFSfG,subsection,Graphing Lines in Standard Form,section-strategies-for-graphing-lines.ptx
+,ORCCAjQgmcmDaEh,subsection,Graphing Horizontal and Vertical Lines,section-strategies-for-graphing-lines.ptx
+,ORCCAmydAUMTsq3,exercises,,section-strategies-for-graphing-lines.ptx
+,ORCCA8wIrlUMVRS,introduction,Introduction,section-strategies-for-graphing-lines.ptx
+,ORCCARa5o1BuwpD,introduction,Introduction,section-strategies-for-graphing-lines.ptx
+,ORCCALNxveZy3hO,introduction,Introduction,section-strategies-for-graphing-lines.ptx
+,ORCCA5MwASuVDVA,introduction,Introduction,section-strategies-for-graphing-lines.ptx
+,ORCCADFGk6cBR1u,introduction,Introduction,section-strategies-for-graphing-lines.ptx
+review-graphing-lines,ORCCAhSNUTNAnGl,section,Graphing Lines Chapter Review,review-graphing-lines.ptx
+,ORCCAqz2HlenfnZ,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAQMWbYYy8XY,introduction,Introduction,review-graphing-lines.ptx
+,ORCCA9cw99YxTwU,introduction,Introduction,review-graphing-lines.ptx
+,ORCCACxzz4S6dI4,introduction,Introduction,review-graphing-lines.ptx
+,ORCCACzcB7mvRKd,introduction,Introduction,review-graphing-lines.ptx
+,ORCCACPQ5fd700q,introduction,Introduction,review-graphing-lines.ptx
+,ORCCA6ClvPxBXHZ,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAfeLXmnKDKH,introduction,Introduction,review-graphing-lines.ptx
+,ORCCA4hxM9IDKFf,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAZJZmDZkVPJ,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAXdoHggVN1V,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAsWVU2qFizA,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAlNRftsiLql,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAZAGMksWyzb,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAUS8S1LioXf,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAi5qAg4Cxb8,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAZOQr8999DY,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAjKlInpGKa8,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAChyMbUiWxY,introduction,Introduction,review-graphing-lines.ptx
+,ORCCA3JladYOWY4,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAnwNb2oa8QY,exercises,Review Exercises for,review-graphing-lines.ptx
+,ORCCAY8W7NbQP9E,introduction,Introduction,review-graphing-lines.ptx
+,ORCCA5Lmv5Tc71D,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAIl6aAq6ojd,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAdJ45lQkbdM,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAdSQESmdPtG,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAI018f6pBm3,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAjG0JknMezJ,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAvWp40l6cE0,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAOy1sFc6Fyu,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAFyhPT1w4le,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAtTh7MW8paa,introduction,Introduction,review-graphing-lines.ptx
+,ORCCA5d3tquqSS1,introduction,Introduction,review-graphing-lines.ptx
+,ORCCApploN2V3Ve,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAwWoFgJxshe,introduction,Introduction,review-graphing-lines.ptx
+,ORCCATj7CN0aHuB,introduction,Introduction,review-graphing-lines.ptx
+,ORCCA79C5RWqlxR,introduction,Introduction,review-graphing-lines.ptx
+,ORCCA8gmgsxx5B3,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAIKZRoohvV2,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAhDYmdnNDDz,introduction,Introduction,review-graphing-lines.ptx
+,ORCCA4UOdx5LNCv,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAH86QjRwpCP,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAw1W0gySa5S,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAcO0eUzZv0q,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAzpLyx0vN5I,introduction,Introduction,review-graphing-lines.ptx
+,ORCCADKrIDf009q,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAuWK83ywzKd,introduction,Introduction,review-graphing-lines.ptx
+,ORCCA1ETSF1LAfG,introduction,Introduction,review-graphing-lines.ptx
+,ORCCA5SxbxoDkWD,introduction,Introduction,review-graphing-lines.ptx
+,ORCCArDeFZtq1si,introduction,Introduction,review-graphing-lines.ptx
+,ORCCAYfwoyT4kOd,introduction,Introduction,review-graphing-lines.ptx
+chapter-systems-of-two-linear-equations,ORCCAe5WaeQD89m,chapter,Systems of Two Linear Equations,chapter-systems-of-two-linear-equations.ptx
+,ORCCAdGB2urSMAz,introduction,Introduction,chapter-systems-of-two-linear-equations.ptx
+section-solving-a-system-by-graphing,ORCCAuW8Qvz1guf,section,Solving a System by Graphing,section-solving-a-system-by-graphing.ptx
+,ORCCAh4MFhGjlLz,introduction,Introduction,section-solving-a-system-by-graphing.ptx
+,ORCCA6ciq3t9X84,subsection,Systems of Two Linear Equations in Two Variables,section-solving-a-system-by-graphing.ptx
+,ORCCANFKRWtY5zM,subsection,Solving a System of Equations by Graphing,section-solving-a-system-by-graphing.ptx
+,ORCCAr794UqaBPk,introduction,Introduction,section-solving-a-system-by-graphing.ptx
+subsection-special-systems-of-equations,ORCCAY8YtqSyZHS,subsection,Special Systems of Equations,section-solving-a-system-by-graphing.ptx
+,ORCCAxEWm83cQFH,exercises,,section-solving-a-system-by-graphing.ptx
+,ORCCARMLNDuUE8h,introduction,Introduction,section-solving-a-system-by-graphing.ptx
+,ORCCA2Qcqt8q3rM,introduction,Introduction,section-solving-a-system-by-graphing.ptx
+,ORCCAmxOk7YYqEa,introduction,Introduction,section-solving-a-system-by-graphing.ptx
+,ORCCARXFXlW4myg,introduction,Introduction,section-solving-a-system-by-graphing.ptx
+,ORCCA9tpNdqGKH2,introduction,Introduction,section-solving-a-system-by-graphing.ptx
+,ORCCAYXCuACecPM,introduction,Introduction,section-solving-a-system-by-graphing.ptx
+,ORCCA3L4W5WyhQX,introduction,Introduction,section-solving-a-system-by-graphing.ptx
+,ORCCAusqdN4PdPF,introduction,Introduction,section-solving-a-system-by-graphing.ptx
+,ORCCAv60MNUdSsJ,introduction,Introduction,section-solving-a-system-by-graphing.ptx
+section-substitution,ORCCAYGDPtpFQ2D,section,Substitution,section-substitution.ptx
+,ORCCACA6tkWXiK6,introduction,Introduction,section-substitution.ptx
+,ORCCAg5HomdKrMg,subsection,Substitution,section-substitution.ptx
+,ORCCA22HgoxHLpF,introduction,Introduction,section-substitution.ptx
+,ORCCAOYvdHkn2XT,subsection,Applications,section-substitution.ptx
+,ORCCAtMrv4BLsVK,introduction,Introduction,section-substitution.ptx
+subsection-special-systems-of-equations-substitution,ORCCAjkjgwbb0BB,subsection,Solving Special Systems of Equations with Substitution,section-substitution.ptx
+,ORCCA9AlWZZGngQ,exercises,,section-substitution.ptx
+,ORCCAMLu1f4oTYi,introduction,Introduction,section-substitution.ptx
+section-elimination,ORCCAZ1JEI79HXB,section,Elimination,section-elimination.ptx
+,ORCCARtYpFzG44G,introduction,Introduction,section-elimination.ptx
+,ORCCAJWcezlGhPi,subsection,Solving Systems of Equations by Elimination,section-elimination.ptx
+,ORCCAFKkJZL5byB,introduction,Introduction,section-elimination.ptx
+,ORCCAPCn2ILMWHt,introduction,Introduction,section-elimination.ptx
+,ORCCA0u5MufyNlB,introduction,Introduction,section-elimination.ptx
+,ORCCAWydH0ZLlMz,subsection,Solving Special Systems of Equations with Elimination,section-elimination.ptx
+,ORCCAae4KWcZjLX,subsection,Substitution versus Elimination,section-elimination.ptx
+,ORCCAYvGM4ZgYLb,exercises,,section-elimination.ptx
+,ORCCAwS5zra1c60,introduction,Introduction,section-elimination.ptx
+review-systems-of-linear-equations,ORCCAKOzvfmEshx,section,Systems of Two Linear Equations Chapter Review,review-systems-of-linear-equations.ptx
+,ORCCAJzBZ8Ia9ZX,introduction,Introduction,review-systems-of-linear-equations.ptx
+,ORCCAtfWTJIAPd5,introduction,Introduction,review-systems-of-linear-equations.ptx
+,ORCCAbBLoFEATTi,introduction,Introduction,review-systems-of-linear-equations.ptx
+,ORCCALJHdCbpc55,introduction,Introduction,review-systems-of-linear-equations.ptx
+,ORCCAZkq9h7Edii,introduction,Introduction,review-systems-of-linear-equations.ptx
+,ORCCAO7LGZP8J9z,exercises,Review Exercises for,review-systems-of-linear-equations.ptx
+,ORCCAU9MNxiSFGc,introduction,Introduction,review-systems-of-linear-equations.ptx
+,ORCCA4rB3Ece5KE,introduction,Introduction,review-systems-of-linear-equations.ptx
+,ORCCAMp1f3B6h5T,introduction,Introduction,review-systems-of-linear-equations.ptx
+,ORCCAbHt6B9KLTQ,introduction,Introduction,review-systems-of-linear-equations.ptx
+,ORCCAVG5DuHb3aj,introduction,Introduction,review-systems-of-linear-equations.ptx
+,ORCCAgRFh4OT3cz,introduction,Introduction,review-systems-of-linear-equations.ptx
+part-preparation-for-stem,ORCCAI3AbGjF0Nb,part,Preparation for STEM,orcca.ptx
+chapter-exponents-and-polynomials,ORCCAado2BGf1S3,chapter,Exponents and Polynomials,chapter-exponents-and-polynomials.ptx
+,ORCCAwgbDXdZgxo,introduction,Introduction,chapter-exponents-and-polynomials.ptx
+section-adding-and-subtracting-polynomials,ORCCAbVoZuimPNm,section,Adding and Subtracting Polynomials,section-adding-and-subtracting-polynomials.ptx
+,ORCCAuvqnwUkJcm,introduction,Introduction,section-adding-and-subtracting-polynomials.ptx
+,ORCCA8xoIYTlsTN,subsection,Polynomial Vocabulary,section-adding-and-subtracting-polynomials.ptx
+,ORCCAOGZcakPmsM,introduction,Introduction,section-adding-and-subtracting-polynomials.ptx
+,ORCCABxwk7nvML5,subsection,Adding and Subtracting Polynomials,section-adding-and-subtracting-polynomials.ptx
+,ORCCAmhK15fTKP7,subsection,Evaluating Polynomial Expressions,section-adding-and-subtracting-polynomials.ptx
+,ORCCA5hX7PYjYrp,exercises,,section-adding-and-subtracting-polynomials.ptx
+,ORCCA48Zp7bLq6T,introduction,Introduction,section-adding-and-subtracting-polynomials.ptx
+,ORCCAFlbVTUjWhF,introduction,Introduction,section-adding-and-subtracting-polynomials.ptx
+,ORCCAsxDXzzqyps,introduction,Introduction,section-adding-and-subtracting-polynomials.ptx
+,ORCCAS3JjuTGWeO,introduction,Introduction,section-adding-and-subtracting-polynomials.ptx
+,ORCCAwdVwQeYihq,introduction,Introduction,section-adding-and-subtracting-polynomials.ptx
+,ORCCA5i2DUU5Ws2,introduction,Introduction,section-adding-and-subtracting-polynomials.ptx
+,ORCCAatzxeeui1g,introduction,Introduction,section-adding-and-subtracting-polynomials.ptx
+,ORCCA9HSGC5btar,introduction,Introduction,section-adding-and-subtracting-polynomials.ptx
+,ORCCANZArQaRTQi,introduction,Introduction,section-adding-and-subtracting-polynomials.ptx
+,ORCCA40IS99q2MB,introduction,Introduction,section-adding-and-subtracting-polynomials.ptx
+,ORCCAUinJeYzkzR,introduction,Introduction,section-adding-and-subtracting-polynomials.ptx
+,ORCCAjbrBAiBDo9,introduction,Introduction,section-adding-and-subtracting-polynomials.ptx
+section-introduction-to-exponent-properties,ORCCAQKBRa7FT6m,section,Introduction to Exponent Rules,section-introduction-to-exponent-properties.ptx
+,ORCCAyB3JtFV7Vw,introduction,Introduction,section-introduction-to-exponent-properties.ptx
+,ORCCAiEUW3y6R8H,subsection,Exponent Basics,section-introduction-to-exponent-properties.ptx
+,ORCCAlbAGk8cyxZ,subsection,Exponent Rules,section-introduction-to-exponent-properties.ptx
+,ORCCAYXICLLbq6g,paragraphs,Product Rule,section-introduction-to-exponent-properties.ptx
+,ORCCA1lP188gqZw,paragraphs,Power to a Power Rule,section-introduction-to-exponent-properties.ptx
+,ORCCA6neOMuhD0j,paragraphs,Product to a Power Rule,section-introduction-to-exponent-properties.ptx
+,ORCCAD1oohnAwIH,introduction,Introduction,section-introduction-to-exponent-properties.ptx
+,ORCCAzJB2vjufWz,exercises,,section-introduction-to-exponent-properties.ptx
+,ORCCAuvszvmH1dd,introduction,Introduction,section-introduction-to-exponent-properties.ptx
+,ORCCAMW7wi5QNzv,introduction,Introduction,section-introduction-to-exponent-properties.ptx
+,ORCCAVtXxWKbaEm,introduction,Introduction,section-introduction-to-exponent-properties.ptx
+,ORCCAau9MjHSydD,introduction,Introduction,section-introduction-to-exponent-properties.ptx
+,ORCCAHPw8stpvsJ,introduction,Introduction,section-introduction-to-exponent-properties.ptx
+section-dividing-by-a-monomial,ORCCAqRdJCsJVhR,section,Dividing by a Monomial,section-dividing-by-a-monomial.ptx
+,ORCCAfqMfAVw19J,introduction,Introduction,section-dividing-by-a-monomial.ptx
+,ORCCAIxfmIOq0ny,subsection,Quotient of Powers Property,section-dividing-by-a-monomial.ptx
+,ORCCAKTEZJNIiEE,introduction,Introduction,section-dividing-by-a-monomial.ptx
+,ORCCA557TrGQOzq,subsection,Dividing a Polynomial by a Monomial,section-dividing-by-a-monomial.ptx
+,ORCCA4v0tXZ3iHt,exercises,,section-dividing-by-a-monomial.ptx
+,ORCCAHGaM3tagos,introduction,Introduction,section-dividing-by-a-monomial.ptx
+,ORCCAJ411XHEr8i,introduction,Introduction,section-dividing-by-a-monomial.ptx
+,ORCCAxrENfOL9nS,introduction,Introduction,section-dividing-by-a-monomial.ptx
+,ORCCALPAwpNMytz,introduction,Introduction,section-dividing-by-a-monomial.ptx
+section-multiplying-polynomials,ORCCAueaNwiVP41,section,Multiplying Polynomials,section-multiplying-polynomials.ptx
+,ORCCAPa1Typto3B,introduction,Introduction,section-multiplying-polynomials.ptx
+,ORCCAly7rWSN5QR,subsection,Review of the Distributive Property,section-multiplying-polynomials.ptx
+subsection-approaches-to-multiplying-binomials,ORCCAAkCIq8mfZH,subsection,Multiplying Binomials,section-multiplying-polynomials.ptx
+,ORCCAwwIS3GNeYK,paragraphs,Multiplying Binomials Using Distribution,section-multiplying-polynomials.ptx
+,ORCCAx9F65TmUuG,paragraphs,Multiplying Binomials Using FOIL,section-multiplying-polynomials.ptx
+,ORCCAr43OT6TAzD,paragraphs,Multiplying Binomials Using Generic Rectangles,section-multiplying-polynomials.ptx
+,ORCCAyGC1XL4vpG,subsection,Multiplying Polynomials Larger Than Binomials,section-multiplying-polynomials.ptx
+,ORCCA9mn3V6YD0b,exercises,,section-multiplying-polynomials.ptx
+,ORCCA5DUPzjHhcF,introduction,Introduction,section-multiplying-polynomials.ptx
+,ORCCAxVDiiuWr8d,introduction,Introduction,section-multiplying-polynomials.ptx
+,ORCCAsDRRxrOOMq,introduction,Introduction,section-multiplying-polynomials.ptx
+,ORCCASPOnT1RjjF,introduction,Introduction,section-multiplying-polynomials.ptx
+section-special-patterns-with-multiplying-polynomials,ORCCA6qT88N3dkA,section,Special Patterns with Multiplying Polynomials,section-special-patterns-with-multiplying-polynomials.ptx
+,ORCCAvgHSeNOiO8,introduction,Introduction,section-special-patterns-with-multiplying-polynomials.ptx
+,ORCCA4txdCLzVrL,subsection,Squaring a Binomial,section-special-patterns-with-multiplying-polynomials.ptx
+,ORCCAaPhPwWRiG5,subsection,The Product of the Sum and Difference of Two Terms,section-special-patterns-with-multiplying-polynomials.ptx
+,ORCCAZ23zAjI5SO,subsection,Binomials Raised to Other Powers,section-special-patterns-with-multiplying-polynomials.ptx
+,ORCCAwQWTxuJ8Kr,exercises,,section-special-patterns-with-multiplying-polynomials.ptx
+,ORCCAaAXHD2rdF7,introduction,Introduction,section-special-patterns-with-multiplying-polynomials.ptx
+,ORCCAzFrJHVi5kc,introduction,Introduction,section-special-patterns-with-multiplying-polynomials.ptx
+,ORCCAPRG2YzyCRS,introduction,Introduction,section-special-patterns-with-multiplying-polynomials.ptx
+,ORCCAWBjhQZjxWV,introduction,Introduction,section-special-patterns-with-multiplying-polynomials.ptx
+,ORCCAbY8QvtaZh6,introduction,Introduction,section-special-patterns-with-multiplying-polynomials.ptx
+section-more-exponent-properties,ORCCAZdVWxE2oBP,section,More Exponent Rules,section-more-exponent-properties.ptx
+,ORCCAF7KGuzHLPQ,introduction,Introduction,section-more-exponent-properties.ptx
+,ORCCAAyQB2FNN3D,subsection,Review of Exponent Rules for Products and Exponents,section-more-exponent-properties.ptx
+,ORCCAfLC4OgUOxS,subsection,Quotient to a Power Rule,section-more-exponent-properties.ptx
+,ORCCAAUzoiEwMNC,subsection,Zero as an Exponent,section-more-exponent-properties.ptx
+,ORCCAC4ctkMkAmK,subsection,Negative Exponents,section-more-exponent-properties.ptx
+,ORCCAso3J11JkTF,subsection,Summary of Exponent Rules,section-more-exponent-properties.ptx
+,ORCCALO5DhqzmbR,introduction,Introduction,section-more-exponent-properties.ptx
+,ORCCAiCDtIordDD,exercises,,section-more-exponent-properties.ptx
+,ORCCAsXnNiZYUNA,introduction,Introduction,section-more-exponent-properties.ptx
+,ORCCA3R6whuSLjY,introduction,Introduction,section-more-exponent-properties.ptx
+review-exponents-and-polynomials,ORCCAg8AYOxFF3C,section,Exponents and Polynomials Chapter Review,review-exponents-and-polynomials.ptx
+,ORCCASaNXCv0lgA,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAfKmGO7rChB,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCARqsvyiWrDf,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCA1Ddcjv2C0P,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAjOtYwStshg,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAMHaWTxj8YY,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAEW7OOYV4u6,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCA2Gbed8ExVa,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCApnrtR91Ip1,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAxoSIS9cYie,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAB63Q9E18Uf,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCANHHit4UpcK,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCANuFP5eNiy8,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAjawSeeuPaR,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAUQkkggHOg6,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAeZCLcSY4sF,exercises,Review Exercises for,review-exponents-and-polynomials.ptx
+,ORCCA1XRDdZzHZl,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAIFarLu2NZh,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAJ8yGF9wGXx,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCABPFcZxw6W7,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAYG4ix1RTWo,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAh4J1mjsfvj,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAhSxKFaw4oX,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAoMPOF6AVqa,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAP4bSvoHh2s,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCACEn7BvCP3k,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCA3lak08LtZs,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCA8qDwRDnNn8,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCANWBHXzvp3q,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAGvZPsjxI37,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAW91XPlFStI,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAcxGlSItoHH,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAJsp3PWhlxa,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCAD2rlisK4dV,introduction,Introduction,review-exponents-and-polynomials.ptx
+,ORCCA81NTFea0sJ,introduction,Introduction,review-exponents-and-polynomials.ptx
+chapter-radical-expressions-and-equations,ORCCAHnAxRUzLO7,chapter,Radical Expressions and Equations,chapter-radical-expressions-and-equations.ptx
+,ORCCA1uzR5m1Xlb,introduction,Introduction,chapter-radical-expressions-and-equations.ptx
+section-square-and-nth-root-properties,ORCCA10XQrOxL8L,section,Square and nth Root Properties,section-square-and-nth-root-properties.ptx
+,ORCCA9mtfMgoCLE,introduction,Introduction,section-square-and-nth-root-properties.ptx
+,ORCCAAxmN0Rpmjj,subsection,Square Roots,section-square-and-nth-root-properties.ptx
+,ORCCAaqSkElTlrJ,subsection,Square Root Decimal Values,section-square-and-nth-root-properties.ptx
+subsection-cube-root-and-higher-order-roots,ORCCAZJeKQJmuxt,subsection,Cube Root and Higher Order Roots,section-square-and-nth-root-properties.ptx
+,ORCCAuUOGIvI5Mz,subsection,Roots of Negative Numbers,section-square-and-nth-root-properties.ptx
+,ORCCAdvVUiwJLcX,subsection,Radical Properties and Exponent Properties,section-square-and-nth-root-properties.ptx
+,ORCCAG5Mt4cV1VL,introduction,Introduction,section-square-and-nth-root-properties.ptx
+,ORCCAlgfgmic7KD,introduction,Introduction,section-square-and-nth-root-properties.ptx
+,ORCCA4zfwUkEcZz,subsection,Multiplying Square Root Expressions,section-square-and-nth-root-properties.ptx
+,ORCCAadiyG3myvh,subsection,Adding and Subtracting Square Root Expressions,section-square-and-nth-root-properties.ptx
+subsection-distributing-with-square-roots,ORCCAvDMcAjfrkz,subsection,Distributing with Square Roots,section-square-and-nth-root-properties.ptx
+,ORCCAog8ACY9A8L,exercises,,section-square-and-nth-root-properties.ptx
+,ORCCA6QgaJjhY9h,introduction,Introduction,section-square-and-nth-root-properties.ptx
+,ORCCAMxxwIXC9vX,introduction,Introduction,section-square-and-nth-root-properties.ptx
+,ORCCAFLg6BV9D2d,introduction,Introduction,section-square-and-nth-root-properties.ptx
+,ORCCAV4onpibyI2,introduction,Introduction,section-square-and-nth-root-properties.ptx
+,ORCCAiWpbYBjfOV,introduction,Introduction,section-square-and-nth-root-properties.ptx
+,ORCCA2xPzIR4bdk,introduction,Introduction,section-square-and-nth-root-properties.ptx
+,ORCCApv8ulg89fP,introduction,Introduction,section-square-and-nth-root-properties.ptx
+section-rationalizing-the-denominator,ORCCAzUEeV8GkSJ,section,Rationalizing the Denominator,section-rationalizing-the-denominator.ptx
+,ORCCAUXxUN2AfjA,introduction,Introduction,section-rationalizing-the-denominator.ptx
+,ORCCAOGb9Cri0nF,subsection,Rationalizing the Denominator,section-rationalizing-the-denominator.ptx
+,ORCCA2gZjyu5SK1,subsection,Rationalize the Denominator Using the Difference of Squares Formula,section-rationalizing-the-denominator.ptx
+,ORCCARnwGKT6Foi,exercises,,section-rationalizing-the-denominator.ptx
+,ORCCAT6FfRRHrae,introduction,Introduction,section-rationalizing-the-denominator.ptx
+section-radical-expressions-and-rational-exponents,ORCCAmMlvXWFbJq,section,Radical Expressions and Rational Exponents,section-radical-expressions-and-rational-exponents.ptx
+,ORCCAqfJ0rLeW8F,introduction,Introduction,section-radical-expressions-and-rational-exponents.ptx
+,ORCCAufrBje9kB1,subsection,Radical Expressions and Rational Exponents,section-radical-expressions-and-rational-exponents.ptx
+,ORCCA0uESDDdKfo,subsection,More Expressions with Rational Exponents,section-radical-expressions-and-rational-exponents.ptx
+,ORCCA30BRg33Xwp,exercises,,section-radical-expressions-and-rational-exponents.ptx
+,ORCCAchueGd8apR,introduction,Introduction,section-radical-expressions-and-rational-exponents.ptx
+,ORCCAr46rxD9BxJ,introduction,Introduction,section-radical-expressions-and-rational-exponents.ptx
+,ORCCABzSaLbAIrv,introduction,Introduction,section-radical-expressions-and-rational-exponents.ptx
+,ORCCAQH1qtqtJhk,introduction,Introduction,section-radical-expressions-and-rational-exponents.ptx
+,ORCCAd8xoIE6uVt,introduction,Introduction,section-radical-expressions-and-rational-exponents.ptx
+,ORCCAc3xklWzmr0,introduction,Introduction,section-radical-expressions-and-rational-exponents.ptx
+,ORCCAHPd7e4baAd,introduction,Introduction,section-radical-expressions-and-rational-exponents.ptx
+section-solving-radical-equations,ORCCAnCg9kNz60O,section,Solving Radical Equations,section-solving-radical-equations.ptx
+,ORCCA5L5GvMRi0k,introduction,Introduction,section-solving-radical-equations.ptx
+,ORCCAL6SqDUZXZl,subsection,Solving Radical Equations,section-solving-radical-equations.ptx
+,ORCCAAfjOwp5tNN,subsection,Solving a Radical Equation with More Than One Variable,section-solving-radical-equations.ptx
+,ORCCA9xKkboTLqx,exercises,,section-solving-radical-equations.ptx
+,ORCCATVwGezAs7y,introduction,Introduction,section-solving-radical-equations.ptx
+,ORCCAuntPusq1EZ,introduction,Introduction,section-solving-radical-equations.ptx
+review-radical-expressions-and-equations,ORCCAV1vm5d5g3q,section,Radical Expressions and Equations Chapter Review,review-radical-expressions-and-equations.ptx
+,ORCCAmo8sL8Cid1,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCAO5LuZNIgyf,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCAXdxzJRsWxw,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCAEeti9533i7,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCA5nX9C6M4oN,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCAxA8zteq208,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCAAwlIfbkq6v,exercises,Review Exercises for,review-radical-expressions-and-equations.ptx
+,ORCCAypkhiX6GNf,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCAGihR8Gaiu2,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCA3tbKnkuPeP,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCAFB6LUVzRSB,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCALgGKWI1JLk,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCAVIb4C9A3Mk,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCArAg4pkO674,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCAwWlNgh2PfD,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCAVKq63n8p9G,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCAa8Yra8nwXt,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCAh3jgfSdFbF,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCAufawYXNv8J,introduction,Introduction,review-radical-expressions-and-equations.ptx
+,ORCCATHTUMVkjE8,introduction,Introduction,review-radical-expressions-and-equations.ptx
+chapter-solving-quadratic-equations,ORCCAKipa7au3n1,chapter,Solving Quadratic Equations,chapter-solving-quadratic-equations.ptx
+,ORCCAAZcm9hjabs,introduction,Introduction,chapter-solving-quadratic-equations.ptx
+section-solving-quadratic-equations-by-using-a-square-root,ORCCAfr04P1ALeb,section,Solving Quadratic Equations by Using a Square Root,section-solving-quadratic-equations-by-using-a-square-root.ptx
+,ORCCAg6QZZS8gEW,introduction,Introduction,section-solving-quadratic-equations-by-using-a-square-root.ptx
+,ORCCA03kwQXQLXc,subsection,Solving Quadratic Equations Using the Square Root Property,section-solving-quadratic-equations-by-using-a-square-root.ptx
+subsection-pythagorean-theorem,ORCCANe6VHRkHmm,subsection,The Pythagorean Theorem,section-solving-quadratic-equations-by-using-a-square-root.ptx
+,ORCCAJPBAWZy8Uv,exercises,,section-solving-quadratic-equations-by-using-a-square-root.ptx
+,ORCCAbDTJuCykJM,introduction,Introduction,section-solving-quadratic-equations-by-using-a-square-root.ptx
+,ORCCAnp9DSeLxrf,introduction,Introduction,section-solving-quadratic-equations-by-using-a-square-root.ptx
+,ORCCAWf4xhFaJnC,introduction,Introduction,section-solving-quadratic-equations-by-using-a-square-root.ptx
+section-the-quadratic-formula,ORCCArcMD2ZVEHz,section,The Quadratic Formula,section-the-quadratic-formula.ptx
+,ORCCAbpsJ8xlqXU,introduction,Introduction,section-the-quadratic-formula.ptx
+,ORCCA8nqq1Y1dwr,subsection,Solving Quadratic Equations with the Quadratic Formula,section-the-quadratic-formula.ptx
+,ORCCAcmMhRxF5BE,subsection,Applications,section-the-quadratic-formula.ptx
+,ORCCA1lgv0AZQUt,subsection,Radical Equations,section-the-quadratic-formula.ptx
+,ORCCAq5GYh3gfsr,exercises,,section-the-quadratic-formula.ptx
+,ORCCAmPvQNDEy0Q,introduction,Introduction,section-the-quadratic-formula.ptx
+,ORCCAe6Ca8U1f4E,introduction,Introduction,section-the-quadratic-formula.ptx
+,ORCCAANAcN7kbg8,introduction,Introduction,section-the-quadratic-formula.ptx
+,ORCCA7a7gd70Cak,introduction,Introduction,section-the-quadratic-formula.ptx
+,ORCCAgTRNIPt6IS,introduction,Introduction,section-the-quadratic-formula.ptx
+section-complex-solutions-to-quadratic-equations,ORCCAPttVSPF7c4,section,Complex Solutions to Quadratic Equations,section-complex-solutions-to-quadratic-equations.ptx
+,ORCCAsbilDRhgR2,introduction,Introduction,section-complex-solutions-to-quadratic-equations.ptx
+,ORCCAr7c4rG1XlY,subsection,Imaginary Numbers,section-complex-solutions-to-quadratic-equations.ptx
+,ORCCAbcdfvhL4Q9,subsection,Solving Quadratic Equations with Imaginary Solutions,section-complex-solutions-to-quadratic-equations.ptx
+,ORCCA1DZRfBCKrT,subsection,Solving Quadratic Equations with Complex Solutions,section-complex-solutions-to-quadratic-equations.ptx
+,ORCCAfDA7D4itMs,exercises,,section-complex-solutions-to-quadratic-equations.ptx
+section-strategies-for-solving-equations-I,ORCCAUf3G9cg2iJ,section,Strategies for Solving Equations I,section-strategies-for-solving-equations-I.ptx
+,ORCCAZLwGogrvNj,introduction,Introduction,section-strategies-for-solving-equations-I.ptx
+,ORCCAMhUFF5NkDF,subsection,Equations Where the Variable Appears Once,section-strategies-for-solving-equations-I.ptx
+,ORCCAIwaPDJ5I9n,subsection,Equations With More Than One Instance of the Variable,section-strategies-for-solving-equations-I.ptx
+,ORCCAXifV64zReE,subsection,Solving For a Variable in Terms of Other Variables,section-strategies-for-solving-equations-I.ptx
+,ORCCAMwSIe8yX7A,exercises,,section-strategies-for-solving-equations-I.ptx
+review-solving-quadratic-equations,ORCCA5KJDyA2lFl,section,Solving Quadratic Equations Chapter Review,review-solving-quadratic-equations.ptx
+,ORCCAHmSc4MeDDF,subsection,Solving Quadratic Equations by Using a Square Root,review-solving-quadratic-equations.ptx
+,ORCCAIZ284NvFEY,subsection,The Quadratic Formula,review-solving-quadratic-equations.ptx
+,ORCCAbDXR63Dy4C,subsection,Complex Solutions to Quadratic Equations,review-solving-quadratic-equations.ptx
+,ORCCASSgVGdy89z,subsection,Solving Equations in General,review-solving-quadratic-equations.ptx
+,ORCCApaIfRP2OEW,exercises,,review-solving-quadratic-equations.ptx
+chapter-quantities-in-the-physical-world,ORCCApqlJW0oiID,chapter,Quantities in the Physical World,chapter-quantities-in-the-physical-world.ptx
+,ORCCApOPmzuxcTl,introduction,Introduction,chapter-quantities-in-the-physical-world.ptx
+section-scientific-notation,ORCCAaMMcQbErpq,section,Scientific Notation,section-scientific-notation.ptx
+,ORCCAJgSjhEETu8,introduction,Introduction,section-scientific-notation.ptx
+,ORCCA7xIN8SPEV7,subsection,The Basics of Scientific Notation,section-scientific-notation.ptx
+,ORCCAvzeN7kvejN,subsection,Scientific Notation for Large Numbers,section-scientific-notation.ptx
+,ORCCAaEK8bHPmba,subsection,Scientific Notation for Small Numbers,section-scientific-notation.ptx
+,ORCCA9tXO1y0TZ9,subsection,Multiplying and Dividing Using Scientific Notation,section-scientific-notation.ptx
+,ORCCArxZQwxxwLu,exercises,,section-scientific-notation.ptx
+section-unit-conversion,ORCCAmmzcCUiTi5,section,Unit Conversion,section-unit-conversion.ptx
+,ORCCA4ve84uVXkV,introduction,Introduction,section-unit-conversion.ptx
+,ORCCA0uBgPPJxvt,subsection,Unit Ratios,section-unit-conversion.ptx
+,ORCCAFHnTLZAZim,subsection,Using Multiple Unit Ratios,section-unit-conversion.ptx
+,ORCCA7zZy288NPG,subsection,Converting Squared or Cubed Units,section-unit-conversion.ptx
+,ORCCAH2eDUsMenf,subsection,Converting Rates,section-unit-conversion.ptx
+,ORCCAMrkU9npbMh,exercises,,section-unit-conversion.ptx
+,ORCCAp37iXTlLD6,conclusion,,section-unit-conversion.ptx
+section-geometry-formulas,ORCCAM1LoE0KCq5,section,Geometry Formulas,section-geometry-formulas.ptx
+,ORCCANfFVcpab0l,introduction,Introduction,section-geometry-formulas.ptx
+subsection-perimeter-and-area,ORCCA8SLDbetb5c,subsection,Evaluating Perimeter and Area Formulas,section-geometry-formulas.ptx
+,ORCCAhEMgiRxFp2,paragraphs,Rectangles,section-geometry-formulas.ptx
+,ORCCA6HSto8Vogk,paragraphs,Triangles,section-geometry-formulas.ptx
+,ORCCAepcegPAnSn,paragraphs,Circles,section-geometry-formulas.ptx
+,ORCCAyiTvPNU3S9,subsection,Volume,section-geometry-formulas.ptx
+,ORCCAyTmu0zhBaq,paragraphs,Rectangular Prisms,section-geometry-formulas.ptx
+,ORCCAlAzkoGBkMA,paragraphs,Cylinders,section-geometry-formulas.ptx
+subsection-list-of-geometry-formulas,ORCCAQ4Nkx8Utk4,subsection,Summary,section-geometry-formulas.ptx
+,ORCCAUzSjp6neat,exercises,,section-geometry-formulas.ptx
+section-geometry-applications,ORCCA2qfvlmjvus,section,Geometry Applications,section-geometry-applications.ptx
+,ORCCAYEMoyUyzl8,introduction,Introduction,section-geometry-applications.ptx
+,ORCCAmV8YYiMjbB,subsection,Solving Equations for Geometry Problems,section-geometry-applications.ptx
+,ORCCA4yLBEaPW9L,subsection,Proportionality in Similar Triangles,section-geometry-applications.ptx
+,ORCCAiI8JM9luZU,exercises,,section-geometry-applications.ptx
+review-quantities-in-the-physical-world,ORCCAkca4D6OBTh,section,Quantities in the Physical World Chapter Review,review-quantities-in-the-physical-world.ptx
+,ORCCAVkJ4MtlS7w,subsection,Scientific Notation,review-quantities-in-the-physical-world.ptx
+,ORCCApV17trXHS9,subsection,Unit Conversion,review-quantities-in-the-physical-world.ptx
+,ORCCAPMhEsPxyAy,subsection,Geometry Formulas,review-quantities-in-the-physical-world.ptx
+,ORCCAz1JoCCibiU,exercises,,review-quantities-in-the-physical-world.ptx
+chapter-topics-in-graphing,ORCCArQ2iLAWs0Y,chapter,Topics in Graphing,chapter-topics-in-graphing.ptx
+,ORCCAiElxHLpE33,introduction,Introduction,chapter-topics-in-graphing.ptx
+section-review-of-graphing,ORCCAiPgdXoFIRm,section,Review of Graphing,section-review-of-graphing.ptx
+,ORCCADKrczrdCmp,introduction,Introduction,section-review-of-graphing.ptx
+,ORCCAbqIOLS5LxE,subsection,Cartesian Coordinates,section-review-of-graphing.ptx
+,ORCCAFZXdUkFetG,subsection,Graphing Equations by Plotting Points,section-review-of-graphing.ptx
+,ORCCAsOp078mrHt,subsection,Graphing Lines Using Intercepts,section-review-of-graphing.ptx
+,ORCCAb6379dMIQQ,exercises,,section-review-of-graphing.ptx
+section-key-features-of-quadratic-graphs,ORCCAQIZ6RzP3kx,section,Key Features of Quadratic Graphs,section-key-features-of-quadratic-graphs.ptx
+,ORCCApttjUbBYoS,introduction,Introduction,section-key-features-of-quadratic-graphs.ptx
+,ORCCAgKEJNEW0TG,subsection,Properties of Quadratic Graphs,section-key-features-of-quadratic-graphs.ptx
+,ORCCAczw1u7INVu,introduction,Introduction,section-key-features-of-quadratic-graphs.ptx
+,ORCCAI4r9KcYCEp,subsection,Finding the Vertex and Axis of Symmetry Algebraically,section-key-features-of-quadratic-graphs.ptx
+,ORCCAUEKc0MxkFA,subsection,Graphing Quadratic Equations by Making a Table,section-key-features-of-quadratic-graphs.ptx
+,ORCCAzM2nbYipVD,subsection,Applications of Quadratic Graphs Involving the Vertex.,section-key-features-of-quadratic-graphs.ptx
+,ORCCA0dZv7NJ0HY,exercises,,section-key-features-of-quadratic-graphs.ptx
+,ORCCA99qng2cKHj,introduction,Introduction,section-key-features-of-quadratic-graphs.ptx
+section-graphing-quadratic-expressions,ORCCATRaLdaLrrI,section,Graphing Quadratic Expressions,section-graphing-quadratic-expressions.ptx
+,ORCCABrEJV2pIQp,introduction,Introduction,section-graphing-quadratic-expressions.ptx
+,ORCCAHO08LjSJCh,subsection,Finding the Vertical and Horizontal Intercepts Algebraically,section-graphing-quadratic-expressions.ptx
+,ORCCA0LxK9u5xGr,subsection,Graphing Quadratic Equations Using Their Key Features,section-graphing-quadratic-expressions.ptx
+,ORCCA9Eqg18Xqee,subsection,Applications of Quadratic Equations,section-graphing-quadratic-expressions.ptx
+,ORCCApZxtkMiTrA,subsection,Distinguishing Quadratic Equations from Other Equations,section-graphing-quadratic-expressions.ptx
+,ORCCAt8mOnBkLm7,exercises,,section-graphing-quadratic-expressions.ptx
+,ORCCAN5evBFlB7r,introduction,Introduction,section-graphing-quadratic-expressions.ptx
+section-graphically-solving-equations-and-inequalities,ORCCAr59BraTWhP,section,Graphically Solving Equations and Inequalities,section-graphically-solving-equations-and-inequalities.ptx
+,ORCCA6plnw2B7Vm,introduction,Introduction,section-graphically-solving-equations-and-inequalities.ptx
+,ORCCAauxVbgWrXL,subsection,Solving Equations Using a Graph,section-graphically-solving-equations-and-inequalities.ptx
+,ORCCAEU13dAglBt,subsection,Solving Inequalities Using a Graph,section-graphically-solving-equations-and-inequalities.ptx
+,ORCCABHBUqpDwRB,exercises,,section-graphically-solving-equations-and-inequalities.ptx
+review-topics-in-graphing,ORCCAN9EEJlnCyx,section,Topics in Graphing Chapter Review,review-topics-in-graphing.ptx
+,ORCCANXBJLfVhRR,subsection,Review of Graphing,review-topics-in-graphing.ptx
+,ORCCAbiu2wY8NtN,subsection,Key Features of Quadratic Graphs,review-topics-in-graphing.ptx
+,ORCCAVcwJ6lQAEk,subsection,Graphing Quadratic Equations,review-topics-in-graphing.ptx
+,ORCCARtOmyj7d9C,subsection,Graphically Solving Equations and Inequalities,review-topics-in-graphing.ptx
+,ORCCAdzBxzLATXh,exercises,,review-topics-in-graphing.ptx
+,ORCCAw7azMpUtjE,introduction,Introduction,review-topics-in-graphing.ptx
+,ORCCA8RLZ4Tye9i,introduction,Introduction,review-topics-in-graphing.ptx
+part-preparation-for-college-algebra,ORCCActuZ0EiJeY,part,Preparation for College Algebra,orcca.ptx
+chapter-factoring,ORCCAx3ODwmUMno,chapter,Factoring,chapter-factoring.ptx
+section-factoring-out-the-common-factor,ORCCAefrjJlkXcY,section,Factoring Out the Common Factor,section-factoring-out-the-common-factor.ptx
+,ORCCAgSOxZd39Ek,introduction,Introduction,section-factoring-out-the-common-factor.ptx
+,ORCCARN7XXMZktX,subsection,Motivation for Factoring,section-factoring-out-the-common-factor.ptx
+,ORCCAXQlnvLdL71,subsection,Identifying the Greatest Common Factor,section-factoring-out-the-common-factor.ptx
+,ORCCASDI9U8Up2U,subsection,Factoring Out the Greatest Common Factor,section-factoring-out-the-common-factor.ptx
+,ORCCAuSqpTuY2bn,subsection,Visualizing With Rectangles,section-factoring-out-the-common-factor.ptx
+,ORCCAaOmw7j2qec,subsection,More Examples of Factoring out the Common Factor,section-factoring-out-the-common-factor.ptx
+,ORCCA8YCAlQXQq3,exercises,,section-factoring-out-the-common-factor.ptx
+section-factoring-by-grouping,ORCCAvHIZHCZMMJ,section,Factoring by Grouping,section-factoring-by-grouping.ptx
+,ORCCA4FHQhBlHFs,introduction,Introduction,section-factoring-by-grouping.ptx
+,ORCCAmFJQoplfq7,subsection,Factoring out Common Polynomials,section-factoring-by-grouping.ptx
+,ORCCAEdxK8iwS5E,subsection,Factoring by Grouping,section-factoring-by-grouping.ptx
+,ORCCAcQGMh33rGZ,exercises,,section-factoring-by-grouping.ptx
+section-factoring-trinomials-with-leading-coefficient-one,ORCCAdMdErD48Sz,section,Factoring Trinomials with Leading Coefficient One,section-factoring-trinomials-with-leading-coefficient-one.ptx
+,ORCCAMrz8Pf9E30,introduction,Introduction,section-factoring-trinomials-with-leading-coefficient-one.ptx
+,ORCCAP9bVFunw9C,subsection,Factoring Trinomials by Listing Factor Pairs,section-factoring-trinomials-with-leading-coefficient-one.ptx
+,ORCCAC8c1SFCzo0,paragraphs,Multiply it Out,section-factoring-trinomials-with-leading-coefficient-one.ptx
+,ORCCAbVJUCjm9gw,paragraphs,Evaluating,section-factoring-trinomials-with-leading-coefficient-one.ptx
+,ORCCAV8k36kz7tM,subsection,Connection to Grouping,section-factoring-trinomials-with-leading-coefficient-one.ptx
+,ORCCAWPPbuZYi4B,subsection,Trinomials with Higher Powers,section-factoring-trinomials-with-leading-coefficient-one.ptx
+,ORCCAEvwMSTbMRj,subsection,Factoring in Stages,section-factoring-trinomials-with-leading-coefficient-one.ptx
+,ORCCAcVkTTBmkuv,subsection,More Trinomials with Two Variables,section-factoring-trinomials-with-leading-coefficient-one.ptx
+,ORCCA9Vw36VAM9x,exercises,,section-factoring-trinomials-with-leading-coefficient-one.ptx
+section-factoring-trinomials-with-a-nontrivial-leading-coefficient,ORCCAXgsh0DdQLE,section,Factoring Trinomials with a Nontrivial Leading Coefficient,section-factoring-trinomials-with-a-nontrivial-leading-coefficient.ptx
+,ORCCAVC2rn876lR,introduction,Introduction,section-factoring-trinomials-with-a-nontrivial-leading-coefficient.ptx
+,ORCCARwKbmxmuAn,subsection,The AC Method,section-factoring-trinomials-with-a-nontrivial-leading-coefficient.ptx
+,ORCCAqvDyaUAPeV,subsection,Factoring in Stages,section-factoring-trinomials-with-a-nontrivial-leading-coefficient.ptx
+,ORCCAWk3tkCeI4o,exercises,,section-factoring-trinomials-with-a-nontrivial-leading-coefficient.ptx
+section-factoring-special-polynomials,ORCCAvboMD4cW4q,section,Factoring Special Polynomials,section-factoring-special-polynomials.ptx
+,ORCCAoZsTpuiBQK,introduction,Introduction,section-factoring-special-polynomials.ptx
+,ORCCAeiAnVv6rVd,subsection,Difference of Squares,section-factoring-special-polynomials.ptx
+,ORCCAsm9xrzjkZK,introduction,Introduction,section-factoring-special-polynomials.ptx
+,ORCCA1jM4gDdVZF,introduction,Introduction,section-factoring-special-polynomials.ptx
+,ORCCAY0EeAX0Xwe,subsection,Perfect Square Trinomials,section-factoring-special-polynomials.ptx
+,ORCCAd18qhXerq2,introduction,Introduction,section-factoring-special-polynomials.ptx
+,ORCCAoXGnvBUaj5,subsection,Factoring in Stages,section-factoring-special-polynomials.ptx
+,ORCCAmlveCr1Osp,exercises,,section-factoring-special-polynomials.ptx
+section-factoring-strategies,ORCCA2UQgXuZ7Aj,section,Factoring Strategies,section-factoring-strategies.ptx
+,ORCCAjhnG2yxYtI,introduction,Introduction,section-factoring-strategies.ptx
+,ORCCA5nMzIYdrSx,subsection,Factoring Strategies,section-factoring-strategies.ptx
+,ORCCAT4EZUyysUd,exercises,,section-factoring-strategies.ptx
+section-solving-quadratic-equations-by-factoring,ORCCAq3Dq7JhdGA,section,Solving Quadratic Equations by Factoring,section-solving-quadratic-equations-by-factoring.ptx
+,ORCCAttzz3neAl5,subsection,Introduction,section-solving-quadratic-equations-by-factoring.ptx
+,ORCCAf09Gq5WHti,subsection,Further Examples,section-solving-quadratic-equations-by-factoring.ptx
+,ORCCALwW0oFf7qg,subsection,Applications,section-solving-quadratic-equations-by-factoring.ptx
+,ORCCAEjVgJ3BY9K,exercises,,section-solving-quadratic-equations-by-factoring.ptx
+review-factoring,ORCCAjeJZpdXiJH,section,Factoring Chapter Review,review-factoring.ptx
+,ORCCAqwGw95c1OA,subsection,Factoring out the GCF,review-factoring.ptx
+,ORCCAPlaYy2pV8h,subsection,Factoring by Grouping,review-factoring.ptx
+,ORCCAH4ED1ZubQz,subsection,Factoring Trinomials with Leading Coefficient 1,review-factoring.ptx
+,ORCCAg0GhAYhtkg,subsection,Factoring Trinomials with Non-Trivial Leading Coefficient,review-factoring.ptx
+,ORCCAnZNxa0vHtd,subsection,Factoring Special Forms,review-factoring.ptx
+,ORCCAOvQHvYOCH4,subsection,Factoring Strategies,review-factoring.ptx
+,ORCCAWD4HxYDvLq,subsection,Solving Quadratic Equations by Factoring,review-factoring.ptx
+,ORCCAZuPR9Sn6JI,exercises,,review-factoring.ptx
+chapter-functions,ORCCACTlooXixtJ,chapter,Functions,chapter-functions.ptx
+section-function-basics,ORCCADSe4gUjGYq,section,Function Basics,section-function-basics.ptx
+,ORCCA1vpRdz5tmy,introduction,Introduction,section-function-basics.ptx
+subsection-informal-definition-of-a-function,ORCCA9U7oiyItuV,subsection,Informal Definition of a Function,section-function-basics.ptx
+,ORCCA3N29HhpAnx,subsection,Tables and Graphs,section-function-basics.ptx
+,ORCCAAmVqtCqcID,subsection,Translating Between Four Descriptions of the Same Function,section-function-basics.ptx
+,ORCCAUDgYAtIxdd,exercises,,section-function-basics.ptx
+section-domain-and-range,ORCCAcPRiJxqVjd,section,Domain and Range,section-domain-and-range.ptx
+,ORCCAxHtcy9vXmM,introduction,Introduction,section-domain-and-range.ptx
+,ORCCALVeOIdTr1F,subsection,Domain,section-domain-and-range.ptx
+,ORCCAFbir7OCMyP,subsection,"Interval, Set, and Set-Builder Notation",section-domain-and-range.ptx
+,ORCCAd1hQttevxx,subsection,Range,section-domain-and-range.ptx
+,ORCCAezK57XltWt,exercises,,section-domain-and-range.ptx
+section-using-technology-to-explore-functions,ORCCAKYgHo7Euh3,section,Using Technology to Explore Functions,section-using-technology-to-explore-functions.ptx
+,ORCCAX9CLdtiCGP,introduction,Introduction,section-using-technology-to-explore-functions.ptx
+,ORCCALI3xrsFoGm,subsection,Finding an Appropriate Window,section-using-technology-to-explore-functions.ptx
+,ORCCAQE8Vf4rEbd,subsection,Using Technology to Determine Key Features of a Graph,section-using-technology-to-explore-functions.ptx
+subsection-solving-equations-and-inequalities-graphically-using-technology,ORCCAq77xSu805S,subsection,Solving Equations Graphically Using Technology,section-using-technology-to-explore-functions.ptx
+,ORCCAweRY74RCUh,exercises,,section-using-technology-to-explore-functions.ptx
+section-simplifying-expressions-with-function-notation,ORCCAXRzd4fAyfH,section,Simplifying Expressions with Function Notation,section-simplifying-expressions-with-function-notation.ptx
+,ORCCAqHlbYMm4Xi,introduction,Introduction,section-simplifying-expressions-with-function-notation.ptx
+,ORCCAGVNp73tQAs,subsection,Negative Signs in and out of Function Notation,section-simplifying-expressions-with-function-notation.ptx
+,ORCCAwqSHdXAvaM,subsection,Other Nontrivial Simplifications,section-simplifying-expressions-with-function-notation.ptx
+,ORCCAK2ZAZrGp1p,exercises,,section-simplifying-expressions-with-function-notation.ptx
+section-technical-definition-of-a-function,ORCCAasuvbv2gkZ,section,Technical Definition of a Function,section-technical-definition-of-a-function.ptx
+,ORCCASrIws1XDTp,introduction,Introduction,section-technical-definition-of-a-function.ptx
+definition-function-technical,ORCCAV7kA8z5ebK,subsection,Formally Defining a Function,section-technical-definition-of-a-function.ptx
+,ORCCANsCykKImjy,subsection,Identifying What is Not a Function,section-technical-definition-of-a-function.ptx
+,ORCCA95kPTE9xS5,exercises,,section-technical-definition-of-a-function.ptx
+review-functions,ORCCAcpIikxlbLa,section,Functions Chapter Review,review-functions.ptx
+,ORCCAMgCSHplqAf,subsection,Function Basics,review-functions.ptx
+,ORCCAZk0wP0hCPr,subsection,Domain and Range,review-functions.ptx
+,ORCCAdIZTBvbbAy,subsection,Using Technology to Explore Functions,review-functions.ptx
+,ORCCA0dzWnBychz,subsection,Simplifying Expressions with Function Notation,review-functions.ptx
+,ORCCAxMPvIWjdbS,subsection,Technical Definition of a Function,review-functions.ptx
+,ORCCA8VT1mtN7Be,exercises,,review-functions.ptx
+,ORCCAUVo0In3BxV,introduction,Introduction,review-functions.ptx
+chapter-rational-functions-and-equations,ORCCAHiEDr890Pd,chapter,Rational Functions and Equations,chapter-rational-functions-and-equations.ptx
+section-introduction-to-rational-functions,ORCCAiZfs3siUb0,section,Introduction to Rational Functions,section-introduction-to-rational-functions.ptx
+,ORCCAKQ7YIKGjp4,introduction,Introduction,section-introduction-to-rational-functions.ptx
+,ORCCATVsexcBuhg,subsection,Graphs of Rational Functions,section-introduction-to-rational-functions.ptx
+,ORCCAGTTwC90DNI,exercises,,section-introduction-to-rational-functions.ptx
+section-multiplication-and-division-of-rational-expressions,ORCCAcyFqoQA36v,section,Multiplication and Division of Rational Expressions,section-multiplication-and-division-of-rational-expressions.ptx
+,ORCCAGiauocmxzi,introduction,Introduction,section-multiplication-and-division-of-rational-expressions.ptx
+,ORCCAkXcDrv4Jum,subsection,Simplifying Rational Expressions,section-multiplication-and-division-of-rational-expressions.ptx
+,ORCCAYJO32glfo7,subsection,Multiplication of Rational Functions and Expressions,section-multiplication-and-division-of-rational-expressions.ptx
+,ORCCAplgl5XsFit,subsection,Division of Rational Functions and Expressions,section-multiplication-and-division-of-rational-expressions.ptx
+,ORCCANMBF8Txum9,exercises,,section-multiplication-and-division-of-rational-expressions.ptx
+section-addition-and-subtraction-of-rational-expressions,ORCCAsaPnBKA6QF,section,Addition and Subtraction of Rational Expressions,section-addition-and-subtraction-of-rational-expressions.ptx
+,ORCCAsVBllQ04Jw,introduction,Introduction,section-addition-and-subtraction-of-rational-expressions.ptx
+,ORCCAL6wdAlVdsC,subsection,Introduction,section-addition-and-subtraction-of-rational-expressions.ptx
+,ORCCANkd97u6PMY,subsection,Addition and Subtraction of Rational Expressions with the Same Denominator,section-addition-and-subtraction-of-rational-expressions.ptx
+,ORCCADVGQItKVHf,subsection,Addition and Subtraction of Rational Expressions with Different Denominators,section-addition-and-subtraction-of-rational-expressions.ptx
+,ORCCASj1cOUOH3L,exercises,,section-addition-and-subtraction-of-rational-expressions.ptx
+section-complex-fractions,ORCCAvydmyuU2FE,section,Complex Fractions,section-complex-fractions.ptx
+,ORCCAYgI6pbqLFi,introduction,Introduction,section-complex-fractions.ptx
+,ORCCAUF5JDPivnX,subsection,Simplifying Complex Fractions,section-complex-fractions.ptx
+,ORCCA9icX0n78a8,exercises,,section-complex-fractions.ptx
+section-solving-rational-equations,ORCCACOCed9B7rJ,section,Solving Rational Equations,section-solving-rational-equations.ptx
+,ORCCA2d5AsoRHe5,introduction,Introduction,section-solving-rational-equations.ptx
+,ORCCAqM44rYiYJm,subsection,Solving Rational Equations,section-solving-rational-equations.ptx
+,ORCCAKQ044ZaBDA,subsection,Solving Rational Equations for a Specific Variable,section-solving-rational-equations.ptx
+,ORCCAmKPOIrFk4c,subsection,Solving Rational Equations Using Technology,section-solving-rational-equations.ptx
+,ORCCAkoB4D97yFc,exercises,,section-solving-rational-equations.ptx
+review-rational-functions-and-equations,ORCCAmUfwTs3zT2,section,Rational Functions and Equations Chapter Review,review-rational-functions-and-equations.ptx
+,ORCCA6BejOJqxmF,subsection,Introduction to Rational Functions,review-rational-functions-and-equations.ptx
+,ORCCAdycluweHA5,subsection,Multiplication and Division of Rational Expressions,review-rational-functions-and-equations.ptx
+,ORCCAzqK1vIpvwG,subsection,Addition and Subtraction of Rational Expressions,review-rational-functions-and-equations.ptx
+,ORCCAupuxnql6ZI,subsection,Complex Fractions,review-rational-functions-and-equations.ptx
+,ORCCAGVTbGtdPTq,subsection,Solving Rational Equations,review-rational-functions-and-equations.ptx
+,ORCCAsaDPvtMSro,exercises,,review-rational-functions-and-equations.ptx
+chapter-graphs-and-equations,ORCCA9jfmi0A68d,chapter,Graphs and Equations,chapter-graphs-and-equations.ptx
+section-overview-of-graphing,ORCCADQdcThHo1b,section,Overview of Graphing,section-overview-of-graphing.ptx
+,ORCCA24LqoZZ2o2,introduction,Introduction,section-overview-of-graphing.ptx
+,ORCCAmxGJJ3c5hw,subsection,Graphing Lines by Plotting Points,section-overview-of-graphing.ptx
+,ORCCArXe9Iuh6gp,subsection,Graphing Lines in Slope-Intercept Form,section-overview-of-graphing.ptx
+,ORCCA1jC3rpoBfG,subsection,Graphing Lines in Point-Slope Form,section-overview-of-graphing.ptx
+,ORCCAvuTAGNQLdr,subsection,Graphing Lines Using Intercepts,section-overview-of-graphing.ptx
+,ORCCABnV2Uw0CCg,subsection,Graphing Functions by Plotting Points,section-overview-of-graphing.ptx
+,ORCCASwAXhnwvg9,exercises,,section-overview-of-graphing.ptx
+,ORCCACtV0kFAaxq,introduction,Introduction,section-overview-of-graphing.ptx
+,ORCCACtmX1t0hdS,introduction,Introduction,section-overview-of-graphing.ptx
+section-quadratic-graphs-and-vertex-form,ORCCABRRwGOM6nk,section,Quadratic Graphs and Vertex Form,section-quadratic-graphs-and-vertex-form.ptx
+,ORCCAjXq6HMw2YT,introduction,Introduction,section-quadratic-graphs-and-vertex-form.ptx
+,ORCCADhYqcVHmH8,subsection,Exploring Quadratic Functions with Graphing Technology,section-quadratic-graphs-and-vertex-form.ptx
+,ORCCAXNCyHz9tMu,subsection,The Vertex Form of a Parabola,section-quadratic-graphs-and-vertex-form.ptx
+,ORCCANRVsPuGO7V,subsection,Horizontal and Vertical Shifts,section-quadratic-graphs-and-vertex-form.ptx
+,ORCCAHHCUPgSJVl,subsection,The Factored Form of a Parabola,section-quadratic-graphs-and-vertex-form.ptx
+,ORCCA5mo0kURG49,exercises,,section-quadratic-graphs-and-vertex-form.ptx
+,ORCCA3oeCFKxMxM,introduction,Introduction,section-quadratic-graphs-and-vertex-form.ptx
+section-completing-the-square,ORCCA8lhLbD2nQJ,section,Completing the Square,section-completing-the-square.ptx
+,ORCCAnWWnWnvq3h,introduction,Introduction,section-completing-the-square.ptx
+,ORCCAXxmfMQYr1B,subsection,Solving Quadratic Equations by Completing the Square,section-completing-the-square.ptx
+,ORCCA0cXHF3XFHT,subsection,Deriving the Quadratic Formula by Completing the Square,section-completing-the-square.ptx
+,ORCCAziqdZvsAYJ,subsection,Putting Quadratic Functions in Vertex Form,section-completing-the-square.ptx
+,ORCCAhiHKAeWQoE,subsection,Graphing Quadratic Functions by Hand,section-completing-the-square.ptx
+,ORCCAFV5KMgEijb,exercises,,section-completing-the-square.ptx
+,ORCCAzMNdH8X2en,introduction,Introduction,section-completing-the-square.ptx
+section-absolute-value-equations,ORCCAPrkyvlWsZ3,section,Absolute Value Equations,section-absolute-value-equations.ptx
+,ORCCA0JrGrLTjm7,introduction,Introduction,section-absolute-value-equations.ptx
+,ORCCASdNipQF8OD,subsection,Graphs of Absolute Value Functions,section-absolute-value-equations.ptx
+,ORCCA992HB6eUvg,subsection,Solving Absolute Value Equations with One Absolute Value,section-absolute-value-equations.ptx
+,ORCCAHaBpheHlH7,subsection,Solving Absolute Value Equations with Two Absolute Values,section-absolute-value-equations.ptx
+,ORCCAAudHFB1BuY,exercises,,section-absolute-value-equations.ptx
+section-solving-mixed-equations,ORCCAPsmVbQeBRl,section,Solving Mixed Equations,section-solving-mixed-equations.ptx
+,ORCCAQb2SbXAOgj,introduction,Introduction,section-solving-mixed-equations.ptx
+,ORCCAcqH0bMl1W6,subsection,Types of Equations,section-solving-mixed-equations.ptx
+,ORCCARAtvGh0HZT,subsection,Solving Mixed Equations,section-solving-mixed-equations.ptx
+,ORCCAdDmTf2Qsij,exercises,,section-solving-mixed-equations.ptx
+section-compound-inequalities,ORCCADj8G5lqWvv,section,Compound Inequalities,section-compound-inequalities.ptx
+,ORCCAxGeBvogGL2,introduction,Introduction,section-compound-inequalities.ptx
+,ORCCA06RFJE5JSu,subsection,Unions of Intervals,section-compound-inequalities.ptx
+,ORCCAlUatAIcSvI,subsection,Or Compound Inequalities,section-compound-inequalities.ptx
+subsection-triple-inequalities,ORCCAKLZKlFfgAD,subsection,Three-Part Inequalities,section-compound-inequalities.ptx
+,ORCCA3ukD83kuT5,subsection,Solving And Inequalities,section-compound-inequalities.ptx
+,ORCCALwP3GHZ52e,subsection,Applications of Compound inequalities,section-compound-inequalities.ptx
+,ORCCA8UzRxTxLUo,exercises,,section-compound-inequalities.ptx
+section-inequalities-graphically,ORCCAtZ3l5KTY1i,section,Solving Inequalities Graphically,section-solving-inequalities-graphically.ptx
+,ORCCAgFCG5FCrtD,introduction,Introduction,section-solving-inequalities-graphically.ptx
+,ORCCAovBymxrngy,subsection,Solving Inequalities Graphically,section-solving-inequalities-graphically.ptx
+,ORCCAuQ7SoWm07Q,subsection,Solving Absolute Value and Quadratic Inequalities Graphically,section-solving-inequalities-graphically.ptx
+,ORCCAVsD5eZMdje,subsection,Solving Compound Inequalities Graphically,section-solving-inequalities-graphically.ptx
+,ORCCAcH57yRRkzd,exercises,,section-solving-inequalities-graphically.ptx
+review-graphs-and-equations,ORCCAMuQfuCAmtj,section,Graphs and Equations Chapter Review,review-graphs-and-equations.ptx
+,ORCCAVLqdfNnAVu,subsection,Overview of Graphing,review-graphs-and-equations.ptx
+,ORCCAvafBXs49gp,subsection,Quadratic Graphs and Vertex Form,review-graphs-and-equations.ptx
+,ORCCAdcILigukp0,subsection,Completing the Square,review-graphs-and-equations.ptx
+,ORCCACYVACD2KEp,subsection,Absolute Value Equations,review-graphs-and-equations.ptx
+,ORCCAEDNy8HJiRw,subsection,Solving Mixed Equations,review-graphs-and-equations.ptx
+,ORCCAvdV263orqb,subsection,Compound Inequalities,review-graphs-and-equations.ptx
+,ORCCAEpWNq3E137,subsection,Solving Inequalities Graphically,review-graphs-and-equations.ptx
+,ORCCAefJnUwzyyj,exercises,,review-graphs-and-equations.ptx
+backmatter,ORCCAEKLc5YNTAD,backmatter,Appendices,backmatter.ptx
+appendix-basic-math-review,ORCCAmywb12RMIS,appendix,Basic Math Review,appendix-basic-math-review.ptx
+,ORCCAsiKFmsLOge,introduction,Introduction,appendix-basic-math-review.ptx
+section-arithmetic-with-negative-numbers,ORCCA8BanDuqNkB,section,Arithmetic with Negative Numbers,section-arithmetic-with-negative-numbers.ptx
+,ORCCAoZsvuTEqax,introduction,Introduction,section-arithmetic-with-negative-numbers.ptx
+,ORCCAWarv7ZW91v,subsection,Signed Numbers,section-arithmetic-with-negative-numbers.ptx
+,ORCCAFp7zK2REiJ,introduction,Introduction,section-arithmetic-with-negative-numbers.ptx
+,ORCCAFICYaF6D7o,subsection,Adding,section-arithmetic-with-negative-numbers.ptx
+,ORCCAiJwaRzlEnG,introduction,Introduction,section-arithmetic-with-negative-numbers.ptx
+,ORCCA9vFXvwfWKW,subsection,Subtracting,section-arithmetic-with-negative-numbers.ptx
+,ORCCAusgm8fJbie,introduction,Introduction,section-arithmetic-with-negative-numbers.ptx
+,ORCCAPrWraV0Ify,subsection,Multiplying,section-arithmetic-with-negative-numbers.ptx
+,ORCCAK0dARmJBTq,introduction,Introduction,section-arithmetic-with-negative-numbers.ptx
+subsection-powers,ORCCAqhR409WlLn,subsection,Powers,section-arithmetic-with-negative-numbers.ptx
+,ORCCA0QYBYYNDyv,introduction,Introduction,section-arithmetic-with-negative-numbers.ptx
+,ORCCAeZKMl5YhsQ,subsection,Summary,section-arithmetic-with-negative-numbers.ptx
+,ORCCAwCpIDGVUbq,exercises,,section-arithmetic-with-negative-numbers.ptx
+,ORCCA1KJ2YoJdK8,introduction,Introduction,section-arithmetic-with-negative-numbers.ptx
+section-fractions-and-fraction-arithmetic,ORCCA1863R5Y3de,section,Fractions and Fraction Arithmetic,section-fractions-and-fraction-arithmetic.ptx
+,ORCCA997aBgOaqG,introduction,Introduction,section-fractions-and-fraction-arithmetic.ptx
+,ORCCAeKm1DLJmhd,subsection,Visualizing Fractions,section-fractions-and-fraction-arithmetic.ptx
+,ORCCAna9gOPk7fY,paragraphs,Parts of a Whole,section-fractions-and-fraction-arithmetic.ptx
+,ORCCA7Vrfj801uM,paragraphs,Division,section-fractions-and-fraction-arithmetic.ptx
+,ORCCAK68t0nGg6H,subsection,Equivalent Fractions,section-fractions-and-fraction-arithmetic.ptx
+,ORCCA5cY8GAhyCK,introduction,Introduction,section-fractions-and-fraction-arithmetic.ptx
+,ORCCA4FPFCqleAY,subsection,Multiplying with Fractions,section-fractions-and-fraction-arithmetic.ptx
+,ORCCAwx9m0xFdkA,introduction,Introduction,section-fractions-and-fraction-arithmetic.ptx
+,ORCCA6iMnmPNT5o,subsection,Division with Fractions,section-fractions-and-fraction-arithmetic.ptx
+,ORCCAmnwEgUwyAd,introduction,Introduction,section-fractions-and-fraction-arithmetic.ptx
+,ORCCA5EJucW8bqh,subsection,Adding and Subtracting Fractions,section-fractions-and-fraction-arithmetic.ptx
+,ORCCA29ZV64Ldq8,introduction,Introduction,section-fractions-and-fraction-arithmetic.ptx
+,ORCCA7VkYkog097,subsection,Mixed Numbers and Improper Fractions,section-fractions-and-fraction-arithmetic.ptx
+,ORCCAW4BJ6EJnxc,exercises,,section-fractions-and-fraction-arithmetic.ptx
+,ORCCATEBgWVeULy,introduction,Introduction,section-fractions-and-fraction-arithmetic.ptx
+,ORCCAK87oM2M6Lr,introduction,Introduction,section-fractions-and-fraction-arithmetic.ptx
+section-absolute-value-and-square-root,ORCCAQ1xzzxD6Us,section,Absolute Value and Square Root,section-absolute-value-and-square-root.ptx
+,ORCCA0np1KHY1KS,introduction,Introduction,section-absolute-value-and-square-root.ptx
+,ORCCAKrFH6SISi0,subsection,Introduction to Absolute Value,section-absolute-value-and-square-root.ptx
+,ORCCA6iXWw6y9ol,introduction,Introduction,section-absolute-value-and-square-root.ptx
+,ORCCAlNKBPzxfoG,subsection,Square Root Facts,section-absolute-value-and-square-root.ptx
+,ORCCAriDbjQ0sj9,subsection,Calculating Square Roots with a Calculator,section-absolute-value-and-square-root.ptx
+,ORCCAbqKiSGjn36,subsection,Square Roots of Fractions,section-absolute-value-and-square-root.ptx
+,ORCCAl5LW2ckJPV,introduction,Introduction,section-absolute-value-and-square-root.ptx
+,ORCCAvOnZl0a3Ka,subsection,Square Root of Negative Numbers,section-absolute-value-and-square-root.ptx
+,ORCCAec73FdG6Pf,exercises,,section-absolute-value-and-square-root.ptx
+section-percentages,ORCCAvenuCT9lrH,section,Percentages,section-percentages.ptx
+,ORCCAMDD1xZXjEU,introduction,Introduction,section-percentages.ptx
+,ORCCATsxHzBGRmi,subsection,"Converting Percents, Decimals, and English",section-percentages.ptx
+,ORCCAlalGAUiHjr,introduction,Introduction,section-percentages.ptx
+,ORCCAZdp8S7rFWi,subsection,Setting up and Solving Percent Equations,section-percentages.ptx
+,ORCCAQluSaCarGX,exercises,,section-percentages.ptx
+section-order-of-operations,ORCCAyyxiMLzmqh,section,Order of Operations,section-order-of-operations.ptx
+,ORCCAsNUzvRp9go,introduction,Introduction,section-order-of-operations.ptx
+,ORCCA0Npjxldk8r,subsection,Grouping Symbols,section-order-of-operations.ptx
+,ORCCA9AkmRCsrej,subsection,Order of Operations,section-order-of-operations.ptx
+,ORCCAxlkS0zqzFD,introduction,Introduction,section-order-of-operations.ptx
+,ORCCAw4BhxOqgu7,subsection,Absolute Value and Implied Grouping,section-order-of-operations.ptx
+,ORCCAiWNAuz5o51,subsection,Understanding (-a)^m versus -a^m,section-order-of-operations.ptx
+,ORCCAvYSUmgAqij,introduction,Introduction,section-order-of-operations.ptx
+,ORCCAuW789TgcKw,exercises,,section-order-of-operations.ptx
+,ORCCArqmSPpC5Qz,introduction,Introduction,section-order-of-operations.ptx
+,ORCCAn4bEEvOFWX,introduction,Introduction,section-order-of-operations.ptx
+,ORCCAYrQAh6051L,introduction,Introduction,section-order-of-operations.ptx
+section-set-notation-and-types-of-numbers,ORCCAhgOcdFtyW1,section,Set Notation and Types of Numbers,section-set-notation-and-types-of-numbers.ptx
+,ORCCAK3wEN8MXqH,introduction,Introduction,section-set-notation-and-types-of-numbers.ptx
+,ORCCABtxSXUcBdj,subsection,Set Notation,section-set-notation-and-types-of-numbers.ptx
+,ORCCA687ev1a0m0,introduction,Introduction,section-set-notation-and-types-of-numbers.ptx
+,ORCCAPdSgOlNuLU,introduction,Introduction,section-set-notation-and-types-of-numbers.ptx
+,ORCCAAzMBw297yT,subsection,Different Number Sets,section-set-notation-and-types-of-numbers.ptx
+,ORCCAs98zgjJz3z,introduction,Introduction,section-set-notation-and-types-of-numbers.ptx
+,ORCCAkcjKfQUsbr,subsection,Converting Repeating Decimals to Fractions,section-set-notation-and-types-of-numbers.ptx
+,ORCCAGJTfbsvqPZ,exercises,,section-set-notation-and-types-of-numbers.ptx
+appendix-unit-conversions,ORCCA79xBad6c2G,appendix,Unit Conversions,appendix-unit-conversions.ptx
+appendix-ccogs,ORCCABOy2zqso3k,appendix,PCC Course Content and Outcome Guides,appendix-ccogs.ptx
+,ORCCABXorD4VRjU,introduction,Introduction,appendix-ccogs.ptx
+ccog-mth60,ORCCAM70JzZYPCl,section,MTH 60,appendix-ccogs.ptx
+ccog-mth65,ORCCAsT55qE60S8,section,MTH 65,appendix-ccogs.ptx
+,ORCCA48eN549HIt,solutions,Answers to Exercises,backmatter.ptx
+,ORCCA8RyDaBz2Ym,index,Index,backmatter.ptx

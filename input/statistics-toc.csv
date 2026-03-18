@@ -1,0 +1,621 @@
+collection_title,chapter_order,chapter_title,subcollection_path,module_order,module_id,module_title,row_type,section_order,section_level,section_id,section_title,source_path
+statistics,,,,1,m79619,Preface,module,,,,,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,1,1,eip-10,About OpenStax,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,2,1,eip-242,About OpenStax Resources,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,3,2,eip-id1172001427154,Customization,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,4,2,eip-983,Art Attribution in Statistics,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,5,2,eip-621,Errata,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,6,2,eip-107,Format,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,7,1,fs-idm526890688,About Statistics,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,8,2,eip-663,Coverage and Scope,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,9,2,eip-451,Flexibility,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,10,2,eip-876,Student-Centered Focus,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,11,2,eip-600,Statistics Labs,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,12,2,sect-00001,Answers to Questions in the Book,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,13,1,eip-382,Additional Resources,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,14,2,eip-id8911316,Student and Instructor Resources,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,15,2,eip-833,Partner Resources,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,16,1,eip-441,About the Authors,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,17,2,eip-id1165226216199,Senior Contributing Authors,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,18,2,eip-429,Contributing Authors,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,19,2,eip-id1165231659584,Reviewers of Prior Editions,STAT/modules/m79619/index.cnxml
+statistics,,,,1,m79619,Preface,section,20,2,eip-638,Editorial Review Board,STAT/modules/m79619/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,1,m79592,Introduction,module,,,,,STAT/modules/m79592/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,2,m79593,"Definitions of Statistics, Probability, and Key Terms",module,,,,,STAT/modules/m79593/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,2,m79593,"Definitions of Statistics, Probability, and Key Terms",section,1,1,fs-id1170309364460,Statistical Models,STAT/modules/m79593/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,2,m79593,"Definitions of Statistics, Probability, and Key Terms",section,2,1,eip-177,Probability,STAT/modules/m79593/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,2,m79593,"Definitions of Statistics, Probability, and Key Terms",section,3,1,eip-159,Key Terms,STAT/modules/m79593/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,2,m79593,"Definitions of Statistics, Probability, and Key Terms",section,4,1,eip-525,References,STAT/modules/m79593/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,2,m79593,"Definitions of Statistics, Probability, and Key Terms",section,5,1,fs-idp10393488,Chapter Review,STAT/modules/m79593/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,2,m79593,"Definitions of Statistics, Probability, and Key Terms",section,6,1,fs-idm17793024,Practice,STAT/modules/m79593/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,2,m79593,"Definitions of Statistics, Probability, and Key Terms",section,7,1,fs-idm57628896,HOMEWORK,STAT/modules/m79593/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",module,,,,,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",section,1,1,eip-312,Qualitative Data Discussion,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",section,2,2,eip-558,Percentages That Add to More (or Less) Than 100 Percent,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",section,3,2,eip-993,Omitting Categories/Missing Data,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",section,4,2,eip-47,Pie Charts: No Missing Data,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",section,5,1,fs-id1170308336983,Marginal Distributions in Two-Way Tables,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",section,6,1,fs-id1170308173342,Conditional Distributions in Two-Way Tables,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",section,7,1,fs-id1170308286054,Presenting Data,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",section,8,1,eip-49,Sampling,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",section,9,1,eip-415,Critical Evaluation,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",section,10,1,eip-624,Variation in Data,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",section,11,1,eip-735,Variation in Samples,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",section,12,2,id-191351579127,Size of a Sample,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",section,13,1,eip-787,References,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",section,14,1,fs-idm44463152,Chapter Review,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",section,15,1,fs-idm55283840,Practice,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",section,16,1,fs-idm36629824,HOMEWORK,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,3,m79594,"Data, Sampling, and Variation in Data and Sampling",section,17,1,eip-166,Bringing It Together,STAT/modules/m79594/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,4,m79595,"Frequency, Frequency Tables, and Levels of Measurement",module,,,,,STAT/modules/m79595/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,4,m79595,"Frequency, Frequency Tables, and Levels of Measurement",section,1,1,fs-idm2552448,Answers and Rounding Off,STAT/modules/m79595/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,4,m79595,"Frequency, Frequency Tables, and Levels of Measurement",section,2,1,eip-109,Levels of Measurement,STAT/modules/m79595/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,4,m79595,"Frequency, Frequency Tables, and Levels of Measurement",section,3,1,eip-959,Frequency,STAT/modules/m79595/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,4,m79595,"Frequency, Frequency Tables, and Levels of Measurement",section,4,1,eip-137,References,STAT/modules/m79595/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,4,m79595,"Frequency, Frequency Tables, and Levels of Measurement",section,5,1,fs-idm13164064,Chapter Review,STAT/modules/m79595/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,4,m79595,"Frequency, Frequency Tables, and Levels of Measurement",section,6,1,fs-idm8238960,HOMEWORK,STAT/modules/m79595/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,5,m79596,Experimental Design and Ethics,module,,,,,STAT/modules/m79596/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,5,m79596,Experimental Design and Ethics,section,1,1,eip-165,Ethics,STAT/modules/m79596/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,5,m79596,Experimental Design and Ethics,section,2,1,eip-568,References,STAT/modules/m79596/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,5,m79596,Experimental Design and Ethics,section,3,1,fs-idp15055024,Chapter Review,STAT/modules/m79596/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,5,m79596,Experimental Design and Ethics,section,4,1,fs-idm36883600,HOMEWORK,STAT/modules/m79596/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,6,m79597,Data Collection Experiment,module,,,,,STAT/modules/m79597/index.cnxml
+statistics,1,Sampling and Data,Sampling and Data,7,m79598,Sampling Experiment,module,,,,,STAT/modules/m79598/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,1,m79599,Introduction,module,,,,,STAT/modules/m79599/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,2,m79600,"Stem-and-Leaf Graphs (Stemplots), Line Graphs, and Bar Graphs",module,,,,,STAT/modules/m79600/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,2,m79600,"Stem-and-Leaf Graphs (Stemplots), Line Graphs, and Bar Graphs",section,1,1,fs-idm21451296,References,STAT/modules/m79600/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,2,m79600,"Stem-and-Leaf Graphs (Stemplots), Line Graphs, and Bar Graphs",section,2,1,fs-idp18706816,Chapter Review,STAT/modules/m79600/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,2,m79600,"Stem-and-Leaf Graphs (Stemplots), Line Graphs, and Bar Graphs",section,3,1,fs-idp103158432,Homework,STAT/modules/m79600/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,3,m79601,"Histograms, Frequency Polygons, and Time Series Graphs",module,,,,,STAT/modules/m79601/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,3,m79601,"Histograms, Frequency Polygons, and Time Series Graphs",section,1,1,fs-idm4800336,Frequency Polygons,STAT/modules/m79601/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,3,m79601,"Histograms, Frequency Polygons, and Time Series Graphs",section,2,1,fs-idp1011776,Constructing a Time Series Graph,STAT/modules/m79601/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,3,m79601,"Histograms, Frequency Polygons, and Time Series Graphs",section,3,2,fs-idm42088096,Uses of a Time Series Graph,STAT/modules/m79601/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,3,m79601,"Histograms, Frequency Polygons, and Time Series Graphs",section,4,1,fs-idm65232944,References,STAT/modules/m79601/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,3,m79601,"Histograms, Frequency Polygons, and Time Series Graphs",section,5,1,fs-idp3035824,Chapter Review,STAT/modules/m79601/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,3,m79601,"Histograms, Frequency Polygons, and Time Series Graphs",section,6,1,fs-idp52790224,Homework,STAT/modules/m79601/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,4,m79602,Measures of the Location of the Data,module,,,,,STAT/modules/m79602/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,4,m79602,Measures of the Location of the Data,section,1,1,fs-idm21580416,A Formula for Finding the kth Percentile,STAT/modules/m79602/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,4,m79602,Measures of the Location of the Data,section,2,1,fs-idp2972176,A Formula for Finding the Percentile of a Value in a Data Set,STAT/modules/m79602/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,4,m79602,Measures of the Location of the Data,section,3,1,fs-idp45793312,"Interpreting Percentiles, Quartiles, and Median",STAT/modules/m79602/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,4,m79602,Measures of the Location of the Data,section,4,1,fs-idm63224784,References,STAT/modules/m79602/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,4,m79602,Measures of the Location of the Data,section,5,1,fs-idm13790128,Chapter Review,STAT/modules/m79602/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,4,m79602,Measures of the Location of the Data,section,6,1,fs-idm202752,Formula Review,STAT/modules/m79602/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,4,m79602,Measures of the Location of the Data,section,7,1,fs-idm1839472,Homework,STAT/modules/m79602/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,5,m79603,Box Plots,module,,,,,STAT/modules/m79603/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,5,m79603,Box Plots,section,1,1,fs-idp34607616,References,STAT/modules/m79603/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,5,m79603,Box Plots,section,2,1,fs-idp44166016,Chapter Review,STAT/modules/m79603/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,5,m79603,Box Plots,section,3,1,fs-idp27456352,Homework,STAT/modules/m79603/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,5,m79603,Box Plots,section,4,1,fs-idm80158176,Bringing It Together,STAT/modules/m79603/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,6,m79604,Measures of the Center of the Data,module,,,,,STAT/modules/m79604/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,6,m79604,Measures of the Center of the Data,section,1,1,element-282,The Law of Large Numbers and the Mean,STAT/modules/m79604/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,6,m79604,Measures of the Center of the Data,section,2,1,eip-529,Sampling Distributions and Statistic of a Sampling Distribution,STAT/modules/m79604/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,6,m79604,Measures of the Center of the Data,section,3,1,fs-idp28527728,Calculating the Mean of Grouped Frequency Tables,STAT/modules/m79604/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,6,m79604,Measures of the Center of the Data,section,4,1,fs-idp2891248,References,STAT/modules/m79604/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,6,m79604,Measures of the Center of the Data,section,5,1,fs-idm7033248,Chapter Review,STAT/modules/m79604/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,6,m79604,Measures of the Center of the Data,section,6,1,fs-idm345328,Formula Review,STAT/modules/m79604/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,6,m79604,Measures of the Center of the Data,section,7,1,fs-idm59277808,Homework,STAT/modules/m79604/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,6,m79604,Measures of the Center of the Data,section,8,1,fs-idm1725088,Bringing It Together,STAT/modules/m79604/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,7,m79605,"Skewness and the Mean, Median, and Mode",module,,,,,STAT/modules/m79605/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,7,m79605,"Skewness and the Mean, Median, and Mode",section,1,1,fs-idm5546880,Chapter Review,STAT/modules/m79605/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,7,m79605,"Skewness and the Mean, Median, and Mode",section,2,1,fs-idm100553376,Homework,STAT/modules/m79605/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,8,m79606,Measures of the Spread of the Data,module,,,,,STAT/modules/m79606/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,8,m79606,Measures of the Spread of the Data,section,1,1,fs-idm94849104,The standard deviation,STAT/modules/m79606/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,8,m79606,Measures of the Spread of the Data,section,2,2,fs-idm34509216,The standard deviation provides a measure of the overall variation in a data set.,STAT/modules/m79606/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,8,m79606,Measures of the Spread of the Data,section,3,2,fs-idm58314928,The standard deviation can be used to determine whether a data value is close to or far from the mean.,STAT/modules/m79606/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,8,m79606,Measures of the Spread of the Data,section,4,2,fs-idm36185184,Calculating the Standard Deviation,STAT/modules/m79606/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,8,m79606,Measures of the Spread of the Data,section,5,2,fs-idm36483152,Formulas for the Sample Standard Deviation,STAT/modules/m79606/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,8,m79606,Measures of the Spread of the Data,section,6,2,fs-idm102220704,Formulas for the Population Standard Deviation,STAT/modules/m79606/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,8,m79606,Measures of the Spread of the Data,section,7,1,fs-id1170308409172,Types of Variability in Samples,STAT/modules/m79606/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,8,m79606,Measures of the Spread of the Data,section,8,1,fs-idm60688208,Sampling Variability of a Statistic,STAT/modules/m79606/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,8,m79606,Measures of the Spread of the Data,section,9,2,fs-idm66792288,Explanation of the standard deviation calculation shown in the table,STAT/modules/m79606/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,8,m79606,Measures of the Spread of the Data,section,10,1,fs-idm111076336,Standard deviation of Grouped Frequency Tables,STAT/modules/m79606/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,8,m79606,Measures of the Spread of the Data,section,11,1,fs-idm77326096,Comparing Values from Different Data Sets,STAT/modules/m79606/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,8,m79606,Measures of the Spread of the Data,section,12,1,fs-idp5887184,References,STAT/modules/m79606/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,8,m79606,Measures of the Spread of the Data,section,13,1,fs-idm30772592,Chapter Review,STAT/modules/m79606/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,8,m79606,Measures of the Spread of the Data,section,14,1,fs-idm71113376,Formula Review,STAT/modules/m79606/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,8,m79606,Measures of the Spread of the Data,section,15,1,fs-idm25848496,Homework,STAT/modules/m79606/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,8,m79606,Measures of the Spread of the Data,section,16,1,fs-idm9788176a,Bringing It Together,STAT/modules/m79606/index.cnxml
+statistics,2,Descriptive Statistics,Descriptive Statistics,9,m79608,Descriptive Statistics,module,,,,,STAT/modules/m79608/index.cnxml
+statistics,3,Probability Topics,Probability Topics,1,m79609,Introduction,module,,,,,STAT/modules/m79609/index.cnxml
+statistics,3,Probability Topics,Probability Topics,2,m79611,Terminology,module,,,,,STAT/modules/m79611/index.cnxml
+statistics,3,Probability Topics,Probability Topics,2,m79611,Terminology,section,1,1,fs-idp2299568,References,STAT/modules/m79611/index.cnxml
+statistics,3,Probability Topics,Probability Topics,2,m79611,Terminology,section,2,1,fs-idp18168192,Chapter Review,STAT/modules/m79611/index.cnxml
+statistics,3,Probability Topics,Probability Topics,2,m79611,Terminology,section,3,1,fs-idp22008272,Formula Review,STAT/modules/m79611/index.cnxml
+statistics,3,Probability Topics,Probability Topics,2,m79611,Terminology,section,4,1,fs-idm3746928,Homework,STAT/modules/m79611/index.cnxml
+statistics,3,Probability Topics,Probability Topics,3,m79612,Independent and Mutually Exclusive Events,module,,,,,STAT/modules/m79612/index.cnxml
+statistics,3,Probability Topics,Probability Topics,3,m79612,Independent and Mutually Exclusive Events,section,1,1,element-20,Independent Events,STAT/modules/m79612/index.cnxml
+statistics,3,Probability Topics,Probability Topics,3,m79612,Independent and Mutually Exclusive Events,section,2,1,element-462,Mutually Exclusive Events,STAT/modules/m79612/index.cnxml
+statistics,3,Probability Topics,Probability Topics,3,m79612,Independent and Mutually Exclusive Events,section,3,1,fs-idm73253936,References,STAT/modules/m79612/index.cnxml
+statistics,3,Probability Topics,Probability Topics,3,m79612,Independent and Mutually Exclusive Events,section,4,1,fs-idm1912144,Chapter Review,STAT/modules/m79612/index.cnxml
+statistics,3,Probability Topics,Probability Topics,3,m79612,Independent and Mutually Exclusive Events,section,5,1,fs-idm4116704,Formula Review,STAT/modules/m79612/index.cnxml
+statistics,3,Probability Topics,Probability Topics,3,m79612,Independent and Mutually Exclusive Events,section,6,1,fs-idm88736,Homework,STAT/modules/m79612/index.cnxml
+statistics,3,Probability Topics,Probability Topics,3,m79612,Independent and Mutually Exclusive Events,section,7,1,fs-idm4259888,Bringing It Together,STAT/modules/m79612/index.cnxml
+statistics,3,Probability Topics,Probability Topics,4,m79614,Two Basic Rules of Probability,module,,,,,STAT/modules/m79614/index.cnxml
+statistics,3,Probability Topics,Probability Topics,4,m79614,Two Basic Rules of Probability,section,1,1,element-860,The Multiplication Rule,STAT/modules/m79614/index.cnxml
+statistics,3,Probability Topics,Probability Topics,4,m79614,Two Basic Rules of Probability,section,2,1,element-56,The Addition Rule,STAT/modules/m79614/index.cnxml
+statistics,3,Probability Topics,Probability Topics,4,m79614,Two Basic Rules of Probability,section,3,1,fs-idm107103536,References,STAT/modules/m79614/index.cnxml
+statistics,3,Probability Topics,Probability Topics,4,m79614,Two Basic Rules of Probability,section,4,1,fs-idp34842048,Chapter Review,STAT/modules/m79614/index.cnxml
+statistics,3,Probability Topics,Probability Topics,4,m79614,Two Basic Rules of Probability,section,5,1,fs-idp67099248,Formula Review,STAT/modules/m79614/index.cnxml
+statistics,3,Probability Topics,Probability Topics,4,m79614,Two Basic Rules of Probability,section,6,1,fs-idm12466720,Homework,STAT/modules/m79614/index.cnxml
+statistics,3,Probability Topics,Probability Topics,5,m79616,Contingency Tables,module,,,,,STAT/modules/m79616/index.cnxml
+statistics,3,Probability Topics,Probability Topics,5,m79616,Contingency Tables,section,1,1,fs-idm122777312,References,STAT/modules/m79616/index.cnxml
+statistics,3,Probability Topics,Probability Topics,5,m79616,Contingency Tables,section,2,1,fs-idm68934880,Chapter Review,STAT/modules/m79616/index.cnxml
+statistics,3,Probability Topics,Probability Topics,5,m79616,Contingency Tables,section,3,1,fs-idm32828224,Bringing It Together,STAT/modules/m79616/index.cnxml
+statistics,3,Probability Topics,Probability Topics,5,m79616,Contingency Tables,section,4,1,fs-idp18062160,Homework,STAT/modules/m79616/index.cnxml
+statistics,3,Probability Topics,Probability Topics,6,m79617,Tree and Venn Diagrams,module,,,,,STAT/modules/m79617/index.cnxml
+statistics,3,Probability Topics,Probability Topics,6,m79617,Tree and Venn Diagrams,section,1,1,fs-idp113760352,Tree Diagrams,STAT/modules/m79617/index.cnxml
+statistics,3,Probability Topics,Probability Topics,6,m79617,Tree and Venn Diagrams,section,2,1,eip-922,Venn Diagram,STAT/modules/m79617/index.cnxml
+statistics,3,Probability Topics,Probability Topics,6,m79617,Tree and Venn Diagrams,section,3,1,fs-idp43368080,References,STAT/modules/m79617/index.cnxml
+statistics,3,Probability Topics,Probability Topics,6,m79617,Tree and Venn Diagrams,section,4,1,fs-idp73675888,Chapter Review,STAT/modules/m79617/index.cnxml
+statistics,3,Probability Topics,Probability Topics,6,m79617,Tree and Venn Diagrams,section,5,1,fs-idp43118896,Homework,STAT/modules/m79617/index.cnxml
+statistics,3,Probability Topics,Probability Topics,6,m79617,Tree and Venn Diagrams,section,6,1,fs-idm72330096,Bringing It Together,STAT/modules/m79617/index.cnxml
+statistics,3,Probability Topics,Probability Topics,7,m79618,Probability Topics,module,,,,,STAT/modules/m79618/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,1,m79620,Introduction,module,,,,,STAT/modules/m79620/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,1,m79620,Introduction,section,1,1,randvarnot,Random Variable Notation,STAT/modules/m79620/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,2,m79621,Probability Distribution Function (PDF) for a Discrete Random Variable,module,,,,,STAT/modules/m79621/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,2,m79621,Probability Distribution Function (PDF) for a Discrete Random Variable,section,1,1,fs-idp97044640,Chapter Review,STAT/modules/m79621/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,2,m79621,Probability Distribution Function (PDF) for a Discrete Random Variable,section,2,1,fs-idp99695744,Homework,STAT/modules/m79621/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,3,m79623,Mean or Expected Value and Standard Deviation,module,,,,,STAT/modules/m79623/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,3,m79623,Mean or Expected Value and Standard Deviation,section,1,1,fs-idp138592560,References,STAT/modules/m79623/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,3,m79623,Mean or Expected Value and Standard Deviation,section,2,1,fs-idp17559008,Chapter Review,STAT/modules/m79623/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,3,m79623,Mean or Expected Value and Standard Deviation,section,3,1,fs-idp161572768,Formula Review,STAT/modules/m79623/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,3,m79623,Mean or Expected Value and Standard Deviation,section,4,1,fs-idm60120304,HOMEWORK,STAT/modules/m79623/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,4,m79624,Binomial Distribution (Optional),module,,,,,STAT/modules/m79624/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,4,m79624,Binomial Distribution (Optional),section,1,1,element-501,Notation for the Binomial: B = Binomial Probability Distribution Function,STAT/modules/m79624/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,4,m79624,Binomial Distribution (Optional),section,2,1,fs-idm225879408,References,STAT/modules/m79624/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,4,m79624,Binomial Distribution (Optional),section,3,1,fs-idm59813888,Chapter Review,STAT/modules/m79624/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,4,m79624,Binomial Distribution (Optional),section,4,1,fs-idm5605264,Formula Review,STAT/modules/m79624/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,4,m79624,Binomial Distribution (Optional),section,5,1,fs-idp12065056,HOMEWORK,STAT/modules/m79624/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,5,m79625,Geometric Distribution (Optional),module,,,,,STAT/modules/m79625/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,5,m79625,Geometric Distribution (Optional),section,1,1,element-125,Notation for the Geometric: G = Geometric Probability Distribution Function,STAT/modules/m79625/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,5,m79625,Geometric Distribution (Optional),section,2,1,fs-idp2191840,References,STAT/modules/m79625/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,5,m79625,Geometric Distribution (Optional),section,3,1,fs-idm56939568,Chapter Review,STAT/modules/m79625/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,5,m79625,Geometric Distribution (Optional),section,4,1,fs-idm130503328,Formula Review,STAT/modules/m79625/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,5,m79625,Geometric Distribution (Optional),section,5,1,fs-idm13601184,HOMEWORK,STAT/modules/m79625/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,6,m79626,Hypergeometric Distribution (Optional),module,,,,,STAT/modules/m79626/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,6,m79626,Hypergeometric Distribution (Optional),section,1,1,element-516,Notation for the Hypergeometric: H = Hypergeometric Probability Distribution Function,STAT/modules/m79626/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,6,m79626,Hypergeometric Distribution (Optional),section,2,1,fs-idp20462736,Chapter Review,STAT/modules/m79626/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,6,m79626,Hypergeometric Distribution (Optional),section,3,1,fs-idm29445280,Formula Review,STAT/modules/m79626/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,6,m79626,Hypergeometric Distribution (Optional),section,4,1,fs-idm62349392,HOMEWORK,STAT/modules/m79626/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,7,m79627,Poisson Distribution (Optional),module,,,,,STAT/modules/m79627/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,7,m79627,Poisson Distribution (Optional),section,1,1,element-210,Notation for the Poisson: P = Poisson Probability Distribution Function,STAT/modules/m79627/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,7,m79627,Poisson Distribution (Optional),section,2,1,fs-idm74033600,References,STAT/modules/m79627/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,7,m79627,Poisson Distribution (Optional),section,3,1,fs-idm134097152,Chapter Review,STAT/modules/m79627/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,7,m79627,Poisson Distribution (Optional),section,4,1,fs-idm139197072,Formula Review,STAT/modules/m79627/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,7,m79627,Poisson Distribution (Optional),section,5,1,fs-idm132424448,HOMEWORK,STAT/modules/m79627/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,8,m79628,Discrete Distribution (Playing Card Experiment),module,,,,,STAT/modules/m79628/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,8,m79628,Discrete Distribution (Playing Card Experiment),section,1,1,fs-id1170309339367,HOMEWORK,STAT/modules/m79628/index.cnxml
+statistics,4,Discrete Random Variables,Discrete Random Variables,9,m79629,Discrete Distribution (Lucky Dice Experiment),module,,,,,STAT/modules/m79629/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,1,m79631,Introduction,module,,,,,STAT/modules/m79631/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,1,m79631,Introduction,section,1,1,eip-606,Properties of Continuous Probability Distributions,STAT/modules/m79631/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,2,m79632,Continuous Probability Functions,module,,,,,STAT/modules/m79632/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,2,m79632,Continuous Probability Functions,section,1,1,fs-idp147304960,Chapter Review,STAT/modules/m79632/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,2,m79632,Continuous Probability Functions,section,2,1,fs-idp108664192,Formula Review,STAT/modules/m79632/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,2,m79632,Continuous Probability Functions,section,3,1,fs-idp5416000,Homework,STAT/modules/m79632/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,3,m79633,The Uniform Distribution,module,,,,,STAT/modules/m79633/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,3,m79633,The Uniform Distribution,section,1,1,fs-idp87344528,Chapter Review,STAT/modules/m79633/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,3,m79633,The Uniform Distribution,section,2,1,fs-idp29641328,Formula Review,STAT/modules/m79633/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,3,m79633,The Uniform Distribution,section,3,1,eip-534,References,STAT/modules/m79633/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,3,m79633,The Uniform Distribution,section,4,1,fs-idp64788688,Homework,STAT/modules/m79633/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,4,m79635,The Exponential Distribution (Optional),module,,,,,STAT/modules/m79635/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,4,m79635,The Exponential Distribution (Optional),section,1,1,fs-idm4878944,Memorylessness of the Exponential Distribution,STAT/modules/m79635/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,4,m79635,The Exponential Distribution (Optional),section,2,1,fs-idp112021200,Relationship Between the Poisson and the Exponential Distribution,STAT/modules/m79635/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,4,m79635,The Exponential Distribution (Optional),section,3,1,fs-idp72211680,Chapter Review,STAT/modules/m79635/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,4,m79635,The Exponential Distribution (Optional),section,4,1,fs-idp8617136,Formula Review,STAT/modules/m79635/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,4,m79635,The Exponential Distribution (Optional),section,5,1,eip-568,References,STAT/modules/m79635/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,4,m79635,The Exponential Distribution (Optional),section,6,1,fs-idp106402544,Homework,STAT/modules/m79635/index.cnxml
+statistics,5,Continuous Random Variables,Continuous Random Variables,5,m79637,Continuous Distribution,module,,,,,STAT/modules/m79637/index.cnxml
+statistics,6,The Normal Distribution,The Normal Distribution,1,m79640,Introduction,module,,,,,STAT/modules/m79640/index.cnxml
+statistics,6,The Normal Distribution,The Normal Distribution,1,m79640,Introduction,section,1,1,fs-idm30369536,Formula Review,STAT/modules/m79640/index.cnxml
+statistics,6,The Normal Distribution,The Normal Distribution,2,m79641,The Standard Normal Distribution,module,,,,,STAT/modules/m79641/index.cnxml
+statistics,6,The Normal Distribution,The Normal Distribution,2,m79641,The Standard Normal Distribution,section,1,1,fs-idp52480624,Z-Scores,STAT/modules/m79641/index.cnxml
+statistics,6,The Normal Distribution,The Normal Distribution,2,m79641,The Standard Normal Distribution,section,2,1,fs-idm49020816,References,STAT/modules/m79641/index.cnxml
+statistics,6,The Normal Distribution,The Normal Distribution,2,m79641,The Standard Normal Distribution,section,3,1,fs-idp33285824,Chapter Review,STAT/modules/m79641/index.cnxml
+statistics,6,The Normal Distribution,The Normal Distribution,2,m79641,The Standard Normal Distribution,section,4,1,eip-676,Formula Review,STAT/modules/m79641/index.cnxml
+statistics,6,The Normal Distribution,The Normal Distribution,2,m79641,The Standard Normal Distribution,section,5,1,fs-idm58670224,Homework,STAT/modules/m79641/index.cnxml
+statistics,6,The Normal Distribution,The Normal Distribution,3,m79643,Using the Normal Distribution,module,,,,,STAT/modules/m79643/index.cnxml
+statistics,6,The Normal Distribution,The Normal Distribution,3,m79643,Using the Normal Distribution,section,1,1,fs-idm123993536,Calculations of Probabilities,STAT/modules/m79643/index.cnxml
+statistics,6,The Normal Distribution,The Normal Distribution,3,m79643,Using the Normal Distribution,section,2,1,fs-idm101453488,References,STAT/modules/m79643/index.cnxml
+statistics,6,The Normal Distribution,The Normal Distribution,3,m79643,Using the Normal Distribution,section,3,1,eip-424,Chapter Review,STAT/modules/m79643/index.cnxml
+statistics,6,The Normal Distribution,The Normal Distribution,3,m79643,Using the Normal Distribution,section,4,1,eip-108,Formula Review,STAT/modules/m79643/index.cnxml
+statistics,6,The Normal Distribution,The Normal Distribution,3,m79643,Using the Normal Distribution,section,5,1,eip-866,Homework,STAT/modules/m79643/index.cnxml
+statistics,6,The Normal Distribution,The Normal Distribution,4,m79644,Normal Distribution—Lap Times,module,,,,,STAT/modules/m79644/index.cnxml
+statistics,6,The Normal Distribution,The Normal Distribution,5,m79645,Normal Distribution—Pinkie Length,module,,,,,STAT/modules/m79645/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,1,m79647,Introduction,module,,,,,STAT/modules/m79647/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,2,m79648,The Central Limit Theorem for Sample Means (Averages),module,,,,,STAT/modules/m79648/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,2,m79648,The Central Limit Theorem for Sample Means (Averages),section,1,1,fs-idp10661120,References,STAT/modules/m79648/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,2,m79648,The Central Limit Theorem for Sample Means (Averages),section,2,1,fs-idm33599328,Chapter Review,STAT/modules/m79648/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,2,m79648,The Central Limit Theorem for Sample Means (Averages),section,3,1,fs-idm104045584,Formula Review,STAT/modules/m79648/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,2,m79648,The Central Limit Theorem for Sample Means (Averages),section,4,1,fs-idp66376176,Homework,STAT/modules/m79648/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,3,m79649,The Central Limit Theorem for Sums (Optional),module,,,,,STAT/modules/m79649/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,3,m79649,The Central Limit Theorem for Sums (Optional),section,1,1,fs-idm111968496,References,STAT/modules/m79649/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,3,m79649,The Central Limit Theorem for Sums (Optional),section,2,1,fs-idp3599840,Chapter Review,STAT/modules/m79649/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,3,m79649,The Central Limit Theorem for Sums (Optional),section,3,1,fs-idm66969536,Formula Review,STAT/modules/m79649/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,3,m79649,The Central Limit Theorem for Sums (Optional),section,4,1,fs-idm107340336,Homework,STAT/modules/m79649/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,4,m79650,Using the Central Limit Theorem,module,,,,,STAT/modules/m79650/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,4,m79650,Using the Central Limit Theorem,section,1,1,element-733,Examples of the Central Limit Theorem,STAT/modules/m79650/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,4,m79650,Using the Central Limit Theorem,section,2,2,fs-idp5962992,Law of Large Numbers,STAT/modules/m79650/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,4,m79650,Using the Central Limit Theorem,section,3,2,fs-idm1089056,Central Limit Theorem for the Mean and Sum Examples,STAT/modules/m79650/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,4,m79650,Using the Central Limit Theorem,section,4,1,fs-idm136010448,References,STAT/modules/m79650/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,4,m79650,Using the Central Limit Theorem,section,5,1,fs-idm72155760,Chapter Review,STAT/modules/m79650/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,4,m79650,Using the Central Limit Theorem,section,6,1,fs-idm47834016,Homework,STAT/modules/m79650/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,5,m79651,Central Limit Theorem (Pocket Change),module,,,,,STAT/modules/m79651/index.cnxml
+statistics,7,The Central Limit Theorem,The Central Limit Theorem,6,m79652,Central Limit Theorem (Cookie Recipes),module,,,,,STAT/modules/m79652/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,1,m79653,Introduction,module,,,,,STAT/modules/m79653/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,2,m79654,A Single Population Mean Using the Normal Distribution,module,,,,,STAT/modules/m79654/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,2,m79654,A Single Population Mean Using the Normal Distribution,section,1,1,eip-548,Calculating the Confidence Interval,STAT/modules/m79654/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,2,m79654,A Single Population Mean Using the Normal Distribution,section,2,2,fs-idm57905968,Calculating the Confidence Interval,STAT/modules/m79654/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,2,m79654,A Single Population Mean Using the Normal Distribution,section,3,2,fs-idm60964192,Finding the z-Score for the Stated Confidence Level,STAT/modules/m79654/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,2,m79654,A Single Population Mean Using the Normal Distribution,section,4,2,fs-idp84332448,Calculating the Margin of Error EBM,STAT/modules/m79654/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,2,m79654,A Single Population Mean Using the Normal Distribution,section,5,2,fs-idm53546816,Constructing the Confidence Interval,STAT/modules/m79654/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,2,m79654,A Single Population Mean Using the Normal Distribution,section,6,2,fs-idm103016896,Writing the Interpretation,STAT/modules/m79654/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,2,m79654,A Single Population Mean Using the Normal Distribution,section,7,2,eip-783,Changing the Confidence Level or Sample Size,STAT/modules/m79654/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,2,m79654,A Single Population Mean Using the Normal Distribution,section,8,1,eip-710,Working Backward to Find the Error Bound or Sample Mean,STAT/modules/m79654/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,2,m79654,A Single Population Mean Using the Normal Distribution,section,9,1,eip-865,Calculating the Sample Size n,STAT/modules/m79654/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,2,m79654,A Single Population Mean Using the Normal Distribution,section,10,1,eip-493,References,STAT/modules/m79654/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,2,m79654,A Single Population Mean Using the Normal Distribution,section,11,1,eip-330,Chapter Review,STAT/modules/m79654/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,2,m79654,A Single Population Mean Using the Normal Distribution,section,12,1,eip-191,Formula Review,STAT/modules/m79654/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,2,m79654,A Single Population Mean Using the Normal Distribution,section,13,1,fs-idm104841536,Homework,STAT/modules/m79654/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,3,m79655,A Single Population Mean Using the Student's t-Distribution,module,,,,,STAT/modules/m79655/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,3,m79655,A Single Population Mean Using the Student's t-Distribution,section,1,1,eip-400,References,STAT/modules/m79655/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,3,m79655,A Single Population Mean Using the Student's t-Distribution,section,2,1,eip-447,Chapter Review,STAT/modules/m79655/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,3,m79655,A Single Population Mean Using the Student's t-Distribution,section,3,1,eip-428,Formula Review,STAT/modules/m79655/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,3,m79655,A Single Population Mean Using the Student's t-Distribution,section,4,1,fs-idp293092128,Homework,STAT/modules/m79655/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,4,m79656,A Population Proportion,module,,,,,STAT/modules/m79656/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,4,m79656,A Population Proportion,section,1,1,eip-443,Plus-Four Confidence Interval for p,STAT/modules/m79656/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,4,m79656,A Population Proportion,section,2,1,fs-idm22068416,Calculating the Sample Size n,STAT/modules/m79656/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,4,m79656,A Population Proportion,section,3,1,eip-566,References,STAT/modules/m79656/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,4,m79656,A Population Proportion,section,4,1,eip-854,Chapter Review,STAT/modules/m79656/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,4,m79656,A Population Proportion,section,5,1,eip-826,Formula Review,STAT/modules/m79656/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,4,m79656,A Population Proportion,section,6,1,fs-idm34727072,Homework,STAT/modules/m79656/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,5,m79657,Confidence Interval (Home Costs),module,,,,,STAT/modules/m79657/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,6,m79658,Confidence Interval (Place of Birth),module,,,,,STAT/modules/m79658/index.cnxml
+statistics,8,Confidence Intervals,Confidence Intervals,7,m79659,Confidence Interval (Women's Heights),module,,,,,STAT/modules/m79659/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,1,m79660,Introduction,module,,,,,STAT/modules/m79660/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,2,m79661,Null and Alternative Hypotheses,module,,,,,STAT/modules/m79661/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,2,m79661,Null and Alternative Hypotheses,section,1,1,eip-591,Chapter Review,STAT/modules/m79661/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,2,m79661,Null and Alternative Hypotheses,section,2,1,fs-idm23881072,Formula Review,STAT/modules/m79661/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,2,m79661,Null and Alternative Hypotheses,section,3,1,fs-idm8472096,Homework,STAT/modules/m79661/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,2,m79661,Null and Alternative Hypotheses,section,4,1,fs-idm48036544,References,STAT/modules/m79661/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,3,m79662,Outcomes and the Type I and Type II Errors,module,,,,,STAT/modules/m79662/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,3,m79662,Outcomes and the Type I and Type II Errors,section,1,1,eip-566,Chapter Review,STAT/modules/m79662/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,3,m79662,Outcomes and the Type I and Type II Errors,section,2,1,fs-idp7813920,Formula Review,STAT/modules/m79662/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,3,m79662,Outcomes and the Type I and Type II Errors,section,3,1,fs-idp36704512,Homework,STAT/modules/m79662/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,4,m79663,Distribution Needed for Hypothesis Testing,module,,,,,STAT/modules/m79663/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,4,m79663,Distribution Needed for Hypothesis Testing,section,1,1,fs-idp38268576,Assumptions,STAT/modules/m79663/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,4,m79663,Distribution Needed for Hypothesis Testing,section,2,1,eip-952,Chapter Review,STAT/modules/m79663/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,4,m79663,Distribution Needed for Hypothesis Testing,section,3,1,eip-772,Formula Review,STAT/modules/m79663/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,4,m79663,Distribution Needed for Hypothesis Testing,section,4,1,fs-idm173512608,Homework,STAT/modules/m79663/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,5,m79664,"Rare Events, the Sample, and the Decision and Conclusion",module,,,,,STAT/modules/m79664/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,5,m79664,"Rare Events, the Sample, and the Decision and Conclusion",section,1,1,fs-idm88599200,Rare Events,STAT/modules/m79664/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,5,m79664,"Rare Events, the Sample, and the Decision and Conclusion",section,2,1,fs-idp139727497741440,Using the Sample to Test the Null Hypothesis,STAT/modules/m79664/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,5,m79664,"Rare Events, the Sample, and the Decision and Conclusion",section,3,1,fs-idp139727505143696,Decision and Conclusion,STAT/modules/m79664/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,5,m79664,"Rare Events, the Sample, and the Decision and Conclusion",section,4,1,fs-idp139727500433008,Chapter Review,STAT/modules/m79664/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,5,m79664,"Rare Events, the Sample, and the Decision and Conclusion",section,5,1,fs-idp78752032,Homework,STAT/modules/m79664/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,6,m79665,Additional Information and Full Hypothesis Test Examples,module,,,,,STAT/modules/m79665/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,6,m79665,Additional Information and Full Hypothesis Test Examples,section,1,1,fs-idm12892576,Full Hypothesis Test Examples,STAT/modules/m79665/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,6,m79665,Additional Information and Full Hypothesis Test Examples,section,2,1,fs-idp69608272,Chapter Review,STAT/modules/m79665/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,6,m79665,Additional Information and Full Hypothesis Test Examples,section,3,1,fs-idp139727497473120,Homework,STAT/modules/m79665/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,6,m79665,Additional Information and Full Hypothesis Test Examples,section,4,1,fs-idp118682672,References,STAT/modules/m79665/index.cnxml
+statistics,9,Hypothesis Testing with One Sample,Hypothesis Testing with One Sample,7,m79666,Hypothesis Testing of a Single Mean and Single Proportion,module,,,,,STAT/modules/m79666/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,1,m79667,Introduction,module,,,,,STAT/modules/m79667/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,2,m79668,Two Population Means with Unknown Standard Deviations,module,,,,,STAT/modules/m79668/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,2,m79668,Two Population Means with Unknown Standard Deviations,section,1,1,eip-137,References,STAT/modules/m79668/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,2,m79668,Two Population Means with Unknown Standard Deviations,section,2,1,fs-idm178063424,Chapter Review,STAT/modules/m79668/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,2,m79668,Two Population Means with Unknown Standard Deviations,section,3,1,fs-idm147993376,Formula Review,STAT/modules/m79668/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,2,m79668,Two Population Means with Unknown Standard Deviations,section,4,1,fs-idm173509824,Homework,STAT/modules/m79668/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,3,m79669,Two Population Means with Known Standard Deviations,module,,,,,STAT/modules/m79669/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,3,m79669,Two Population Means with Known Standard Deviations,section,1,1,eip-752,References,STAT/modules/m79669/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,3,m79669,Two Population Means with Known Standard Deviations,section,2,1,fs-idm120175008,Chapter Review,STAT/modules/m79669/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,3,m79669,Two Population Means with Known Standard Deviations,section,3,1,fs-idm25139648,Formula Review,STAT/modules/m79669/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,3,m79669,Two Population Means with Known Standard Deviations,section,4,1,fs-idp58644992,Homework,STAT/modules/m79669/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,4,m79670,Comparing Two Independent Population Proportions,module,,,,,STAT/modules/m79670/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,4,m79670,Comparing Two Independent Population Proportions,section,1,1,eip-290,References,STAT/modules/m79670/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,4,m79670,Comparing Two Independent Population Proportions,section,2,1,fs-idm55267024,Chapter Review,STAT/modules/m79670/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,4,m79670,Comparing Two Independent Population Proportions,section,3,1,fs-idp63662736,Formula Review,STAT/modules/m79670/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,4,m79670,Comparing Two Independent Population Proportions,section,4,1,fs-idp49279360,Homework,STAT/modules/m79670/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,5,m79672,Matched or Paired Samples (Optional),module,,,,,STAT/modules/m79672/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,5,m79672,Matched or Paired Samples (Optional),section,1,1,fs-idp51883760,Chapter Review,STAT/modules/m79672/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,5,m79672,Matched or Paired Samples (Optional),section,2,1,fs-idm5585024,Formula Review,STAT/modules/m79672/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,5,m79672,Matched or Paired Samples (Optional),section,3,1,fs-idp14136208,Homework,STAT/modules/m79672/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,5,m79672,Matched or Paired Samples (Optional),section,4,1,fs-idm68580000,Bringing It Together,STAT/modules/m79672/index.cnxml
+statistics,10,Hypothesis Testing with Two Samples,Hypothesis Testing with Two Samples,6,m79671,Hypothesis Testing for Two Means and Two Proportions,module,,,,,STAT/modules/m79671/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,1,m79673,Introduction,module,,,,,STAT/modules/m79673/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,2,m79674,Facts About the Chi-Square Distribution,module,,,,,STAT/modules/m79674/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,2,m79674,Facts About the Chi-Square Distribution,section,1,1,fs-idm72973008,References,STAT/modules/m79674/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,2,m79674,Facts About the Chi-Square Distribution,section,2,1,eip-648,Chapter Review,STAT/modules/m79674/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,2,m79674,Facts About the Chi-Square Distribution,section,3,1,eip-257,Formula Review,STAT/modules/m79674/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,2,m79674,Facts About the Chi-Square Distribution,section,4,1,fs-idm36620848,Homework,STAT/modules/m79674/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,3,m79675,Goodness-of-Fit Test,module,,,,,STAT/modules/m79675/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,3,m79675,Goodness-of-Fit Test,section,1,1,fs-idp190810816,References,STAT/modules/m79675/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,3,m79675,Goodness-of-Fit Test,section,2,1,fs-idm22604560,Chapter Review,STAT/modules/m79675/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,3,m79675,Goodness-of-Fit Test,section,3,1,fs-idp15590400,Formula Review,STAT/modules/m79675/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,3,m79675,Goodness-of-Fit Test,section,4,1,fs-idp86765760,Homework,STAT/modules/m79675/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,4,m79676,Test of Independence,module,,,,,STAT/modules/m79676/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,4,m79676,Test of Independence,section,1,1,fs-idp57429040,References,STAT/modules/m79676/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,4,m79676,Test of Independence,section,2,1,fs-idm174129504,Chapter Review,STAT/modules/m79676/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,4,m79676,Test of Independence,section,3,1,fs-idm165691616,Formula Review,STAT/modules/m79676/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,4,m79676,Test of Independence,section,4,1,fs-idm54060384,Homework,STAT/modules/m79676/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,5,m79678,Test for Homogeneity,module,,,,,STAT/modules/m79678/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,5,m79678,Test for Homogeneity,section,1,1,fs-idm80427920,References,STAT/modules/m79678/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,5,m79678,Test for Homogeneity,section,2,1,fs-idp53742432,Chapter Review,STAT/modules/m79678/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,5,m79678,Test for Homogeneity,section,3,1,fs-idp64112192,Formula Review,STAT/modules/m79678/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,5,m79678,Test for Homogeneity,section,4,1,eip-659,Homework,STAT/modules/m79678/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,6,m79679,Comparison of the Chi-Square Tests,module,,,,,STAT/modules/m79679/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,6,m79679,Comparison of the Chi-Square Tests,section,1,1,fs-idm111900416,Chapter Review,STAT/modules/m79679/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,6,m79679,Comparison of the Chi-Square Tests,section,2,1,fs-idp35566032,Homework,STAT/modules/m79679/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,6,m79679,Comparison of the Chi-Square Tests,section,3,1,eip-idp90445392,Bringing It Together,STAT/modules/m79679/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,7,m79682,Test of a Single Variance,module,,,,,STAT/modules/m79682/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,7,m79682,Test of a Single Variance,section,1,1,fs-idp59526304,References,STAT/modules/m79682/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,7,m79682,Test of a Single Variance,section,2,1,fs-idm93039536,Chapter Review,STAT/modules/m79682/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,7,m79682,Test of a Single Variance,section,3,1,fs-idm8553712,Formula Review,STAT/modules/m79682/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,7,m79682,Test of a Single Variance,section,4,1,fs-idm85852512,Homework,STAT/modules/m79682/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,8,m79683,Lab 1: Chi-Square Goodness-of-Fit,module,,,,,STAT/modules/m79683/index.cnxml
+statistics,11,The Chi-Square Distribution,The Chi-Square Distribution,9,m79685,Lab 2: Chi-Square Test of Independence,module,,,,,STAT/modules/m79685/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,1,m79700,Introduction,module,,,,,STAT/modules/m79700/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,2,m79686,Linear Equations,module,,,,,STAT/modules/m79686/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,2,m79686,Linear Equations,section,1,1,fs-idm35899664,Slope and y-interceptof a Linear Equation,STAT/modules/m79686/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,2,m79686,Linear Equations,section,2,1,eip-746,References,STAT/modules/m79686/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,2,m79686,Linear Equations,section,3,1,eip-645,Chapter Review,STAT/modules/m79686/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,2,m79686,Linear Equations,section,4,1,eip-190,Formula Review,STAT/modules/m79686/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,2,m79686,Linear Equations,section,5,1,fs-idm70124224,Homework,STAT/modules/m79686/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,3,m79689,The Regression Equation,module,,,,,STAT/modules/m79689/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,3,m79689,The Regression Equation,section,1,1,fs-idm120169264,Least-Squares Criteria for Best Fit,STAT/modules/m79689/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,3,m79689,The Regression Equation,section,2,1,fs-id1164561137123,Third Exam vs. Final Exam Example,STAT/modules/m79689/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,3,m79689,The Regression Equation,section,3,1,fs-id1170308568879,Understanding and Interpreting the y-intercept,STAT/modules/m79689/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,3,m79689,The Regression Equation,section,4,1,fs-idp153906304,Understanding Slope,STAT/modules/m79689/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,3,m79689,The Regression Equation,section,5,1,eip-737,The Correlation Coefficient r,STAT/modules/m79689/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,3,m79689,The Regression Equation,section,6,1,eip-117,The Coefficient of Determination,STAT/modules/m79689/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,3,m79689,The Regression Equation,section,7,1,eip-993,Chapter Review,STAT/modules/m79689/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,3,m79689,The Regression Equation,section,8,1,eip-884,Homework,STAT/modules/m79689/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,4,m79691,Testing the Significance of the Correlation Coefficient (Optional),module,,,,,STAT/modules/m79691/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,4,m79691,Testing the Significance of the Correlation Coefficient (Optional),section,1,1,fs-idm115676240,Performing the Hypothesis Test,STAT/modules/m79691/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,4,m79691,Testing the Significance of the Correlation Coefficient (Optional),section,2,2,fs-idp18638240,METHOD 1: Using a p-value to Make a Decision,STAT/modules/m79691/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,4,m79691,Testing the Significance of the Correlation Coefficient (Optional),section,3,2,fs-idp201258800,METHOD 2: Using a Table of Critical Values to Make a Decision,STAT/modules/m79691/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,4,m79691,Testing the Significance of the Correlation Coefficient (Optional),section,4,1,fs-idm89842304,Third Exam vs. Final Exam Example: Critical Value Method,STAT/modules/m79691/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,4,m79691,Testing the Significance of the Correlation Coefficient (Optional),section,5,1,eip-570,Assumptions in Testing the Significance of the Correlation Coefficient,STAT/modules/m79691/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,4,m79691,Testing the Significance of the Correlation Coefficient (Optional),section,6,1,eip-724,Chapter Review,STAT/modules/m79691/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,4,m79691,Testing the Significance of the Correlation Coefficient (Optional),section,7,1,eip-896,Formula Review,STAT/modules/m79691/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,5,m79692,Prediction (Optional),module,,,,,STAT/modules/m79692/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,5,m79692,Prediction (Optional),section,1,1,eip-368,References,STAT/modules/m79692/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,5,m79692,Prediction (Optional),section,2,1,eip-469,Chapter Review,STAT/modules/m79692/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,5,m79692,Prediction (Optional),section,3,1,fs-idp66999104,Homework,STAT/modules/m79692/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,6,m79694,Outliers,module,,,,,STAT/modules/m79694/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,6,m79694,Outliers,section,1,1,fs-idm49430544,Identifying Outliers,STAT/modules/m79694/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,6,m79694,Outliers,section,2,1,eip-212,Numerical Identification of Outliers,STAT/modules/m79694/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,6,m79694,Outliers,section,3,1,fs-id1170308241568,How Does the Outlier Affect the Best-Fit Line?,STAT/modules/m79694/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,6,m79694,Outliers,section,4,1,fs-idm24143888,Numerical Identification of Outliers: Calculating s and Finding Outliers Manually,STAT/modules/m79694/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,6,m79694,Outliers,section,5,1,eip-518,95 Percent Critical Values of the Sample Correlation Coefficient Table,STAT/modules/m79694/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,6,m79694,Outliers,section,6,1,eip-604,References,STAT/modules/m79694/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,6,m79694,Outliers,section,7,1,eip-380,Chapter Review,STAT/modules/m79694/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,6,m79694,Outliers,section,8,1,fs-idm86899200,Homework,STAT/modules/m79694/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,6,m79694,Outliers,section,9,1,fs-idm85401472,Bring It Together,STAT/modules/m79694/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,7,m79695,Regression (Distance from School) (Optional),module,,,,,STAT/modules/m79695/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,8,m79697,Regression (Textbook Cost) (Optional),module,,,,,STAT/modules/m79697/index.cnxml
+statistics,12,Linear Regression and Correlation,Linear Regression and Correlation,9,m79699,Regression (Fuel Efficiency) (Optional),module,,,,,STAT/modules/m79699/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,1,m79701,Introduction,module,,,,,STAT/modules/m79701/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,2,m79703,One-Way ANOVA,module,,,,,STAT/modules/m79703/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,2,m79703,One-Way ANOVA,section,1,1,fs-idm3483088,The Null and Alternative Hypotheses,STAT/modules/m79703/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,2,m79703,One-Way ANOVA,section,2,1,eip-60,Chapter Review,STAT/modules/m79703/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,2,m79703,One-Way ANOVA,section,3,1,fs-idm25046720,Homework,STAT/modules/m79703/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,3,m79704,The F Distribution and the F Ratio,module,,,,,STAT/modules/m79704/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,3,m79704,The F Distribution and the F Ratio,section,1,1,element-628,Notation,STAT/modules/m79704/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,3,m79704,The F Distribution and the F Ratio,section,2,1,eip-957,References,STAT/modules/m79704/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,3,m79704,The F Distribution and the F Ratio,section,3,1,fs-idp65787616,Chapter Review,STAT/modules/m79704/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,3,m79704,The F Distribution and the F Ratio,section,4,1,fs-idm69171152,Formula Review,STAT/modules/m79704/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,3,m79704,The F Distribution and the F Ratio,section,5,1,eip-103,Homework,STAT/modules/m79704/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,4,m79705,Facts About the F Distribution,module,,,,,STAT/modules/m79705/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,4,m79705,Facts About the F Distribution,section,1,1,eip-712,References,STAT/modules/m79705/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,4,m79705,Facts About the F Distribution,section,2,1,fs-idm51047200,Chapter Review,STAT/modules/m79705/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,4,m79705,Facts About the F Distribution,section,3,1,fs-idp159138080,Homework,STAT/modules/m79705/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,5,m79706,Test of Two Variances,module,,,,,STAT/modules/m79706/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,5,m79706,Test of Two Variances,section,1,1,eip-873,References,STAT/modules/m79706/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,5,m79706,Test of Two Variances,section,2,1,fs-idm88248672,Chapter Review,STAT/modules/m79706/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,5,m79706,Test of Two Variances,section,3,1,fs-idm61020880,Formula Review,STAT/modules/m79706/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,5,m79706,Test of Two Variances,section,4,1,fs-idp94808464,Homework,STAT/modules/m79706/index.cnxml
+statistics,13,F Distribution and One-way Anova,F Distribution and One-way Anova,6,m79708,Lab: One-Way ANOVA,module,,,,,STAT/modules/m79708/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),module,,,,,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,1,1,fs-idp100048656,Chapter 3,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,2,1,fs-idp77189872,Chapter 4,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,3,1,fs-idp36636832,Chapter 5,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,4,1,fs-idp146652912,Chapter 6,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,5,1,fs-idp95429824,Chapter 7,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,6,1,fs-idp190034912,Chapter 8,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,7,1,fs-idp121744256,Chapter 9,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,8,1,fs-idm150557568,Chapter 10,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,9,1,eip-469,Chapter 11,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,10,1,fs-idp126881392,Chapter 12,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,11,1,fs-idp22947392,Chapter 13,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,12,1,eip-501,Solutions,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,13,2,eip-927,Chapter 3,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,14,2,eip-517,Chapter 4,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,15,2,eip-282,Chapter 5,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,16,2,eip-162,Chapter 6,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,17,2,eip-434,Chapter 7,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,18,2,eip-864,Chapter 8,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,19,2,eip-761,Chapter 9,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,20,2,eip-827,Chapter 10,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,21,2,eip-736,Chapter 11,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,22,2,eip-896,Chapter 12,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,23,2,eip-693,Chapter 13,STAT/modules/m79709/index.cnxml
+statistics,,,,2,m79709,Appendix A Review Exercises (Ch 3–13),section,24,1,fs-idp74334080,References,STAT/modules/m79709/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,module,,,,,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,1,1,fs-id1167205437366,Practice Test 1,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,2,2,fs-idm70683648,"1.1: Definitions of Statistics, Probability, and Key Terms",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,3,2,fs-idp77463008,"1.2: Data, Sampling, and Variation in Data and Sampling",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,4,2,fs-idm56322224,"1.3: Frequency, Frequency Tables, and Levels of Measurement",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,5,2,fs-idp3285808,1.4: Experimental Design and Ethics,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,6,2,fs-idp4391744,"2.1: Stem-and Leaf Graphs (Stemplots), Line Graphs, and Bar Graphs",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,7,2,fs-idm34602112,"2.2: Histograms, Frequency Polygons, and Time Series Graphs",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,8,2,eip-324,2.3: Measures of the Location of the Data,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,9,2,fs-idp42529360,2.4: Box Plots,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,10,2,fs-idp79012576,2.5: Measures of the Center of the Data,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,11,2,fs-idp76944256,"2.6: Skewness and the Mean, Median, and Mode",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,12,2,fs-idm38303408,2.7: Measures of the Spread of the Data,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,13,2,fs-idp110086880,3.1: Terminology,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,14,2,fs-idm55505552,3.2: Independent and Mutually Exclusive Events,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,15,2,fs-idm93842096,3.3: Two Basic Rules of Probability,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,16,2,fs-idp105829072,3.4: Contingency Tables,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,17,2,fs-idm109928496,3.5: Tree and Venn Diagrams,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,18,1,eip-396,Practice Test 1 Solutions,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,19,2,fs-idm85818208,"1.1: Definitions of Statistics, Probability, and Key Terms",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,20,2,fs-idp17477936,"1.2: Data, Sampling, and Variation in Data and Sampling",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,21,2,eip-215,"1.3: Frequency, Frequency Tables, and Levels of Measurement",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,22,2,eip-id4268574,1.4: Experimental Design and Ethics,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,23,2,eip-id1168064965406,"2.1: Stem-and Leaf Graphs (Stemplots), Line Graphs, and Bar Graphs",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,24,2,eip-id1168066042976,"2.2: Histograms, Frequency Polygons, and Time Series Graphs",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,25,2,eip-196,2.3: Measures of the Location of the Data,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,26,2,eip-id5977366,2.4: Box Plots,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,27,2,eip-id7817764,2.5: Measures of the Center of the Data,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,28,2,eip-id1168065416003,"2.6: Skewness and the Mean, Median, and Mode",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,29,2,eip-id1168071310533,2.7: Measures of the Spread of the Data,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,30,2,eip-id1168066112421,3.1: Terminology,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,31,2,eip-id5319976,3.2: Independent and Mutually Exclusive Events,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,32,2,eip-id1168067689531,3.3: Two Basic Rules of Probability,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,33,2,eip-id7256391,3.4: Contingency Tables,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,34,2,eip-id1168066373070,3.5: Tree and Venn Diagrams,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,35,1,eip-220,Practice Test 2,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,36,2,fs-idp12080480,4.1: Probability Distribution Function (PDF) for a Discrete Random Variable,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,37,2,fs-idp168828704,4.2: Mean or Expected Value and Standard Deviation,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,38,2,fs-idp96951968,4.3: Binomial Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,39,2,fs-idp87418512,4.4: Geometric Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,40,2,fs-idm59044736,4.5: Hypergeometric Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,41,2,fs-idp102475552,4.6: Poisson Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,42,2,fs-idp28692928,5.1: Continuous Probability Functions,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,43,2,fs-idm64483024,5.2: The Uniform Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,44,2,fs-idp19923200,5.3: The Exponential Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,45,2,fs-idp120466432,6.1: The Standard Normal Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,46,2,fs-idp98148496,6.2: Using the Normal Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,47,2,fs-idp24279568,7.1: The Central Limit Theorem for Sample Means (Averages),STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,48,2,fs-idp35217728,7.2: The Central Limit Theorem for Sums,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,49,2,fs-idm74629584,7.3: Using the Central Limit Theorem,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,50,1,eip-730,Practice Test 2 Solutions,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,51,2,fs-idp163165600,Probability Distribution Function (PDF) for a Discrete Random Variable,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,52,2,fs-idp15145488,Mean or Expected Value and Standard Deviation,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,53,2,fs-idp95313088,Binomial Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,54,2,fs-idp183631968,4.4: Geometric Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,55,2,fs-idp7914128,4.5: Hypergeometric Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,56,2,fs-idp190430512,4.6: Poisson Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,57,2,fs-idm12735136,5.1: Continuous Probability Functions,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,58,2,fs-idp161195456,5.2: The Uniform Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,59,2,fs-idp8644368,5.3: The Exponential Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,60,2,fs-idp6601088,6.1: The Standard Normal Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,61,2,fs-idp102188048,6.2: Using the Normal Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,62,2,fs-idm5215776,7.1: The Central Limit Theorem for Sample Means (Averages),STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,63,2,fs-idp9921552,7.2: The Central Limit Theorem for Sums,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,64,2,fs-idm21840928,7.3: Using the Central Limit Theorem,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,65,1,eip-661,Practice Test 3,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,66,2,fs-idp32141136,"8.1: Confidence Interval, Single Population Mean, Population Standard Deviation Known, Normal",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,67,2,fs-idm62513872,"8.2: Confidence Interval, Single Population Mean, Standard Deviation Unknown, Student’s t",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,68,2,fs-idm16711040,8.3: Confidence Interval for a Population Proportion,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,69,2,fs-idm122113808,9.1: Null and Alternate Hypotheses,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,70,2,fs-idp31982640,9.2: Outcomes and the Type I and Type II Errors,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,71,2,fs-idm4856208,9.3: Distribution Needed for Hypothesis Testing,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,72,2,fs-idm30468352,"9.4: Rare Events, the Sample, Decision, and Conclusion",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,73,2,fs-idp26157024,9.5: Additional Information and Full Hypothesis Test Examples,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,74,2,fs-idm135638048,10.1: Comparing Two Independent Population Means with Unknown Population Standard Deviations,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,75,2,fs-idm137269424,10.2: Comparing Two Independent Population Means with Known Population Standard Deviations,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,76,2,fs-idm63020240,10.3: Comparing Two Independent Population Proportions,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,77,2,fs-idm113585712,10.4: Matched or Paired Samples,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,78,2,fs-idm47761744,11.1: Facts About the Chi-Square Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,79,2,fs-idm22071744,11.2: Goodness-of-Fit Test,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,80,2,fs-idm20544432,11.3: Test of Independence,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,81,2,fs-idm95483456,11.4: Test of Homogeneity,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,82,2,fs-idm114147792,"11.5: Comparison Summary of the Chi-Square Tests: Goodness-of-Fit, Independence and Homogeneity",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,83,2,fs-idm149502704,11.6: Test of a Single Variance,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,84,1,eip-526,Practice Test 3 Solutions,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,85,2,fs-idm6072384,"8.1: Confidence Interval, Single Population Mean, Population Standard Deviation Known, Normal",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,86,2,fs-idp116317648,"8.2: Confidence Interval, Single Population Mean, Standard Deviation Unknown, Student’s t",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,87,2,fs-idp51576912,8.3: Confidence Interval for a Population Proportion,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,88,2,fs-idm34219760,9.1: Null and Alternate Hypotheses,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,89,2,fs-idp21058976,9.2: Outcomes and the Type I and Type II Errors,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,90,2,fs-idm54803776,9.3: Distribution Needed for Hypothesis Testing,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,91,2,fs-idp9270464,"9.4: Rare Events, the Sample, Decision, and Conclusion",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,92,2,fs-idm104203632,9.5: Additional Information and Full Hypothesis Test Examples,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,93,2,fs-idm90776944,10.1: Comparing Two Independent Population Means with Unknown Population Standard Deviations,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,94,2,fs-idm81218432,10.2: Comparing Two Independent Population Means with Known Population Standard Deviations,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,95,2,fs-idm125183440,10.3: Comparing Two Independent Population Proportions,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,96,2,fs-idp41318464,10.4: Matched or Paired Samples,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,97,2,fs-idp59707184,11.1: Facts About the Chi-Square Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,98,2,fs-idm62128032,11.2: Goodness-of-Fit Test,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,99,2,fs-idm8149664,11.3: Test of Independence,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,100,2,fs-idm117507520,11.4: Test of Homogeneity,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,101,2,fs-idm68673488,"11.5: Comparison Summary of the Chi-Square Tests: Goodness-of-Fit, Independence and Homogeneity",STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,102,2,fs-idm124468928,11.6: Test of a Single Variance,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,103,1,eip-137,Practice Test 4,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,104,2,fs-idm36554224,12.1 Linear Equations,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,105,2,fs-idm29780960,12.2: Slope and y-intercept of a Linear Equation,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,106,2,fs-idm51194112,12.3: Scatter Plots,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,107,2,fs-idm92254352,12.4: The Regression Equation,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,108,2,fs-idm87966784,12.5: Correlation Coefficient and Coefficient of Determination,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,109,2,fs-idm85658240,12.6: Testing the Significance of the Correlation Coefficient,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,110,2,fs-idm20642608,12.7: Prediction,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,111,2,fs-idp62245024,12.8: Outliers,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,112,2,fs-idp56601440,13.1: One-Way ANOVA,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,113,2,fs-idm62385104,13.2: The F Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,114,2,fs-idm178058688,13.3: Facts About the F Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,115,2,fs-idp24351968,13.4: Test of Two Variances,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,116,1,eip-807,Practice Test 4 Solutions,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,117,2,fs-idm47837968,12.1 Linear Equations,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,118,2,fs-idp69501712,12.2: Slope and y-intercept of a Linear Equation,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,119,2,fs-idp159316416,12.3: Scatter Plots,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,120,2,fs-idm40028640,12.4: The Regression Equation,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,121,2,fs-idp106793456,12.5: Correlation Coefficient and Coefficient of Determination,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,122,2,fs-idp463936,12.6: Testing the Significance of the Correlation Coefficient,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,123,2,fs-idp67354512,12.7: Prediction,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,124,2,fs-idp6872928,12.8: Outliers,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,125,2,fs-idm1555552,13.1: One-Way ANOVA,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,126,2,fs-idp125067968,13.2: The F Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,127,2,fs-idp18259040,13.3: Facts About the F Distribution,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,128,2,fs-idm50142320,13.4: Test of Two Variances,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,129,1,eip-74,Practice Final Exam 1,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,130,1,eip-571,Practice Final Exam 1 Solutions,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,131,2,fs-idm43734672,Solutions,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,132,1,eip-779,Practice Final Exam 2,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,133,1,eip-587,Practice Final Exam 2 Solutions,STAT/modules/m79711/index.cnxml
+statistics,,,,3,m79711,Appendix B Practice Tests (1–4) and Final Exams,section,134,2,fs-idp69608016,Solutions,STAT/modules/m79711/index.cnxml
+statistics,,,,4,m79712,Data Sets,module,,,,,STAT/modules/m79712/index.cnxml
+statistics,,,,4,m79712,Data Sets,section,1,1,element-244,Lap Times,STAT/modules/m79712/index.cnxml
+statistics,,,,4,m79712,Data Sets,section,2,1,element-949,Stock Prices,STAT/modules/m79712/index.cnxml
+statistics,,,,4,m79712,Data Sets,section,3,1,fs-idp192653104,References,STAT/modules/m79712/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,module,,,,,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,1,1,fs-id1168805567129,Univariate Data,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,2,2,element-141,Student Learning Objectives,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,3,2,element-782,Instructions,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,4,2,element-175,Assignment Checklist,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,5,1,eip-143,Continuous Distributions and Central Limit Theorem,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,6,2,element-958,Student Learning Objectives,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,7,2,element-463,Instructions,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,8,2,element-727,Part I: Sampling,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,9,2,element-747,Part II: Possible Distributions,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,10,2,element-442,Part III: CLT Experiments,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,11,2,element-413,Assignment Checklist,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,12,1,eip-496,Hypothesis Testing-Article,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,13,2,element-517,Student Learning Objectives,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,14,2,element-708,Instructions,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,15,2,element-253,Assignment Checklist,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,16,1,eip-625,"Bivariate Data, Linear Regression, and Univariate Data",STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,17,2,element-564,Student Learning Objectives,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,18,2,element-765,Instructions,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,19,2,element-108,Part I: Bivariate Data,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,20,2,element-645,Part II: Univariate Data,STAT/modules/m79713/index.cnxml
+statistics,,,,5,m79713,Group and Partner Projects,section,21,2,element-460,Due Dates,STAT/modules/m79713/index.cnxml
+statistics,,,,6,m79714,Solution Sheets,module,,,,,STAT/modules/m79714/index.cnxml
+statistics,,,,6,m79714,Solution Sheets,section,1,1,fs-id1168979367091,Hypothesis Testing With One Sample,STAT/modules/m79714/index.cnxml
+statistics,,,,6,m79714,Solution Sheets,section,2,1,eip-422,Hypothesis Testing With Two Samples,STAT/modules/m79714/index.cnxml
+statistics,,,,6,m79714,Solution Sheets,section,3,1,eip-494,The Chi-Square Distribution,STAT/modules/m79714/index.cnxml
+statistics,,,,6,m79714,Solution Sheets,section,4,1,eip-893,F Distribution and One-Way ANOVA,STAT/modules/m79714/index.cnxml
+statistics,,,,7,m79715,"Mathematical Phrases, Symbols, and Formulas",module,,,,,STAT/modules/m79715/index.cnxml
+statistics,,,,7,m79715,"Mathematical Phrases, Symbols, and Formulas",section,1,1,fs-id1168975964661,English Phrases Written Mathematically,STAT/modules/m79715/index.cnxml
+statistics,,,,7,m79715,"Mathematical Phrases, Symbols, and Formulas",section,2,1,eip-732,Formulas,STAT/modules/m79715/index.cnxml
+statistics,,,,7,m79715,"Mathematical Phrases, Symbols, and Formulas",section,3,1,eip-663,Symbols and Their Meanings,STAT/modules/m79715/index.cnxml
+statistics,,,,8,m79717,"Notes for the TI-83, 83+, 84, 84+ Calculators",module,,,,,STAT/modules/m79717/index.cnxml
+statistics,,,,8,m79717,"Notes for the TI-83, 83+, 84, 84+ Calculators",section,1,1,fs-id15632468,Quick Tips,STAT/modules/m79717/index.cnxml
+statistics,,,,8,m79717,"Notes for the TI-83, 83+, 84, 84+ Calculators",section,2,1,eip-367,Manipulating One-Variable Statistics,STAT/modules/m79717/index.cnxml
+statistics,,,,8,m79717,"Notes for the TI-83, 83+, 84, 84+ Calculators",section,3,1,fs-id15737311,Drawing Histograms,STAT/modules/m79717/index.cnxml
+statistics,,,,8,m79717,"Notes for the TI-83, 83+, 84, 84+ Calculators",section,4,1,fs-id14569516,Linear Regression,STAT/modules/m79717/index.cnxml
+statistics,,,,8,m79717,"Notes for the TI-83, 83+, 84, 84+ Calculators",section,5,2,fs-id15377984,Sample Data,STAT/modules/m79717/index.cnxml
+statistics,,,,8,m79717,"Notes for the TI-83, 83+, 84, 84+ Calculators",section,6,1,fs-id5169011,"TI-83, 83+, 84, 84+ instructions for distributions and tests",STAT/modules/m79717/index.cnxml
+statistics,,,,8,m79717,"Notes for the TI-83, 83+, 84, 84+ Calculators",section,7,2,fs-id15450346,Distributions,STAT/modules/m79717/index.cnxml
+statistics,,,,8,m79717,"Notes for the TI-83, 83+, 84, 84+ Calculators",section,8,2,fs-id15677913,Tests and Confidence Intervals,STAT/modules/m79717/index.cnxml
+statistics,,,,9,m79718,Tables,module,,,,,STAT/modules/m79718/index.cnxml
