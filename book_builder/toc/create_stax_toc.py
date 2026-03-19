@@ -110,7 +110,7 @@ def walk_collection_rows(
                 raise FileNotFoundError(f"Module CNXML not found: {module_file}")
 
             module_title = read_module_title(module_file)
-            relative_module = module_file.relative_to(modules_root).as_posix()
+            relative_module = module_file.relative_to(modules_root.parent.parent).as_posix()
 
             base_row = {
                 "collection_title": collection_title,
@@ -215,7 +215,7 @@ def run_stax_toc(
     collection_name: str,
     output_name: Path | None = None
 ) -> Path:
-    collection_file = resource_folder / "collections" / collection_name
+    collection_file = resource_folder / "collections" / f"{collection_name}.collection.xml"
     if not collection_file.exists():
         raise FileNotFoundError(f"Collection file not found: {collection_file}")
     

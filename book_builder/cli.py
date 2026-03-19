@@ -213,14 +213,14 @@ def build_toc_parser(subparsers):
         "stax-toc", 
         help="Export STAX collection TOC to CSV")
     stax_toc.add_argument(
-        "resource-folder", 
+        "resource_folder", 
         type=Path, 
         help="Location of the resource folder containing the collection XML and modules (e.g. adapted-worls/PREALG)"
     )
     stax_toc.add_argument(
-        "collection-name", 
+        "collection_name", 
         type=str, 
-        help="Name of the collection XML file (e.g. prealgebra-2e.collection.xml). Assumed to be in resource-folder/collections/"
+        help="Name of the collection XML file (e.g. prealgebra-2e for prealgebra-2e.collection.xml). Assumed to be in resource-folder/collections/"
     )
     stax_toc.add_argument(
         "--output-name", 
@@ -309,10 +309,9 @@ def main() -> None:
         print(f"Wrote {row_count} TOC rows to {output_path}")
     elif args.command == "stax-toc":
         output_path = create_stax_toc.run_stax_toc(
-            collection=args.collection,
-            modules_root=args.modules_root,
+            resource_folder=args.resource_folder,
+            collection_name=args.collection_name,
             output_name=args.output_name,
-            workspace_root=args.workspace_root,
         )
         print(f"Wrote TOC CSV: {output_path}")
     else:
