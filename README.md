@@ -82,12 +82,15 @@ These should exist before running the listed commands.
 	- used by: `book-builder skeleton` (for `source/` section template)
 - `textbook_info/Book Structure.csv`
 	- used by: `book-builder skeleton`, `book-builder populate`
+    - automatically generate through `book-builder load-textbook-sheet`
 - `textbook_info/Open Textbooks.csv`
 	- used by: `book-builder populate`
+    - automatically generate through `book-builder load-open-textbooks-sheet`
 - `textbook_info/Automatic Links.csv`
 	- used by: `book-builder add-objectives`, `book-builder add-resources`, `book-builder generate-syllabus`, `book-builder generate-lo`, `book-builder syllabus-tables`, `book-builder validate-paths`
 - `textbook_info/Learning Outcomes.csv`
 	- used by: `book-builder generate-lo`, `book-builder syllabus-tables`
+    - automatically generate through `book-builder load-textbook-sheet`
 
 Optional but commonly needed:
 
@@ -97,6 +100,22 @@ Optional but commonly needed:
 	- used by: `book-builder pull-plans`, `book-builder validate-paths`, `book-builder audit`
 - `secret/google_ids.json` (sheet/folder IDs)
 	- used by: `book-builder pull-plans`, `book-builder validate-paths`, `book-builder audit`
+    - This should have structure:
+    ```
+        {
+            "grade" : 
+                {"grade_10":
+                    {"textbook_spreadsheet_id": "XXXX",
+                    "lesson_plans_folder_id": "XXXX"
+                    },
+                "grade_11":
+                    {"textbook_spreadsheet_id": "XXXX",
+                     "lesson_plans_folder_id": "XXXX"
+                    }
+                },
+            "open_textbooks_spreadsheet_id": "XXXX"
+        }
+    ```
 
 ### Generated files/directories (tool creates)
 

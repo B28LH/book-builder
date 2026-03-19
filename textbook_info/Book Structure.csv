@@ -1,31 +1,37 @@
 Part (Strand),Chapter (Substrand),Section,Lesson title,Core/Essential,Content summary,Key Takeaways,S.L.E Assigned to:,Suggested Learning Experience,Animation?,LO 1,LO 2,LO 3,LO 4,Possibility for More Lessons,PTX File,Open Source Resource 1,Open Source ID 1,Open Source Title 1,Open Source Resource 2,Open Source ID 2,Open Source Title 2,Open Source Resource 3,Open Source ID 3,Open Source Title 3,Open Source Resource 4,Open Source ID 4,Open Source Title 4
 Numbers and Algebra,Quadratic Expressions and Equations,Perfect Squares,Perfect Squares,Core,"- Recall expansion (a+b)^2 = a^2 + 2ab + b^2
 - Factorise expressions like x^2 + 6x + 9
-- Factorise equations like x^2 - 4x + 4 = 0, solve for x",,Diera,,No,Identify perfect squares in quadratic expressions and equations,,,,,#REF!,PREALG,m81400,Solve Quadratic Equations Using the Square Root Property,ORCCA,section-solving-quadratic-equations-by-using-a-square-root,Solving Quadratic Equations by Using a Square Root,,,,,,
+- Factorise equations like x^2 - 4x + 4 = 0, solve for x",,Diera,Copy square learner experience from Grade 10,No,Identify perfect squares in quadratic expressions and equations,,,,,#REF!,PREALG,m81400,Solve Quadratic Equations Using the Square Root Property,ORCCA,section-solving-quadratic-equations-by-using-a-square-root,Solving Quadratic Equations by Using a Square Root
 Numbers and Algebra,Quadratic Expressions and Equations,Completing the Square I,Completing the Square I,Core,"- Complete the square for monic quadatics
-- Start with even b term: x^2 -4x + 5 = 0
+- Start with even b term: x^2 -4x + 2 = 0
 - Move to odd b term: x^2 - 5x + 6 = 0
 - Solutions have plus or minus the square root 
-- Don't derive quadratic formula yet.",,Diera,,No,Solve quadratic equations by completing square method,,,,,#REF!,PREALG,fs-id1167836800584,Solve Quadratic Equations of the Form x2 + bx + c = 0 by Completing the Square,ORCCA,section-the-quadratic-formula,The Quadratic Formula,,,,,,
+- Don't derive quadratic formula yet.",,Diera,"Solving x^2 + 6x + 3 = 0, have a square with x+3 sides, see there is a missing square, need to add 6.",No,Solve quadratic equations by completing square method,,,,,#REF!,PREALG,fs-id1167836800584,Solve Quadratic Equations of the Form x2 + bx + c = 0 by Completing the Square,ORCCA,section-the-quadratic-formula,The Quadratic Formula
 Numbers and Algebra,Quadratic Expressions and Equations,Completing the Square II,Completing the Square II,Core,"- Complete the square for non-monic quadratics
-- e.g. 3x^2 - 2x + 5 = 0
-- Factor out the 3, then proceed",,Diera,,No,Solve quadratic equations by completing square method,,,,,#REF!,PREALG,fs-id1167836342004,Solve Quadratic Equations of the Form ax2 + bx + c = 0 by Completing the Square,,,,,,,,,
+- e.g. 3x^2 - 2x - 5 = 0
+- Factor out the 3, then proceed",,Diera,Repeat above but with 2x^2 + 5x+ 4,No,Solve quadratic equations by completing square method,,,,,#REF!,PREALG,fs-id1167836342004,Solve Quadratic Equations of the Form ax2 + bx + c = 0 by Completing the Square
 Numbers and Algebra,Quadratic Expressions and Equations,Deriving the Quadratic Formula,Deriving the Quadratic Formula,Core,"- Complete the square for generic ax^2 + bx + c = 0 to derive quadratic formula
-- Discuss + interpret the discriminant (b^2 - 4ac)",,Diera,,,Derive the quadratic formula using completing square,,,,,,PREALG,fs-id1167836664862,Solve Quadratic Equations Using the Quadratic Formula,,,,,,,,,
-Numbers and Algebra,Quadratic Expressions and Equations,Applying the Quadratic Formula,Applying the Quadratic Formula,Core,- Many quadratic expressions which need to be solved via quadratic formula,,Diera,,,Solve quadratic equations using the quadratic formula,,,,,,PREALG,fs-id1167829717106,Solve Equations in Quadratic Form,,,,,,,,,
-Numbers and Algebra,Quadratic Expressions and Equations,Simultaneous Linear and Quadratic Equations,Simultaneous Linear and Quadratic Equations,Core,- Solve problems like x + 7 = x^2 - 4x + 5 by moving terms to one side,,Diera,,,Solve simultaneous equations involving linear and quadratic equations,,,,,,PRECALC,fs-id1165135428383,Intersection of a Parabola and a Line,,,,,,,,,
-Numbers and Algebra,Quadratic Expressions and Equations,Quadratic Equations in Real Life,Quadratic Equations in Real Life,Core,"- Real-life problems involving perfect squares, the quadratic formula, a linear and quadratic term",,Diera,,,Apply quadratic equations in real-life situations,Appreciate the application of quadratic equations in real-life situations,,,,,PREALG,fs-id1169147803160,Solve Applications Modeled by Quadratic Equations,,,,,,,,,
-Numbers and Algebra,Irrational Numbers,Identifying Irrational Numbers,Identifying Irrational Numbers,Core,"- Recap of Grade 10, pick out that sqrt(7) is irrational, sqrt(9) is not, pi is irrational etc.",,Diera,,,Identify irrational numbers from a set of real numbers,,,,,,,,,,,,,,,,,
-Numbers and Algebra,Irrational Numbers,Simplifying Irrational Numbers,Simplifying Irrational Numbers,Core,"- Simplify square factors, e.g. sqrt(20) = 2 sqrt(5), sqrt(4x + 4) = 2sqrt(x+1)",,Diera,,,Simplify irrational numbers in different situations,,,,,,PREALG,fs-id1169148889441,Simplify Expressions with Roots,,,,,,,,,
+- Discuss + interpret the discriminant (b^2 - 4ac)",,Diera,"Same fill in the block, but with generic ax^2 + bx+c = 0",,Derive the quadratic formula using completing square,,,,,,PREALG,fs-id1167836664862,Solve Quadratic Equations Using the Quadratic Formula
+Numbers and Algebra,Quadratic Expressions and Equations,Applying the Quadratic Formula,Applying the Quadratic Formula,Core,- Many quadratic expressions which need to be solved via quadratic formula,,Diera,"4 people. Person 1 picks a single digit number (make sure <=5), whispers to person 2, who adds 5 to it. Both whisper to person 3, who multiplies them. Class has to figure out what the secret number was. Trial and error first, then use quadratic formula",,Solve quadratic equations using the quadratic formula,,,,,,PREALG,fs-id1167829717106,Solve Equations in Quadratic Form
+Numbers and Algebra,Quadratic Expressions and Equations,Simultaneous Linear and Quadratic Equations,Simultaneous Linear and Quadratic Equations,Core,- Solve problems like x + 7 = x^2 - 4x + 5 by moving terms to one side,,Diera,"Similar number picking game, but extra person who gets whispered the number and adds 12 to it. See when the two groups agree",,Solve simultaneous equations involving linear and quadratic equations,,,,,,PRECALC,fs-id1165135428383,Intersection of a Parabola and a Line
+Numbers and Algebra,Quadratic Expressions and Equations,Quadratic Equations in Real Life,Quadratic Equations in Real Life,Core,"- Real-life problems involving perfect squares, the quadratic formula, a linear and quadratic term",,Diera,"Give 30 cm string, ask to find the largest area they can enclose with 4 sides.
+- Work to length = x, width = 15-x. ",,Apply quadratic equations in real-life situations,Appreciate the application of quadratic equations in real-life situations,,,,,PREALG,fs-id1169147803160,Solve Applications Modeled by Quadratic Equations
+Numbers and Algebra,Irrational Numbers,Identifying Irrational Numbers,Identifying Irrational Numbers,Core,"- Recap of Grade 10, pick out that sqrt(7) is irrational, sqrt(9) is not, pi is irrational etc.",,Diera,"- Ask learners to work in their groups and list numbers between 50-100, and express them as square roots e.g  sqrt 20 
+- Groups must determine if their numbers can be written as a simple fraction or a terminating/recurring decimal.
+-If a learner scored a perfect square (e.g., 16, 64, 81, 100), their identity is Rational, If their mark is not a perfect square (like 80, 50, or 60), their identity is Irrational.",,Identify irrational numbers from a set of real numbers
+Numbers and Algebra,Irrational Numbers,Simplifying Irrational Numbers,Simplifying Irrational Numbers,Core,"- Simplify square factors, e.g. sqrt(20) = 2 sqrt(5), sqrt(4x + 4) = 2sqrt(x+1)",,Diera,"-Provide each group with square-shaped tiles or draw squares on the floor with masking tape. Give each group a square with a specific ""Area"" e.g Group A has a square with Area = 20cm^2 while  Group B has a square with Area = 16 cm^2.
+- Learners must find the side length i.e Group B finds s = 4 (Rational).Group A finds s = sqrt 20 (Irrational).
+- Discussion: Why can Group B measure their side perfectly with a ruler, but Group A has to estimate?
+N/B: Ask  Grp 1 to simplify their side length to see how many ""Root 5s"" they have",,Simplify irrational numbers in different situations,,,,,,PREALG,fs-id1169148889441,Simplify Expressions with Roots
 Numbers and Algebra,Irrational Numbers,Adding and Subtracting Irrational Numbers,Adding and Subtracting Irrational Numbers,Core,"- Adding, subtracting, rational numbers
 - e.g. sqrt(3) +2 sqrt(3) = 3 sqrt(3)
-- e.g. sqrt(5) - (4sqrt(5) - 2) = 2 - 3sqrt(5)",,Diera,,,Perform operations on irrational numbers in different situations,,,,,,PREALG,fs-id1169145730644,Add and Subtract Radical Expressions,ORCCA,B6YKLMef,Adding and Subtracting Square Root Expressions,,,,,,
+- e.g. sqrt(5) - (4sqrt(5) - 2) = 2 - 3sqrt(5)",,Diera,,,Perform operations on irrational numbers in different situations,,,,,,PREALG,fs-id1169145730644,Add and Subtract Radical Expressions,ORCCA,B6YKLMef,Adding and Subtracting Square Root Expressions
 Numbers and Algebra,Irrational Numbers,Multiplying and Dividing Irrational Numbers,Multiplying and Dividing Irrational Numbers,Core,"- Multiplying and dividing rational numbers (no rationalisation yet)
 - e.g. sqrt(6) * sqrt(3) = sqrt(18) = 3sqrt(2)
-- e.g. sqrt(10) / 2 sqrt(5) = sqrt(2)/2",,Diera,,,Perform operations on irrational numbers in different situations,,,,,,PREALG,fs-id1169147967415,Multiply Radical Expressions,ORCCA,g7AJBqoj,Multiplying Square Root Expressions,,,,,,
+- e.g. sqrt(10) / 2 sqrt(5) = sqrt(2)/2",,Diera,,,Perform operations on irrational numbers in different situations,,,,,,PREALG,fs-id1169147967415,Multiply Radical Expressions,ORCCA,g7AJBqoj,Multiplying Square Root Expressions
 Numbers and Algebra,Irrational Numbers,Rationalising the Denominator,Rationalising the Denominator,Core,"- Rationalise e.g. 1/sqrt(2), (sqrt(3) + 1)/(sqrt(5) - 1), use difference of squares
 - Introduce idea of conjugates to irrational numbers (e.g. 1 + 2sqrt(3) has conjugate 1 - 2sqrt(3))
-- Extension: If f(x) = sqrt(x), calculate [f(x+h)- f(x)]/h, rationalise the numerator to get limit as h -> 0.",,Diera,,,Rationalise irrational numbers in different situations,,,,,,PREALG,m81446,Divide Radical Expressions,ORCCA,section-rationalizing-the-denominator,Rationalizing the Denominator,,,,,,
+- Extension: If f(x) = sqrt(x), calculate [f(x+h)- f(x)]/h, rationalise the numerator to get limit as h -> 0.",,Diera,,,Rationalise irrational numbers in different situations,,,,,,PREALG,m81446,Divide Radical Expressions,ORCCA,section-rationalizing-the-denominator,Rationalizing the Denominator
 Numbers and Algebra,Irrational Numbers,Irrational Numbers in Real Life,Irrational Numbers in Real Life,Core,"- Real-life problems w/ irrational numbers, e.g. 
 - exact area of pentagonal garden, 
 - escape velocity v = sqrt(2GM/r), 
@@ -33,75 +39,79 @@ Numbers and Algebra,Irrational Numbers,Irrational Numbers in Real Life,Irrationa
 - period of a pendulum T = 2pi sqrt(L/g)
 - Scaling laws: B = B_0 M^(3/4)
 - Kelper's 3rd law: T = r^(3/2), where T is period of planet and r is radius of orbit
-- Political science: size of the assembly S = P^(1/3), where P is population.",,Diera,,,Apply irrational numbers in different situations,Reflect on the use of irrational numbers in mathematical computations,,,,,,,,,,,,,,,,
+- Political science: size of the assembly S = P^(1/3), where P is population.",,Diera,"- Using scores as variables in Pendulum or Kepler's Law formulas. i.e have students use pendulums or marbles or improvise using a pebble, to calculate the period( T) of a pendulum swing.
+- Learners must ""rationalize"" their score to find the final answer.",,Apply irrational numbers in different situations,Reflect on the use of irrational numbers in mathematical computations
 Numbers and Algebra,Linear Inequalities,Simple Inequalities,Simple Inequalities,Core,"- Difference between > and >=, <, <=
 - Solve simple inequalities in one variable: e.g. 2x + 7 < 3 (ans: x < -2)
 - Understand that multiplying an inequality by a negative flips it (e.g. -x < 2 => x > -2)
-- Note that this is a review of 2.3 Linear Inequalities in Grade 9 syllabus",,Diera,"- Diera scored 80 marks in Core mathematics, whille Barasa and Musibega scored 50 and 60 marks each.( Compare the scores of the learners e.g 80(Diera)>50 and 60.
+- Note that this is a review of 2.3 Linear Inequalities in Grade 9 syllabus",,Diera,"- In groups, ask learners to share the marks that they scored during the recent math test. Guide them to compare their marks using this example:
+- Diera scored 80 marks in Core mathematics, whille Barasa and Musibega scored 50 and 60 marks each.( Compare the scores of the learners e.g 80(Diera)>50 and 60.
 - If the target for the exam was 70 marks, Musibega's marks <= 70, and Diera's score (80)>=70
-",,Solve compound inequalities in one unknown,,,,,,PREALG,fs-id1167834346402,Solve Linear Inequalities,PREALG,fs-id1167832055407,Practice Makes Perfect,ORCCA,section-solving-one-step-inequalities,Solving One-Step Inequalities,,,
+",,Solve compound inequalities in one unknown,,,,,,PREALG,fs-id1167834346402,Solve Linear Inequalities,PREALG,fs-id1167832055407,Practice Makes Perfect,ORCCA,section-solving-one-step-inequalities,Solving One-Step Inequalities
 Numbers and Algebra,Linear Inequalities,Compound Inequalities,Compound Inequalities,Core,"- Combine two simple inequalities with OR, e.g. x < 2 OR x >= 5.
 - Combine two simple inequalities with AND, e.g. x <= -4 AND 2x > -10. (ans: -5 < x <= 4).
-- Understand a compound inequality, work to simplify it (e.g. simplify 2x + 4 < 5 + 3x < 8 + 2x)",,Diera,,,Solve compound inequalities in one unknown,,,,,,PREALG,fs-id1167835338613,Solve Compound Inequalities with ‚Äúand‚Äù,PREALG,fs-id1167835170774,Solve Compound Inequalities with ‚Äúor‚Äù,ORCCA,section-compound-inequalities,Compound Inequalities,,,
+- Understand a compound inequality, work to simplify it (e.g. simplify 2x + 4 < 5 + 3x < 8 + 2x)",,Diera,"- Consider two learners, 
+- Consider a student who must be at least 14 years old AND under 20 years old to participate in a specific youth tournament. If they don't meet both criteria, they are out.",,Solve compound inequalities in one unknown,,,,,,PREALG,fs-id1167835338613,Solve Compound Inequalities with ‚Äúand‚Äù,PREALG,fs-id1167835170774,Solve Compound Inequalities with ‚Äúor‚Äù,ORCCA,section-compound-inequalities,Compound Inequalities
 Numbers and Algebra,Linear Inequalities,Graphing Inequalities in One Unknown,Graphing Inequalities in One Unknown,Core,"- Recap of graphs for inequalities in one variable
-- Shaded vs filled in circles, combined inequalities",,Diera,,,Represent linear inequalities in two unknowns graphically,,,,,,PREALG,fs-id1167831985734,Graph Inequalities on the Number Line,,,,,,,,,
+- Shaded vs filled in circles, combined inequalities",,Diera,,,Represent linear inequalities in two unknowns graphically,,,,,,PREALG,fs-id1167831985734,Graph Inequalities on the Number Line
 Numbers and Algebra,Linear Inequalities,Graphing Inequalities in Two Unknowns,Graphing Inequalities in Two Unknowns,Core,"- Graph on the Cartesian plane inequalities like 2x + y < 5 (draw the line, use a test point), 
 - Shade the region that statisfies
 - Compound inequalities, like x - y > 5, 2x < 12, shade region 
-- Use digital resources to represent linear inequalities (STACK exercise etc)",,Diera,,,Represent linear inequalities in two unknowns graphically,,,,,,PREALG,fs-id1167834431130,Graph Linear Inequalities in Two Variables,ORCCA,section-inequalities-graphically,Solving Inequalities Graphically,,,,,,
-Numbers and Algebra,Linear Inequalities,Solving Inequalities in Two Unknowns,Solving Inequalities in Two Unknowns,Core,"- Use graph to solve inequality, e.g. simplify a compound inequality.",,Diera,,,Solve linear inequalities in two unknowns graphically,,,,,,PREALG,fs-id1167835524373,Solve Applications using Linear Inequalities in Two Variables,ORCCA,eX1PqYKN,Solving Inequalities Using a Graph,,,,,,
-Numbers and Algebra,Linear Inequalities,Forming Inequalities From Graphs,Forming Inequalities From Graphs,Core,- Convert a graph with shaded regions into inequalities that make it up,,Diera,,,Form simple linear inequalities from inequality graphs,,,,,,PREALG,fs-id1167835367015,Recognize the Relation Between the Solutions of an Inequality and its Graph,,,,,,,,,
+- Use digital resources to represent linear inequalities (STACK exercise etc)",,Diera,,,Represent linear inequalities in two unknowns graphically,,,,,,PREALG,fs-id1167834431130,Graph Linear Inequalities in Two Variables,ORCCA,section-inequalities-graphically,Solving Inequalities Graphically
+Numbers and Algebra,Linear Inequalities,Solving Inequalities in Two Unknowns,Solving Inequalities in Two Unknowns,Core,"- Use graph to solve inequality, e.g. simplify a compound inequality.",,Diera,,,Solve linear inequalities in two unknowns graphically,,,,,,PREALG,fs-id1167835524373,Solve Applications using Linear Inequalities in Two Variables,ORCCA,eX1PqYKN,Solving Inequalities Using a Graph
+Numbers and Algebra,Linear Inequalities,Forming Inequalities From Graphs,Forming Inequalities From Graphs,Core,- Convert a graph with shaded regions into inequalities that make it up,,Diera,,,Form simple linear inequalities from inequality graphs,,,,,,PREALG,fs-id1167835367015,Recognize the Relation Between the Solutions of an Inequality and its Graph
 Numbers and Algebra,Linear Inequalities,Inequalities in Real Life,Inequalities in Real Life,Core,"- Applied problems with inequalities (including graphical):
 - Farmer has 10,000 Ksh, soy beans cost 80Ksh /kg, tea plants costs 300 Ksh/kg, graph the possible amounts of each they can buy
 - Matatu can fit x children and y adults, capacity of 20 total (x + y <= 20)
 - Speed limits: x <= 100 km/h
 - Spending limit of 3500 Ksh per week, what is the spending limit per day.
 - Need an average mark of 50 to pass the course, after 9 tests have an average of 45, what scores will allow the student to pass (equal weighted tests)
-",,Diera,,,Apply inequalities to real life situations,Appreciate the use of inequalities in real life,,,,,ORCCA,oCDkWyO1,Inequalities in Modeling,,,,,,,,,
+",,Diera,,,Apply inequalities to real life situations,Appreciate the use of inequalities in real life,,,,,ORCCA,oCDkWyO1,Inequalities in Modeling
 Numbers and Algebra,Logarithms II,Review of Logarithms,Review of Logarithms,Core,"- Recap of Grade 10: log_a (x) = n <=> a^n = x
 - Log laws: log(ab) = log(a) + log(b), log(a^n) = nlog(a), relate to index laws
-- Simplify, e.g. log_3(18) = 2 + log_3(2)",,Diera,,,Relate index form to logarithmic notation,Simplify logarithmic expressions using laws of logarithms,,,,,,,,,,,,,,,,
-Numbers and Algebra,Logarithms II,Solving Logarithmic Equations I,Solving Logarithmic Equations I,Core,- Solve e.g. log_3(x + 4) = 10,,Diera,,,Solve logarithmic equations in different situations,,,,,,PRECALC,fs-id1165137862548,Using the Definition of a Logarithm to Solve Logarithmic Equations,PRECALC,fs-id1165137755280,Using the One-to-One Property of Logarithms to Solve Logarithmic Equations,,,,,,
+- Simplify, e.g. log_3(18) = 2 + log_3(2)",,Diera,,,Relate index form to logarithmic notation,Simplify logarithmic expressions using laws of logarithms
+Numbers and Algebra,Logarithms II,Solving Logarithmic Equations I,Solving Logarithmic Equations I,Core,- Solve e.g. log_3(x + 4) = 10,,Diera,,,Solve logarithmic equations in different situations,,,,,,PRECALC,fs-id1165137862548,Using the Definition of a Logarithm to Solve Logarithmic Equations,PRECALC,fs-id1165137755280,Using the One-to-One Property of Logarithms to Solve Logarithmic Equations
 Numbers and Algebra,Logarithms II,Solving Logarithmic Equations II,Solving Logarithmic Equations II,Core,"- More advanced: solve log_2(x+5) = log_2(2x-1)+1
-- Questions where the base is unknown, e.g. log_x(16) = log_x(8) + 1/2",,Diera,,,Solve logarithmic equations in different situations,,,,,,,,,,,,,,,,,
+- Questions where the base is unknown, e.g. log_x(16) = log_x(8) + 1/2",,Diera,,,Solve logarithmic equations in different situations
 Numbers and Algebra,Logarithms II,Logarithmic Equations in Real Life,Logarithmic Equations in Real Life,Core,"- Applied problems, e.g.:
 - Benford's Law for detecting fraud
 - Bacteria is spreading at exponential rate, department of health needs to know when there will be 10,000 cases etc.
 - Mobile network providers measure network strength in decibels, log scale: P_{dB} = 10 \log_{10}\left(\frac{P}{P_0}\right)
 - Food safety inspection, how quickly food cools (exponential)
 - Sigmoid curve for adoption of social media
-- Use digital devices to calculate logs",,Diera,,,Apply laws of logarithms in different situations,Explore the use of logarithms in real life situations,,,,,PRECALC,fs-id1165137828382,Solving Applied Problems Using Exponential and Logarithmic Equations,,,,,,,,,
+- Use digital devices to calculate logs",,Diera,,,Apply laws of logarithms in different situations,Explore the use of logarithms in real life situations,,,,,PRECALC,fs-id1165137828382,Solving Applied Problems Using Exponential and Logarithmic Equations
 Numbers and Algebra,Formulae and Variations,Changing the Subject,Changing the Subject,Core,"- Rearrange formulae the change the subject, e.g.:
 - V = 4/3 pi r^3
 - s = ut + 1/2 a t^2, rearrange for u (or using quadratics, rearrange for t)
-- Make x the subject of 1/x = 1/s +1/r (application in triangles, inscribed square)",,Diera,,,Rewrite a formula to change the subject in different situations,,,,,,,,,,,,,,,,,
+- Make x the subject of 1/x = 1/s +1/r (application in triangles, inscribed square)",,Diera,,,Rewrite a formula to change the subject in different situations
 Numbers and Algebra,Formulae and Variations,Direct Variation,Direct Variation,Core,"- y = kx, show graphs too
-- e.g. circumference of a circle,",,Diera,,,Solve direct and inverse variations from real life situations,Draw graphs of direct and inverse variations,,,,,PRECALC,fs-id1165137730306,Solving Direct Variation Problems,,,,,,,,,
+- e.g. circumference of a circle,",,Diera,,,Solve direct and inverse variations from real life situations,Draw graphs of direct and inverse variations,,,,,PRECALC,fs-id1165137730306,Solving Direct Variation Problems
 Numbers and Algebra,Formulae and Variations,Inverse Variation,Inverse Variation,Core,"- y = k/x, show graphs too
-- time to travel  = distance/speed, frequency of a string",,Diera,,,Solve direct and inverse variations from real life situations,Draw graphs of direct and inverse variations,,,,,PRECALC,fs-id1165137758211,Solving Inverse Variation Problems,,,,,,,,,
+- time to travel  = distance/speed, frequency of a string",,Diera,,,Solve direct and inverse variations from real life situations,Draw graphs of direct and inverse variations,,,,,PRECALC,fs-id1165137758211,Solving Inverse Variation Problems
 Numbers and Algebra,Formulae and Variations,Combined and Joint Variation,Combined and Joint Variation,Core,"- Joint variation: y = k x z (e.g. area of a triangle A = 1/2 bh)
-- Combined variation: y = k x / z, energy usage = power * time / efficiency, transport fare = fuel price * distance / no. passengers)",,Diera,,,"Solve combined, joint and partial variations in different situations",,,,,,PRECALC,fs-id1165134054044,Solving Problems Involving Joint Variation,,,,,,,,,
+- Combined variation: y = k x / z, energy usage = power * time / efficiency, transport fare = fuel price * distance / no. passengers)",,Diera,,,"Solve combined, joint and partial variations in different situations",,,,,,PRECALC,fs-id1165134054044,Solving Problems Involving Joint Variation
 Numbers and Algebra,Formulae and Variations,Partial Variation,Partial Variation,Core,"- Partial variation: y = kx + b. (e.g. electricity costs 100Ksh per month + 500Ksh/5GB, transaction fee for m-pesa, parking fees).
-- Cost for drilling a bore hole",,Diera,,,"Solve combined, joint and partial variations in different situations",,,,,,,,,,,,,,,,,
+- Cost for drilling a bore hole",,Diera,,,"Solve combined, joint and partial variations in different situations"
 Numbers and Algebra,Formulae and Variations,Variation in Real Life,Variation in Real Life,Core,"Applied examples (see those listed above)
-- Go from tables to graphs",,Diera,,,Apply variations to real life situations,Appreciate the use of variations in day-to-day life,,,,,PRECALC,fs-id1165137407207,Real-World Applications,,,,,,,,,
+- Go from tables to graphs",,Diera,,,Apply variations to real life situations,Appreciate the use of variations in day-to-day life,,,,,PRECALC,fs-id1165137407207,Real-World Applications
 Numbers and Algebra,Sequences and Series,Introduction to Sequences,Introduction to Sequences,Core,"- Start with continuing sequences: e.g. what's next: 2, 3.5, 5, or 1, -1, 1, -1
 - Terminology for sequences, initial term, nth term, etc.",,Diera,"- Teacher writes 5 numbers, students say what comes next. e.g. 1,3,5,7,9, or 1, 1, 2, 3, 5, 8. Knock down pegs, every second peg.
 - What's the third term
-",,Determine nth term in a number sequences,,,,,,PRECALC,fs-id1165137571964,Writing the Terms of a Sequence Defined by an Explicit Formula,,,,,,,,,
+- Can use visual patterns from this site (CC-BY) https://www.visualpatterns.org/",,Determine nth term in a number sequences,,,,,,PRECALC,fs-id1165137571964,Writing the Terms of a Sequence Defined by an Explicit Formula
 Numbers and Algebra,Sequences and Series,Arithmetic Sequences,Arithmetic Sequences,Core,"- Introduced arithmetic sequences, d = T_(n+1) - T_n
-- nth term: find through patterns, and T_n = (n-1)d + T_1",,Diera,"- Continue with sequences above, find a pattern for the nth term",,Determine nth term in a number sequences,Determine terms and common difference in an arithmetic sequence and series,,,,,PRECALC,m49445,Arithmetic Sequences,,,,,,,,,
-Numbers and Algebra,Sequences and Series,Finding the Sum of Arithmetic Sequences,Finding the Sum of Arithmetic Sequences,Core,"- Prove formula that S_n = n/2 (T_0 + T_n), and S_n =  n/2(2a + (n-1)d)",,Diera,"Weekly base pay of 500 KsH, get a pay rise each week of 20 Ksh",,Determine the sum of terms in arithmetic and geometric series,,,,,,PRECALC,fs-id1165137480338,Using the Formula for Arithmetic Series,,,,,,,,,
+- nth term: find through patterns, and T_n = (n-1)d + T_1",,Diera,"- Continue with sequences above, find a pattern for the nth term",,Determine nth term in a number sequences,Determine terms and common difference in an arithmetic sequence and series,,,,,PRECALC,m49445,Arithmetic Sequences
+Numbers and Algebra,Sequences and Series,Finding the Sum of Arithmetic Sequences,Finding the Sum of Arithmetic Sequences,Core,"- Prove formula that S_n = n/2 (T_0 + T_n), and S_n =  n/2(2a + (n-1)d)",,Diera,"Weekly base pay of 500 KsH, get a pay rise each week of 20 Ksh",,Determine the sum of terms in arithmetic and geometric series,,,,,,PRECALC,fs-id1165137480338,Using the Formula for Arithmetic Series
 Numbers and Algebra,Sequences and Series,Geometric Sequences,Geometric Sequences,Core,"- Introduce geometric sequences, r = T_(n+1)/T_n
-- nth term: T_n = T_1 * r^(n-1)",,Diera,"Splitting a square into 2x2, keeping going.
-- Find the number of squares for the nth.",,Determine nth term in a number sequences,Compute the terms and common ratio in a geometric sequence and series,,,,,PRECALC,m49446,Geometric Sequences,,,,,,,,,
+- nth term: T_n = T_1 * r^(n-1)
+- Ball loses 20% of its height each bounce",,Diera,"Splitting a square into 2x2, keeping going.
+- Find the number of squares for the nth.",,Determine nth term in a number sequences,Compute the terms and common ratio in a geometric sequence and series,,,,,PRECALC,m49446,Geometric Sequences
 Numbers and Algebra,Sequences and Series,Sum of Geometric Sequences I,Finding the Sum of Geometric Sequences,Core,"- Sum formula: S_n = a(r^n - 1)/(r - 1)
-- Extend to infinite sum, but when -1 < r < 1, S_infty = a/(1-r)",,Diera,"- 3x3 board, one grain of rice on square 1, two on square 2, keep going, find the sum",,Determine the sum of terms in arithmetic and geometric series,,,,,,PRECALC,fs-id1165137660105,Using the Formula for Geometric Series,PRECALC,fs-id1165135527007,Using the Formula for the Sum of an Infinite Geometric Series,,,,,,
-Numbers and Algebra,Sequences and Series,Sum of Geometric Sequences II,Finding the Sum of Geometric Sequences,Core,"- Extend to infinite sum, but when -1 < r < 1, S_infty = a/(1-r)",,Diera,"- Running 1km, then 1/3km, then 1/9km, then 1/27 etc.",,Determine the sum of terms in arithmetic and geometric series,,,,,,PRECALC,fs-id1165137660105,Using the Formula for Geometric Series,PRECALC,fs-id1165135527007,Using the Formula for the Sum of an Infinite Geometric Series,,,,,,
+- Extend to infinite sum, but when -1 < r < 1, S_infty = a/(1-r)",,Diera,"- 3x3 board, one grain of rice on square 1, two on square 2, keep going, find the sum",,Determine the sum of terms in arithmetic and geometric series,,,,,,PRECALC,fs-id1165137660105,Using the Formula for Geometric Series,PRECALC,fs-id1165135527007,Using the Formula for the Sum of an Infinite Geometric Series
+Numbers and Algebra,Sequences and Series,Sum of Geometric Sequences II,Finding the Sum of Geometric Sequences,Core,"- Extend to infinite sum, but when -1 < r < 1, S_infty = a/(1-r)",,Diera,"- Running 1km, then 1/3km, then 1/9km, then 1/27 etc.",,Determine the sum of terms in arithmetic and geometric series,,,,,,PRECALC,fs-id1165137660105,Using the Formula for Geometric Series,PRECALC,fs-id1165135527007,Using the Formula for the Sum of an Infinite Geometric Series
 Numbers and Algebra,Sequences and Series,Sequences in Real Life,Sequences in Real Life,Core,"- Applied problems, such as:
 - Grains of rice doubling on a chessboard
 - Weekly savings amount - increase savings each week by 100Ksh, find total savings
-- Triangular stack of bricks",,Ben,- Cup stacking,,Apply sequences and series to real-life situations,Appreciate the use of sequences and series in real life,,,,,,,,,,,,,,,,
+- Triangular stack of bricks",,Ben,- Cup stacking,,Apply sequences and series to real-life situations,Appreciate the use of sequences and series in real life
 Numbers and Algebra,Matrices I,Introduction to Matrices,Introduction to Matrices,Core,"- Outline what a matrix is, where element a_ij is (row i, column j)
 - Identify: 
 column matrix (i.e. column vector), 
@@ -110,247 +120,249 @@ square matrix
 rectangular matrix
 null matrix
 identity matrix
-- Introduce dimensions [order] of a matrix (n by m etc)",,Ben,- Premier League table with different columns for different figures,,Identify types of matrices using rows and columns,Determine properties of a matrix from rows and columns,,,,,PRECALC,fs-id1165132938226,Describing Matrices,,,,,,,,,
+- Introduce dimensions [order] of a matrix (n by m etc)",,Ben,- Premier League table with different columns for different figures,,Identify types of matrices using rows and columns,Determine properties of a matrix from rows and columns,,,,,PRECALC,fs-id1165132938226,Describing Matrices
 Numbers and Algebra,Matrices I,Adding and Subtracting Matrices,Adding and Subtracting Matrices,Core,"- Can only add and subtract matrices with same dimensions [compatible]
 - Add term by term
 - Reinforce why zero matrix (null matrix) is what it is
 - Multiplying a matrix by a scalar",,Ben,"- Kelvin and esther buying magoes and oranges. K buys 11 m and 7 o, E buys 9 m and 12 o. 
 - Form vectors (matrices) from these, add them to get the total. 
 - Recognise that matrices need to be same size to add.
-- For matrix for shop 1 (both K and E, both columns), then a matrix for shop 2, ask for difference to represent.",,Perform addition and subtraction of compatible matrices,,,,,,PRECALC,fs-id1165135499659,Adding and Subtracting Matrices,,,,,,,,,
+- For matrix for shop 1 (both K and E, both columns), then a matrix for shop 2, ask for difference to represent.",,Perform addition and subtraction of compatible matrices,,,,,,PRECALC,fs-id1165135499659,Adding and Subtracting Matrices
 Numbers and Algebra,Matrices I,Multiplying Matrices I,Multiplying Matrices I,Core,"- Geometric justification for matrix multiplication, leaning into the 2x2 case
 - Matricies need to be compatible",,Ben,"- Add prices to the mangoes matrix - matrix vector multiplication.
 - Then prices for shop 2, make a matrix with both
-- Ask what ",,Multiply compatible matrices in different situations,,,,,,PRECALC,fs-id1165134389759,Finding Scalar Multiples of a Matrix,PRECALC,fs-id1165133073877,Finding the Product of Two Matrices,,,,,,
-Numbers and Algebra,Matrices I,Multiplying Matrices II,Multiplying Matrices II,Core,"- Focus on computations of matrix multiplication, formula + process",,Ben,,,Multiply compatible matrices in different situations,,,,,,,,,,,,,,,,,
+- Ask what ",,Multiply compatible matrices in different situations,,,,,,PRECALC,fs-id1165134389759,Finding Scalar Multiples of a Matrix,PRECALC,fs-id1165133073877,Finding the Product of Two Matrices
+Numbers and Algebra,Matrices I,Multiplying Matrices II,Multiplying Matrices II,Core,"- Focus on computations of matrix multiplication, formula + process",,Ben,,,Multiply compatible matrices in different situations
 Numbers and Algebra,Matrices I,Inverse of 2 by 2 Matrices I,Inverse of 2 by 2 Matrices,Core,"- Motivate inverse with reciprocals of real numbers, need M * M^{-1} = identity. Show how inverse helps undo Mx = b (so M^(-1)b = x).
-- - Simple equations like 2x + 3y = 10 and 4x + 4y = 8, calculate matrix, find inverse, multiply to get answer.",,Ben,"- Someone tells you how much they bought, how much it cost, you figure out the prices.",,Determine the inverse of a 2 by 2 matrix,Solve linear equations in two unknowns using matrix method,,,,,PRECALC,fs-id1165132300248,Finding the Multiplicative Inverse of 2√ó2 Matrices Using a Formula,PRECALC,fs-id1165137694180,Solving a System of Linear Equations Using the Inverse of a Matrix,,,,,,
+- - Simple equations like 2x + 3y = 10 and 4x + 4y = 8, calculate matrix, find inverse, multiply to get answer.",,Ben,"- Someone tells you how much they bought, how much it cost, you figure out the prices.",,Determine the inverse of a 2 by 2 matrix,Solve linear equations in two unknowns using matrix method,,,,,PRECALC,fs-id1165132300248,Finding the Multiplicative Inverse of 2√ó2 Matrices Using a Formula,PRECALC,fs-id1165137694180,Solving a System of Linear Equations Using the Inverse of a Matrix
 Numbers and Algebra,Matrices I,Inverse of 2 by 2 Matrices II,Inverse of 2 by 2 Matrices,Core,"Derive formula for inverse
-- Show that M * M^{-1} = id for 2x2 case",,Ben,Derive formula for inverse,,Determine the inverse of a 2 by 2 matrix,Solve linear equations in two unknowns using matrix method,,,,,PRECALC,fs-id1165132300248,Finding the Multiplicative Inverse of 2√ó2 Matrices Using a Formula,,,,,,,,,
+- Show that M * M^{-1} = id for 2x2 case",,Ben,Derive formula for inverse,,Determine the inverse of a 2 by 2 matrix,Solve linear equations in two unknowns using matrix method,,,,,PRECALC,fs-id1165132300248,Finding the Multiplicative Inverse of 2√ó2 Matrices Using a Formula
 Numbers and Algebra,Matrices I,Determinant,Determinant I,Core,"- Note that no inverse possible if det(A) = 0, note connection to inverse formula. Give formula for determinant
-- Other properties of determinat: det(aA) = a det(A), det(AB) = det(A) + det(B)",,Ben,,,Compute the determinant of a 2 by 2 matrix,,,,,,PRECALC,fs-id1423475,Evaluating the Determinant of a 2√ó2 Matrix,,,,,,,,,
+- Other properties of determinat: det(aA) = a det(A), det(AB) = det(A) + det(B)",,Ben,,,Compute the determinant of a 2 by 2 matrix,,,,,,PRECALC,fs-id1423475,Evaluating the Determinant of a 2√ó2 Matrix
 Numbers and Algebra,Matrices I,Matrices in Real Life,Matrices in Real Life,Core,"- Rural-urban migration proportions, finding evolution over time
 - Adding yields from harvests for different crops, across different farmers
 - Total cost of shopping = quantity vector * cost vector
-- Image processing with matrix of pixel brightness",,Ben,,,Explore the use of matrices in real life situations,,,,,,PRECALC,fs-id1165131881248,Real-World Applications,PRECALC,fs-id1165133094400,Real-World Applications,,,,,,
+- Image processing with matrix of pixel brightness",,Ben,,,Explore the use of matrices in real life situations,,,,,,PRECALC,fs-id1165131881248,Real-World Applications,PRECALC,fs-id1165133094400,Real-World Applications
 Measurement and Geometry,Approximation and Errors,Estimations and Approximations,Estimations and Approximations,Core,"- Introduce the concept of approximation and errors
 - Include activities where learners measure different objects using different tool, e.g 15cm ruler, 30cm ruler, metre rule, tape measure e.t.c and determine possible errors from the measurements.
 - Compare the resuilts from their activities and the object's actual values and determine the possible errors.
 ",,Bath,"- Include activities where learners measure different objects using different tool, e.g 15cm ruler, 30cm ruler, metre rule, tape measure e.t.c and determine possible errors from the measurements. Measure their desk. 
 - Different groups measure one desk, find out reasons for differences
-",,Determine errors from measurements of quantities,,,,,,,,,,,,,,,,,
+",,Determine errors from measurements of quantities
 Measurement and Geometry,Approximation and Errors,"Absolute, Relative, and Percentage Errors","Absolute, Relative, and Percentage Errors",Core,"- Probably use accuracy of instruments to introduce the concept.
 - Use cm and mm to explain absolute error
 - Introduce the formula: Relative error=absolute error/actual measurement and give examples.
-- Introduce  the formula: percentage error = relative error*100% and percentage error = absolute error/actual measurement * 100% and give examples on the same.",,Bath,"- Potato crisps with air, measure the difference",,"Determine absolute, relative and percentage errors from measurements",,,,,,,,,,,,,,,,,
+- Introduce  the formula: percentage error = relative error*100% and percentage error = absolute error/actual measurement * 100% and give examples on the same.",,Bath,"- Potato crisps with air, measure the difference",,"Determine absolute, relative and percentage errors from measurements"
 Measurement and Geometry,Approximation and Errors,Rounding off and Truncation Errors,Rounding off and Truncation Errors,Core,"- Recap on rounding off (significant figures and decimal places), expalin how to round off and give examples.
 Explain the term ""truncation"" and how truncation error comes about.
 - Give examples of rounding off and truncation errors
-- Work out the absolute errors resulting from rounding off numbers to a given decimal places and significant figures",,Bath,- Tell students to round their desk mesurement ,,Compute round off and truncation errors from measurements,,,,,,,,,,,,,,,,,
+- Work out the absolute errors resulting from rounding off numbers to a given decimal places and significant figures",,Bath,- Tell students to round their desk mesurement ,,Compute round off and truncation errors from measurements
 Measurement and Geometry,Approximation and Errors,Maximum and Minimum Errors,Maximum and Minimum Errors,Core,"- Introduce the concept of: maximum error, and minimum errors and give examples.
 - Determine maximum and minimum errors limits in measurements
 - e.g. reporting height in cm, max error is + 0.5cm, minimum error is -0.5
-- Introduce plus or minus",,Bath,"Give one group of students a ruler that says it is 10cm, but it is actually 8cm, another with 11cm, another with the correct length.",,Determine maximum and minimum errors from limits in measurements,,,,,,,,,,,,,,,,,
+- Introduce plus or minus",,Bath,"Give one group of students a ruler that says it is 10cm, but it is actually 8cm, another with 11cm, another with the correct length.",,Determine maximum and minimum errors from limits in measurements
 Measurement and Geometry,Approximation and Errors,Addition and Subtraction of Errors,Addition and Subtraction of Errors,Core,"- Examples on addition and subtraction of errors.
 - E.g. t1 = 10s +- 0.2, t2 = 5s +- 0.1, t1+t2 = 15s +- 0.3
 - For both additiona and subtraction, add the absolute value of errors
 ",,Bath,"- Measure textbook, measure exercise book, add the measurements. 
-- Subtraction - different between length of textbook and length of exericse book",,Perform propagation of errors using limits of measurements,,,,,,,,,,,,,,,,,
+- Subtraction - different between length of textbook and length of exericse book",,Perform propagation of errors using limits of measurements
 Measurement and Geometry,Approximation and Errors,Multiplication of Errors,Multiplication of Errors,Core,"- Examples on multiplication
-- minimum x minimum, maximum x maximum",,Bath,- Finding error in area of measurement from the ruler for the textbook,,Perform propagation of errors using limits of measurements,,,,,,,,,,,,,,,,,
+- minimum x minimum, maximum x maximum",,Bath,- Finding error in area of measurement from the ruler for the textbook,,Perform propagation of errors using limits of measurements
 Measurement and Geometry,Approximation and Errors,Division of Errors,Division of Errors,Core,"- Examples on division of errors. 
-- min numerator / max denominator, max numerator / min denominator",,Bath,"- Real life example: know the distance travelled +- error, time taken +- error, calculate speed",,Perform propagation of errors using limits of measurements,,,,,,,,,,,,,,,,,
-Measurement and Geometry,Approximation and Errors,Approximation and Errors in Real Life,Approximation and Errors in Real Life,Core,"- Highlight instances of how approximation and errors in used real life e.g in construction, road safety!",,Bath,,,Appreciate the use of approximations and errors in real life situations,,,,,,,,,,,,,,,,,
+- min numerator / max denominator, max numerator / min denominator",,Bath,"- Real life example: know the distance travelled +- error, time taken +- error, calculate speed",,Perform propagation of errors using limits of measurements
+Measurement and Geometry,Approximation and Errors,Approximation and Errors in Real Life,Approximation and Errors in Real Life,Core,"- Highlight instances of how approximation and errors in used real life e.g in construction, road safety!",,Bath,,,Appreciate the use of approximations and errors in real life situations
 Measurement and Geometry,Angle Properties of a Circle,"Arcs, Chords, and Segments","Arcs, Chords, and Segments",Core,"- Introduction of the strand since it wasn't taught in Grade 10.
 Introduce the sub section by an activity where learners can draw a circle and identify an arc, a chord and a segment.
 - Using exaples, explain the terms: an arc, chord, and segment in a circle 
-",,Bath,,,"Identify an arc, chord, and segment in a circle",,,,,,,,,,,,,,,,,
-Measurement and Geometry,Angle Properties of a Circle,Angles at the Centre and on the Circumference,Angles at the Centre and on the Circumference,Core,- Angle at circumference = 2x angle at centre,,Bath,,,Relate angles subtended by the same arc at the circumference,,,,,,,,,,,,,,,,,
+",,Bath,"Include activities where learners trace a circular object such as a plate or bottle top to draw a circle, draw straight lines from one point of the edge to another, trace the curve between the two edges, shade the regions between the line and the curved edge.",,"Identify an arc, chord, and segment in a circle"
+Measurement and Geometry,Angle Properties of a Circle,Angles at the Centre and on the Circumference,Angles at the Centre and on the Circumference,Core,-  angle at centre = 2x Angle at circumference.,,Bath,"-draw a circle and mark the centre, as well as the positions of the hours like in a clock. mark points at 4 o'clock and 8 o'clock. the the circle and join them to the centre, chose another point on the circle and join it to the two points, use protractors to measure both angles. Give different angles to different groups",,Relate angles subtended by the same arc at the circumference
 Measurement and Geometry,Angle Properties of a Circle,Angles Substended by the Same Arc,Angles Substended by the Same Arc,Core,"- Two angles subtended by the same arc at the circumference are equal.
-- advanced: angles add to 180 when different sides of the circle",,Bath,,,Relate the angle subtended by an arc at the centre and at the circumference,,,,,,,,,,,,,,,,,
-Measurement and Geometry,Angle Properties of a Circle,Angles Subtended the Diameter,Angles Subtended the Diameter,Core,"- Illustrate how an angle can be  subtended by a chord and a diameter at the circumference.
-- Highlight that ""The angle subtended by a diameter at any point on the circumference is always 90 degrees (a right angle)",,Bath,,,Determine angles subtended by a chord and a diameter at the circumference,,,,,,,,,,,,,,,,,
+- advanced: angles add to 180 when different sides of the circle",,Bath,"-draw a circle and mark two points on the circumference and join the two points to form a chord, choose two different points on the same side on the chord and join them to the end of the chord, use protractors to measure the angles and record the mesurements. Repeat this with a point on the opposite side of the chord, measure the angle and add them.",,Relate the angle subtended by an arc at the centre and at the circumference
+Measurement and Geometry,Angle Properties of a Circle,Angles Subtended by the Diameter,Angles Subtended the Diameter,Core,"- Illustrate how an angle can be  subtended by a chord and a diameter at the circumference.
+- Highlight that ""The angle subtended by a diameter at any point on the circumference is always 90 degrees (a right angle)",,Bath,"- Give students a circle. Ask them to pick a point. Draw any segment from that point. Make a 90 degree angle from that point (using a set square or a textbook), see where that segment lies. Repeat with multiple starting segments.",,Determine angles subtended by a chord and a diameter at the circumference
 Measurement and Geometry,Angle Properties of a Circle,Angles in a Cyclic Quadrilateral,Angles in a Cyclic Quadrilateral,Core,"- Demonstrate and explain how identify  a cyclic quadrilateral.
 - Highlight angles in a cyclic quadilateral.
 - Highlight that :the most important property of a cyclic quadrilateral is that opposite angles always add up to 180 degrees, The exterior angle is exactly equal to the interior opposite angle.
 - Inscribe a quadrilateral into a circle
-",,Bath,,,Determine angles in a cyclic quadrilateral,,,,,,,,,,,,,,,,,
+",,Bath,"-learners draw a circle and choose 4 points on the circumference join them to form a quadrilateral, measure each interior angle and record the results, add each pair of the opposite angles and record the patterns, extend one side of the quadrilateral, measure the angle and compare to the opposite interior angle.",,Determine angles in a cyclic quadrilateral
 Measurement and Geometry,Angle Properties of a Circle,Angle Properties of a Circle in Real Life,Angle Properties of a Circle in Real Life,Core,"- Highlight how the  angle properties of a circle can be used/are applied in different situations
-- Discuss safety precautions when using construction instruments",,Bath,,,Apply the angle properties of a circle in different situations,,,,,,,,,,,,,,,,,
-Measurement and Geometry,"Circles, Chords and Tangents",Constructing Tangents,Constructing Tangents,Core,- Illustrate how to construct a tangent to a circle at a given point,,Bath,,,Construct a tangent to a circle at a given point,,,,,,,,,,,,,,,,,
-Measurement and Geometry,"Circles, Chords and Tangents",Intersecting Chords,Intersecting Chords,Core,"- Explain that when two chords intersect inside a circle, the product of the segments of one chord is equal to the product of the segments of the other.",,Bath,,,Determine the length of intersecting chords and tangent to a circle,,,,,,,,,,,,,,,,,
+- Discuss safety precautions when using construction instruments
+- 3 people on the 3 point line in basketball (or equivalent in ok",,Bath,"-identify circular objects in school sports equipments, ",,Apply the angle properties of a circle in different situations
+Measurement and Geometry,"Circles, Chords and Tangents",Constructing Tangents,Constructing Tangents,Core,- Illustrate how to construct a tangent to a circle at a given point,,Bath,"- Coin resting flat on its face, move books on either side. Measure angle of tangent",,Construct a tangent to a circle at a given point
+Measurement and Geometry,"Circles, Chords and Tangents",Intersecting Chords,Intersecting Chords,Core,"- Explain that when two chords intersect inside a circle, the product of the segments of one chord is equal to the product of the segments of the other.
+- Proof using similarity ",,Bath,"-learners draw two chods that intersect in the circle, label the points of intersection and the segments formed on each chord, measure the lengths of each segment using a ruler an dcalculate the products of the two segments on each chord.",,Determine the length of intersecting chords and tangent to a circle
 Measurement and Geometry,"Circles, Chords and Tangents",Intersecting Secants and Tangents,Intersecting Secants and Tangents,Core,"- Explain what a secant is
 - Detail how, when two secant segments are drawn to a circle from an exterior point, the product of one full secant and its external portion equals the product of the other.
 - Highlight the specific case where a tangent and a secant meet at an external point. The square of the tangent segment equals the product of the whole secant and its external part.( Tangent-Secant Theorem)
-- Highlight that tangent segments to a circle from the same external point are congruent (equal in length).",,Bath,,,Determine the length of intersecting chords and tangent to a circle,,,,,,,,,,,,,,,,,
+- Highlight that tangent segments to a circle from the same external point are congruent (equal in length).",,Bath,"- dwar a circle and mark a point outside the circle,  draw two lines from the point cutting the circle at two points and label the segments, measure the lengths using a ruler and record the measurements,  calculate product of secant and the external part for both the secants and compare the results.  Draw a tangent from the same external point to the circle, measure its length and divide the length of the tangent by the product uof one scecant and its external part. choose another point on the circumference and construct a tangent to the external point, measure, record the results, and compare to the original length of the tangent recorded, observe the pattern.",,Determine the length of intersecting chords and tangent to a circle
 Measurement and Geometry,"Circles, Chords and Tangents",Direct Tangents to Two Circles,Direct Tangents to Two Circles,Core,"- Explain the difference between tangents that touch two circles without crossing the line segment joining their centers (Direct) and those that do cross it (Transverse).
 - Show the method of drawing a circle with radius R-1 - R-2 to find the points of tangency.
-- Highlight that for two circles, the lengths of the direct common tangents are equal.",,Bath,,,Construct direct and transverse common tangents to two circles,,,,,,,,,,,,,,,,,
+- Highlight that for two circles, the lengths of the direct common tangents are equal.",,Bath,"Include activities where learners draw two circles of different sizes on the same page, join the two centers using a line segment, draw a tangents that touch both circles without crossing the line segment joining the centres on both sides of the circle, measure the lengths and record the observations",,Construct direct and transverse common tangents to two circles
 Measurement and Geometry,"Circles, Chords and Tangents",Transverse Tangents to Two Circles,Transverse Tangents to Two Circles,Core,"- Explain the difference between tangents that touch two circles without crossing the line segment joining their centers (Direct) and those that do cross it (Transverse).
-- Show the method for transverse tangents",,Bath,,,Construct direct and transverse common tangents to two circles,,,,,,,,,,,,,,,,,
+- Show the method for transverse tangents",,Bath,"Include activities where learners draw two circles of different sizes on the same page, join the two centers using a line segment, draw a tangents that touch both circles crossing the line segment joining the centres on both sides of the circle, mesure the lengths and record the observations",,Construct direct and transverse common tangents to two circles
 Measurement and Geometry,"Circles, Chords and Tangents",Alternate Segment Theorem,Alternate Segment Theorem,Core,"- State the fundamental rule: the angle between a tangent and a chord through the point of contact is equal to the angle subtended by the chord in the alternate segment.
 - Use diagrams to show how to identify which ""alternate"" segment corresponds to which angle.
-- ",,Bath,,,Determine the angles in the alternate segment,,,,,,,,,,,,,,,,,
+- ",,Bath,"- include an activity where learners draw a circle and a tangent, draw a chord through the tangent point. identify the segments, chose a point on the opposite segment and using the chord form an angle, measure the angle formed and record, measure the angle formed between the chord and the tangent and compare the results.",,Determine the angles in the alternate segment
 Measurement and Geometry,"Circles, Chords and Tangents",Inscribed Circles,Inscribed Circles,Core,"- Explain that the center (Incenter) is the intersection of the triangle’s angle bisectors. (Show that the circle touches all three sides internally.)
-- Demonstrate how to construct an inscribed circle.",,Bath,,,"Construct an inscribed, circumscribed and escribed circles on a triangle",Determine the centroid and orthocentre of a triangle,,,,,,,,,,,,,,,,
+- Demonstrate how to construct an inscribed circle.",,Bath,"Give triangle, ask to draw largest circle inside they can",,"Construct an inscribed, circumscribed and escribed circles on a triangle",Determine the centroid and orthocentre of a triangle
 Measurement and Geometry,"Circles, Chords and Tangents",Circumscribed Circles,Circumscribed Circles,Core,"- Explain that the center (Circumcenter) is the intersection of the perpendicular bisectors of the sides. (Show that the circle passes through all three vertices.)
-- Demonstrate how to construct an circumsribed circle.",,Bath,,,"Construct an inscribed, circumscribed and escribed circles on a triangle",Determine the centroid and orthocentre of a triangle,,,,,,,,,,,,,,,,
+- Demonstrate how to construct an circumsribed circle.",,Bath,"Give triangle, ask to try find a circle with all 3 points",,"Construct an inscribed, circumscribed and escribed circles on a triangle",Determine the centroid and orthocentre of a triangle
 Measurement and Geometry,"Circles, Chords and Tangents",Escribed Circles,Escribed Circles,Core,"- Describe how these circles lie outside the triangle and touch one side and the extensions of the other two sides.
 (Mention that the center is formed by the intersection of two external angle bisectors.)
-- Demonstrate how to construct an escribed circle.",,Bath,,,"Construct an inscribed, circumscribed and escribed circles on a triangle",Determine the centroid and orthocentre of a triangle,,,,,,,,,,,,,,,,
-Measurement and Geometry,"Circles, Chords and Tangents","Circles, Chords, and Tangents in Real Life","Circles, Chords, and Tangents in Real Life",Core,"- Give illustrations how angles, chords and tangents relate to real life situations",,Bath,,,Apply angles chords and tangents to real life situations,,,,,,,,,,,,,,,,,
+- Demonstrate how to construct an escribed circle.",,Bath,"Include activities where learners draw a triangle and extend two of its sides. Construct the external angle bisectors of two angles and identify their intersection, draw a circle that touches one side of the triangle internally and the extensions of the other two sides externally. ",,"Construct an inscribed, circumscribed and escribed circles on a triangle",Determine the centroid and orthocentre of a triangle
+Measurement and Geometry,"Circles, Chords and Tangents","Circles, Chords, and Tangents in Real Life","Circles, Chords, and Tangents in Real Life",Core,"- Give illustrations how angles, chords and tangents relate to real life situations",,Bath,,,Apply angles chords and tangents to real life situations
 Measurement and Geometry,Commercial Arithmetic,Simple Interest,Simple Interest,Core,"- Introduce the sub strand since they didn't study it in Grade 10
 - Define Simple Interest (Explain that it is interest calculated only on the initial amount (principal) for the entire period.)
 - Introduce the formula for calculating the Simple Interest 
-- Demonstrate calculating interest for periods given in months or days by converting them into years.",,Bath,,,Compute simple interest using the simple interest formula,,,,,,PREALG,m81308,Solve Simple Interest Applications,,,,,,,,,
+- Demonstrate calculating interest for periods given in months or days by converting them into years.",,Bath,,,Compute simple interest using the simple interest formula,,,,,,PREALG,m81308,Solve Simple Interest Applications
 Measurement and Geometry,Commercial Arithmetic,Compound Interest,Compound Interest,Core,"- Guide the learners in deriving the compound interest formula
 - Demonstrate how to adjust the formula for semi-annual (twice a year) or quarterly compounding.
 - Highlight that CI = Final Amount -  Original Principal
-- - Give examples for learners to calculate the compound interest using the compound interest formula",,Bath,,,Derive compound interest formula using the step by step method,Determine compound interest using the compound interest formula,,,,,PRECALC,fs-id1165137871708,Applying the Compound-Interest Formula,,,,,,,,,
+- - Give examples for learners to calculate the compound interest using the compound interest formula",,Bath,,,Derive compound interest formula using the step by step method,Determine compound interest using the compound interest formula,,,,,PRECALC,fs-id1165137871708,Applying the Compound-Interest Formula
 Measurement and Geometry,Commercial Arithmetic,Appreciation,Appreciation,Core,"- Define appreciation as the increase in value of an asset over time (e.g., land, gold)
-- Illustrate how to calculate the rate of appreciation and depreciation (Introduce and use formulas)",,Bath,,,Determine the value of appreciation and depreciation of assets,,,,,,,,,,,,,,,,,
+- Illustrate how to calculate the rate of appreciation and depreciation (Introduce and use formulas)",,Bath,,,Determine the value of appreciation and depreciation of assets
 Measurement and Geometry,Commercial Arithmetic,Depreciation,Depreciation,Core,"- Define depreciation as the decrease in value of an asset (e.g., cars, machinery)
-- Illustrate how to calculate the rate of appreciation and depreciation (Introduce and use formulas)",,Bath,,,Determine the value of appreciation and depreciation of assets,,,,,,,,,,,,,,,,,
+- Illustrate how to calculate the rate of appreciation and depreciation (Introduce and use formulas)",,Bath,,,Determine the value of appreciation and depreciation of assets
 Measurement and Geometry,Commercial Arithmetic,Hire Purchase I,Hire Purchase I,Core,"- Define Key Terms i.e Identify the Deposit (initial payment), Instalments (monthly payments), and Hire Purchase Price (HPP).
 - Demonstrate that to Calculate Carrying Charge(interest) is HPP - Cash Price
 - Show to calculate instalments.
-- Rate of Interest: Demonstrate how to find the flat rate of interest charged on the remaining balance in a hire purchase agreement.",,Bath,,,Determine the cost of goods in purchase,,,,,,PRECALC,fs-id1165135390954,Solving Annuity Problems,,,,,,,,,
-Measurement and Geometry,Commercial Arithmetic,Hire Purchase II,Hire Purchase II,Core,- Harder questions with instalments etc,,Bath,,,Determine the cost of goods in purchase,,,,,,PRECALC,fs-id1165135390954,Solving Annuity Problems,,,,,,,,,
+- Rate of Interest: Demonstrate how to find the flat rate of interest charged on the remaining balance in a hire purchase agreement.",,Bath,,,Determine the cost of goods in purchase,,,,,,PRECALC,fs-id1165135390954,Solving Annuity Problems
+Measurement and Geometry,Commercial Arithmetic,Hire Purchase II,Hire Purchase II,Core,- Harder questions with instalments etc,,Bath,,,Determine the cost of goods in purchase,,,,,,PRECALC,fs-id1165135390954,Solving Annuity Problems
 Measurement and Geometry,Commercial Arithmetic,Income Tax I,Income Tax I,Core,"- Define Gross Income, Taxable Income (Gross minus allowable deductions like pension), and Net Income.
-- Explain how to use progressive tax brackets (graduated scales) to calculate ""Tax Due.""",,Ben,,,Compute income tax using taxation table,,,,,,,,,,,,,,,,,
-Measurement and Geometry,Commercial Arithmetic,Income Tax II,Income Tax II,Core,"- Further content, such as tax relief, PAYE",,Ben,,,Compute income tax using taxation table,,,,,,,,,,,,,,,,,
-Measurement and Geometry,Commercial Arithmetic,Commerical Arithmetic in Real Life,Commerical Arithmetic in Real Life,Core,"- Give illustrations like bank loans, car payments, and salary slips.",,Ben,,,Appreciate the use of commercial arithmetic in real-life situations,,,,,,,,,,,,,,,,,
+- Explain how to use progressive tax brackets (graduated scales) to calculate ""Tax Due.""",,Ben,,,Compute income tax using taxation table
+Measurement and Geometry,Commercial Arithmetic,Income Tax II,Income Tax II,Core,"- Further content, such as tax relief, PAYE",,Ben,,,Compute income tax using taxation table
+Measurement and Geometry,Commercial Arithmetic,Commerical Arithmetic in Real Life,Commerical Arithmetic in Real Life,Core,"- Give illustrations like bank loans, car payments, and salary slips.",,Ben,,,Appreciate the use of commercial arithmetic in real-life situations
 Measurement and Geometry,Trigonometry II,Trigonometry and the Unit Circle,Trigonometry and the Unit Circle,Core,"- Define the unit circle as a circle with radius r = 1. Explain that for any point (x, y) on the circle, cos theta = x and sin theta = y.
-- Connect to pythagoras",,Ben,,,Determine trigonometric ratios of angles using a unit circle,,,,,,PRECALC,m49372,Unit Circle: Sine and Cosine Functions,,,,,,,,,
+- Connect to pythagoras",,Ben,"Draw 10cm circle, Find coordinates  of  point on the circle. sin^2 x + cos^2 x = 1. See https://docs.google.com/presentation/d/e/2PACX-1vRiMHOoiJk3Z4_PYAo7mlM2n8uHllyyf6OTWRv-xAOqo0MG7NFjCDvweCmRyzAnOaqXAHk_QunOxwEl/pub?start=false&loop=false&delayms=3000&slide=id.g2e6adfc76f7_0_42 (CC-BY-NC)",,Determine trigonometric ratios of angles using a unit circle,,,,,,PRECALC,m49372,Unit Circle: Sine and Cosine Functions
 Measurement and Geometry,Trigonometry II,Trigonometric Ratios Beyond Acute Angles,Trigonometric Ratios Beyond Acute Angles,Core,"- Use the unit circle to determine trig ratios beyond acute, watching for the sign.
-- For Angles Greater than 90°, Use the CAST diagram (All, Sine, Tangent, Cosine) to determine the signs of ratios in the four quadrants.",,Ben,,,Determine trigonometric ratios of angles greater than 90 degrees in different situations,,,,,,,,,,,,,,,,,
-Measurement and Geometry,Trigonometry II,Trigonometric Ratios of Negative Angles,Trigonometric Ratios of Negative Angles,Core,- Demonstrate that sin(-theta) = -sin theta and cos(-theta) = cos theta by reflecting across the x-axis.,,Ben,,,Determine trigonometric ratios of negative angles in different situations,,,,,,,,,,,,,,,,,
+- For Angles Greater than 90°, Use the CAST diagram (All, Sine, Tangent, Cosine) to determine the signs of ratios in the four quadrants.",,Ben,Continue with circle demonstration,,Determine trigonometric ratios of angles greater than 90 degrees in different situations
+Measurement and Geometry,Trigonometry II,Trigonometric Ratios of Negative Angles,Trigonometric Ratios of Negative Angles,Core,- Demonstrate that sin(-theta) = -sin theta and cos(-theta) = cos theta by reflecting across the x-axis.,,Ben,Angles going clockwise,,Determine trigonometric ratios of negative angles in different situations
 Measurement and Geometry,Trigonometry II,Solving Trigonometric Equations I,Solving Trigonometric Equations I,Core,"-Illustrate using examples how to solve trigonometric equations involving trigonometric ratios across the range 0 to 360 degrees
-- e.g. sin(theta) = 1/2, cos (theta) = 0.8",,Ben,,,Solve trigonometric equations involving trigonometric ratios across the range 0 to 360 degrees,,,,,,PRECALC,m49398,Solving Trigonometric Equations,,,,,,,,,
-Measurement and Geometry,Trigonometry II,Solving Trigonometric Equations II,Solving Trigonometric Equations II,Core,"- Harder trig equations like sin(theta) = cos(theta), tan(theta/2) = 1/2 etc.",,Ben,,,Solve trigonometric equations involving trigonometric ratios across the range 0 to 360 degrees,,,,,,,,,,,,,,,,,
+- e.g. sin(theta) = 1/2, cos (theta) = 0.8",,Ben,"Solve via measurement on the unit circle, give a height, ask to find which angle(s!) will give that",,Solve trigonometric equations involving trigonometric ratios across the range 0 to 360 degrees,,,,,,PRECALC,m49398,Solving Trigonometric Equations
+Measurement and Geometry,Trigonometry II,Solving Trigonometric Equations II,Solving Trigonometric Equations II,Core,"- Harder trig equations like sin(theta) = cos(theta), tan(theta/2) = 1/2 etc.",,Ben,Group activities discussing solve tan x = sqrt(3) for 0 < x < 720,,Solve trigonometric equations involving trigonometric ratios across the range 0 to 360 degrees
 Measurement and Geometry,Trigonometry II,Radians,Radians,Core,"- Introduce the Conversion Formulas: To convert Degrees to Radians: Multiply by pi/180.To convert Radians to Degrees: Multiply by 180/pi.
 - Illustrate how to apply this formula using examples.
-",,Ben,,,Convert angles from degrees to radians and vice versa in different situations,,,,,,PRECALC,fs-id1165137502647,Converting Between Degrees and Radians,,,,,,,,,
+",,Ben,"Use string to draw a circle, then place one end of string on the circumference, see how far it can go, measure the angle. How many uses of the string would you need to cover the circumference",,Convert angles from degrees to radians and vice versa in different situations,,,,,,PRECALC,fs-id1165137502647,Converting Between Degrees and Radians
 Measurement and Geometry,Trigonometry II,Graphing Sine and Cosine,Graphing Sine and Cosine,Core,"- Demonstrate how to generate tables of values to use in plotting the graphs, and step by step on how to draw the graphs.
-- Identify amplitude, period or/and intercepts.",,Ben,,,Draw graphs of trigonometric functions in degrees and radians,,,,,,PRECALC,fs-id1165135169322,Graphs of the Sine and Cosine Functions,,,,,,,,,
-Measurement and Geometry,Trigonometry II,Graphing Tangent,Graphing Tangent,Core,"- Show how to Graph tangent, asymptotes",,Ben,,,Draw graphs of trigonometric functions in degrees and radians,,,,,,PRECALC,fs-id1321556,Analyzing the Graph of y = tan x,,,,,,,,,
+- Identify amplitude, period or/and intercepts.",,Ben,"- Create a table of points for sine and cosines (e.g. at 30 degrees, 45 degrees, 60 degrees), draw a curve to fit",Yes,Draw graphs of trigonometric functions in degrees and radians,,,,,,PRECALC,fs-id1165135169322,Graphs of the Sine and Cosine Functions
+Measurement and Geometry,Trigonometry II,Graphing Tangent,Graphing Tangent,Core,"- Show how to Graph tangent, asymptotes",,Ben,"- Table of points, create graph",,Draw graphs of trigonometric functions in degrees and radians,,,,,,PRECALC,fs-id1321556,Analyzing the Graph of y = tan x
 Measurement and Geometry,Trigonometry II,Sine Rule,Sine Rule,Core,"- Using a right-angled triangle, illustrate the sides A,B and C, and their opposite angles.
 - Explain how to derive the Sine Rule using triangles
-- Advanced - sine rule with two answers for theta",,Ben,,,Derive sine and cosine rules using triangles,,,,,,PRECALC,fs-id1165137629477,Using the Law of Sines to Solve Oblique Triangles,PRECALC,fs-id1165135199352,Using The Law of Sines to Solve SSA Triangles,,,,,,
-Measurement and Geometry,Trigonometry II,Cosine Rule,Cosine Rule,Core,- Cosine rule c^2 = a^2 + b^2 - 2ab cosC,,Ben,,,Solve triangles using the sine and cosine rule,,,,,,PRECALC,fs-id1165135190782,Using the Law of Cosines to Solve Oblique Triangles,,,,,,,,,
-Measurement and Geometry,Trigonometry II,Trigonometry in Real Life,Trigonometry in Real Life,Core,"- Highlight the applications of trigonometry in real life situationse.g in Surveying and Civil Engineering, architecture and construction etc",,Ben,,,Appreciate the use of trigonometry in real life situations,,,,,,PRECALC,fs-id1165135381204,Solving Applied Problems Using the Law of Sines,PRECALC,fs-id1165133215477,Solving Applied Problems Using the Law of Cosines,,,,,,
+- Advanced - sine rule with two answers for theta",,Ben,"- Draw triangles, calculate ratios of (sin A)/a etc",,Derive sine and cosine rules using triangles,,,,,,PRECALC,fs-id1165137629477,Using the Law of Sines to Solve Oblique Triangles,PRECALC,fs-id1165135199352,Using The Law of Sines to Solve SSA Triangles
+Measurement and Geometry,Trigonometry II,Cosine Rule,Cosine Rule,Core,- Cosine rule c^2 = a^2 + b^2 - 2ab cosC,,Ben,"Right angled triangle, c^2 = a^2+b^2, ask what happens as b pivots to the right and the left while remaining the same size",,Solve triangles using the sine and cosine rule,,,,,,PRECALC,fs-id1165135190782,Using the Law of Cosines to Solve Oblique Triangles
+Measurement and Geometry,Trigonometry II,Trigonometry in Real Life,Trigonometry in Real Life,Core,"- Highlight the applications of trigonometry in real life situationse.g in Surveying and Civil Engineering, architecture and construction etc",,Ben,Do a demonstration with the roof at the school,,Appreciate the use of trigonometry in real life situations,,,,,,PRECALC,fs-id1165135381204,Solving Applied Problems Using the Law of Sines,PRECALC,fs-id1165133215477,Solving Applied Problems Using the Law of Cosines
 Measurement and Geometry,Graphical Methods,Graphing Circles,Graphing Circles,Core,"- Define a circle using its center (h, k) and radius r, and mastering the standard equation:(x - h)^2 + (y - k)^2 = r^2
-- Use examples to highlight the same.",,Kelvin,,,"Determine the centre, radius and equation of a circle in different situations",Draw graphs of circles and parabolas in different situations,,,,,,,,,,,,,,,,
+- Use examples to highlight the same.",,Kelvin,,,"Determine the centre, radius and equation of a circle in different situations",Draw graphs of circles and parabolas in different situations
 Measurement and Geometry,Graphical Methods,Graphing Quadratics,Graphing Quadratics,Core,"- Illustrate plotting curves for y = ax^2 + bx + c
--- Concave up vs concave down (a is +ve or -ve), line of symmetry -b/2a, roots either side",,Kelvin,,,Solve quadratic and cubic equations graphically,Draw graphs of circles and parabolas in different situations,,,,,PRECALC,fs-id1165137641326,Understanding How the Graphs of Parabolas are Related to Their Quadratic Functions,ORCCA,section-key-features-of-quadratic-graphs,Key Features of Quadratic Graphs,ORCCA,section-graphing-quadratic-expressions,Graphing Quadratic Expressions,,,
+-- Concave up vs concave down (a is +ve or -ve), line of symmetry -b/2a, roots either side",,Kelvin,,,Solve quadratic and cubic equations graphically,Draw graphs of circles and parabolas in different situations,,,,,PRECALC,fs-id1165137641326,Understanding How the Graphs of Parabolas are Related to Their Quadratic Functions,ORCCA,section-key-features-of-quadratic-graphs,Key Features of Quadratic Graphs,ORCCA,section-graphing-quadratic-expressions,Graphing Quadratic Expressions
 Measurement and Geometry,Graphical Methods,Roots of Quadratic and Cubic Equations,Roots of Quadratic and Cubic Equations,Core,"- Key focus is visualizing the solutions to equations by identifying where a curve meets the x-axis.
 - Illustrate plotting curves for y = ax^2 + bx + c and x = ax^3 + bx^2 + cx + d.
--",,Kelvin,,,Solve quadratic and cubic equations graphically,,,,,,PRECALC,fs-id1165135693703,Finding the x- and y-Intercepts of a Quadratic Function,,,,,,,,,
+-",,Kelvin,,,Solve quadratic and cubic equations graphically,,,,,,PRECALC,fs-id1165135693703,Finding the x- and y-Intercepts of a Quadratic Function
 Measurement and Geometry,Graphical Methods,Solving Simultaneous Equations Graphically,Solving Simultaneous Equations Graphically,Core,"- Illustrate how to solve a linear equation (straight line) and a non-linear equation (parabola or cubic), using examples.
--  Accurately plotting both functions on the same grid and identifying the coordinates (x, y) of their intersection points.",,Kelvin,,,Solve simultaneous equations of a linear and a quadratic and cubic equations graphically,,,,,,PRECALC,fs-id1165134573832,Solving Systems of Equations by Graphing,,,,,,,,,
+-  Accurately plotting both functions on the same grid and identifying the coordinates (x, y) of their intersection points.",,Kelvin,,,Solve simultaneous equations of a linear and a quadratic and cubic equations graphically,,,,,,PRECALC,fs-id1165134573832,Solving Systems of Equations by Graphing
 Measurement and Geometry,Graphical Methods,Average Rate of Change,Average Rate of Change,Core,"- Demonstrate how to calculate the gradient of a curve at a single point versus between two points.
 - Illustrate how to draw a tangent to the curve and calculating its gradient.
-- Illustrate how to find the slope of the secant line.",,Kelvin,,,Determine average rate of change and average rate of change at an instant from a graph,,,,,,,,,,,,,,,,,
-Measurement and Geometry,Graphical Methods,Instantaneous Rate of Change,Instantaneous Rate of Change,Core,"- Introduction to drawing tangents, precursor to differentiation content",,Kelvin,,,Determine average rate of change and average rate of change at an instant from a graph,,,,,,,,,,,,,,,,,
-Measurement and Geometry,Graphical Methods,Graphing Empirical Data,Graphing Empirical Data,Core,"- Show graphs of empirical data, ask analysis question",,Kelvin,,,Draw graphs of empirical data and line of best fit in different situations,,,,,,PRECALC,fs-id1165137557592,Drawing and Interpreting Scatter Plots,,,,,,,,,
+- Illustrate how to find the slope of the secant line.",,Kelvin,,,Determine average rate of change and average rate of change at an instant from a graph
+Measurement and Geometry,Graphical Methods,Instantaneous Rate of Change,Instantaneous Rate of Change,Core,"- Introduction to drawing tangents, precursor to differentiation content",,Kelvin,,,Determine average rate of change and average rate of change at an instant from a graph
+Measurement and Geometry,Graphical Methods,Graphing Empirical Data,Graphing Empirical Data,Core,"- Show graphs of empirical data, ask analysis question",,Kelvin,,,Draw graphs of empirical data and line of best fit in different situations,,,,,,PRECALC,fs-id1165137557592,Drawing and Interpreting Scatter Plots
 Measurement and Geometry,Graphical Methods,Line of Best Fit,Line of Best Fit,Core,"- Illustrate how to plot experimental data points and drawing the best line of fit.
-",,Kelvin,,,Draw graphs of empirical data and line of best fit in different situations,,,,,,PRECALC,fs-id1165135623674,Finding the Line of Best Fit,,,,,,,,,
-Measurement and Geometry,Graphical Methods,Converting Non-Linear Equations into a Linear Form,Converting Non-Linear Equations into a Linear Form,Core,- Demonstrate Using logarithms or algebraic manipulation to turn nonlinear equations (like y = ax^n) into a straight-line form (Y = mX + c).,,Kelvin,,,Convert nonlinear equation to linear form in different situations,,,,,,PRECALC,fs-id1137429,Building a Logarithmic Model from Data,PRECALC,fs-id1165134129918,Solving a System of Nonlinear Equations Using Substitution,,,,,,
-Measurement and Geometry,Graphical Methods,Determining Constants in Nonlinear Equations,Determining Constants in Nonlinear Equations,Core,- Demonstrate using the gradient (m) and y-intercept (c) of the new linear graph to find the original unknown constants (a and n).,,Kelvin,,,Determine constants in nonlinear equations in different situations,,,,,,,,,,,,,,,,,
-Measurement and Geometry,Graphical Methods,Graphical Methods in Real Life,Graphical Methods in Real Life,Core,"- Highligt real life applications like i: Telecommunications( Signal Coverage), sports science, and engineering.",,Kelvin,,,Promote the use of graphical solutions to day to day life,,,,,,PRECALC,fs-id1165137558753,Real-World Applications,,,,,,,,,
+",,Kelvin,,,Draw graphs of empirical data and line of best fit in different situations,,,,,,PRECALC,fs-id1165135623674,Finding the Line of Best Fit
+Measurement and Geometry,Graphical Methods,Converting Non-Linear Equations into a Linear Form,Converting Non-Linear Equations into a Linear Form,Core,- Demonstrate Using logarithms or algebraic manipulation to turn nonlinear equations (like y = ax^n) into a straight-line form (Y = mX + c).,,Kelvin,,,Convert nonlinear equation to linear form in different situations,,,,,,PRECALC,fs-id1137429,Building a Logarithmic Model from Data,PRECALC,fs-id1165134129918,Solving a System of Nonlinear Equations Using Substitution
+Measurement and Geometry,Graphical Methods,Determining Constants in Nonlinear Equations,Determining Constants in Nonlinear Equations,Core,- Demonstrate using the gradient (m) and y-intercept (c) of the new linear graph to find the original unknown constants (a and n).,,Kelvin,,,Determine constants in nonlinear equations in different situations
+Measurement and Geometry,Graphical Methods,Graphical Methods in Real Life,Graphical Methods in Real Life,Core,"- Highligt real life applications like i: Telecommunications( Signal Coverage), sports science, and engineering.",,Kelvin,,,Promote the use of graphical solutions to day to day life,,,,,,PRECALC,fs-id1165137558753,Real-World Applications
 Statistics and Probability,Permutations and Combinations,Factorials,Factorials,Core,"- Brief introdiction on what is a factorial notation
 - using factorial notation by expressing it as a product of decreasing integers. eg 4!=4×3×2×1=24
 - Simplifying factorial expressions eg  6! / 4!
-",,Kelvin,"3 students and line, how many ways",,Express a natural number in factorial notation,,,,,,PRECALC,fs-id1165137593595,Using Factorial Notation,,,,,,,,,
+",,Kelvin,"3 students and line, how many ways",,Express a natural number in factorial notation,,,,,,PRECALC,fs-id1165137593595,Using Factorial Notation
 Statistics and Probability,Permutations and Combinations,Permutations I,Permutations I,Core,"- Brief introdiction, queueing, picking people for captain and vice captain
 - simplifying of permutations  by multipliying ,dividing and subtracting of factorials eg 
-5! /(5 - 3)!, formula for nPr",,Kelvin,4 students 2 chairs,,Perform permutations involving real life situations,,,,,,PRECALC,fs-id1165137553058,Finding the Number of Permutations of n Distinct Objects,,,,,,,,,
+5! /(5 - 3)!, formula for nPr",,Kelvin,4 students 2 chairs,,Perform permutations involving real life situations,,,,,,PRECALC,fs-id1165137553058,Finding the Number of Permutations of n Distinct Objects
 Statistics and Probability,Permutations and Combinations,Permutations II,Permutations II,Core,"- Harder questions with duplicates - e.g. 5 red balls, 3 blue, arrange in line. ",,Kelvin,"In how many ways can we order the word ZOO, BOOK
- ",,Perform permutations involving real life situations,,,,,,PRECALC,fs-id1165137553058,Finding the Number of Permutations of n Distinct Objects,,,,,,,,,
-Statistics and Probability,Permutations and Combinations,Permutations in Real Life,Permutations in Real Life,Core,Solving real life  situations using permutation eg arranging books in a shelf.,,Kelvin,Captain and vice-captain from a team of 11 ,,Apply permutations and combinations to real life situations,Explore the use of permutations and combinations in real life situations,,,,,PRECALC,fs-id1165135526953,Real-World Applications,,,,,,,,,
-Statistics and Probability,Permutations and Combinations,Combinations,Combinations,Core,"Picking people for a team, introduction to nCr notation, relation to permutations",,Kelvin,select 5 from 8 to represent in a debate,,Perform combinations involving real life situations,,,,,,PRECALC,fs-id1165137648225,Find the Number of Combinations Using the Formula,,,,,,,,,
-Statistics and Probability,Permutations and Combinations,Combinations in Real Life,Combinations in Real Life,Core,Solving real life  situations using combination eg a pizza shop offers 10 toppings.you are allowed to choose 3.how many different pizzas can you make?,,Kelvin, eg a pizza shop offers 10 toppings.you are allowed to choose 3.how many different pizzas can you make?,,Apply permutations and combinations to real life situations,Explore the use of permutations and combinations in real life situations,,,,,,,,,,,,,,,,
+ ",,Perform permutations involving real life situations,,,,,,PRECALC,fs-id1165137553058,Finding the Number of Permutations of n Distinct Objects
+Statistics and Probability,Permutations and Combinations,Permutations in Real Life,Permutations in Real Life,Core,Solving real life  situations using permutation eg arranging books in a shelf.,,Kelvin,Captain and vice-captain from a team of 11 ,,Apply permutations and combinations to real life situations,Explore the use of permutations and combinations in real life situations,,,,,PRECALC,fs-id1165135526953,Real-World Applications
+Statistics and Probability,Permutations and Combinations,Combinations,Combinations,Core,"Picking people for a team, introduction to nCr notation, relation to permutations",,Kelvin,select 5 from 8 to represent in a debate,,Perform combinations involving real life situations,,,,,,PRECALC,fs-id1165137648225,Find the Number of Combinations Using the Formula
+Statistics and Probability,Permutations and Combinations,Combinations in Real Life,Combinations in Real Life,Core,Solving real life  situations using combination eg a pizza shop offers 10 toppings.you are allowed to choose 3.how many different pizzas can you make?,,Kelvin, eg a pizza shop offers 10 toppings.you are allowed to choose 3.how many different pizzas can you make?,,Apply permutations and combinations to real life situations,Explore the use of permutations and combinations in real life situations
 Statistics and Probability,Probability II,Theoretical Probability,Theoretical Probability,Core,"Combining combinatorics to probability eg A bag contains 5 Red marbles and 3 Blue marbles. If you pick 2 marbles at random, what is the theoretical probability that both are Red?
 - defining of sample space
 - Recap of Grade 10
-",,Kelvin," bag contains 5 Red marbles and 3 Blue marbles. If you pick 2 marbles at random, what is the theoretical probability that both are Red?",,Determine theoretical probability in different situations,,,,,,,,,,,,,,,,,
-Statistics and Probability,Probability II,Discrete Probability,Discrete Probability,Core,"Use of  Bar Graphs, rolling a die, fixed outcome",,Kelvin,"Tossing a coin, rolling a die",,Determine discrete and continuous probabilities in different situations,,,,,,STAT,randvarnot,Random Variable Notation,STAT,m79621,Probability Distribution Function (PDF) for a Discrete Random Variable,,,,,,
+",,Kelvin," bag contains 5 Red marbles and 3 Blue marbles. If you pick 2 marbles at random, what is the theoretical probability that both are Red?",,Determine theoretical probability in different situations
+Statistics and Probability,Probability II,Discrete Probability,Discrete Probability,Core,"Use of  Bar Graphs, rolling a die, fixed outcome",,Kelvin,"Tossing a coin, rolling a die",,Determine discrete and continuous probabilities in different situations,,,,,,STAT,randvarnot,Random Variable Notation,STAT,m79621,Probability Distribution Function (PDF) for a Discrete Random Variable
 Statistics and Probability,Probability II,Continuous Probability I,Continuous Probability I,Core,"- - Uniform continuous distribution
 - Picking a random number between 0 and 1
 ",,Kelvin,"- Matatu waiting time uniform between 0 and 30 minutes
-- Uniform chance of rain between 2pm and 5pm",,Determine discrete and continuous probabilities in different situations,,,,,,STAT,m79632,Continuous Probability Functions,,,,,,,,,
+- Uniform chance of rain between 2pm and 5pm",,Determine discrete and continuous probabilities in different situations,,,,,,STAT,m79632,Continuous Probability Functions
 Statistics and Probability,Probability II,Continuous Probability II,Continuous Probability II,Core,"- Harder continuous probabilities,  bell curves, areas covered etc.
 - Tie into areas to get probabilities
 - Exponential decay, water evaporate",,Kelvin,"- A chicken is wandering randomly around a 10 m × 10 m square enclosure. It is just as likely to be at
-any one place in the enclosure as any other. A circle 5 metres in radius has been inscribed in the square. what is the probability that the chicken is inside the circle?",,Determine discrete and continuous probabilities in different situations,,,,,,STAT,m79633,The Uniform Distribution,,,,,,,,,
-Statistics and Probability,Probability II,Mutually Exclusive and Independent Events ,Mutually Exclusive and Independent Events ,Core,Recap of Grade 10,,Kelvin,- Copy from grade 10,,Determine probability of mutually exclusive and independent events,,,,,,PRECALC,fs-id1116713,Computing the Probability of Mutually Exclusive Events,,,,,,,,,
+any one place in the enclosure as any other. A circle 5 metres in radius has been inscribed in the square. what is the probability that the chicken is inside the circle?",,Determine discrete and continuous probabilities in different situations,,,,,,STAT,m79633,The Uniform Distribution
+Statistics and Probability,Probability II,Mutually Exclusive and Independent Events ,Mutually Exclusive and Independent Events ,Core,Recap of Grade 10,,Kelvin,- Copy from grade 10,,Determine probability of mutually exclusive and independent events,,,,,,PRECALC,fs-id1116713,Computing the Probability of Mutually Exclusive Events
 Statistics and Probability,Probability II,Laws of Probability,Laws of Probability,Core,"Include all the laws of probability.
 - additional law
 - multiplication law
 -The Law of Complementary Events
-- Paste from grade 10",,Kelvin,"- Roll a die, probability even or prime, probability even and prime",,Apply laws of probability to predict likelihood of events, ,,,,,STAT,m79614,Two Basic Rules of Probability,,,,,,,,,
-Statistics and Probability,Probability II,Tree Diagrams,Tree Diagrams,Core,Calculating probability using tree diagram,,Kelvin,"- 3 socks, pick a left sock and a right sock, probability of matching",,Calculate probabilities using tree diagrams,,,,,,STAT,fs-idp113760352,Tree Diagrams,,,,,,,,,
+- Paste from grade 10",,Kelvin,"- Roll a die, probability even or prime, probability even and prime",,Apply laws of probability to predict likelihood of events, ,,,,,STAT,m79614,Two Basic Rules of Probability
+Statistics and Probability,Probability II,Tree Diagrams,Tree Diagrams,Core,Calculating probability using tree diagram,,Kelvin,"- 3 socks, pick a left sock and a right sock, probability of matching",,Calculate probabilities using tree diagrams,,,,,,STAT,fs-idp113760352,Tree Diagrams
 Statistics and Probability,Probability II,Probability in Real Life,Probability in Real Life,Core,"Give scenarios of probability use in real life eg
 - If both parents carry a recessive gene for a trait, what is the probability the child will express it?
-- experimental probability in weather forecasting",,Kelvin,,,Appreciate the application of probability in day-to-day life,,,,,,STAT,m79628,Discrete Distribution (Playing Card Experiment),,,,,,,,,
+- experimental probability in weather forecasting",,Kelvin,,,Appreciate the application of probability in day-to-day life,,,,,,STAT,m79628,Discrete Distribution (Playing Card Experiment)
 Calculus,Functions,Types of Relations,Types of Mappings,Core,"One-to-One, Many-to-One, One-to-Many, Many-To-Many, and the Horizontal + Vertical Line Test.",,Kelvin,"Examples: one-to-one, marriage
 one-to-many, mother-to-kids
  many-to-one, siblings-to-father
-many-to-many: kids-to-gtandparents",,Identify relations and the different types of mappings,,,,,,PRECALC,fs-id1165133394710,Determining Whether a Relation Represents a Function,ORCCA,section-technical-definition-of-a-function,Technical Definition of a Function,,,,,,
-Calculus,Functions,Function Notation,Function Notation,Core,"The Name and the Input: Explain that f is the name, and (x) is the placeholder for the input.. Plugging in a specific value for the input variable to find the corresponding output. eg The Input-Output Process: If we have f(x) = 3x^2 - 5, then f(4) asks us to replace every x with 4.",,Kelvin,Assigning prices to foods.,,Compute the value of a function in different situations,,,,,,PRECALC,fs-id1165134474160,Using Function Notation,ORCCA,section-function-basics,Function Basics,,,,,,
+many-to-many: kids-to-gtandparents",,Identify relations and the different types of mappings,,,,,,PRECALC,fs-id1165133394710,Determining Whether a Relation Represents a Function,ORCCA,section-technical-definition-of-a-function,Technical Definition of a Function
+Calculus,Functions,Function Notation,Function Notation,Core,"The Name and the Input: Explain that f is the name, and (x) is the placeholder for the input.. Plugging in a specific value for the input variable to find the corresponding output. eg The Input-Output Process: If we have f(x) = 3x^2 - 5, then f(4) asks us to replace every x with 4.",,Kelvin,Assigning prices to foods.,,Compute the value of a function in different situations,,,,,,PRECALC,fs-id1165134474160,Using Function Notation,ORCCA,section-function-basics,Function Basics
 Calculus,Functions,Domain,Domain,Core,"The Conceptual Definition
 - Domain: Every x-value that is legal to plug into the function.
-- Finding Domain Algebraically (The Two Red Flags) Division by Zero: In rational functions, the denominator cannot be 0.Square Roots of Negatives: (If you are working with Real numbers).",,Kelvin,"Continuing with shop example. Design a shop with 6 items, assign a price. Ask students about prices of goods not in the shop",,Define the range and domain of functions,,,,,,PRECALC,m49304,Domain and Range,ORCCA,3l8UoHPM,Domain,,,,,,
+- Finding Domain Algebraically (The Two Red Flags) Division by Zero: In rational functions, the denominator cannot be 0.Square Roots of Negatives: (If you are working with Real numbers).",,Kelvin,"Continuing with shop example. Design a shop with 6 items, assign a price. Ask students about prices of goods not in the shop",,Define the range and domain of functions,,,,,,PRECALC,m49304,Domain and Range,ORCCA,3l8UoHPM,Domain
 Calculus,Functions,Range,Range,Core,"- Range: Every y-value that actually comes out of the function.
 - Finding Range Graphically eg the ""Shadow Method"":If you shine a light from the side, what part of the y-axis does the graph cast a shadow on?
-- range of parabolas, trig functions",,Kelvin,You are in a shop with 10 items. Does anything cost 200 Ksh,,Define the range and domain of functions,,,,,,PRECALC,m49304,Domain and Range,ORCCA,d18TrYb0,Range,,,,,,
+- range of parabolas, trig functions",,Kelvin,You are in a shop with 10 items. Does anything cost 200 Ksh,,Define the range and domain of functions,,,,,,PRECALC,m49304,Domain and Range,ORCCA,d18TrYb0,Range
 Calculus,Functions,Types of Functions,Types of Functions,Core,"- Linear Functions: f(x) = mx + c. Straight lines, constant rate of change.
 - Quadratic Functions: f(x) = ax^2 + bx + c. Parabolas; they have a turning point (vertex).
 - Polynomials functions
 - trigonometry functions
-- One to many and one to one functions",,Kelvin,,,Identify functions and their properties,,,,,,,,,,,,,,,,,
+- One to many and one to one functions",,Kelvin,,,Identify functions and their properties
 Calculus,Functions,Even and Odd Functions,Even and Odd Functions,Core,"- f(x) = f(-x) for even, f(x) = -f(-x) for odd, show visually what this means, 
-- even = reflection across y axis, odd = reflection across y = -x",,Kelvin,Show with graphs,,Identify functions and their properties,,,,,,PRECALC,fs-id1165134069294,Identifying Polynomial Functions,PRECALC,m49351,"Direct Substitution: Evaluating a function at a point.Trend Analysis: Understanding the ""limit"" as x =c. Introduce limit notation. ",,,,,,
-Calculus,Functions,Limits of Polynomials,Limits of Polynomials,Core,"Direct Substitution: Evaluating a function at a point.Trend Analysis: Understanding the ""limit"" as x =c. Introduce limit notation",,Kelvin,,,Evaluate limits of polynomial functions in different situations,,,,,,PRECALC,fs-id1165137605562,Finding the Limit of a Polynomial,,,,,,,,,
+- even = reflection across y axis, odd = reflection across y = -x",,Kelvin,Show with graphs,,Identify functions and their properties,,,,,,PRECALC,fs-id1165134069294,Identifying Polynomial Functions,PRECALC,m49351,"Direct Substitution: Evaluating a function at a point.Trend Analysis: Understanding the ""limit"" as x =c. Introduce limit notation. "
+Calculus,Functions,Limits of Polynomials,Limits of Polynomials,Core,"Direct Substitution: Evaluating a function at a point.Trend Analysis: Understanding the ""limit"" as x =c. Introduce limit notation",,Kelvin,,,Evaluate limits of polynomial functions in different situations,,,,,,PRECALC,fs-id1165137605562,Finding the Limit of a Polynomial
 Calculus,Functions,Inverse of Polynomials,Inverse of Polynomials,Core,"Explore the symmetry between a function and its inverse, specifically how they reflect across the line y = x: * Solving for x to find f^{-1}(x).Restricting domains to ensure a function is one-to-one.
 
-- Relate inverse of numbers to inverse of functions",,Kelvin,"Have cards with input and output (e.g. to a quadratic), ask what input would lie behind a given output. ",,Determine the inverse of a function of polynomials and trigonometric ratios,,,,,,PRECALC,m49320,Inverse Functions,,,,,,,,,
-Calculus,Functions,Trignometric Functions,Inverse of Trigonometric Functions,Core,"Trig functions. Sine with input and output, look at domain and range etc",,Kelvin,,,Determine the inverse of a function of polynomials and trigonometric ratios,,,,,,PRECALC,m49320,Inverse Functions,,,,,,,,,
-Calculus,Functions,Inverse of Trigonometric Functions,Inverse of Trigonometric Functions,Core,Careful with domain of inverse trigonometric functions,,Kelvin,"Give right angled triangles with (e.g.) side lengths 1 and 1, 3 and 4 etc. measure angles using a protractor. ",,Determine the inverse of a function of polynomials and trigonometric ratios,,,,,,PRECALC,m49320,Inverse Functions,,,,,,,,,
-Calculus,Functions,Functions in real life,Functions in Real Life,Core,"Applying functions to time, money, and physics.",,Kelvin,Car with speed as a function of time,,Appreciate the use of functions in real life situations,Apply functions to real life situations,,,,,PRECALC,fs-id1165137592239,Real-World Applications,,,,,,,,,
-Calculus,Differentiation I,Average Rates of Change,Average Rates of Change,Core,Recap from Graphing Methods,,Ben,,,Compute average and instantaneous rates of change in different situations,,,,,,PRECALC,fs-id1165137634037,Finding the Average Rate of Change of a Function,PRECALC,fs-id1165137602891,Understanding the Instantaneous Rate of Change,,,,,,
+- Relate inverse of numbers to inverse of functions",,Kelvin,"Have cards with input and output (e.g. to a quadratic), ask what input would lie behind a given output. ",,Determine the inverse of a function of polynomials and trigonometric ratios,,,,,,PRECALC,m49320,Inverse Functions
+Calculus,Functions,Trignometric Functions,Inverse of Trigonometric Functions,Core,"Trig functions. Sine with input and output, look at domain and range etc",,Kelvin,,,Determine the inverse of a function of polynomials and trigonometric ratios,,,,,,PRECALC,m49320,Inverse Functions
+Calculus,Functions,Inverse of Trigonometric Functions,Inverse of Trigonometric Functions,Core,Careful with domain of inverse trigonometric functions,,Kelvin,"Give right angled triangles with (e.g.) side lengths 1 and 1, 3 and 4 etc. measure angles using a protractor. ",,Determine the inverse of a function of polynomials and trigonometric ratios,,,,,,PRECALC,m49320,Inverse Functions
+Calculus,Functions,Functions in real life,Functions in Real Life,Core,"Applying functions to time, money, and physics.",,Kelvin,Car with speed as a function of time,,Appreciate the use of functions in real life situations,Apply functions to real life situations,,,,,PRECALC,fs-id1165137592239,Real-World Applications
+Calculus,Differentiation I,Average Rates of Change,Average Rates of Change,Core,Recap from Graphing Methods,,Ben,,,Compute average and instantaneous rates of change in different situations,,,,,,PRECALC,fs-id1165137634037,Finding the Average Rate of Change of a Function,PRECALC,fs-id1165137602891,Understanding the Instantaneous Rate of Change
 Calculus,Differentiation I,Introducing the Derivative,Introducing the Derivative,Core,"Understand the limit definition of a derivative: lim h -> 0 (f(x+h) - f(x))/h
 The derivative of a function 𝑓⁡(𝑥) at a point 𝑥=𝑎 is the slope of the tangent line to the curve 𝑓⁡(𝑥) at 𝑥=𝑎. The derivative of 𝑓⁡(𝑥) at 𝑥=𝑎 is written 𝑓′⁡(𝑎).
 The derivative 𝑓′⁡(𝑎) measures how the curve changes at the point (𝑎,𝑓⁡(𝑎)).
 The derivative 𝑓′⁡(𝑎) may be thought of as the instantaneous rate of change of the function 𝑓⁡(𝑥) at 𝑥=𝑎
 - Introduce dy/dx notation
-",,Ben,,,Determine the derivatives of polynomial functions,,,,,,,,,,,,,,,,,
-Calculus,Differentiation I,Derivatives of Lines,Derivatives of Lines,Core,"y = mx + c, apply the derivative definition, see that dy/dx = m",,Ben,,,Calculate the gradient at a curve at point,,,,,,,,,,,,,,,,,
-Calculus,Differentiation I,Power Rule,Power Rule,Core,"y = x^n, show that y = n x^(n-1)",,Ben,,,Calculate the gradient at a curve at point,,,,,,,,,,,,,,,,,
-Calculus,Differentiation I,Derivatives of Polynomials,Derivatives of Polynomials,Core,"derivative of e.g. y = 4x^4 + 3x^2, show that (f+g)' = f' + g' (derivatives add) and that (af)' = a*f' (scalar multiplication)",,Ben,,,Calculate the gradient at a curve at point,,,,,,,,,,,,,,,,,
-Calculus,Differentiation I,Finding the Derivative Graphically,Finding the Derivative Graphically,Core,"Recap from Graphing Methods for instantaneous rate of change, draw tangent line, measure its slope",,Ben,,,Compute average and instantaneous rates of change in different situations,,,,,,PRECALC,fs-id1165137634037,Finding the Average Rate of Change of a Function,PRECALC,fs-id1165137602891,Understanding the Instantaneous Rate of Change,,,,,,
-Calculus,Differentiation I,Equations of Gradients,Equations of Gradients,Core,The Gradient (m): Found by evaluating the derivative at point x_1. Plug into y - y1 = m(x-x1),,Ben,,,Determine the equations of tangents and normal to a curve,,,,,,PRECALC,fs-id1165135645114,Finding an Equation of a Line Tangent to the Graph of a Function,,,,,,,,,
-Calculus,Differentiation I,Equations of Normals,Equations of Normals,Core,"normal has gradient -1/f'(x), plug into y - y1 = m(x-x1)",,Ben,,,Determine the equations of tangents and normal to a curve,,,,,,PRECALC,fs-id1165135645114,Finding an Equation of a Line Tangent to the Graph of a Function,,,,,,,,,
-Calculus,Differentiation I,Application of Derivatives to Kinematics,Application of Derivatives to Kinematics,Core,"Explain how we move between Displacement (s), Velocity (v), and Acceleration (a) using derivatives.",,Ben,,,Apply derivatives to kinematics in different situations,,,,,,PRECALC,fs-id1165134075444,Finding the Instantaneous Speed of a Particle,,,,,,,,,
+",,Ben,,,Determine the derivatives of polynomial functions
+Calculus,Differentiation I,Derivatives of Lines,Derivatives of Lines,Core,"y = mx + c, apply the derivative definition, see that dy/dx = m",,Ben,,,Calculate the gradient at a curve at point
+Calculus,Differentiation I,Power Rule,Power Rule,Core,"y = x^n, show that y = n x^(n-1)",,Ben,,,Calculate the gradient at a curve at point
+Calculus,Differentiation I,Derivatives of Polynomials,Derivatives of Polynomials,Core,"derivative of e.g. y = 4x^4 + 3x^2, show that (f+g)' = f' + g' (derivatives add) and that (af)' = a*f' (scalar multiplication)",,Ben,,,Calculate the gradient at a curve at point
+Calculus,Differentiation I,Finding the Derivative Graphically,Finding the Derivative Graphically,Core,"Recap from Graphing Methods for instantaneous rate of change, draw tangent line, measure its slope",,Ben,,,Compute average and instantaneous rates of change in different situations,,,,,,PRECALC,fs-id1165137634037,Finding the Average Rate of Change of a Function,PRECALC,fs-id1165137602891,Understanding the Instantaneous Rate of Change
+Calculus,Differentiation I,Equations of Gradients,Equations of Gradients,Core,The Gradient (m): Found by evaluating the derivative at point x_1. Plug into y - y1 = m(x-x1),,Ben,,,Determine the equations of tangents and normal to a curve,,,,,,PRECALC,fs-id1165135645114,Finding an Equation of a Line Tangent to the Graph of a Function
+Calculus,Differentiation I,Equations of Normals,Equations of Normals,Core,"normal has gradient -1/f'(x), plug into y - y1 = m(x-x1)",,Ben,,,Determine the equations of tangents and normal to a curve,,,,,,PRECALC,fs-id1165135645114,Finding an Equation of a Line Tangent to the Graph of a Function
+Calculus,Differentiation I,Application of Derivatives to Kinematics,Application of Derivatives to Kinematics,Core,"Explain how we move between Displacement (s), Velocity (v), and Acceleration (a) using derivatives.",,Ben,,,Apply derivatives to kinematics in different situations,,,,,,PRECALC,fs-id1165134075444,Finding the Instantaneous Speed of a Particle
 Calculus,Differentiation I,Differentiation in Real Life,Differentiation in Real Life,Core,"Practical Applications of the Derivative eg 
 - The Rate of Reaction: Chemists use derivatives to determine how fast a reactant is being consumed or how fast a product is being formed at a specific second.
-",,Ben,,,Appreciate the use of differentiation in real life,,,,,,PRECALC,fs-id1165135546098,Using Instantaneous Rates of Change to Solve Real-World Problems,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"Ministry suggests 5 lessons per week of maths, assume 35 teaching weeks in a school year, so 175 lessons total",,,,,,,,,,,,,,,,,,,,,,,,,,,
+",,Ben,,,Appreciate the use of differentiation in real life,,,,,,PRECALC,fs-id1165135546098,Using Instantaneous Rates of Change to Solve Real-World Problems
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"Ministry suggests 5 lessons per week of maths, assume 35 teaching weeks in a school year, so 175 lessons total"

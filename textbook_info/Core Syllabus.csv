@@ -1,0 +1,118 @@
+Strand,Sub-Strand,Specific Learning Outcome,LO Item,Code,Assigned To
+Numbers and Algebra,Quadratic Expressions and Equations,Identify perfect squares in quadratic expressions and equations,a,Num-Alg/Quad-Expr-Eqn/a
+Numbers and Algebra,Quadratic Expressions and Equations,Solve quadratic equations by completing square method,b,Num-Alg/Quad-Expr-Eqn/b
+Numbers and Algebra,Quadratic Expressions and Equations,Derive the quadratic formula using completing square,c,Num-Alg/Quad-Expr-Eqn/c
+Numbers and Algebra,Quadratic Expressions and Equations,Solve quadratic equations using the quadratic formula,d,Num-Alg/Quad-Expr-Eqn/d
+Numbers and Algebra,Quadratic Expressions and Equations,Solve simultaneous equations involving linear and quadratic equations,e,Num-Alg/Quad-Expr-Eqn/e
+Numbers and Algebra,Quadratic Expressions and Equations,Apply quadratic equations in real-life situations,f,Num-Alg/Quad-Expr-Eqn/f
+Numbers and Algebra,Quadratic Expressions and Equations,Appreciate the application of quadratic equations in real-life situations,g,Num-Alg/Quad-Expr-Eqn/g
+Numbers and Algebra,Irrational Numbers,Identify irrational numbers from a set of real numbers,a,Num-Alg/Irrational/a
+Numbers and Algebra,Irrational Numbers,Simplify irrational numbers in different situations,b,Num-Alg/Irrational/b
+Numbers and Algebra,Irrational Numbers,Perform operations on irrational numbers in different situations,c,Num-Alg/Irrational/c
+Numbers and Algebra,Irrational Numbers,Rationalise irrational numbers in different situations,d,Num-Alg/Irrational/d
+Numbers and Algebra,Irrational Numbers,Apply irrational numbers in different situations,e,Num-Alg/Irrational/e
+Numbers and Algebra,Irrational Numbers,Reflect on the use of irrational numbers in mathematical computations,f,Num-Alg/Irrational/f
+Numbers and Algebra,Linear Inequalities,Solve compound inequalities in one unknown,a,Num-Alg/Linear-Ineq/a
+Numbers and Algebra,Linear Inequalities,Represent linear inequalities in two unknowns graphically,b,Num-Alg/Linear-Ineq/b
+Numbers and Algebra,Linear Inequalities,Solve linear inequalities in two unknowns graphically,c,Num-Alg/Linear-Ineq/c
+Numbers and Algebra,Linear Inequalities,Form simple linear inequalities from inequality graphs,d,Num-Alg/Linear-Ineq/d
+Numbers and Algebra,Linear Inequalities,Apply inequalities to real life situations,e,Num-Alg/Linear-Ineq/e
+Numbers and Algebra,Linear Inequalities,Appreciate the use of inequalities in real life,f,Num-Alg/Linear-Ineq/f
+Numbers and Algebra,Logarithms II,Relate index form to logarithmic notation,a,Num-Alg/Log-II/a
+Numbers and Algebra,Logarithms II,Simplify logarithmic expressions using laws of logarithms,b,Num-Alg/Log-II/b
+Numbers and Algebra,Logarithms II,Solve logarithmic equations in different situations,c,Num-Alg/Log-II/c
+Numbers and Algebra,Logarithms II,Apply laws of logarithms in different situations,d,Num-Alg/Log-II/d
+Numbers and Algebra,Logarithms II,Explore the use of logarithms in real life situations,e,Num-Alg/Log-II/e
+Numbers and Algebra,Formulae and Variations,Rewrite a formula to change the subject in different situations,a,Num-Alg/Variations/a
+Numbers and Algebra,Formulae and Variations,Solve direct and inverse variations from real life situations,b,Num-Alg/Variations/b
+Numbers and Algebra,Formulae and Variations,"Solve combined, joint and partial variations in different situations",c,Num-Alg/Variations/c
+Numbers and Algebra,Formulae and Variations,Draw graphs of direct and inverse variations,d,Num-Alg/Variations/d
+Numbers and Algebra,Formulae and Variations,Apply variations to real life situations,e,Num-Alg/Variations/e
+Numbers and Algebra,Formulae and Variations,Appreciate the use of variations in day-to-day life,f,Num-Alg/Variations/f
+Numbers and Algebra,Sequences and Series,Determine nth term in a number sequences,a,Num-Alg/Seq-Series/a
+Numbers and Algebra,Sequences and Series,Determine terms and common difference in an arithmetic sequence and series,b,Num-Alg/Seq-Series/b
+Numbers and Algebra,Sequences and Series,Compute the terms and common ratio in a geometric sequence and series,c,Num-Alg/Seq-Series/c
+Numbers and Algebra,Sequences and Series,Determine the sum of terms in arithmetic and geometric series,d,Num-Alg/Seq-Series/d
+Numbers and Algebra,Sequences and Series,Apply sequences and series to real-life situations,e,Num-Alg/Seq-Series/e
+Numbers and Algebra,Sequences and Series,Appreciate the use of sequences and series in real life,f,Num-Alg/Seq-Series/f
+Numbers and Algebra,Matrices I,Identify types of matrices using rows and columns,a,Num-Alg/Matrices-I/a
+Numbers and Algebra,Matrices I,Determine properties of a matrix from rows and columns,b,Num-Alg/Matrices-I/b
+Numbers and Algebra,Matrices I,Perform addition and subtraction of compatible matrices,c,Num-Alg/Matrices-I/c
+Numbers and Algebra,Matrices I,Multiply compatible matrices in different situations,d,Num-Alg/Matrices-I/d
+Numbers and Algebra,Matrices I,Compute the determinant of a 2 by 2 matrix,e,Num-Alg/Matrices-I/e
+Numbers and Algebra,Matrices I,Determine the inverse of a 2 by 2 matrix,f,Num-Alg/Matrices-I/f
+Numbers and Algebra,Matrices I,Solve linear equations in two unknowns using matrix method,g,Num-Alg/Matrices-I/g
+Numbers and Algebra,Matrices I,Explore the use of matrices in real life situations,h,Num-Alg/Matrices-I/h
+Measurements and Geometry,Approximation and Errors,Determine errors from measurements of quantities,a,Measure-Geo/Approx-Errors/a
+Measurements and Geometry,Approximation and Errors,"Determine absolute, relative and percentage errors from measurements",b,Measure-Geo/Approx-Errors/b
+Measurements and Geometry,Approximation and Errors,Compute round off and truncation errors from measurements,c,Measure-Geo/Approx-Errors/c
+Measurements and Geometry,Approximation and Errors,Determine maximum and minimum errors from limits in measurements,d,Measure-Geo/Approx-Errors/d
+Measurements and Geometry,Approximation and Errors,Perform propagation of errors using limits of measurements,e,Measure-Geo/Approx-Errors/e
+Measurements and Geometry,Approximation and Errors,Appreciate the use of approximations and errors in real life situations,f,Measure-Geo/Approx-Errors/f
+Measurements and Geometry,Angle Properties of a Circle,"Identify an arc, chord, and segment in a circle",a,Measure-Geo/Angle-Prop-Circle/a
+Measurements and Geometry,Angle Properties of a Circle,Relate angles subtended by the same arc at the circumference,b,Measure-Geo/Angle-Prop-Circle/b
+Measurements and Geometry,Angle Properties of a Circle,Relate the angle subtended by an arc at the centre and at the circumference,c,Measure-Geo/Angle-Prop-Circle/c
+Measurements and Geometry,Angle Properties of a Circle,Determine angles subtended by a chord and a diameter at the circumference,d,Measure-Geo/Angle-Prop-Circle/d
+Measurements and Geometry,Angle Properties of a Circle,Determine angles in a cyclic quadrilateral,e,Measure-Geo/Angle-Prop-Circle/e
+Measurements and Geometry,Angle Properties of a Circle,Apply the angle properties of a circle in different situations,f,Measure-Geo/Angle-Prop-Circle/f
+Measurements and Geometry,Angle Properties of a Circle,Reflect on the use of angle properties of a circle in different situations,g,Measure-Geo/Angle-Prop-Circle/g
+Measurements and Geometry,Commercial Arithmetic,Compute simple interest using the simple interest formula,a,Measure-Geo/Com-Arith/a
+Measurements and Geometry,Commercial Arithmetic,Derive compound interest formula using the step by step method,b,Measure-Geo/Com-Arith/b
+Measurements and Geometry,Commercial Arithmetic,Determine compound interest using the compound interest formula,c,Measure-Geo/Com-Arith/c
+Measurements and Geometry,Commercial Arithmetic,Determine the value of appreciation and depreciation of assets,d,Measure-Geo/Com-Arith/d
+Measurements and Geometry,Commercial Arithmetic,Determine the cost of goods in purchase,e,Measure-Geo/Com-Arith/e
+Measurements and Geometry,Commercial Arithmetic,Compute income tax using taxation table,f,Measure-Geo/Com-Arith/f
+Measurements and Geometry,Commercial Arithmetic,Apply commercial arithmetic concepts in day to day life,g,Measure-Geo/Com-Arith/g
+Measurements and Geometry,Commercial Arithmetic,Appreciate the use of commercial arithmetic in real-life situations,h,Measure-Geo/Com-Arith/h
+Measurements and Geometry,"Circles, Chords and Tangents",Determine the length of intersecting chords and tangent to a circle,a,Measure-Geo/Circle-Chord-Tangent/a
+Measurements and Geometry,"Circles, Chords and Tangents",Construct a tangent to a circle at a given point,b,Measure-Geo/Circle-Chord-Tangent/b
+Measurements and Geometry,"Circles, Chords and Tangents",Construct direct and transverse common tangents to two circles,c,Measure-Geo/Circle-Chord-Tangent/c
+Measurements and Geometry,"Circles, Chords and Tangents",Determine the angles in the alternate segment,d,Measure-Geo/Circle-Chord-Tangent/d
+Measurements and Geometry,"Circles, Chords and Tangents","Construct an inscribed, circumscribed and escribed circles on a triangle",e,Measure-Geo/Circle-Chord-Tangent/e
+Measurements and Geometry,"Circles, Chords and Tangents",Determine the centroid and orthocentre of a triangle,f,Measure-Geo/Circle-Chord-Tangent/f
+Measurements and Geometry,"Circles, Chords and Tangents",Apply angles chords and tangents to real life situations,g,Measure-Geo/Circle-Chord-Tangent/g
+Measurements and Geometry,"Circles, Chords and Tangents","Appreciate the use of circles, chords and tangents in real life situations",h,Measure-Geo/Circle-Chord-Tangent/h
+Measurements and Geometry,Trigonometry II,Determine trigonometric ratios of angles using a unit circle,a,Measure-Geo/Trig-II/a
+Measurements and Geometry,Trigonometry II,Determine trigonometric ratios of angles greater than 90 degrees in different situations,b,Measure-Geo/Trig-II/b
+Measurements and Geometry,Trigonometry II,Determine trigonometric ratios of negative angles in different situations,c,Measure-Geo/Trig-II/c
+Measurements and Geometry,Trigonometry II,Solve trigonometric equations involving trigonometric ratios across the range 0 to 360 degrees,d,Measure-Geo/Trig-II/d
+Measurements and Geometry,Trigonometry II,Convert angles from degrees to radians and vice versa in different situations,e,Measure-Geo/Trig-II/e
+Measurements and Geometry,Trigonometry II,Draw graphs of trigonometric functions in degrees and radians,f,Measure-Geo/Trig-II/f
+Measurements and Geometry,Trigonometry II,Derive sine and cosine rules using triangles,g,Measure-Geo/Trig-II/g
+Measurements and Geometry,Trigonometry II,Solve triangles using the sine and cosine rule,h,Measure-Geo/Trig-II/h
+Measurements and Geometry,Trigonometry II,Appreciate the use of trigonometry in real life situations,i,Measure-Geo/Trig-II/i
+Measurements and Geometry,Graphical Methods,Solve quadratic and cubic equations graphically,a,Measure-Geo/Graph-Methods/a
+Measurements and Geometry,Graphical Methods,Solve simultaneous equations of a linear and a quadratic and cubic equations graphically,b,Measure-Geo/Graph-Methods/b
+Measurements and Geometry,Graphical Methods,Determine average rate of change and average rate of change at an instant from a graph,c,Measure-Geo/Graph-Methods/c
+Measurements and Geometry,Graphical Methods,Draw graphs of empirical data and line of best fit in different situations,d,Measure-Geo/Graph-Methods/d
+Measurements and Geometry,Graphical Methods,Convert nonlinear equation to linear form in different situations,e,Measure-Geo/Graph-Methods/e
+Measurements and Geometry,Graphical Methods,Determine constants in nonlinear equations in different situations,f,Measure-Geo/Graph-Methods/f
+Measurements and Geometry,Graphical Methods,"Determine the centre, radius and equation of a circle in different situations",g,Measure-Geo/Graph-Methods/g
+Measurements and Geometry,Graphical Methods,Draw graphs of circles and parabolas in different situations,h,Measure-Geo/Graph-Methods/h
+Measurements and Geometry,Graphical Methods,Promote the use of graphical solutions to day to day life,i,Measure-Geo/Graph-Methods/i
+Statistics and Probability,Permutations and Combinations,Express a natural number in factorial notation,a,Stats-Prob/Perms-Combs/a,Kelvin
+Statistics and Probability,Permutations and Combinations,Perform permutations involving real life situations,b,Stats-Prob/Perms-Combs/b,Kelvin
+Statistics and Probability,Permutations and Combinations,Perform combinations involving real life situations,c,Stats-Prob/Perms-Combs/c,Kelvin
+Statistics and Probability,Permutations and Combinations,Apply permutations and combinations to real life situations,d,Stats-Prob/Perms-Combs/d,Kelvin
+Statistics and Probability,Permutations and Combinations,Explore the use of permutations and combinations in real life situations,e,Stats-Prob/Perms-Combs/e,Kelvin
+Statistics and Probability,Probability II,Determine theoretical probability in different situations,a,Stats-Prob/Prob-II/a,Kelvin
+Statistics and Probability,Probability II,Determine discrete and continuous probabilities in different situations,b,Stats-Prob/Prob-II/b,Kelvin
+Statistics and Probability,Probability II,Apply laws of probability to predict likelihood of events,c,Stats-Prob/Prob-II/c,Kelvin
+Statistics and Probability,Probability II,Determine probability of mutually exclusive and independent events,d,Stats-Prob/Prob-II/d,Kelvin
+Statistics and Probability,Probability II,Calculate probabilities using tree diagrams,e,Stats-Prob/Prob-II/e,Kelvin
+Statistics and Probability,Probability II,Appreciate the application of probability in day-to-day life,f,Stats-Prob/Prob-II/f,Kelvin
+Calculus,Functions,Identify relations and the different types of mappings,a,Calc/Func/a,Kelvin
+Calculus,Functions,Identify functions and their properties,b,Calc/Func/b,Kelvin
+Calculus,Functions,Define the range and domain of functions,c,Calc/Func/c,Kelvin
+Calculus,Functions,Compute the value of a function in different situations,d,Calc/Func/d,Kelvin
+Calculus,Functions,Determine the inverse of a function of polynomials and trigonometric ratios,e,Calc/Func/e,Kelvin
+Calculus,Functions,Evaluate limits of polynomial functions in different situations,f,Calc/Func/f,Kelvin
+Calculus,Functions,Apply functions to real life situations,g,Calc/Func/g,Kelvin
+Calculus,Functions,Appreciate the use of functions in real life situations,h,Calc/Func/h,Kelvin
+Calculus,Differentiation I,Compute average and instantaneous rates of change in different situations,a,Calc/Diff-I/a,Kelvin
+Calculus,Differentiation I,Calculate the gradient at a curve at point,b,Calc/Diff-I/b,Kelvin
+Calculus,Differentiation I,Relate the delta notation to rate of change in curve,c,Calc/Diff-I/c,Kelvin
+Calculus,Differentiation I,Determine the derivatives of polynomial functions,d,Calc/Diff-I/d,Kelvin
+Calculus,Differentiation I,Determine the equations of tangents and normal to a curve,e,Calc/Diff-I/e,Kelvin
+Calculus,Differentiation I,Apply derivatives to kinematics in different situations,f,Calc/Diff-I/f,Kelvin
+Calculus,Differentiation I,Appreciate the use of differentiation in real life,g,Calc/Diff-I/g,Kelvin

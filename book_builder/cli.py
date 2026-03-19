@@ -6,7 +6,7 @@ from pathlib import Path
 from book_builder.audits import lesson_plans, reports, audit_questions
 from book_builder.populator import populate
 from book_builder.content import add_labels, create_book_skeleton, namespace, objectives, resources, syllabus_tables
-from book_builder.toc import create_pretext_toc, create_stax_toc, load_sheets
+from book_builder.sheets import create_pretext_toc, create_stax_toc, load_sheets
 
 
 def build_populate_parser(subparsers):
@@ -73,28 +73,6 @@ def build_populate_parser(subparsers):
 
 def build_audit_parser(subparsers):
     """Add audit-related subcommands to the given subparsers object."""
-
-    load_textbook_sheet = subparsers.add_parser(
-        "load-textbook-sheet",
-        help="Download textbook spreadsheet tabs to textbook_info CSVs",
-    )
-    load_textbook_sheet.add_argument("grade", help="Grade of the project (e.g. grade_11)")
-    load_textbook_sheet.add_argument(
-        "--output-dir",
-        type=Path,
-        default=Path.cwd() / "textbook_info",
-        help="Directory to write CSV outputs (default: textbook_info)",
-    )
-    load_textbook_sheet.add_argument(
-        "--structure-tab",
-        default="Book Structure",
-        help="Spreadsheet tab name for the structure data (default: Book Structure)",
-    )
-    load_textbook_sheet.add_argument(
-        "--syllabus-tab",
-        default="Core Syllabus",
-        help="Spreadsheet tab name for the syllabus data (default: Core Syllabus)",
-    )
 
     pull_plans = subparsers.add_parser("pull-plans", help="Download lesson plans from the Google Drive")
     pull_plans.add_argument("grade", help="Grade of the project (e.g. grade_11)")
@@ -260,8 +238,41 @@ def build_content_parser(subparsers):
     subparsers.add_parser("content", help="execute the typical content workflow in order")
     
     
-def build_toc_parser(subparsers):
-    """Add TOC-related subcommands to the given subparsers object."""
+def build_sheets_parser(subparsers):
+    """Add sheets-related subcommands to the given subparsers object."""
+    
+    load_textbook_sheet = subparsers.add_parser(
+        "load-textbook-sheet",
+        help="Download textbook spreadsheet tabs to textbook_info CSVs",
+    )
+    load_textbook_sheet.add_argument("grade", help="Grade of the project (e.g. grade_11)")
+    load_textbook_sheet.add_argument(
+        "--output-dir",
+        type=Path,
+        default=Path.cwd() / "textbook_info",
+        help="Directory to write CSV outputs (default: textbook_info)",
+    )
+    load_textbook_sheet.add_argument(
+        "--structure-tab",
+        default="Book Structure",
+        help="Spreadsheet tab name for the structure data (default: Book Structure)",
+    )
+    load_textbook_sheet.add_argument(
+        "--syllabus-tab",
+        default="Learning Outcomes",
+        help="Spreadsheet tab name for the syllabus data (default: Learning Outcomes)",
+    )
+    
+    load_open_textbooks_sheet = subparsers.add_parser(
+        "load-open-textbooks-sheet",
+        help="Download open textbooks spreadsheet to textbook_info CSV",
+    )
+    load_open_textbooks_sheet.add_argument(
+        "--output-dir",
+        type=Path,
+        default=Path.cwd() / "textbook_info",
+        help="Directory to write CSV output (default: textbook_info)",
+    )
 
     pretext_toc = subparsers.add_parser(
         "pretext-toc", 
@@ -325,7 +336,7 @@ def build_parser() -> argparse.ArgumentParser:
     build_populate_parser(subparsers)
     build_audit_parser(subparsers)
     build_content_parser(subparsers)
-    build_toc_parser(subparsers)
+    build_sheets_parser(subparsers)
 
     return parser
 
@@ -352,13 +363,6 @@ def main() -> None:
         )
         
         populate.print_results(result)
-    elif args.command == "load-textbook-sheet":
-        load_sheets.cmd_load_textbook_sheet(
-            grade=args.grade,
-            output_dir=args.output_dir,
-            structure_tab=args.structure_tab,
-            syllabus_tab=args.syllabus_tab,
-        )
     elif args.command == "pull-plans":
         lesson_plans.cmd_pull_plans(
             grade=args.grade,
@@ -422,6 +426,17 @@ def main() -> None:
         namespace.cmd_namespace()
         syllabus_tables.cmd_generate_syllabus()
         syllabus_tables.cmd_generate_lo()
+    elif args.command == "load-textbook-sheet":
+        load_sheets.load_textbook_sheet(
+            grade=args.grade,
+            output_dir=args.output_dir,
+            structure_tab=args.structure_tab,
+            syllabus_tab=args.syllabus_tab,
+        )
+    elif args.command == "load-open-textbooks-sheet":
+        load_sheets.load_open_textbooks_sheet(
+            output_dir=args.output_dir,
+        ) 
     elif args.command == "pretext-toc":
         row_count = create_pretext_toc.run_pretext_toc(
             root=args.root,

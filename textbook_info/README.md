@@ -5,6 +5,3 @@ This folder expects two pieces of information:
 - Open Textbooks.csv, a spreadsheet containing shorthands, URLs and license info of the Open Textbooks used.
 
 - Note that Automatic Links, Learning Outcomes, and Stack Questions by Section are old from Grade 10, these are just sample.
-
-TODO:
-- Write a script that downloads these folders
