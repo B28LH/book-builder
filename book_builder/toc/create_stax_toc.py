@@ -213,6 +213,27 @@ def export_toc(collection_file: Path, modules_root: Path, output_file: Path, wor
         writer.writerows(rows)
 
 
+def run_stax_toc(
+    collection: Path,
+    modules_root: Path | None = None,
+    output_name: Path | None = None,
+    workspace_root: Path | None = None,
+) -> Path:
+    collection_file = collection.resolve()
+    workspace_root = workspace_root.resolve() if workspace_root else collection_file.parents[2]
+    modules_root = modules_root.resolve() if modules_root else (collection_file.parents[1] / "modules")
+
+    if not output_name:
+        output_name = Path(f"{collection_basename(collection_file)}-toc.csv")
+
+    output_folder = Path(".") / "reference_tocs"
+    output_folder.mkdir(parents=True, exist_ok=True)
+    output_file = output_folder / output_name
+
+    export_toc(collection_file, modules_root, output_file, workspace_root)
+    return output_file
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Export a collection table of contents to CSV.")
     parser.add_argument("collection", type=Path, help="Path to a *.collection.xml file")
@@ -236,19 +257,12 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    collection_file = args.collection.resolve()
-    workspace_root = args.workspace_root.resolve() if args.workspace_root else collection_file.parents[2]
-    modules_root = args.modules_root.resolve() if args.modules_root else (collection_file.parents[1] / "modules")
-    if not args.output_name:
-        args.output_name = f"{collection_basename(collection_file)}-toc.csv"
-
-    output_folder = Path(".") / "reference_tocs"
-    if not output_folder.exists():
-        output_folder.mkdir(parents=True, exist_ok=True)
-        
-    output_file = output_folder / args.output_name
-
-    export_toc(collection_file, modules_root, output_file, workspace_root)
+    output_file = run_stax_toc(
+        collection=args.collection,
+        modules_root=args.modules_root,
+        output_name=args.output_name,
+        workspace_root=args.workspace_root,
+    )
     print(f"Wrote TOC CSV: {output_file}")
 
 

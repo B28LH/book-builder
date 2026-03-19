@@ -11,12 +11,12 @@ from typing import Optional, Tuple
 
 import pandas as pd
 
-from book_builder.helpers.text import detect_newline
-from ..helpers import csvtools
+from book_builder.helpers._text import detect_newline
+from book_builder.helpers import _csvtools
 
 
 # path to the automatic links CSV; use cached location
-AUTOMATIC_LINKS_PATH = csvtools.cached_file("Automatic Links.csv")
+AUTOMATIC_LINKS_PATH = _csvtools.cached_file("Automatic Links.csv")
 
 
 # ------------------------------------------------------------------

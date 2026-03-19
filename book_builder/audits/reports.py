@@ -8,12 +8,12 @@ import argparse
 from pathlib import Path
 from typing import Iterable, Tuple, List, Dict, Any
 
-from book_builder.helpers import csvtools, google
+from book_builder.helpers import _csvtools, _google
 
 
 # --- sheet interaction --------------------------------------------------
 
-@google.retry_on_auth_failure
+@_google.retry_on_auth_failure
 
 def fetch_links_from_sheet() -> list[dict[str, str]]:
     """Download the "Automatic Links" sheet and return its rows.
@@ -22,8 +22,8 @@ def fetch_links_from_sheet() -> list[dict[str, str]]:
     directory (same behaviour as the old helper scripts, but moved to a
     dedicated secret folder).
     """
-    service = google.get_sheets_service()
-    ids = google.load_ids_config()
+    service = _google.get_sheets_service()
+    ids = _google.load_ids_config()
     spreadsheet_id = ids["automatic_links_spreadsheet_id"]
     sheet = service.spreadsheets()
     result = sheet.values().get(
@@ -38,7 +38,7 @@ def fetch_links_from_sheet() -> list[dict[str, str]]:
     return [dict(zip(headers, row)) for row in rows_data]
 
 
-@google.retry_on_auth_failure
+@_google.retry_on_auth_failure
 
 def write_validated_to_sheet(
     rows: Iterable[Dict[str, str]],
@@ -52,8 +52,8 @@ def write_validated_to_sheet(
     rows = list(rows)
     if not rows:
         return
-    service = google.get_sheets_service()
-    ids = google.load_ids_config()
+    service = _google.get_sheets_service()
+    ids = _google.load_ids_config()
     spreadsheet_id = ids["automatic_links_spreadsheet_id"]
     sheet = service.spreadsheets()
 
@@ -83,7 +83,7 @@ def validate_paths(rows: Iterable[Dict[str, str]], base_dir: Path) -> list[Dict[
     ``base_dir`` is expected to be the repository root (parent of
     ``source``/``assets``).
     """
-    return csvtools.augment_with_existence(rows, base_dir)
+    return _csvtools.augment_with_existence(rows, base_dir)
 
 
 def find_unreferenced_pdfs(base_dir: Path) -> List[str]:

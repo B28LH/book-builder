@@ -402,6 +402,38 @@ def default_mapping_path(toc_file: Path) -> Path:
     return toc_file.with_name(f"{stem}-id-mapping.csv")
 
 
+def run_pretext_toc(
+    root: Path,
+    output_name: Path | None = None,
+    relative_to: Path | None = None,
+    resource_name: str | None = None,
+    mapping_output: Path | None = None,
+) -> int:
+    if not output_name:
+        output_name = Path(f"{root.stem}-toc.csv")
+
+    output_folder = Path(".") / "reference_tocs"
+    output_folder.mkdir(parents=True, exist_ok=True)
+
+    output_file = output_folder / output_name
+    root_file = root.resolve()
+    if not root_file.exists():
+        raise FileNotFoundError(f"Root file not found: {root_file}")
+
+    relative_to = relative_to.resolve() if relative_to else root_file.parent
+    effective_resource_name = resource_name if resource_name else root_file.stem.upper()
+    mapping_file = mapping_output.resolve() if mapping_output else None
+
+    row_count = export_toc(
+        root_file=root_file,
+        output_file=output_file,
+        relative_to=relative_to,
+        resource_name=effective_resource_name,
+        mapping_file=mapping_file,
+    )
+    return row_count
+
+
 def main() -> None:
     """Parse CLI arguments and export the requested TOC CSV."""
 
@@ -441,33 +473,15 @@ def main() -> None:
         help="Path for the ID-mapping CSV (defaults to <stem>-id-mapping.csv beside the TOC output)",
     )
     args = parser.parse_args()
-    
-    if not args.output_name:
-        args.output_name = f"{args.root.stem}-toc.csv"
 
-    output_folder = Path(".") / "reference_tocs"
-    if not output_folder.exists():
-        output_folder.mkdir(parents=True, exist_ok=True)
-        
-    output_file = output_folder / args.output_name
-
-    root_file = args.root.resolve()
-    if not root_file.exists():
-        raise FileNotFoundError(f"Root file not found: {root_file}")
-
-    relative_to = args.relative_to.resolve() if args.relative_to else root_file.parent
-    resource_name = args.resource_name if args.resource_name else root_file.stem.upper()
-    mapping_file = args.mapping_output.resolve() if args.mapping_output else None
-    
-
-
-    row_count = export_toc(
-        root_file=root_file,
-        output_file=output_file,
-        relative_to=relative_to,
-        resource_name=resource_name,
-        mapping_file=mapping_file,
+    row_count = run_pretext_toc(
+        root=args.root,
+        output_name=args.output_name,
+        relative_to=args.relative_to,
+        resource_name=args.resource_name,
+        mapping_output=args.mapping_output,
     )
+    output_file = Path(".") / "reference_tocs" / (args.output_name or f"{args.root.stem}-toc.csv")
     print(f"Wrote {row_count} TOC rows to {output_file}")
 
 

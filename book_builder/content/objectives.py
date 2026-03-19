@@ -11,13 +11,13 @@ import argparse
 from pathlib import Path
 from typing import List, Dict
 
-from book_builder.helpers.text import detect_newline, indent_of_line
+from book_builder.helpers._text import detect_newline, indent_of_line
 import pandas as pd
-from ..helpers import csvtools
+from book_builder.helpers import _csvtools
 
 
 # path to the automatic links CSV; use cached location
-AUTOMATIC_LINKS_PATH = csvtools.cached_file("Automatic Links.csv")
+AUTOMATIC_LINKS_PATH = _csvtools.cached_file("Automatic Links.csv")
 
 
 # -------------------------------------------------------------

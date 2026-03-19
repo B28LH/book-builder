@@ -17,12 +17,12 @@ from pathlib import Path
 from collections import OrderedDict
 from typing import Iterable, Dict, List, Tuple
 
-from ..helpers import csvtools
+from book_builder.helpers import _csvtools
 
 
 # paths to CSV caches
-AUTOMATIC_LINKS_PATH = csvtools.cached_file("Automatic Links.csv")
-LEARNING_OUTCOMES_PATH = csvtools.cached_file("Learning Outcomes.csv")
+AUTOMATIC_LINKS_PATH = _csvtools.cached_file("Automatic Links.csv")
+LEARNING_OUTCOMES_PATH = _csvtools.cached_file("Learning Outcomes.csv")
 
 
 def get_xml_id(section_filecase, subsection_filecase, subsubsection_filecase):
@@ -287,7 +287,7 @@ def cmd_generate_syllabus(
     output_path: Path | str | None = None,
 ) -> None:
     print("generate-syllabus: starting")
-    rows = csvtools.read_links_csv(path=links_csv_path or AUTOMATIC_LINKS_PATH)
+    rows = _csvtools.read_links_csv(path=links_csv_path or AUTOMATIC_LINKS_PATH)
     source_root = Path(source_dir)
     output_file = Path(output_path) if output_path is not None else source_root / "syllabus-alignment.ptx"
     data = parse_links(rows, source_root)
@@ -315,7 +315,7 @@ def cmd_generate_lo(
 
     print(f"generate-lo: read {len(lo_rows)} learning outcomes rows")
 
-    rows = csvtools.read_links_csv(path=links_csv_path or AUTOMATIC_LINKS_PATH)
+    rows = _csvtools.read_links_csv(path=links_csv_path or AUTOMATIC_LINKS_PATH)
     fmv = parse_file_matching_validated(rows)
     lo_data = parse_learning_outcomes(lo_rows)
     print(f"generate-lo: generated lo_data with {sum(len(v) for d in lo_data.values() for v in d.values())} entries")

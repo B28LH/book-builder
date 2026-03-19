@@ -6,21 +6,21 @@ import re
 import shutil
 from pathlib import Path
 
-from book_builder.helpers import csvtools, google
+from book_builder.helpers import _csvtools, _google
 from googleapiclient.http import MediaIoBaseDownload
 from book_builder.audits import reports
 
 
-@google.retry_on_auth_failure
+@_google.retry_on_auth_failure
 def cmd_pull_plans(args: argparse.Namespace) -> None:
     print("pull-plans: starting")
-    ids = google.load_ids_config()
+    ids = _google.load_ids_config()
     folder_id = ids.get("lesson_plans_folder_id")
     if not folder_id:
-        print(f"lesson_plans_folder_id not found in {google.CONFIG_PATH}")
+        print(f"lesson_plans_folder_id not found in {_google.CONFIG_PATH}")
         return
 
-    service = google.get_drive_service()
+    service = _google.get_drive_service()
 
     def sanitize_filename(name: str) -> str:
         cleaned = name.rstrip().lower()
@@ -86,13 +86,13 @@ def cmd_validate_paths(args: argparse.Namespace) -> None:
 
     if getattr(args, "cached", False):
         print("validate-paths: reading cached CSV")
-        rows = csvtools.read_links_csv()
+        rows = _csvtools.read_links_csv()
     else:
         print("validate-paths: fetching from sheet")
         rows = reports.fetch_links_from_sheet()
 
     validated = reports.validate_paths(rows, base)
-    csvtools.write_links_csv(validated)
+    _csvtools.write_links_csv(validated)
     print(f"validate-paths: processed {len(rows)} rows")
 
     if getattr(args, "no_write", False):

@@ -1,72 +1,191 @@
 import argparse
 import sys
-
 from pathlib import Path
+from turtle import st
+
 from audits import lesson_plans, reports, audit_questions
+from content import add_labels, create_book_skeleton, namespace, objectives, resources, syllabus_tables
+
+
+def build_audit_parser(subparsers):
+    """ Adds audit-related subcommands to the given subparsers object. """
+
+    pull_plans = subparsers.add_parser("pull-plans", help="Download lesson plans from the Google Drive")
+    pull_plans.add_argument("--new", action="store_true", help="only download plans that are not already present")
+    pull_plans.add_argument("--clean", action="store_true", help="remove existing lesson plans before downloading")
+    pull_plans.add_argument("--dest", default="assets/lesson_plans", help="destination directory for downloaded lesson plans (default: assets/lesson_plans)")
+    pull_plans.add_argument("--file-type", default=".pdf", choices=[".pdf", ".md"], help="file type to download (default: .pdf)")
+
+    validate_paths = subparsers.add_parser("validate-paths", help="Verify and annotate CSV rows with file existence")
+    validate_paths.add_argument("--base-dir", help="root of repo (defaults to current working directory)")
+    validate_paths.add_argument("--cached", action="store_true", help="use locally cached Automatic Links.csv instead of fetching from sheet")
+    validate_paths.add_argument("--no-write-sheet", action="store_true", dest="no_write", help="do not upload validation results back to a sheet (default is to write)")
+
+    subparsers.add_parser("audit-pdfs", help="Report lesson-plan PDFs not referenced by any source file")
+
+    audit_questions_parser = subparsers.add_parser("audit-questions", help="Run the STACK/image/pdf audit routines")
+    audit_questions_parser.add_argument("--output-folder", type=Path, default=Path("textbook_info"), help="folder to write audit outputs (like orphaned_ptx) to; defaults to 'textbook_info'")
+
+    subparsers.add_parser("audit", help="Pull plans, validate, and audit pdfs and questions")
+
+
+def build_content_parser(subparsers):
+    """ Adds content-related subcommands to the given subparsers object. """
+
+    skeleton = subparsers.add_parser("skeleton", help="generate empty PreTeXt structure files from Book Structure CSV")
+    skeleton.add_argument(
+        "--csv",
+        type=Path,
+        default=Path("textbook_info/Book Structure.csv"),
+        help="Path to the Book Structure CSV",
+    )
+    skeleton.add_argument(
+        "--source",
+        type=Path,
+        default=Path("source"),
+        help="Path to the PreTeXt source directory",
+    )
+    skeleton.add_argument(
+        "--reference",
+        type=Path,
+        default=Path("reference"),
+        help="Path to the generated reference directory",
+    )
+
+    add_obj = subparsers.add_parser("add-objectives", help="insert objectives blocks into PTX files")
+    add_obj.add_argument(
+        "--links-csv",
+        type=Path,
+        default=objectives.AUTOMATIC_LINKS_PATH,
+        help="Path to Automatic Links CSV",
+    )
+    add_obj.add_argument(
+        "--source-dir",
+        type=Path,
+        default=Path("source"),
+        help="Source directory",
+    )
+
+    add_resources = subparsers.add_parser("add-resources", help="insert/upgrade resource boxes for lesson plans")
+    add_resources.add_argument(
+        "--links-csv",
+        type=Path,
+        default=resources.AUTOMATIC_LINKS_PATH,
+        help="Path to Automatic Links CSV",
+    )
+    add_resources.add_argument(
+        "--source-dir",
+        type=Path,
+        default=Path("source"),
+        help="Source directory",
+    )
+
+    namespace = subparsers.add_parser("namespace", help="add xmlns:xi attribute to subsection/subsubsection tags")
+    namespace.add_argument(
+        "--source-dir",
+        type=Path,
+        default=Path("source"),
+        help="Directory to process",
+    )
+
+    generate_syllabus = subparsers.add_parser("generate-syllabus", help="create syllabus-alignment.ptx from CSV data")
+    generate_syllabus.add_argument(
+        "--links-csv",
+        type=Path,
+        default=syllabus_tables.AUTOMATIC_LINKS_PATH,
+        help="Path to Automatic Links CSV",
+    )
+    generate_syllabus.add_argument(
+        "--source-dir",
+        type=Path,
+        default=Path("source"),
+        help="Source directory",
+    )
+    generate_syllabus.add_argument(
+        "--output",
+        type=Path,
+        default=Path("source") / "syllabus-alignment.ptx",
+        help="Output PTX path",
+    )
+
+    generate_lo = subparsers.add_parser("generate-lo", help="create lo-coverage-table.ptx from CSV and outcome data")
+    generate_lo.add_argument(
+        "--links-csv",
+        type=Path,
+        default=syllabus_tables.AUTOMATIC_LINKS_PATH,
+        help="Path to Automatic Links CSV",
+    )
+    generate_lo.add_argument(
+        "--outcomes-csv",
+        type=Path,
+        default=syllabus_tables.LEARNING_OUTCOMES_PATH,
+        help="Path to Learning Outcomes CSV",
+    )
+    generate_lo.add_argument(
+        "--output",
+        type=Path,
+        default=Path("source") / "lo-coverage-table.ptx",
+        help="Output PTX path",
+    )
+
+    syllabus = subparsers.add_parser("syllabus-tables", help="generate both syllabus and LO coverage tables")
+    syllabus.add_argument(
+        "--links-csv",
+        type=Path,
+        default=syllabus_tables.AUTOMATIC_LINKS_PATH,
+        help="Path to Automatic Links CSV",
+    )
+    syllabus.add_argument(
+        "--outcomes-csv",
+        type=Path,
+        default=syllabus_tables.LEARNING_OUTCOMES_PATH,
+        help="Path to Learning Outcomes CSV",
+    )
+    syllabus.add_argument(
+        "--source-dir",
+        type=Path,
+        default=Path("source"),
+        help="Source directory",
+    )
+    syllabus.add_argument(
+        "--syllabus-output",
+        type=Path,
+        default=Path("source") / "syllabus-alignment.ptx",
+        help="Syllabus output PTX path",
+    )
+    syllabus.add_argument(
+        "--lo-output",
+        type=Path,
+        default=Path("source") / "lo-coverage-table.ptx",
+        help="Learning outcomes output PTX path",
+    )
+
+    add_labels = subparsers.add_parser("add-labels", help="add xml:id labels to PTX elements")
+    add_labels.add_argument(
+        "--search-dir",
+        dest="search_dir",
+        default="source",
+        help="Directory or file to process (defaults to ./source)",
+    )
+
+    subparsers.add_parser("content", help="execute the typical content workflow in order")
 
 
 def build_parser() -> argparse.ArgumentParser:
-    """Build and return the CLI argument parser."""
     parser = argparse.ArgumentParser(description="Commands to help build pretext books, audit content, and adapt open source material.")
     subparsers = parser.add_subparsers(dest="command", required=True)
+    
+    build_audit_parser(subparsers)
+    build_content_parser(subparsers)
+    
 
-    ## Audits commands
-    
-    pull_plans = subparsers.add_parser("pull-plans", help="Download lesson plans from the Google Drive")
-    pull_plans.add_argument(
-        "--new", action="store_true", help="only download plans that are not already present"
-    )
-    pull_plans.add_argument(
-        "--clean", action="store_true", help="remove existing lesson plans before downloading"
-    )
-    pull_plans.add_argument(
-        "--dest",
-        default="assets/lesson_plans",
-        help="destination directory for downloaded lesson plans (default: assets/lesson_plans)",
-    )
-    pull_plans.add_argument(
-        "--file-type",
-        default=".pdf",
-        choices=[".pdf", ".md"],
-        help="file type to download (default: .pdf)",
-    )
-    
-    validate_paths = subparsers.add_parser("validate-paths", help="Verify and annotate CSV rows with file existence")
-    validate_paths.add_argument("--base-dir", help="root of repo (defaults to current working directory)")
-    validate_paths.add_argument(
-        "--cached",
-        action="store_true",
-        help="use locally cached Automatic Links.csv instead of fetching from sheet",
-    )
-    validate_paths.add_argument(
-        "--no-write-sheet",
-        action="store_true",
-        dest="no_write",
-        help="do not upload validation results back to a sheet (default is to write)",
-    )
-    
-    subparsers.add_parser("audit-pdfs", help="Report lesson-plan PDFs not referenced by any source file")
-    
-    audit_questions = subparsers.add_parser("audit-questions", help="Run the STACK/image/pdf audit routines")
-    audit_questions.add_argument(
-        "--output-folder",
-        type=Path,
-        default=Path("textbook_info"),
-        help="folder to write audit outputs (like orphaned_ptx) to; defaults to 'textbook_info'",
-    )
-    
-    subparsers.add_parser("audit-full", help="Pull plans, validate, and audit pdfs and questions")
 
     return parser
 
 
-def main():
+def main(argv: list[str] | None = None) -> None:
     parser = build_parser()
-    args = parser.parse_args()
-    
-    if not args.command:
-        parser.print_help()
-        sys.exit(1)
+    args = parser.parse_args(argv)
 
     if args.command == "pull-plans":
         lesson_plans.cmd_pull_plans(args)
@@ -76,11 +195,53 @@ def main():
         reports.cmd_audit_pdfs(args)
     elif args.command == "audit-questions":
         audit_questions.run_audit(output_folder=args.output_folder)
-    elif args.command == "all":
+    elif args.command == "audit":
         lesson_plans.cmd_pull_plans(args)
         lesson_plans.cmd_validate_paths(args)
         reports.cmd_audit_pdfs(args)
-        audit_questions.run_audit(output_folder=args.output_folder)
-        
+        audit_questions.run_audit(output_folder=Path("textbook_info"))
+    elif args.command == "skeleton":
+        create_book_skeleton.main(args.csv.resolve(), args.source.resolve(), args.reference.resolve())
+    elif args.command == "add-objectives":
+        objectives.cmd_add_objectives(links_csv_path=args.links_csv, source_dir=args.source_dir)
+    elif args.command == "add-resources":
+        resources.cmd_add_resources(links_csv_path=args.links_csv, source_dir=args.source_dir)
+    elif args.command == "namespace":
+        namespace.cmd_namespace(source_dir=args.source_dir)
+    elif args.command == "generate-syllabus":
+        syllabus_tables.cmd_generate_syllabus(
+            links_csv_path=args.links_csv,
+            source_dir=args.source_dir,
+            output_path=args.output,
+        )
+    elif args.command == "generate-lo":
+        syllabus_tables.cmd_generate_lo(
+            links_csv_path=args.links_csv,
+            outcomes_csv_path=args.outcomes_csv,
+            output_path=args.output,
+        )
+    elif args.command == "syllabus-tables":
+        syllabus_tables.cmd_generate_syllabus(
+            links_csv_path=args.links_csv,
+            source_dir=args.source_dir,
+            output_path=args.syllabus_output,
+        )
+        syllabus_tables.cmd_generate_lo(
+            links_csv_path=args.links_csv,
+            outcomes_csv_path=args.outcomes_csv,
+            output_path=args.lo_output,
+        )
+    elif args.command == "add-labels":
+        add_labels.main(search_dir=getattr(args, "search_dir", None))
+    elif args.command == "content":
+        objectives.cmd_add_objectives()
+        resources.cmd_add_resources()
+        namespace.cmd_namespace()
+        syllabus_tables.cmd_generate_syllabus()
+        syllabus_tables.cmd_generate_lo()
+    else:
+        parser.error(f"unknown command {args.command}")
+
+
 if __name__ == "__main__":
     main()
