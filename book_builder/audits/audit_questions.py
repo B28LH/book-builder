@@ -6,8 +6,8 @@ from lxml import etree
 from slugify import slugify
 from pathlib import Path
 
-from ..helpers.csvtools import read_links_csv, cached_file, PTX_COL
-from ..audits.reports import write_validated_to_sheet
+from book_builder.helpers.csvtools import read_links_csv, cached_file, PTX_COL
+from book_builder.audits.reports import write_validated_to_sheet
 
 ## Usage: in the root directory:
 # python3 -m utilis.audits.audit_questions
@@ -244,16 +244,16 @@ def run_stack_catalogue() -> None:
     write_validated_to_sheet(output_rows, sheet_name="STACK Audit Upload")
 
 
-def run_audit():
+def run_audit(output_folder) -> None:
     print("--- Starting IMAGE Audit ---\n")
     audit_includes((".png", ".jpg", ".jpeg", ".webp"), "image")
     print("--- Starting PDF Audit ---\n")
     audit_includes((".pdf"), "dataurl")
     print("\n\n--- Starting STACK Audit ---\n")
-    stack_files = audit_includes(".xml", "stack", orphan_include_file="utils/audits/orphaned.ptx")
+    stack_files = audit_includes(".xml", "stack", orphan_include_file=output_folder / "orphaned_ptx")
     check_deployed_variants(stack_files)
     run_stack_catalogue()
 
 
 if __name__ == "__main__":
-    run_audit()
+    run_audit(Path("textbook_info"))

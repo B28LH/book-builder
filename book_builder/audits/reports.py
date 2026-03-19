@@ -8,7 +8,7 @@ import argparse
 from pathlib import Path
 from typing import Iterable, Tuple, List, Dict, Any
 
-from ..helpers import csvtools, google
+from book_builder.helpers import csvtools, google
 
 
 # --- sheet interaction --------------------------------------------------

@@ -1,6 +1,7 @@
 import argparse
 import sys
 
+from pathlib import Path
 from audits import lesson_plans, reports, audit_questions
 
 
@@ -10,7 +11,6 @@ def build_parser() -> argparse.ArgumentParser:
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     ## Audits commands
-    
     
     pull_plans = subparsers.add_parser("pull-plans", help="Download lesson plans from the Google Drive")
     pull_plans.add_argument(
@@ -31,14 +31,14 @@ def build_parser() -> argparse.ArgumentParser:
         help="file type to download (default: .pdf)",
     )
     
-    validate_plans = subparsers.add_parser("validate-plans", help="Verify and annotate CSV rows with file existence")
-    validate_plans.add_argument("--base-dir", help="root of repo (defaults to current working directory)")
-    validate_plans.add_argument(
+    validate_paths = subparsers.add_parser("validate-paths", help="Verify and annotate CSV rows with file existence")
+    validate_paths.add_argument("--base-dir", help="root of repo (defaults to current working directory)")
+    validate_paths.add_argument(
         "--cached",
         action="store_true",
         help="use locally cached Automatic Links.csv instead of fetching from sheet",
     )
-    validate_plans.add_argument(
+    validate_paths.add_argument(
         "--no-write-sheet",
         action="store_true",
         dest="no_write",
@@ -47,7 +47,13 @@ def build_parser() -> argparse.ArgumentParser:
     
     subparsers.add_parser("audit-pdfs", help="Report lesson-plan PDFs not referenced by any source file")
     
-    subparsers.add_parser("audit-questions", help="Run the STACK/image/pdf audit routines")
+    audit_questions = subparsers.add_parser("audit-questions", help="Run the STACK/image/pdf audit routines")
+    audit_questions.add_argument(
+        "--output-folder",
+        type=Path,
+        default=Path("textbook_info"),
+        help="folder to write audit outputs (like orphaned_ptx) to; defaults to 'textbook_info'",
+    )
     
     subparsers.add_parser("audit-full", help="Pull plans, validate, and audit pdfs and questions")
 
@@ -69,9 +75,12 @@ def main():
     elif args.command == "audit-pdfs":
         reports.cmd_audit_pdfs(args)
     elif args.command == "audit-questions":
-        audit_questions.run_audit()
+        audit_questions.run_audit(output_folder=args.output_folder)
     elif args.command == "all":
         lesson_plans.cmd_pull_plans(args)
         lesson_plans.cmd_validate_paths(args)
         reports.cmd_audit_pdfs(args)
-        audit_questions.run_audit()
+        audit_questions.run_audit(output_folder=args.output_folder)
+        
+if __name__ == "__main__":
+    main()
