@@ -115,14 +115,6 @@ def build_content_parser(subparsers):
         default=Path("reference"),
         help="Path to the generated reference directory",
     )
-    
-    add_labels = subparsers.add_parser("add-labels", description="Add xml:id labels to PreTeXt files.")
-    add_labels.add_argument(
-        "--search-dir",
-        dest="search_dir",
-        default="source",
-        help="Directory or file to process (defaults to ./source).",
-    )
 
     add_obj = subparsers.add_parser("add-objectives", help="insert objectives blocks into PTX files")
     add_obj.add_argument(

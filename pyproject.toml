@@ -10,7 +10,7 @@ readme = "README.md"
 authors = [
     {name = "Ben Lloyd-Hurwitz", email = "benlloydhurwitz@gmail.com"}
 ]
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 dependencies = [
   "google-api-python-client",
   "google-auth",
@@ -99,7 +99,7 @@ reportPrivateImportUsage = false
 
 [tool.ruff]
 line-length = 115
-target-version = "py39"
+target-version = "py312"
 
 [tool.ruff.per-file-ignores]
 "__init__.py" = ["F401"]
