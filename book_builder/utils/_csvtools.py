@@ -56,6 +56,15 @@ def read_links_csv(path: Path | str | None = None) -> list[dict[str, str]]:
             clean = {k: v.strip() for k, v in row.items()}
             rows.append(clean)  # type: ignore[assignment]
         return rows
+    
+
+def _write_values_to_csv(values: list[list[str]], output_file: Path) -> None:
+    """Write a 2D list of strings to a CSV file at *output_file*."""
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    with output_file.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        if values:
+            writer.writerows(values)
 
 
 def write_links_csv(rows: Iterable[Mapping[str, str]], path: Path | str | None = None) -> None:

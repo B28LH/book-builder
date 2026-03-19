@@ -88,12 +88,12 @@ def build_audit_parser(subparsers):
     load_textbook_sheet.add_argument(
         "--structure-tab",
         default="Book Structure",
-        help="Spreadsheet tab name for the structure data",
+        help="Spreadsheet tab name for the structure data (default: Book Structure)",
     )
     load_textbook_sheet.add_argument(
         "--syllabus-tab",
         default="Core Syllabus",
-        help="Spreadsheet tab name for the syllabus data",
+        help="Spreadsheet tab name for the syllabus data (default: Core Syllabus)",
     )
 
     pull_plans = subparsers.add_parser("pull-plans", help="Download lesson plans from the Google Drive")

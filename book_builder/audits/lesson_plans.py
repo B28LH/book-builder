@@ -111,7 +111,12 @@ def cmd_validate_paths(
         except KeyError:
             raise ValueError(f"Spreadsheet ID not found for grade '{grade}'")
         
-        rows = _google.fetch_sheet(spreadsheet_id, "'Automatic Links'")
+        sheet = _google._fetch_tab_values(spreadsheet_id, "'Automatic Links'")
+        if not sheet:
+            raise ValueError(f"No data found in 'Automatic Links' sheet for grade '{grade}'")
+        headers = sheet[0]
+        rows_data = sheet[1:]
+        rows = [dict(zip(headers, row)) for row in rows_data]
     else:
         raise ValueError("Either --cached or --grade must be specified")
 

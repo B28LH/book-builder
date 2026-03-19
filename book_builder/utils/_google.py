@@ -13,10 +13,13 @@ script) and will store OAUTH tokens in a local `token.pickle` if needed.
 from __future__ import annotations
 
 import os
+import csv
 import pickle
+import functools
 from pathlib import Path
 from typing import Iterable, Tuple, List, Dict, Any, Optional
 
+from googleapiclient.errors import HttpError
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
@@ -93,8 +96,7 @@ def _get_credentials(scopes: list[str] | None = None) -> Any:
 # once; the next call into :func:`_get_credentials` will prompt the user for
 # fresh credentials (or refresh the token automatically).  the decorator
 # can be applied to any function that may interact with Google APIs.
-from googleapiclient.errors import HttpError
-import functools
+
 
 
 def _is_auth_failure(exc: Exception) -> bool:
@@ -151,27 +153,15 @@ def get_sheets_service(scopes: list[str] | None = None) -> Any:
     return build("sheets", "v4", credentials=creds)
 
 
+
 @retry_on_auth_failure
-def fetch_sheet(spreadsheet_id: str, range_name: str) -> list[dict[str, str]]:
-    """Fetch a range of cells from a Google Sheet and return as list of dicts.
-
-    The first row of the range is treated as headers.  Each subsequent row
-    is returned as a dictionary mapping header to value.  Missing values are
-    returned as empty strings.
-    """
+def _fetch_tab_values(spreadsheet_id: str, tab_name: str) -> list[list[str]]:
+    """Fetch a range of cells from a Google Sheet """
     service = get_sheets_service()
-
     sheet = service.spreadsheets()
-    result = sheet.values().get(
-        spreadsheetId=spreadsheet_id,
-        range=range_name,
-    ).execute()
-    values = result.get("values", [])
-    if not values:
-        return []
-    headers = values[0]
-    rows_data = values[1:]
-    return [dict(zip(headers, row)) for row in rows_data]
+    result = sheet.values().get(spreadsheetId=spreadsheet_id, range=f"'{tab_name}'").execute()
+    return result.get("values", [])
+
 
 
 def load_ids_config() -> dict[str, Any]:

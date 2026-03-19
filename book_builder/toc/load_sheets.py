@@ -1,27 +1,10 @@
 from __future__ import annotations
 
-import csv
 from pathlib import Path
 
-from book_builder.utils import _google
+from book_builder.utils import _google, _csvtools
 
 
-def _fetch_tab_values(spreadsheet_id: str, tab_name: str) -> list[list[str]]:
-    service = _google.get_sheets_service()
-    sheet = service.spreadsheets()
-    result = sheet.values().get(spreadsheetId=spreadsheet_id, range=f"'{tab_name}'").execute()
-    return result.get("values", [])
-
-
-def _write_values_to_csv(values: list[list[str]], output_file: Path) -> None:
-    output_file.parent.mkdir(parents=True, exist_ok=True)
-    with output_file.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        if values:
-            writer.writerows(values)
-
-
-@_google.retry_on_auth_failure
 def load_textbook_sheet(
     grade: str,
     output_path: Path | str | None = None,
@@ -41,13 +24,13 @@ def load_textbook_sheet(
 
     output_dir = Path(output_path) if output_path is not None else (Path.cwd() / "textbook_info")
 
-    structure_values = _fetch_tab_values(spreadsheet_id=spreadsheet_id, tab_name=structure_tab)
-    syllabus_values = _fetch_tab_values(spreadsheet_id=spreadsheet_id, tab_name=syllabus_tab)
+    structure_values = _google._fetch_tab_values(spreadsheet_id=spreadsheet_id, tab_name=structure_tab)
+    syllabus_values = _google._fetch_tab_values(spreadsheet_id=spreadsheet_id, tab_name=syllabus_tab)
 
     structure_csv = output_dir / f"{structure_tab}.csv"
     syllabus_csv = output_dir / f"{syllabus_tab}.csv"
-    _write_values_to_csv(structure_values, structure_csv)
-    _write_values_to_csv(syllabus_values, syllabus_csv)
+    _csvtools._write_values_to_csv(structure_values, structure_csv)
+    _csvtools._write_values_to_csv(syllabus_values, syllabus_csv)
 
     return {
         "structure": structure_csv,
