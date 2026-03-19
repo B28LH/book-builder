@@ -1,7 +1,6 @@
 import os
 import re
 import random
-import argparse
 import string
 from pathlib import Path
 
@@ -70,13 +69,4 @@ def main(*, search_dir=None):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Add xml:id labels to PreTeXt files.")
-    parser.add_argument(
-        "--search-dir",
-        dest="search_dir",
-        default=str(DEFAULT_SEARCH_DIR),
-        help="Directory or file to process (defaults to ./source).",
-    )
-
-    args = parser.parse_args()
-    main(search_dir=args.search_dir)
+    main()

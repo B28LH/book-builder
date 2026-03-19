@@ -7,7 +7,6 @@ Higher-level code can call `insert_objectives` repeatedly over rows from the
 links CSV.
 """
 from __future__ import annotations
-import argparse
 from pathlib import Path
 from typing import List, Dict
 
@@ -199,22 +198,12 @@ def cmd_add_objectives(*, links_csv_path: Path | None = None, source_dir: Path |
     print("add-objectives: done")
 
 
-def main(argv: list[str] | None = None) -> None:
-    parser = argparse.ArgumentParser(description="Insert objectives blocks into PTX files")
-    parser.add_argument(
-        "--links-csv",
-        type=Path,
-        default=AUTOMATIC_LINKS_PATH,
-        help="Path to Automatic Links CSV (default: textbook_info/Automatic Links.csv)",
-    )
-    parser.add_argument(
-        "--source-dir",
-        type=Path,
-        default=Path("source"),
-        help="Root source directory for PTX paths (default: source)",
-    )
-    args = parser.parse_args(argv)
-    cmd_add_objectives(links_csv_path=args.links_csv, source_dir=args.source_dir)
+def main(
+    *,
+    links_csv_path: Path | None = None,
+    source_dir: Path | str = Path("source"),
+) -> None:
+    cmd_add_objectives(links_csv_path=links_csv_path, source_dir=source_dir)
 
 
 if __name__ == "__main__":

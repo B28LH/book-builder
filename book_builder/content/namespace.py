@@ -7,7 +7,6 @@ pure and can be run over any string.
 """
 
 from __future__ import annotations
-import argparse
 from pathlib import Path
 import re
 
@@ -62,16 +61,8 @@ def cmd_namespace(*, source_dir: Path | str = Path("source")) -> None:
     print("namespace: done")
 
 
-def main(argv: list[str] | None = None) -> None:
-    parser = argparse.ArgumentParser(description="Add xmlns:xi to subsection/subsubsection PTX tags")
-    parser.add_argument(
-        "--source-dir",
-        type=Path,
-        default=Path("source"),
-        help="Directory to process (default: source)",
-    )
-    args = parser.parse_args(argv)
-    cmd_namespace(source_dir=args.source_dir)
+def main(*, source_dir: Path | str = Path("source")) -> None:
+    cmd_namespace(source_dir=source_dir)
 
 
 if __name__ == "__main__":

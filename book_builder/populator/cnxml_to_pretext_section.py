@@ -7,7 +7,6 @@ It converts common CNXML structures and leaves unknown tags as TODO comments.
 
 from __future__ import annotations
 
-import argparse
 import copy
 import random
 import re
@@ -1653,50 +1652,45 @@ def infer_assets_subdir_from_input(input_file: Path) -> str:
     return input_file.resolve().parents[2].name
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Prototype CNXML -> PreTeXt converter")
-    parser.add_argument("input", type=Path, help="Path to index.cnxml")
-    parser.add_argument("output", type=Path, help="Path to output .ptx file")
-    parser.add_argument("--workspace-root", type=Path, default=None, help="Workspace root (defaults to inferred project root)")
-    parser.add_argument(
-        "--assets-subdir",
-        default=None,
-        help="Subdirectory under assets/ for copied images (defaults to the module content root, e.g. PRECALC)",
-    )
-    parser.add_argument("--no-copy-images", action="store_true", help="Do not copy images into assets")
-    parser.add_argument("--section-id", default=None, help="Override generated section xml:id")
-    parser.add_argument("--no-attribution", action="store_true", help="Skip attribution convention at top")
-    parser.add_argument("--max-content-nodes", type=int, default=None, help="Optional cap on top-level <content> nodes to convert")
-    parser.add_argument("--max-first-section-nodes", type=int, default=None, help="Optional cap on first nested section children")
-    args = parser.parse_args()
-
-    tree = ET.parse(args.input)
+def main(
+    input_path: Path,
+    output_path: Path,
+    *,
+    workspace_root: Path | None = None,
+    assets_subdir: str | None = None,
+    copy_images: bool = True,
+    section_id: str | None = None,
+    include_attribution: bool = True,
+    max_content_nodes: int | None = None,
+    max_first_section_nodes: int | None = None,
+) -> None:
+    tree = ET.parse(input_path)
     root = tree.getroot()
 
-    workspace_root = args.workspace_root.resolve() if args.workspace_root else args.input.resolve().parents[3]
-    assets_subdir = args.assets_subdir or infer_assets_subdir_from_input(args.input)
+    resolved_workspace_root = workspace_root.resolve() if workspace_root else input_path.resolve().parents[3]
+    resolved_assets_subdir = assets_subdir or infer_assets_subdir_from_input(input_path)
 
     out = build_pretext_section(
         root,
-        args.input.resolve(),
-        args.output.resolve(),
-        workspace_root,
-        assets_subdir,
-        not args.no_copy_images,
-        args.max_content_nodes,
-        args.max_first_section_nodes,
-        args.section_id,
-        not args.no_attribution,
+        input_path.resolve(),
+        output_path.resolve(),
+        resolved_workspace_root,
+        resolved_assets_subdir,
+        copy_images,
+        max_content_nodes,
+        max_first_section_nodes,
+        section_id,
+        include_attribution,
     )
     out = resolve_or_downgrade_xrefs(out)
     # Ensure there are no raw ampersands or raw angle operators in text content.
     out = escape_ampersands_in_xml(out)
     out = sanitize_angle_operators_outside_math(out)
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(out, encoding="utf-8")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(out, encoding="utf-8")
 
-    print(f"Wrote {args.output}")
+    print(f"Wrote {output_path}")
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit("Run conversions via book_builder.cli (populate command), not module argparse.")

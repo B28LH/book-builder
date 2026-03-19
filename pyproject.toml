@@ -29,6 +29,9 @@ Repository = "https://github.com/B28LH/book-builder"
 Changelog = "https://github.com/B28LH/book-builder/blob/main/CHANGELOG.md"
 # Documentation = "https://book-builder.readthedocs.io/"
 
+[project.scripts]
+book-builder = "book_builder.cli:main"
+
 [project.optional-dependencies]
 dev = [
     "ruff",

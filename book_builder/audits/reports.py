@@ -4,9 +4,8 @@ from __future__ import annotations
 import os
 import re
 import csv
-import argparse
 from pathlib import Path
-from typing import Iterable, Tuple, List, Dict, Any
+from typing import Iterable, Tuple, List, Dict, Any, Optional
 
 from book_builder.utils import _csvtools, _google
 
@@ -199,9 +198,9 @@ def save_id_mapping(id_mapping: Dict[str, str], output_path: Path) -> None:
     print(f"\nID mapping saved to: {output_path}")
     
     
-def cmd_audit_pdfs(_: argparse.Namespace) -> None:
+def cmd_audit_pdfs(*, base_dir: Path | str = Path(".")) -> None:
     print("audit-pdfs: starting")
-    base = Path(".")
+    base = Path(base_dir)
     unref = find_unreferenced_pdfs(base)
     if unref:
         print("Unreferenced PDFs:")

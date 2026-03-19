@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import argparse
 import io
 import re
 import shutil
@@ -12,7 +11,13 @@ from book_builder.audits import reports
 
 
 @_google.retry_on_auth_failure
-def cmd_pull_plans(args: argparse.Namespace) -> None:
+def cmd_pull_plans(
+    *,
+    only_missing: bool = False,
+    clean: bool = False,
+    dest: Path | str = "assets/lesson_plans",
+    file_type: str = ".pdf",
+) -> None:
     print("pull-plans: starting")
     ids = _google.load_ids_config()
     folder_id = ids.get("lesson_plans_folder_id")
@@ -64,27 +69,30 @@ def cmd_pull_plans(args: argparse.Namespace) -> None:
                     _, done = downloader.next_chunk()
                 print(f"Downloaded: {downloaded_path.name}")
 
-    dest = Path(getattr(args, "dest", "assets/lesson_plans"))
-    clean = getattr(args, "clean", False)
-    if clean and dest.exists():
-        print(f"pull-plans: cleaning {dest}")
-        shutil.rmtree(dest)
+    dest_path = Path(dest)
+    if clean and dest_path.exists():
+        print(f"pull-plans: cleaning {dest_path}")
+        shutil.rmtree(dest_path)
 
     download_folder(
         folder_id,
-        dest,
-        only_missing=getattr(args, "new", False),
-        file_type=getattr(args, "file_type", ".pdf"),
+        dest_path,
+        only_missing=only_missing,
+        file_type=file_type,
     )
     print("pull-plans: done")
 
 
-def cmd_validate_paths(args: argparse.Namespace) -> None:
+def cmd_validate_paths(
+    *,
+    base_dir: Path | str | None = None,
+    cached: bool = False,
+    no_write: bool = False,
+) -> None:
     print("validate-paths: starting")
-    base_dir = getattr(args, "base_dir", None)
     base = Path(base_dir) if base_dir else Path(".")
 
-    if getattr(args, "cached", False):
+    if cached:
         print("validate-paths: reading cached CSV")
         rows = _csvtools.read_links_csv()
     else:
@@ -95,7 +103,7 @@ def cmd_validate_paths(args: argparse.Namespace) -> None:
     _csvtools.write_links_csv(validated)
     print(f"validate-paths: processed {len(rows)} rows")
 
-    if getattr(args, "no_write", False):
+    if no_write:
         print("validate-paths: skipped sheet upload")
     else:
         reports.write_validated_to_sheet(validated)

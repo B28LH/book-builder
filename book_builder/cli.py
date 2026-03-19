@@ -2,7 +2,6 @@
 
 import argparse
 from pathlib import Path
-from sqlite3 import adapt
 
 from book_builder.audits import lesson_plans, reports, audit_questions
 from book_builder.populator import populate
@@ -115,6 +114,14 @@ def build_content_parser(subparsers):
         type=Path,
         default=Path("reference"),
         help="Path to the generated reference directory",
+    )
+    
+    add_labels = subparsers.add_parser("add-labels", description="Add xml:id labels to PreTeXt files.")
+    add_labels.add_argument(
+        "--search-dir",
+        dest="search_dir",
+        default="source",
+        help="Directory or file to process (defaults to ./source).",
     )
 
     add_obj = subparsers.add_parser("add-objectives", help="insert objectives blocks into PTX files")
@@ -329,17 +336,26 @@ def main() -> None:
         
         populate.print_results(result)
     elif args.command == "pull-plans":
-        lesson_plans.cmd_pull_plans(args)
+        lesson_plans.cmd_pull_plans(
+            only_missing=args.new,
+            clean=args.clean,
+            dest=args.dest,
+            file_type=args.file_type,
+        )
     elif args.command == "validate-paths":
-        lesson_plans.cmd_validate_paths(args)
+        lesson_plans.cmd_validate_paths(
+            base_dir=args.base_dir,
+            cached=args.cached,
+            no_write=args.no_write,
+        )
     elif args.command == "audit-pdfs":
-        reports.cmd_audit_pdfs(args)
+        reports.cmd_audit_pdfs()
     elif args.command == "audit-questions":
         audit_questions.run_audit(output_folder=args.output_folder)
     elif args.command == "audit":
-        lesson_plans.cmd_pull_plans(args)
-        lesson_plans.cmd_validate_paths(args)
-        reports.cmd_audit_pdfs(args)
+        lesson_plans.cmd_pull_plans()
+        lesson_plans.cmd_validate_paths()
+        reports.cmd_audit_pdfs()
         audit_questions.run_audit(output_folder=Path("textbook_info"))
     elif args.command == "skeleton":
         create_book_skeleton.main(args.csv.resolve(), args.source.resolve(), args.reference.resolve())
