@@ -91,7 +91,6 @@ def walk_collection_rows(
     *,
     collection_title: str,
     modules_root: Path,
-    workspace_root: Path,
     chapter_order: int,
     chapter_title: str,
     chapter_path: tuple[str, ...],
@@ -111,7 +110,7 @@ def walk_collection_rows(
                 raise FileNotFoundError(f"Module CNXML not found: {module_file}")
 
             module_title = read_module_title(module_file)
-            relative_module = module_file.relative_to(workspace_root).as_posix()
+            relative_module = module_file.relative_to(modules_root).as_posix()
 
             base_row = {
                 "collection_title": collection_title,
@@ -161,7 +160,6 @@ def walk_collection_rows(
                 content,
                 collection_title=collection_title,
                 modules_root=modules_root,
-                workspace_root=workspace_root,
                 chapter_order=next_chapter_order,
                 chapter_title=next_chapter_title,
                 chapter_path=next_path,
@@ -172,7 +170,7 @@ def walk_collection_rows(
     return rows, chapter_order
 
 
-def export_toc(collection_file: Path, modules_root: Path, output_file: Path, workspace_root: Path) -> None:
+def export_toc(collection_file: Path, modules_root: Path, output_file: Path) -> None:
     tree = ET.parse(collection_file)
     root = tree.getroot()
     content = root.find("col:content", NS)
@@ -184,7 +182,6 @@ def export_toc(collection_file: Path, modules_root: Path, output_file: Path, wor
         content,
         collection_title=collection_title,
         modules_root=modules_root,
-        workspace_root=workspace_root,
         chapter_order=0,
         chapter_title="",
         chapter_path=(),
@@ -214,21 +211,25 @@ def export_toc(collection_file: Path, modules_root: Path, output_file: Path, wor
 
 
 def run_stax_toc(
-    collection: Path,
-    modules_root: Path | None = None,
-    output_name: Path | None = None,
-    workspace_root: Path | None = None,
+    resource_folder: Path,
+    collection_name: str,
+    output_name: Path | None = None
 ) -> Path:
-    collection_file = collection.resolve()
-    workspace_root = workspace_root.resolve() if workspace_root else collection_file.parents[2]
-    modules_root = modules_root.resolve() if modules_root else (collection_file.parents[1] / "modules")
+    collection_file = resource_folder / "collections" / collection_name
+    if not collection_file.exists():
+        raise FileNotFoundError(f"Collection file not found: {collection_file}")
+    
+    modules_root = resource_folder / "modules"
 
     if not output_name:
         output_name = Path(f"{collection_basename(collection_file)}-toc.csv")
 
     output_folder = Path(".") / "reference_tocs"
-    output_folder.mkdir(parents=True, exist_ok=True)
+    if not output_folder.exists():
+        print(f"Creating output folder: {output_folder}")
+        output_folder.mkdir(parents=True, exist_ok=True)
+        
     output_file = output_folder / output_name
 
-    export_toc(collection_file, modules_root, output_file, workspace_root)
+    export_toc(collection_file, modules_root, output_file)
     return output_file

@@ -213,27 +213,20 @@ def build_toc_parser(subparsers):
         "stax-toc", 
         help="Export STAX collection TOC to CSV")
     stax_toc.add_argument(
-        "collection", 
+        "resource-folder", 
         type=Path, 
-        help="Path to a *.collection.xml file"
+        help="Location of the resource folder containing the collection XML and modules (e.g. adapted-worls/PREALG)"
     )
     stax_toc.add_argument(
-        "--modules-root", 
-        type=Path, 
-        default=None, 
-        help="Path to the modules directory (defaults to sibling modules/ next to the collection)"
+        "collection-name", 
+        type=str, 
+        help="Name of the collection XML file (e.g. prealgebra-2e.collection.xml). Assumed to be in resource-folder/collections/"
     )
     stax_toc.add_argument(
         "--output-name", 
         type=Path, 
         default=None, 
         help="CSV output name (defaults to <collection-basename>-toc.csv)"
-    )
-    stax_toc.add_argument(
-        "--workspace-root", 
-        type=Path, 
-        default=None, 
-        help="Workspace root for relative paths (defaults to inferred from collection location)"
     )
 
 
