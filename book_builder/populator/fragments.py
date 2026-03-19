@@ -20,7 +20,7 @@ try:
 except Exception:  # pragma: no cover - optional runtime dependency
     LET = None
 
-from book_builder.adapter.models import (
+from book_builder.populator.models import (
     ALLOWED_XML_TAGS,
     CP1252_CONTROL_MAP,
     INVALID_XML_CHARS_RE,
@@ -28,7 +28,7 @@ from book_builder.adapter.models import (
     local_name,
     text_or_empty,
 )
-from book_builder.adapter.scoped_ids import ScopedIdRegistry
+from book_builder.populator.scoped_ids import ScopedIdRegistry
 
 
 ID_ELIGIBLE_TAGS = {

@@ -11,8 +11,8 @@ from typing import Optional, Tuple
 
 import pandas as pd
 
-from book_builder.helpers._text import detect_newline
-from book_builder.helpers import _csvtools
+from book_builder.utils._text import detect_newline
+from book_builder.utils import _csvtools
 
 
 # path to the automatic links CSV; use cached location

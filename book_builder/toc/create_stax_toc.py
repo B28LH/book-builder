@@ -9,7 +9,6 @@ module's CNXML.
 
 from __future__ import annotations
 
-import argparse
 import csv
 import lxml.etree as ET
 from pathlib import Path

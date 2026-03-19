@@ -12,7 +12,7 @@ from pathlib import Path
 
 from slugify import slugify
 
-from book_builder.adapter.fragments import (
+from book_builder.populator.fragments import (
     expand_section_markers,
     find_pretext_element_by_id,
     find_pretext_element_by_title,
@@ -21,8 +21,8 @@ from book_builder.adapter.fragments import (
     section_to_paragraph_title_block,
     strip_nested_include_nodes,
 )
-from book_builder.adapter.models import ReferenceMatch, SECTION_TAGS, local_name, text_or_empty
-from book_builder.adapter.scoped_ids import ScopedIdRegistry
+from book_builder.populator.models import ReferenceMatch, SECTION_TAGS, local_name, text_or_empty
+from book_builder.populator.scoped_ids import ScopedIdRegistry
 
 
 def convert_pretext_reference_to_fragments(

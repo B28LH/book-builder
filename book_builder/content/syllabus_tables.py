@@ -17,7 +17,7 @@ from pathlib import Path
 from collections import OrderedDict
 from typing import Iterable, Dict, List, Tuple
 
-from book_builder.helpers import _csvtools
+from book_builder.utils import _csvtools
 
 
 # paths to CSV caches

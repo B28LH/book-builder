@@ -14,7 +14,7 @@ from pathlib import Path
 
 from slugify import slugify
 
-from book_builder.adapter.models import AttributionEntry, dedupe_preserve_order, text_or_empty
+from book_builder.populator.models import AttributionEntry, dedupe_preserve_order, text_or_empty
 
 
 def inject_content_into_target(target_file: Path, fragment_blocks: list[str], append: bool = False) -> None:

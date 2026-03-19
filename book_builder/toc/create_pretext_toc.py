@@ -9,7 +9,6 @@ reusable across books with different nesting depths.
 
 from __future__ import annotations
 
-import argparse
 import csv
 from dataclasses import dataclass
 from pathlib import Path

@@ -12,10 +12,10 @@ from pathlib import Path
 
 from slugify import slugify
 
-import book_builder.adapter.cnxml_to_pretext_section as cnxml
-from book_builder.adapter.fragments import extract_fragment_xml, sanitize_xml_text
-from book_builder.adapter.models import ReferenceMatch, local_name, text_or_empty
-from book_builder.adapter.scoped_ids import ScopedIdRegistry
+import book_builder.populator.cnxml_to_pretext_section as cnxml
+from book_builder.populator.fragments import extract_fragment_xml, sanitize_xml_text
+from book_builder.populator.models import ReferenceMatch, local_name, text_or_empty
+from book_builder.populator.scoped_ids import ScopedIdRegistry
 
 
 NS = cnxml.NS

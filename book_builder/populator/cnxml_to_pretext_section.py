@@ -15,7 +15,7 @@ import string
 import lxml.etree as ET
 from pathlib import Path
 
-from book_builder.adapter.cnxml_shared import (
+from book_builder.populator.cnxml_shared import (
     clean_text,
     copy_image_to_assets,
     escape_ampersands_in_xml,
@@ -29,7 +29,7 @@ from book_builder.adapter.cnxml_shared import (
     sanitize_angle_operators_outside_math,
     source_origin_path,
 )
-from book_builder.adapter.scoped_ids import ScopedIdRegistry
+from book_builder.populator.scoped_ids import ScopedIdRegistry
 
 NS = {
     "c": "http://cnx.rice.edu/cnxml",

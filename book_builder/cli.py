@@ -1,12 +1,76 @@
+""" Command-line interface for book builder utilities. """
+
 import argparse
-import sys
 from pathlib import Path
-from turtle import st
+from sqlite3 import adapt
 
 from book_builder.audits import lesson_plans, reports, audit_questions
+from book_builder.populator import populate
 from book_builder.content import add_labels, create_book_skeleton, namespace, objectives, resources, syllabus_tables
 from book_builder.toc import create_pretext_toc, create_stax_toc
 
+
+def build_populate_parser(subparsers):
+    """ Add populate-related subcommands to the given subparsers object. """
+    
+    populate = subparsers.add_parser("populate", help="Run the typical population workflow in order to convert ")
+    
+    populate.add_argument(
+        "--source-format",
+        choices=["auto", "cnxml", "pretext"],
+        default="auto",
+        help="Default is auto: inspect Book Structure resources and dispatch by source type",
+    )
+    populate.add_argument(
+        "--book-csv", 
+        type=Path, 
+        default=Path("textbook_info") / "Book Structure.csv"
+    )
+    populate.add_argument(
+        "--toc-csv",
+        type=Path,
+        default=Path("reference_tocs/stax-toc.csv"),
+        help="CNXML TOC CSV, or explicit TOC CSV when running a single PreTeXt resource",
+    )
+    populate.add_argument(
+        "--reference", 
+        type=Path, 
+        default=Path("reference"))
+    populate.add_argument(
+        "--workspace-root", 
+        type=Path, 
+        default=Path(".")
+    )
+    populate.add_argument(
+        "--open-textbooks-csv", 
+        type=Path, 
+        default=Path("textbook_info/Open Textbooks.csv")
+    )
+    populate.add_argument(
+        "--enriched-toc-output", 
+        type=Path, 
+        default=Path("reference_tocs/stax-toc.enriched.csv")
+    )
+    populate.add_argument(
+        "--resource", 
+        type=str, 
+        default=None, 
+        help="Resource abbreviation for PreTeXt exports, e.g. ORCCA")
+    populate.add_argument(
+        "--limit", 
+        type=int, 
+        default=None, 
+        help="Limit number of Book Structure rows processed"
+    )
+    populate.add_argument(
+        "--no-copy-images", 
+        action="store_true"
+    )
+    populate.add_argument(
+        "--dry-run", 
+    action="store_true")
+    
+    
 
 def build_audit_parser(subparsers):
     """Add audit-related subcommands to the given subparsers object."""
@@ -234,6 +298,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Commands to help build pretext books, audit content, and adapt open source material.")
     subparsers = parser.add_subparsers(dest="command", required=True)
     
+    build_populate_parser(subparsers)
     build_audit_parser(subparsers)
     build_content_parser(subparsers)
     build_toc_parser(subparsers)
@@ -245,7 +310,23 @@ def main() -> None:
     parser = build_parser()
     args = parser.parse_args()
 
-    if args.command == "pull-plans":
+    if args.command == "populate":
+        populate.run_population(
+            populate.PopulationOptions(
+                source_format=args.source_format,
+                workspace_root=args.workspace_root,
+                book_csv=args.book_csv,
+                toc_csv=args.toc_csv,
+                reference_dir=args.reference,
+                open_textbooks_csv=args.open_textbooks_csv,
+                enriched_toc_output=args.enriched_toc_output if args.source_format in {"auto", "cnxml"} else None,
+                resource=args.resource,
+                limit=args.limit,
+                no_copy_images=args.no_copy_images,
+                dry_run=args.dry_run,
+            )
+        )
+    elif args.command == "pull-plans":
         lesson_plans.cmd_pull_plans(args)
     elif args.command == "validate-paths":
         lesson_plans.cmd_validate_paths(args)

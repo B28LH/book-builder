@@ -10,7 +10,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from book_builder.adapter.populate import PopulationOptions, run_population
+from book_builder.populator.populate import PopulationOptions, run_population
 from book_builder.content import create_book_skeleton
 
 
@@ -46,12 +46,7 @@ def main() -> None:
     parser = build_parser()
     args = parser.parse_args()
     
-    source_dir = Path(".") / "source"
-    reference_dir = Path(".") / "reference"
-    if not source_dir.exists() or not reference_dir.exists():
-        print("[INFO]: Generating Stucture")
-        create_book_skeleton.main(args.csv.resolve(), source_dir, reference_dir)
-
+    
     enriched_toc_output = args.enriched_toc_output if args.source_format in {"auto", "cnxml"} else None
     result = run_population(
         PopulationOptions(
@@ -69,19 +64,7 @@ def main() -> None:
         )
     )
 
-    print(f"Processed {result.processed} Book Structure rows")
-    if args.resource:
-        print(f"Converted {result.matched} matched reference blocks from {args.resource.upper()}")
-    elif args.source_format == "auto":
-        print(f"Converted {result.matched} matched reference blocks across detected sources")
-    else:
-        print(f"Converted {result.matched} matched reference blocks")
-    if result.enriched_toc_output is not None:
-        print(f"Wrote enriched TOC: {result.enriched_toc_output}")
-    if result.warnings:
-        print("Warnings:")
-        for warning in result.warnings:
-            print(f"- {warning}")
+    
 
 
 if __name__ == "__main__":

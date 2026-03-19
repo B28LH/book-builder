@@ -14,7 +14,7 @@ from pathlib import Path
 import pandas as pd
 from slugify import slugify
 
-from book_builder.adapter.models import (
+from book_builder.populator.models import (
     NUM_OPEN_SOURCE_COLS,
     BOOK_STRUCTURE_COLUMNS,
     EXERCISE_SECTION_TITLES,

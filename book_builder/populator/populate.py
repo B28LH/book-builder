@@ -10,10 +10,11 @@ import lxml.etree as ET
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Literal
+from book_builder.content import create_book_skeleton
 
 import pandas as pd
 
-from book_builder.adapter.catalog import (
+from book_builder.populator.catalog import (
     build_chapter_folder_map,
     collect_references,
     enrich_toc_dataframe,
@@ -22,8 +23,8 @@ from book_builder.adapter.catalog import (
     reference_attribution,
     resolve_target_file,
 )
-from book_builder.adapter.cnxml_adapter import convert_reference_to_fragments
-from book_builder.adapter.document_io import (
+from book_builder.populator.cnxml_adapter import convert_reference_to_fragments
+from book_builder.populator.document_io import (
     build_source_convention_block,
     collect_project_xml_ids,
     deduplicate_xml_ids_in_tree,
@@ -40,10 +41,10 @@ from book_builder.adapter.document_io import (
     update_section_attributes_and_convention,
     write_borrowed_section_file,
 )
-from book_builder.adapter.fragments import separate_exercise_fragments
-from book_builder.adapter.models import NUM_OPEN_SOURCE_COLS, AttributionEntry, BOOK_STRUCTURE_COLUMNS, TOC_COLUMNS, resolve_input_path, text_or_empty
-from book_builder.adapter.pretext_adapter import convert_pretext_reference_to_fragments
-from book_builder.adapter.scoped_ids import ScopedIdRegistry
+from book_builder.populator.fragments import separate_exercise_fragments
+from book_builder.populator.models import NUM_OPEN_SOURCE_COLS, AttributionEntry, BOOK_STRUCTURE_COLUMNS, TOC_COLUMNS, resolve_input_path, text_or_empty
+from book_builder.populator.pretext_adapter import convert_pretext_reference_to_fragments
+from book_builder.populator.scoped_ids import ScopedIdRegistry
 
 
 @dataclass(slots=True)
@@ -689,11 +690,30 @@ def _run_pretext_population(
     return PopulationResult(processed=processed, matched=matched, warnings=warnings, enriched_toc_output=options.enriched_toc_output)
 
 
-def run_population(options: PopulationOptions) -> PopulationResult:
-    """Single entry point for all supported population flows."""
-    if options.source_format == "auto":
-        return _run_auto_population(options)
+def print_results(result: PopulationResult) -> None:
+    print(f"Processed {result.processed} Book Structure rows")
+    print(f"Converted {result.matched} matched reference blocks across detected sources")
+    if result.enriched_toc_output is not None:
+        print(f"Wrote enriched TOC: {result.enriched_toc_output}")
+    if result.warnings:
+        print("Warnings:")
+        for warning in result.warnings:
+            print(f"- {warning}")
 
+
+def run_population(options: PopulationOptions):
+    """Single entry point for all supported population flows."""
+    source_dir = Path(".") / "source"
+    reference_dir = Path(".") / "reference"
+    if not source_dir.exists() or not reference_dir.exists():
+        print("[INFO]: Generating Stucture")
+        create_book_skeleton.main(options.book_csv, source_dir, reference_dir)
+    
+    if options.source_format == "auto":
+        result = _run_auto_population(options)
+        print(result)
+        return result
+    
     reference_dir, book_df, toc_raw_df, workspace_root, textbooks = _load_inputs(options)
     toc_df = _prepare_toc_dataframe(options, toc_raw_df, textbooks)
 
@@ -716,5 +736,9 @@ def run_population(options: PopulationOptions) -> PopulationResult:
         )
 
     if options.source_format == "cnxml":
-        return _run_cnxml_population(options, workspace_root, reference_dir, book_df, toc_df, textbooks)
-    return _run_pretext_population(options, workspace_root, reference_dir, book_df, toc_df, textbooks)
+        result = _run_cnxml_population(options, workspace_root, reference_dir, book_df, toc_df, textbooks)
+    else:
+        result = _run_pretext_population(options, workspace_root, reference_dir, book_df, toc_df, textbooks)
+        
+    print_results(result)
+    return result

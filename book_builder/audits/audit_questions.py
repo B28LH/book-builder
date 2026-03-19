@@ -6,7 +6,7 @@ from lxml import etree
 from slugify import slugify
 from pathlib import Path
 
-from book_builder.helpers._csvtools import read_links_csv, cached_file, PTX_COL
+from book_builder.utils._csvtools import read_links_csv, cached_file, PTX_COL
 from book_builder.audits.reports import write_validated_to_sheet
 
 ## Usage: in the root directory:
