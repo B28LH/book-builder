@@ -223,7 +223,7 @@ def run_stax_toc(
     if not output_name:
         output_name = Path(f"{collection_basename(collection_file)}-toc.csv")
 
-    output_folder = Path(".") / "reference_tocs"
+    output_folder = Path.cwd() / "reference_tocs"
     if not output_folder.exists():
         print(f"Creating output folder: {output_folder}")
         output_folder.mkdir(parents=True, exist_ok=True)

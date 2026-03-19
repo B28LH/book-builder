@@ -154,10 +154,10 @@ def insert_objectives(
     return content[:insert_pos] + newline + block + content[insert_pos:]
 
 
-def cmd_add_objectives(*, links_csv_path: Path | None = None, source_dir: Path | str = Path("source")) -> None:
+def cmd_add_objectives(*, links_csv_path: Path | None = None, source_dir: Path | str = None) -> None:
     """Insert objectives blocks into PTX files listed in the links CSV."""
     csv_path = links_csv_path or AUTOMATIC_LINKS_PATH
-    source_root = Path(source_dir)
+    source_root = Path(source_dir) if source_dir else Path.cwd() / "source"
 
     df = pd.read_csv(csv_path, encoding="utf-8", na_filter=False)
     numbering = build_numbering(df)
@@ -201,8 +201,10 @@ def cmd_add_objectives(*, links_csv_path: Path | None = None, source_dir: Path |
 def main(
     *,
     links_csv_path: Path | None = None,
-    source_dir: Path | str = Path("source"),
+    source_dir: Path | str = None,
 ) -> None:
+    if source_dir is None:
+        source_dir = Path.cwd() / "source"
     cmd_add_objectives(links_csv_path=links_csv_path, source_dir=source_dir)
 
 

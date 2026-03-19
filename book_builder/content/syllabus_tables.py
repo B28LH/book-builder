@@ -282,12 +282,12 @@ def generate_lo_coverage_ptx(
 def cmd_generate_syllabus(
     *,
     links_csv_path: Path | str | None = None,
-    source_dir: Path | str = Path("source"),
+    source_dir: Path | str = None,
     output_path: Path | str | None = None,
 ) -> None:
     print("generate-syllabus: starting")
     rows = _csvtools.read_links_csv(path=links_csv_path or AUTOMATIC_LINKS_PATH)
-    source_root = Path(source_dir)
+    source_root = Path(source_dir) if source_dir else Path.cwd() / "source"
     output_file = Path(output_path) if output_path is not None else source_root / "syllabus-alignment.ptx"
     data = parse_links(rows, source_root)
     generate_syllabus_ptx(data, output_file)
@@ -319,7 +319,7 @@ def cmd_generate_lo(
     lo_data = parse_learning_outcomes(lo_rows)
     print(f"generate-lo: generated lo_data with {sum(len(v) for d in lo_data.values() for v in d.values())} entries")
 
-    out_path = Path(output_path) if output_path is not None else Path("source") / "lo-coverage-table.ptx"
+    out_path = Path(output_path) if output_path is not None else Path.cwd() / "source" / "lo-coverage-table.ptx"
     generate_lo_coverage_ptx(lo_data, fmv, out_path)
     print("generate-lo: done")
 
@@ -329,7 +329,7 @@ def main(
     command: str = "syllabus-tables",
     links_csv_path: Path | str | None = None,
     outcomes_csv_path: Path | str | None = None,
-    source_dir: Path | str = Path("source"),
+    source_dir: Path | str = None,
     syllabus_output: Path | str | None = None,
     lo_output: Path | str | None = None,
 ) -> None:

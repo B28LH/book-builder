@@ -198,7 +198,7 @@ def save_id_mapping(id_mapping: Dict[str, str], output_path: Path) -> None:
     print(f"\nID mapping saved to: {output_path}")
     
     
-def cmd_audit_pdfs(*, base_dir: Path | str = Path(".")) -> None:
+def cmd_audit_pdfs(*, base_dir: Path | str = Path.cwd()) -> None:
     print("audit-pdfs: starting")
     base = Path(base_dir)
     unref = find_unreferenced_pdfs(base)

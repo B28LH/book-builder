@@ -84,8 +84,18 @@ def unique_section_filename(base_slug: str, seen: dict[str, int]) -> str:
 
 
 def load_source_section_template() -> str:
-    """Load source section template from textbook_info/template.ptx."""
-    template_path = Path(__file__).resolve().parents[2] / "textbook_info" / "template.ptx"
+    """Load source section template from textbook_info/template.ptx.
+    """
+    
+    # Try current working directory first
+    template_path = Path.cwd() / "textbook_info" / "template.ptx"
+    
+    if not template_path.exists():
+        raise FileNotFoundError(
+            f"Template not found at {template_path}. "
+            f"Please ensure textbook_info/template.ptx exists in your project root or installation."
+        )
+    
     template = template_path.read_text(encoding="utf-8")
 
     # Normalize opening tag so generated files have section ids.

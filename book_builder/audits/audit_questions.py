@@ -13,8 +13,8 @@ from book_builder.audits.reports import write_validated_to_sheet
 # python3 -m utilis.audits.audit_questions
 
 # Configuration: assume commands run from repository root
-ASSET_FILES_ROOT = Path('assets')      # tree containing the STACK questions
-PTX_FILES_ROOT = Path('source')       # tree containing files that reference the XMLs
+ASSET_FILES_ROOT = Path.cwd() / 'assets'      # tree containing the STACK questions
+PTX_FILES_ROOT = Path.cwd() / 'source'       # tree containing files that reference the XMLs
 
 
 def get_all_asset_files(root_dir, extension=".xml"):
@@ -256,4 +256,4 @@ def run_audit(output_folder) -> None:
 
 
 if __name__ == "__main__":
-    run_audit(Path("textbook_info"))
+    run_audit(Path.cwd() / "textbook_info")

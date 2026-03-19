@@ -41,16 +41,46 @@ Core capabilities:
 - `reference/` — generated/updated adapted reference content
 - `adapted-works/` — local copies of upstream source books
 
+## Project Structure for Users
+
+When users install book-builder and use it, they'll work with this structure:
+
+```
+my-textbook-project/
+├── textbook_info/
+│   ├── template.ptx
+│   ├── Book Structure.csv
+│   ├── Open Textbooks.csv
+│   └── Automatic Links.csv
+├── source/
+│   ├── content.ptx
+│   └── [chapter directories]
+├── reference/
+│   └── [reference content]
+├── reference_tocs/
+│   ├── orcca-toc.csv
+│   └── [other TOC files]
+├── assets/
+│   ├── lesson_plans/
+│   └── [images, media]
+├── secret/
+│   ├── google_ids.json
+│   └── [credentials]
+└── [other project files]
+```
+
+All paths are resolved **relative to the user's current working directory**, not the package installation directory.
+
 ## Requirements
 
-- Python **3.8+**
+- Python **3.12+**
 
 ## Installation
 
 ### Install from PyPI
 
 ```bash
-pip install book-builder
+pipx install book-builder
 ```
 
 ### Install for development

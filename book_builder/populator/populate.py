@@ -51,11 +51,11 @@ from book_builder.populator.scoped_ids import ScopedIdRegistry
 class PopulationOptions:
     """Runtime options controlling one population run."""
     source_format: Literal["auto", "cnxml", "pretext"]
-    workspace_root: Path = Path(".")
-    book_csv: Path = Path("textbook_info/Book Structure.csv")
-    toc_csv: Path = Path("reference_tocs/stax-toc.csv")
-    reference_dir: Path = Path("reference")
-    open_textbooks_csv: Path = Path("textbook_info/Open Textbooks.csv")
+    workspace_root: Path = Path.cwd()
+    book_csv: Path = Path.cwd() / "textbook_info" / "Book Structure.csv"
+    toc_csv: Path = Path.cwd() / "reference_tocs" / "stax-toc.csv"
+    reference_dir: Path = Path.cwd() / "reference"
+    open_textbooks_csv: Path = Path.cwd() / "textbook_info" / "Open Textbooks.csv"
     enriched_toc_output: Path | None = None
     resource: str | None = None
     limit: int | None = None
@@ -78,7 +78,7 @@ def _load_inputs(options: PopulationOptions) -> tuple[Path, pd.DataFrame, pd.Dat
     workspace_root = options.workspace_root.resolve()
     book_csv = resolve_input_path(workspace_root, options.book_csv)
     toc_csv_arg = options.toc_csv
-    if options.source_format == "pretext" and options.resource and toc_csv_arg == Path("reference_tocs/stax-toc.csv"):
+    if options.source_format == "pretext" and options.resource and toc_csv_arg == Path.cwd() / "reference_tocs" / "stax-toc.csv":
         toc_csv_arg = _discover_pretext_toc_csv(workspace_root, options.resource) or toc_csv_arg
     toc_csv = resolve_input_path(workspace_root, toc_csv_arg)
     reference_dir = resolve_input_path(workspace_root, options.reference_dir)
@@ -703,8 +703,8 @@ def print_results(result: PopulationResult) -> None:
 
 def run_population(options: PopulationOptions):
     """Single entry point for all supported population flows."""
-    source_dir = Path(".") / "source"
-    reference_dir = Path(".") / "reference"
+    source_dir = Path.cwd() / "source"
+    reference_dir = Path.cwd() / "reference"
     if not source_dir.exists() or not reference_dir.exists():
         print("[INFO]: Generating Stucture")
         create_book_skeleton.main(options.book_csv, source_dir, reference_dir)

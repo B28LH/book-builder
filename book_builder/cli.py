@@ -23,32 +23,32 @@ def build_populate_parser(subparsers):
     populate.add_argument(
         "--book-csv", 
         type=Path, 
-        default=Path("textbook_info") / "Book Structure.csv"
+        default=Path.cwd() / "textbook_info" / "Book Structure.csv"
     )
     populate.add_argument(
         "--toc-csv",
         type=Path,
-        default=Path("reference_tocs/stax-toc.csv"),
+        default=Path.cwd() / "reference_tocs" / "stax-toc.csv",
         help="CNXML TOC CSV, or explicit TOC CSV when running a single PreTeXt resource",
     )
     populate.add_argument(
         "--reference", 
         type=Path, 
-        default=Path("reference"))
+        default=Path.cwd() / "reference")
     populate.add_argument(
         "--workspace-root", 
         type=Path, 
-        default=Path(".")
+        default=Path.cwd()
     )
     populate.add_argument(
         "--open-textbooks-csv", 
         type=Path, 
-        default=Path("textbook_info/Open Textbooks.csv")
+        default=Path.cwd() / "textbook_info" / "Open Textbooks.csv"
     )
     populate.add_argument(
         "--enriched-toc-output", 
         type=Path, 
-        default=Path("reference_tocs/stax-toc.enriched.csv")
+        default=Path.cwd() / "reference_tocs" / "stax-toc.enriched.csv"
     )
     populate.add_argument(
         "--resource", 
@@ -88,7 +88,7 @@ def build_audit_parser(subparsers):
     subparsers.add_parser("audit-pdfs", help="Report lesson-plan PDFs not referenced by any source file")
 
     audit_questions_parser = subparsers.add_parser("audit-questions", help="Run the STACK/image/pdf audit routines")
-    audit_questions_parser.add_argument("--output-folder", type=Path, default=Path("textbook_info"), help="folder to write audit outputs (like orphaned_ptx) to; defaults to 'textbook_info'")
+    audit_questions_parser.add_argument("--output-folder", type=Path, default=Path.cwd() / "textbook_info", help="folder to write audit outputs (like orphaned_ptx) to; defaults to 'textbook_info'")
 
     subparsers.add_parser("audit", help="Pull plans, validate, and audit pdfs and questions")
 
@@ -100,19 +100,19 @@ def build_content_parser(subparsers):
     skeleton.add_argument(
         "--csv",
         type=Path,
-        default=Path("textbook_info/Book Structure.csv"),
+        default=Path.cwd() / "textbook_info" / "Book Structure.csv",
         help="Path to the Book Structure CSV",
     )
     skeleton.add_argument(
         "--source",
         type=Path,
-        default=Path("source"),
+        default=Path.cwd() / "source",
         help="Path to the PreTeXt source directory",
     )
     skeleton.add_argument(
         "--reference",
         type=Path,
-        default=Path("reference"),
+        default=Path.cwd() / "reference",
         help="Path to the generated reference directory",
     )
 
@@ -126,7 +126,7 @@ def build_content_parser(subparsers):
     add_obj.add_argument(
         "--source-dir",
         type=Path,
-        default=Path("source"),
+        default=Path.cwd() / "source",
         help="Source directory",
     )
 
@@ -140,7 +140,7 @@ def build_content_parser(subparsers):
     add_resources.add_argument(
         "--source-dir",
         type=Path,
-        default=Path("source"),
+        default=Path.cwd() / "source",
         help="Source directory",
     )
 
@@ -148,7 +148,7 @@ def build_content_parser(subparsers):
     namespace.add_argument(
         "--source-dir",
         type=Path,
-        default=Path("source"),
+        default=Path.cwd() / "source",
         help="Directory to process",
     )
 
@@ -162,13 +162,13 @@ def build_content_parser(subparsers):
     generate_syllabus.add_argument(
         "--source-dir",
         type=Path,
-        default=Path("source"),
+        default=Path.cwd() / "source",
         help="Source directory",
     )
     generate_syllabus.add_argument(
         "--output",
         type=Path,
-        default=Path("source") / "syllabus-alignment.ptx",
+        default=Path.cwd() / "source" / "syllabus-alignment.ptx",
         help="Output PTX path",
     )
 
@@ -188,7 +188,7 @@ def build_content_parser(subparsers):
     generate_lo.add_argument(
         "--output",
         type=Path,
-        default=Path("source") / "lo-coverage-table.ptx",
+        default=Path.cwd() / "source" / "lo-coverage-table.ptx",
         help="Output PTX path",
     )
 
@@ -208,19 +208,19 @@ def build_content_parser(subparsers):
     syllabus.add_argument(
         "--source-dir",
         type=Path,
-        default=Path("source"),
+        default=Path.cwd() / "source",
         help="Source directory",
     )
     syllabus.add_argument(
         "--syllabus-output",
         type=Path,
-        default=Path("source") / "syllabus-alignment.ptx",
+        default=Path.cwd() / "source" / "syllabus-alignment.ptx",
         help="Syllabus output PTX path",
     )
     syllabus.add_argument(
         "--lo-output",
         type=Path,
-        default=Path("source") / "lo-coverage-table.ptx",
+        default=Path.cwd() / "source" / "lo-coverage-table.ptx",
         help="Learning outcomes output PTX path",
     )
 
@@ -348,7 +348,7 @@ def main() -> None:
         lesson_plans.cmd_pull_plans()
         lesson_plans.cmd_validate_paths()
         reports.cmd_audit_pdfs()
-        audit_questions.run_audit(output_folder=Path("textbook_info"))
+        audit_questions.run_audit(output_folder=Path.cwd() / "textbook_info")
     elif args.command == "skeleton":
         create_book_skeleton.main(args.csv.resolve(), args.source.resolve(), args.reference.resolve())
     elif args.command == "add-objectives":
@@ -396,7 +396,7 @@ def main() -> None:
             resource_name=args.resource_name,
             mapping_output=args.mapping_output,
         )
-        output_path = Path("reference_tocs") / (args.output_name or Path(f"{args.root.stem}-toc.csv"))
+        output_path = Path.cwd() / "reference_tocs" / (args.output_name or Path(f"{args.root.stem}-toc.csv"))
         print(f"Wrote {row_count} TOC rows to {output_path}")
     elif args.command == "stax-toc":
         output_path = create_stax_toc.run_stax_toc(

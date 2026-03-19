@@ -50,7 +50,7 @@ def process_file(path: str | Path) -> int:
     return count
 
 
-def cmd_namespace(*, source_dir: Path | str = Path("source")) -> None:
+def cmd_namespace(*, source_dir: Path | str = Path.cwd() / "source") -> None:
     """Add `xmlns:xi` to subsection/subsubsection tags across PTX files."""
     print("namespace: starting")
     source_root = Path(source_dir)
@@ -61,7 +61,7 @@ def cmd_namespace(*, source_dir: Path | str = Path("source")) -> None:
     print("namespace: done")
 
 
-def main(*, source_dir: Path | str = Path("source")) -> None:
+def main(*, source_dir: Path | str = Path.cwd() / "source") -> None:
     cmd_namespace(source_dir=source_dir)
 
 

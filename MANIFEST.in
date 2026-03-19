@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+include CHANGELOG.md
+recursive-include textbook_info *.ptx *.csv
+recursive-include lesson-plan-templates *.ptx

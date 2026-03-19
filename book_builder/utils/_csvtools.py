@@ -26,7 +26,7 @@ SECTION_COL = "Section"
 def cached_dir() -> Path:
     """Return the path to the `textbook_info` directory, creating it if
     necessary."""
-    d = Path(".") / "textbook_info"
+    d = Path.cwd() / "textbook_info"
     if not d.exists():
         d.mkdir(parents=True, exist_ok=True)
     return d

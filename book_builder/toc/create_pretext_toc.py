@@ -415,7 +415,7 @@ def run_pretext_toc(
     if not output_name:
         output_name = Path(f"{root.stem}-toc.csv")
 
-    output_folder = Path(".") / "reference_tocs"
+    output_folder = Path.cwd() / "reference_tocs"
     output_folder.mkdir(parents=True, exist_ok=True)
 
     output_file = output_folder / output_name

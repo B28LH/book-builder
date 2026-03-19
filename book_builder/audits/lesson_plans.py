@@ -15,10 +15,14 @@ def cmd_pull_plans(
     *,
     only_missing: bool = False,
     clean: bool = False,
-    dest: Path | str = "assets/lesson_plans",
+    dest: Path | str = None,
     file_type: str = ".pdf",
 ) -> None:
     print("pull-plans: starting")
+    if dest is None:
+        dest = Path.cwd() / "assets" / "lesson_plans"
+    else:
+        dest = Path(dest)
     ids = _google.load_ids_config()
     folder_id = ids.get("lesson_plans_folder_id")
     if not folder_id:
@@ -69,7 +73,7 @@ def cmd_pull_plans(
                     _, done = downloader.next_chunk()
                 print(f"Downloaded: {downloaded_path.name}")
 
-    dest_path = Path(dest)
+    dest_path = dest if isinstance(dest, Path) else Path(dest)
     if clean and dest_path.exists():
         print(f"pull-plans: cleaning {dest_path}")
         shutil.rmtree(dest_path)
@@ -90,7 +94,7 @@ def cmd_validate_paths(
     no_write: bool = False,
 ) -> None:
     print("validate-paths: starting")
-    base = Path(base_dir) if base_dir else Path(".")
+    base = Path(base_dir) if base_dir else Path.cwd()
 
     if cached:
         print("validate-paths: reading cached CSV")

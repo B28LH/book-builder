@@ -187,11 +187,11 @@ def upgrade_lesson_only_resource_boxes(
     return "".join(pieces), upgraded
 
 
-def cmd_add_resources(*, links_csv_path: Path | None = None, source_dir: Path | str = Path("source")) -> None:
+def cmd_add_resources(*, links_csv_path: Path | None = None, source_dir: Path | str = None) -> None:
     """Insert or upgrade lesson-plan resource boxes in PTX files."""
     print("add-resources: starting")
     csv_path = links_csv_path or AUTOMATIC_LINKS_PATH
-    source_root = Path(source_dir)
+    source_root = Path(source_dir) if source_dir else Path.cwd() / "source"
 
     df = pd.read_csv(csv_path, encoding="utf-8")
     added = 0
@@ -242,8 +242,10 @@ def cmd_add_resources(*, links_csv_path: Path | None = None, source_dir: Path | 
 def main(
     *,
     links_csv_path: Path | None = None,
-    source_dir: Path | str = Path("source"),
+    source_dir: Path | str = None,
 ) -> None:
+    if source_dir is None:
+        source_dir = Path.cwd() / "source"
     cmd_add_resources(links_csv_path=links_csv_path, source_dir=source_dir)
 
 
