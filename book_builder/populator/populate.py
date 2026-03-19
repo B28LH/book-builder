@@ -708,11 +708,11 @@ def run_population(options: PopulationOptions):
     if not source_dir.exists() or not reference_dir.exists():
         print("[INFO]: Generating Stucture")
         create_book_skeleton.main(options.book_csv, source_dir, reference_dir)
+        
+    print(f"Running population with source format: {options.source_format}")
     
     if options.source_format == "auto":
-        result = _run_auto_population(options)
-        print(result)
-        return result
+        return _run_auto_population(options)
     
     reference_dir, book_df, toc_raw_df, workspace_root, textbooks = _load_inputs(options)
     toc_df = _prepare_toc_dataframe(options, toc_raw_df, textbooks)
@@ -736,9 +736,6 @@ def run_population(options: PopulationOptions):
         )
 
     if options.source_format == "cnxml":
-        result = _run_cnxml_population(options, workspace_root, reference_dir, book_df, toc_df, textbooks)
+        return _run_cnxml_population(options, workspace_root, reference_dir, book_df, toc_df, textbooks)
     else:
-        result = _run_pretext_population(options, workspace_root, reference_dir, book_df, toc_df, textbooks)
-        
-    print_results(result)
-    return result
+        return _run_pretext_population(options, workspace_root, reference_dir, book_df, toc_df, textbooks)

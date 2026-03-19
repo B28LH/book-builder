@@ -13,7 +13,7 @@ from book_builder.toc import create_pretext_toc, create_stax_toc
 def build_populate_parser(subparsers):
     """ Add populate-related subcommands to the given subparsers object. """
     
-    populate = subparsers.add_parser("populate", help="Run the typical population workflow in order to convert ")
+    populate = subparsers.add_parser("populate", help="Using the Book Structure and TOC CSVs, populate reference folder with converted content from CNXML and/or PreTeXt sources")
     
     populate.add_argument(
         "--source-format",
@@ -311,7 +311,7 @@ def main() -> None:
     args = parser.parse_args()
 
     if args.command == "populate":
-        populate.run_population(
+        result = populate.run_population(
             populate.PopulationOptions(
                 source_format=args.source_format,
                 workspace_root=args.workspace_root,
@@ -326,6 +326,8 @@ def main() -> None:
                 dry_run=args.dry_run,
             )
         )
+        
+        populate.print_results(result)
     elif args.command == "pull-plans":
         lesson_plans.cmd_pull_plans(args)
     elif args.command == "validate-paths":
