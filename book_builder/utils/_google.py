@@ -15,7 +15,7 @@ from __future__ import annotations
 import os
 import pickle
 from pathlib import Path
-from typing import Any
+from typing import Iterable, Tuple, List, Dict, Any, Optional
 
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -111,9 +111,6 @@ def _is_auth_failure(exc: Exception) -> bool:
 
 def retry_on_auth_failure(func):
     """Decorator that reruns *func* one time after clearing token file.
-
-    This is suitable for light-weight wrappers such as
-    :func:`fetch_links_from_sheet` where retrying the entire body is safe.
     """
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
@@ -154,6 +151,29 @@ def get_sheets_service(scopes: list[str] | None = None) -> Any:
     return build("sheets", "v4", credentials=creds)
 
 
+@retry_on_auth_failure
+def fetch_sheet(spreadsheet_id: str, range_name: str) -> list[dict[str, str]]:
+    """Fetch a range of cells from a Google Sheet and return as list of dicts.
+
+    The first row of the range is treated as headers.  Each subsequent row
+    is returned as a dictionary mapping header to value.  Missing values are
+    returned as empty strings.
+    """
+    service = get_sheets_service()
+
+    sheet = service.spreadsheets()
+    result = sheet.values().get(
+        spreadsheetId=spreadsheet_id,
+        range=range_name,
+    ).execute()
+    values = result.get("values", [])
+    if not values:
+        return []
+    headers = values[0]
+    rows_data = values[1:]
+    return [dict(zip(headers, row)) for row in rows_data]
+
+
 def load_ids_config() -> dict[str, Any]:
     """Return the JSON object from ``google_ids.json``.
 
@@ -165,3 +185,43 @@ def load_ids_config() -> dict[str, Any]:
 
     with open(CONFIG_PATH, encoding="utf-8") as f:
         return json.load(f)
+    
+
+@retry_on_auth_failure
+def write_validated_to_sheet(
+    grade: str,
+    rows: Iterable[Dict[str, str]],
+    sheet_name: str = "Automatic Links Upload"
+) -> None:
+    """Write *rows* back to a (possibly new) sheet in the same workbook.
+
+    This mirrors the behaviour of the original helper, but operates purely on
+    the row data provided.
+    """
+    rows = list(rows)
+    if not rows:
+        return
+    service = get_sheets_service()
+    ids = load_ids_config()
+    try:
+        spreadsheet_id = ids["grade"][grade]["textbook_spreadsheet_id"]
+    except KeyError:
+        raise ValueError(f"Spreadsheet ID not found for grade '{grade}'")
+    sheet = service.spreadsheets()
+
+    # ensure sheet exists
+    metadata = sheet.get(spreadsheetId=spreadsheet_id).execute()
+    existing_titles = [s["properties"]["title"] for s in metadata.get("sheets", [])]
+    if sheet_name not in existing_titles:
+        body = {"requests": [{"addSheet": {"properties": {"title": sheet_name}}}]}
+        sheet.batchUpdate(spreadsheetId=spreadsheet_id, body=body).execute()
+
+    # clear
+    sheet.values().clear(spreadsheetId=spreadsheet_id, range=f"'{sheet_name}'!A:Z").execute()
+    values = [list(rows[0].keys())] + [[row.get(col, "") for col in rows[0].keys()] for row in rows]
+    sheet.values().update(
+        spreadsheetId=spreadsheet_id,
+        range=f"'{sheet_name}'!A1",
+        valueInputOption="RAW",
+        body={"values": values},
+    ).execute()

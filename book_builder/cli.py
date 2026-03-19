@@ -6,7 +6,7 @@ from pathlib import Path
 from book_builder.audits import lesson_plans, reports, audit_questions
 from book_builder.populator import populate
 from book_builder.content import add_labels, create_book_skeleton, namespace, objectives, resources, syllabus_tables
-from book_builder.toc import create_pretext_toc, create_stax_toc
+from book_builder.toc import create_pretext_toc, create_stax_toc, load_sheets
 
 
 def build_populate_parser(subparsers):
@@ -74,13 +74,37 @@ def build_populate_parser(subparsers):
 def build_audit_parser(subparsers):
     """Add audit-related subcommands to the given subparsers object."""
 
+    load_textbook_sheet = subparsers.add_parser(
+        "load-textbook-sheet",
+        help="Download textbook spreadsheet tabs to textbook_info CSVs",
+    )
+    load_textbook_sheet.add_argument("grade", help="Grade of the project (e.g. grade_11)")
+    load_textbook_sheet.add_argument(
+        "--output-dir",
+        type=Path,
+        default=Path.cwd() / "textbook_info",
+        help="Directory to write CSV outputs (default: textbook_info)",
+    )
+    load_textbook_sheet.add_argument(
+        "--structure-tab",
+        default="Book Structure",
+        help="Spreadsheet tab name for the structure data",
+    )
+    load_textbook_sheet.add_argument(
+        "--syllabus-tab",
+        default="Core Syllabus",
+        help="Spreadsheet tab name for the syllabus data",
+    )
+
     pull_plans = subparsers.add_parser("pull-plans", help="Download lesson plans from the Google Drive")
+    pull_plans.add_argument("grade", help="Grade of the project (e.g. grade_11)")
     pull_plans.add_argument("--new", action="store_true", help="only download plans that are not already present")
     pull_plans.add_argument("--clean", action="store_true", help="remove existing lesson plans before downloading")
     pull_plans.add_argument("--dest", default="assets/lesson_plans", help="destination directory for downloaded lesson plans (default: assets/lesson_plans)")
     pull_plans.add_argument("--file-type", default=".pdf", choices=[".pdf", ".md"], help="file type to download (default: .pdf)")
 
     validate_paths = subparsers.add_parser("validate-paths", help="Verify and annotate CSV rows with file existence")
+    validate_paths.add_argument("--grade", help="Grade of the project (e.g. grade_11). Not need if --cached is used.")
     validate_paths.add_argument("--base-dir", help="root of repo (defaults to current working directory)")
     validate_paths.add_argument("--cached", action="store_true", help="use locally cached Automatic Links.csv instead of fetching from sheet")
     validate_paths.add_argument("--no-write-sheet", action="store_true", dest="no_write", help="do not upload validation results back to a sheet (default is to write)")
@@ -90,7 +114,8 @@ def build_audit_parser(subparsers):
     audit_questions_parser = subparsers.add_parser("audit-questions", help="Run the STACK/image/pdf audit routines")
     audit_questions_parser.add_argument("--output-folder", type=Path, default=Path.cwd() / "textbook_info", help="folder to write audit outputs (like orphaned_ptx) to; defaults to 'textbook_info'")
 
-    subparsers.add_parser("audit", help="Pull plans, validate, and audit pdfs and questions")
+    audit = subparsers.add_parser("audit", help="Pull plans, validate, and audit pdfs and questions")
+    audit.add_argument("grade", help="Grade of the project (e.g. grade_11)")
 
 
 def build_content_parser(subparsers):
@@ -327,8 +352,16 @@ def main() -> None:
         )
         
         populate.print_results(result)
+    elif args.command == "load-textbook-sheet":
+        load_sheets.cmd_load_textbook_sheet(
+            grade=args.grade,
+            output_dir=args.output_dir,
+            structure_tab=args.structure_tab,
+            syllabus_tab=args.syllabus_tab,
+        )
     elif args.command == "pull-plans":
         lesson_plans.cmd_pull_plans(
+            grade=args.grade,
             only_missing=args.new,
             clean=args.clean,
             dest=args.dest,
@@ -336,6 +369,7 @@ def main() -> None:
         )
     elif args.command == "validate-paths":
         lesson_plans.cmd_validate_paths(
+            grade=args.grade,
             base_dir=args.base_dir,
             cached=args.cached,
             no_write=args.no_write,
@@ -345,8 +379,8 @@ def main() -> None:
     elif args.command == "audit-questions":
         audit_questions.run_audit(output_folder=args.output_folder)
     elif args.command == "audit":
-        lesson_plans.cmd_pull_plans()
-        lesson_plans.cmd_validate_paths()
+        lesson_plans.cmd_pull_plans(grade=args.grade)
+        lesson_plans.cmd_validate_paths(grade=args.grade)
         reports.cmd_audit_pdfs()
         audit_questions.run_audit(output_folder=Path.cwd() / "textbook_info")
     elif args.command == "skeleton":

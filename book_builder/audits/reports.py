@@ -7,71 +7,8 @@ import csv
 from pathlib import Path
 from typing import Iterable, Tuple, List, Dict, Any, Optional
 
-from book_builder.utils import _csvtools, _google
+from book_builder.utils import _csvtools
 
-
-# --- sheet interaction --------------------------------------------------
-
-@_google.retry_on_auth_failure
-
-def fetch_links_from_sheet() -> list[dict[str, str]]:
-    """Download the "Automatic Links" sheet and return its rows.
-
-    The caller must have a valid ``credentials.json`` in the ``utils/secret``
-    directory (same behaviour as the old helper scripts, but moved to a
-    dedicated secret folder).
-    """
-    service = _google.get_sheets_service()
-    ids = _google.load_ids_config()
-    spreadsheet_id = ids["automatic_links_spreadsheet_id"]
-    sheet = service.spreadsheets()
-    result = sheet.values().get(
-        spreadsheetId=spreadsheet_id,
-        range="'Automatic Links'",
-    ).execute()
-    values = result.get("values", [])
-    if not values:
-        return []
-    headers = values[0]
-    rows_data = values[1:]
-    return [dict(zip(headers, row)) for row in rows_data]
-
-
-@_google.retry_on_auth_failure
-
-def write_validated_to_sheet(
-    rows: Iterable[Dict[str, str]],
-    sheet_name: str = "Automatic Links Upload"
-) -> None:
-    """Write *rows* back to a (possibly new) sheet in the same workbook.
-
-    This mirrors the behaviour of the original helper, but operates purely on
-    the row data provided.
-    """
-    rows = list(rows)
-    if not rows:
-        return
-    service = _google.get_sheets_service()
-    ids = _google.load_ids_config()
-    spreadsheet_id = ids["automatic_links_spreadsheet_id"]
-    sheet = service.spreadsheets()
-
-    # ensure sheet exists
-    metadata = sheet.get(spreadsheetId=spreadsheet_id).execute()
-    existing_titles = [s["properties"]["title"] for s in metadata.get("sheets", [])]
-    if sheet_name not in existing_titles:
-        body = {"requests": [{"addSheet": {"properties": {"title": sheet_name}}}]}
-        sheet.batchUpdate(spreadsheetId=spreadsheet_id, body=body).execute()
-
-    # clear
-    sheet.values().clear(spreadsheetId=spreadsheet_id, range=f"'{sheet_name}'!A:Z").execute()
-    values = [list(rows[0].keys())] + [[row.get(col, "") for col in rows[0].keys()] for row in rows]
-    sheet.values().update(
-        spreadsheetId=spreadsheet_id,
-        range=f"'{sheet_name}'!A1",
-        valueInputOption="RAW",
-        body={"values": values},
-    ).execute()
 
 
 # --- validation / auditing ---------------------------------------------

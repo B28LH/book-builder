@@ -13,9 +13,10 @@ from book_builder.audits import reports
 @_google.retry_on_auth_failure
 def cmd_pull_plans(
     *,
+    grade: str,
     only_missing: bool = False,
     clean: bool = False,
-    dest: Path | str = None,
+    dest: Path | None = None,
     file_type: str = ".pdf",
 ) -> None:
     print("pull-plans: starting")
@@ -24,10 +25,11 @@ def cmd_pull_plans(
     else:
         dest = Path(dest)
     ids = _google.load_ids_config()
-    folder_id = ids.get("lesson_plans_folder_id")
-    if not folder_id:
-        print(f"lesson_plans_folder_id not found in {_google.CONFIG_PATH}")
-        return
+    
+    try:
+        folder_id = ids["grade"][grade]["lesson_plans_folder_id"]
+    except KeyError:
+        raise ValueError(f"Lesson plans folder ID not found for grade '{grade}'")
 
     service = _google.get_drive_service()
 
@@ -89,6 +91,7 @@ def cmd_pull_plans(
 
 def cmd_validate_paths(
     *,
+    grade: str | None = None,
     base_dir: Path | str | None = None,
     cached: bool = False,
     no_write: bool = False,
@@ -99,9 +102,18 @@ def cmd_validate_paths(
     if cached:
         print("validate-paths: reading cached CSV")
         rows = _csvtools.read_links_csv()
-    else:
+    elif grade is not None:
         print("validate-paths: fetching from sheet")
-        rows = reports.fetch_links_from_sheet()
+        
+        ids = _google.load_ids_config()
+        try:
+            spreadsheet_id = ids["grade"][grade]["textbook_spreadsheet_id"]
+        except KeyError:
+            raise ValueError(f"Spreadsheet ID not found for grade '{grade}'")
+        
+        rows = _google.fetch_sheet(spreadsheet_id, "'Automatic Links'")
+    else:
+        raise ValueError("Either --cached or --grade must be specified")
 
     validated = reports.validate_paths(rows, base)
     _csvtools.write_links_csv(validated)
@@ -109,8 +121,10 @@ def cmd_validate_paths(
 
     if no_write:
         print("validate-paths: skipped sheet upload")
-    else:
-        reports.write_validated_to_sheet(validated)
+    elif grade is not None:
+        _google.write_validated_to_sheet(grade, validated)
         print("validate-paths: uploaded results to sheet")
+    else:
+        raise ValueError("Grade must be specified to upload results to sheet")
 
     print("validate-paths: done")
