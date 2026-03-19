@@ -84,8 +84,11 @@ class TocRow:
     lineage: tuple[TocNode, ...]
 
 
-def local_name(tag: str) -> str:
+def local_name(tag: object) -> str:
     """Return an XML tag name without its namespace prefix."""
+
+    if not isinstance(tag, str):
+        return ""
 
     if tag.startswith("{"):
         return tag.rsplit("}", 1)[1]
@@ -136,16 +139,17 @@ def sanitize_unmatched_comment_closers(xml_text: str) -> str:
 def parse_xml(xml_file: Path) -> ET.Element:
     """Parse XML, retrying once with a small sanitization step if needed."""
 
-    xml_text = xml_file.read_text(encoding="utf-8")
+    xml_bytes = xml_file.read_bytes()
 
     try:
-        return ET.fromstring(xml_text)
+        return ET.fromstring(xml_bytes)
     except ET.ParseError:
         # Some borrowed sources are almost valid XML apart from stray comment
         # closers, so try a minimal repair before failing hard.
+        xml_text = xml_bytes.decode("utf-8", errors="replace")
         sanitized = sanitize_unmatched_comment_closers(xml_text)
         try:
-            return ET.fromstring(sanitized)
+            return ET.fromstring(sanitized.encode("utf-8"))
         except ET.ParseError as exc:
             raise ValueError(f"Could not parse XML file: {xml_file}") from exc
 

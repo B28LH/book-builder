@@ -3,12 +3,13 @@ import sys
 from pathlib import Path
 from turtle import st
 
-from audits import lesson_plans, reports, audit_questions
-from content import add_labels, create_book_skeleton, namespace, objectives, resources, syllabus_tables
+from book_builder.audits import lesson_plans, reports, audit_questions
+from book_builder.content import add_labels, create_book_skeleton, namespace, objectives, resources, syllabus_tables
+from book_builder.toc import create_pretext_toc, create_stax_toc
 
 
 def build_audit_parser(subparsers):
-    """ Adds audit-related subcommands to the given subparsers object. """
+    """Add audit-related subcommands to the given subparsers object."""
 
     pull_plans = subparsers.add_parser("pull-plans", help="Download lesson plans from the Google Drive")
     pull_plans.add_argument("--new", action="store_true", help="only download plans that are not already present")
@@ -169,6 +170,71 @@ def build_content_parser(subparsers):
     )
 
     subparsers.add_parser("content", help="execute the typical content workflow in order")
+    
+    
+def build_toc_parser(subparsers):
+    """Add TOC-related subcommands to the given subparsers object."""
+
+    pretext_toc = subparsers.add_parser(
+        "pretext-toc", 
+        help="Export PreTeXt TOC to CSV"
+    )
+    pretext_toc.add_argument(
+        "root", 
+        type=Path, 
+        help="Path to the starting PreTeXt/PTX file"
+    )
+    pretext_toc.add_argument(
+        "--output-name", 
+        type=Path, 
+        default=None, 
+        help="Output CSV name (defaults to <root-stem>-toc.csv)"
+    )
+    pretext_toc.add_argument(
+        "--relative-to", 
+        type=Path, 
+        default=None, 
+        help="Base directory used for source_path values"
+    )
+    pretext_toc.add_argument(
+        "--resource-name", 
+        type=str, 
+        default=None, 
+        help="Short identifier prepended to every generated node ID (defaults to root stem uppercased)"
+    )
+    pretext_toc.add_argument(
+        "--mapping-output", 
+        type=Path, 
+        default=None, 
+        help="Path for the ID-mapping CSV (defaults to <stem>-id-mapping.csv beside the TOC output)"
+    )
+
+    stax_toc = subparsers.add_parser(
+        "stax-toc", 
+        help="Export STAX collection TOC to CSV")
+    stax_toc.add_argument(
+        "collection", 
+        type=Path, 
+        help="Path to a *.collection.xml file"
+    )
+    stax_toc.add_argument(
+        "--modules-root", 
+        type=Path, 
+        default=None, 
+        help="Path to the modules directory (defaults to sibling modules/ next to the collection)"
+    )
+    stax_toc.add_argument(
+        "--output-name", 
+        type=Path, 
+        default=None, 
+        help="CSV output name (defaults to <collection-basename>-toc.csv)"
+    )
+    stax_toc.add_argument(
+        "--workspace-root", 
+        type=Path, 
+        default=None, 
+        help="Workspace root for relative paths (defaults to inferred from collection location)"
+    )
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -177,15 +243,14 @@ def build_parser() -> argparse.ArgumentParser:
     
     build_audit_parser(subparsers)
     build_content_parser(subparsers)
-    
-
+    build_toc_parser(subparsers)
 
     return parser
 
 
-def main(argv: list[str] | None = None) -> None:
+def main() -> None:
     parser = build_parser()
-    args = parser.parse_args(argv)
+    args = parser.parse_args()
 
     if args.command == "pull-plans":
         lesson_plans.cmd_pull_plans(args)
@@ -239,6 +304,24 @@ def main(argv: list[str] | None = None) -> None:
         namespace.cmd_namespace()
         syllabus_tables.cmd_generate_syllabus()
         syllabus_tables.cmd_generate_lo()
+    elif args.command == "pretext-toc":
+        row_count = create_pretext_toc.run_pretext_toc(
+            root=args.root,
+            output_name=args.output_name,
+            relative_to=args.relative_to,
+            resource_name=args.resource_name,
+            mapping_output=args.mapping_output,
+        )
+        output_path = Path("reference_tocs") / (args.output_name or Path(f"{args.root.stem}-toc.csv"))
+        print(f"Wrote {row_count} TOC rows to {output_path}")
+    elif args.command == "stax-toc":
+        output_path = create_stax_toc.run_stax_toc(
+            collection=args.collection,
+            modules_root=args.modules_root,
+            output_name=args.output_name,
+            workspace_root=args.workspace_root,
+        )
+        print(f"Wrote TOC CSV: {output_path}")
     else:
         parser.error(f"unknown command {args.command}")
 

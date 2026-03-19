@@ -232,39 +232,3 @@ def run_stax_toc(
 
     export_toc(collection_file, modules_root, output_file, workspace_root)
     return output_file
-
-
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Export a collection table of contents to CSV.")
-    parser.add_argument("collection", type=Path, help="Path to a *.collection.xml file")
-    parser.add_argument(
-        "--modules-root",
-        type=Path,
-        default=None,
-        help="Path to the modules directory (defaults to sibling modules/ next to the collection)",
-    )
-    parser.add_argument(
-        "--output-name",
-        type=Path,
-        default=None,
-        help="CSV output path (defaults to reference_tocs/<collection-name>-toc.csv under the workspace root)",
-    )
-    parser.add_argument(
-        "--workspace-root",
-        type=Path,
-        default=None,
-        help="Workspace root for relative paths (defaults to inferred from the collection path)",
-    )
-    args = parser.parse_args()
-
-    output_file = run_stax_toc(
-        collection=args.collection,
-        modules_root=args.modules_root,
-        output_name=args.output_name,
-        workspace_root=args.workspace_root,
-    )
-    print(f"Wrote TOC CSV: {output_file}")
-
-
-if __name__ == "__main__":
-    main()
