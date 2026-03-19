@@ -30,7 +30,6 @@ pyrightconfig.json
 doc/_build/
 *.swp
 .DS_Store
-secret/
 
 
 # python

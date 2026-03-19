@@ -1,89 +1,204 @@
 # book-builder
 
-Utilities for building a PreTeXt textbook workflow from mixed open-source inputs (CNXML and PreTeXt), with support for:
+`book-builder` is a CLI for building a PreTeXt textbook workspace from planning CSVs and open-source source books (CNXML + PreTeXt).
 
-- generating chapter/section skeleton files from curriculum CSVs,
-- exporting source tables of contents to normalized CSV,
-- and populating reference sections with attributed adapted content.
+It is designed for a practical production flow:
 
-This repository is tuned for practical textbook production: it combines metadata-driven matching (`textbook_info/Book Structure.csv`) with source adapters and file-safe post-processing.
+1. Generate a full `source/` + `reference/` skeleton from curriculum metadata.
+2. Export source TOCs to normalized CSVs.
+3. Populate `reference/` with adapted content.
+4. Run content enrich/audit workflows.
 
-## What this project does
+## Quick entry (2-minute start)
 
-At a high level, `book-builder` helps you move from planning spreadsheets and source textbooks to a structured PreTeXt book in your workspace.
-
-Core capabilities:
-
-1. **Create a book skeleton**
-	 - Reads a Book Structure CSV and creates:
-		 - chapter folders,
-		 - section templates,
-		 - `source/content.ptx` and `reference/content.ptx` include trees.
-
-2. **Export TOCs from source books**
-	 - CNXML flow: extract collection/module/section structure to CSV.
-	 - PreTeXt flow: resolve `xi:include` trees and export a flattened structural TOC CSV.
-
-3. **Populate reference files**
-	 - Matches Book Structure rows to source TOC entries.
-	 - Converts source content fragments into PreTeXt-ready blocks.
-	 - Injects content into target reference sections with attribution and cleanup passes.
-
-## Repository layout (important folders)
-
-- `book_builder/` — Python package code
-	- `create_book_structure.py` — generate source/reference skeleton files
-	- `toc/` — TOC exporters for CNXML and PreTeXt
-	- `adapter/` — matching, conversion, injection, and orchestration pipeline
-- `textbook_info/` — input planning metadata (`Book Structure.csv`, `Open Textbooks.csv`)
-- `reference_tocs/` — generated TOC CSVs and ID maps
-- `source/` — your authoring tree
-- `reference/` — generated/updated adapted reference content
-- `adapted-works/` — local copies of upstream source books
-
-## Project Structure for Users
-
-When users install book-builder and use it, they'll work with this structure:
-
-```
-my-textbook-project/
-├── textbook_info/
-│   ├── template.ptx
-│   ├── Book Structure.csv
-│   ├── Open Textbooks.csv
-│   └── Automatic Links.csv
-├── source/
-│   ├── content.ptx
-│   └── [chapter directories]
-├── reference/
-│   └── [reference content]
-├── reference_tocs/
-│   ├── orcca-toc.csv
-│   └── [other TOC files]
-├── assets/
-│   ├── lesson_plans/
-│   └── [images, media]
-├── secret/
-│   ├── google_ids.json
-│   └── [credentials]
-└── [other project files]
-```
-
-All paths are resolved **relative to the user's current working directory**, not the package installation directory.
-
-## Requirements
-
-- Python **3.12+**
-
-## Installation
-
-### Install from PyPI
+Install:
 
 ```bash
 pipx install book-builder
 ```
 
-### Install for development
+From your textbook project root (the folder that contains `textbook_info/`):
+
+```bash
+# 1) Generate source + reference structure
+book-builder skeleton
+
+# 2) Populate reference content from TOC/metadata
+book-builder populate
+
+# 3) Run typical content post-processing
+book-builder content
+```
+
+See all commands:
+
+```bash
+book-builder --help
+```
+
+## Project Structure for Users
+
+When users install `book-builder` and use it, they'll work with this structure:
+
+```text
+my-textbook-project/
+├── textbook_info/
+│   ├── template.ptx
+│   ├── Book Structure.csv
+│   ├── Open Textbooks.csv
+│   ├── Automatic Links.csv
+│   └── Learning Outcomes.csv
+├── source/
+│   ├── content.ptx
+│   └── [chapter directories and sec-*.ptx files]
+├── reference/
+│   ├── content.ptx
+│   └── [chapter directories and sec-*.ptx files]
+├── reference_tocs/
+│   ├── stax-toc.csv
+│   ├── orcca-toc.csv
+│   └── [other generated toc / id-map CSV files]
+├── assets/
+│   ├── lesson_plans/
+│   └── [images/media copied during processing]
+├── adapted-works/
+│   └── [upstream CNXML or PreTeXt source repositories]
+├── secret/
+│   ├── credentials.json
+│   ├── google_ids.json
+│   └── token.pickle
+└── [other project files]
+```
+
+All paths are resolved relative to your current working directory (`Path.cwd()`), not the package installation folder.
+
+## Required input files vs generated files
+
+### Required inputs (you provide)
+
+These should exist before running the listed commands.
+
+- `textbook_info/template.ptx`
+	- used by: `book-builder skeleton` (for `source/` section template)
+- `textbook_info/Book Structure.csv`
+	- used by: `book-builder skeleton`, `book-builder populate`
+- `textbook_info/Open Textbooks.csv`
+	- used by: `book-builder populate`
+- `textbook_info/Automatic Links.csv`
+	- used by: `book-builder add-objectives`, `book-builder add-resources`, `book-builder generate-syllabus`, `book-builder generate-lo`, `book-builder syllabus-tables`, `book-builder validate-paths`
+- `textbook_info/Learning Outcomes.csv`
+	- used by: `book-builder generate-lo`, `book-builder syllabus-tables`
+
+Optional but commonly needed:
+
+- `adapted-works/...`
+	- used by: `book-builder stax-toc`, `book-builder pretext-toc`, and then indirectly by `populate`
+- `secret/credentials.json` (required for Google API auth)
+	- used by: `book-builder pull-plans`, `book-builder validate-paths`, `book-builder audit`
+- `secret/google_ids.json` (sheet/folder IDs)
+	- used by: `book-builder pull-plans`, `book-builder validate-paths`, `book-builder audit`
+
+### Generated files/directories (tool creates)
+
+- `source/` and `reference/` trees
+	- generated by: `book-builder skeleton`
+	- includes `content.ptx`, chapter folders, and section files
+	- **Important:** `reference/` is generated by `skeleton`
+- `reference_tocs/*.csv`
+	- generated by: `book-builder stax-toc`, `book-builder pretext-toc`
+- `reference_tocs/*-id-mapping.csv`
+	- generated by: `book-builder pretext-toc` (mapping output)
+- `reference_tocs/stax-toc.enriched.csv`
+	- generated by: `book-builder populate` (default CNXML/auto flow)
+- `assets/lesson_plans/*`
+	- generated/downloaded by: `book-builder pull-plans`
+- `textbook_info/orphaned_ptx`, `textbook_info/orphaned.ptx`
+	- generated by: `book-builder audit-questions`
+- `source/syllabus-alignment.ptx`, `source/lo-coverage-table.ptx`
+	- generated by: `book-builder generate-syllabus`, `book-builder generate-lo`, or `book-builder syllabus-tables`
+- `secret/token.pickle`
+	- generated on first successful Google OAuth flow
+
+## Command map
+
+### Core workflow
+
+- `book-builder skeleton`
+	- create empty `source/` and `reference/` structures from `Book Structure.csv`
+- `book-builder populate`
+	- match rows to TOC entries and inject adapted content into `reference/`
+- `book-builder content`
+	- run common post-processing sequence:
+		- `add-objectives`
+		- `add-resources`
+		- `namespace`
+		- `generate-syllabus`
+		- `generate-lo`
+
+### TOC generation
+
+- `book-builder stax-toc <resource_folder> <collection_name>`
+	- export CNXML collection structure to `reference_tocs/`
+- `book-builder pretext-toc <root>`
+	- export PreTeXt include tree to `reference_tocs/`
+
+### Content helpers
+
+- `book-builder add-objectives`
+- `book-builder add-resources`
+- `book-builder namespace`
+- `book-builder add-labels`
+- `book-builder generate-syllabus`
+- `book-builder generate-lo`
+- `book-builder syllabus-tables`
+
+### Audits and Google sync
+
+- `book-builder pull-plans`
+- `book-builder validate-paths`
+- `book-builder audit-pdfs`
+- `book-builder audit-questions`
+- `book-builder audit` (runs pull + validate + pdf audit + question audit)
+
+## Typical end-to-end workflow
+
+```bash
+# 0) Inspect command options
+book-builder --help
+
+# 1) Build source/reference scaffold from curriculum plan
+book-builder skeleton
+
+# 2) Build TOCs from source repositories (examples)
+book-builder stax-toc adapted-works/PREALG prealgebra-2e
+book-builder pretext-toc adapted-works/ORCCA/src/orcca.ptx --resource-name ORCCA
+
+# 3) Populate reference content
+book-builder populate --source-format auto
+
+# 4) Add objectives/resources/namespace/syllabus tables
+book-builder content
+
+# 5) Optional audits
+book-builder audit-questions
+book-builder audit-pdfs
+```
+
+Useful `populate` flags while testing:
+
+- `--limit N` to process only first `N` matching rows
+- `--dry-run` to run matching without writes
+- `--no-copy-images` to skip image copy
+
+## Installation
+
+### From PyPI (recommended)
+
+```bash
+pipx install book-builder
+```
+
+### Development install
 
 ```bash
 git clone https://github.com/B28LH/book-builder.git
@@ -91,75 +206,13 @@ cd book-builder
 pip install -e .[dev]
 ```
 
-## Quick start (easy entry)
+Requirements:
 
-From the repository root:
+- Python 3.12+
 
-1. **Generate/refresh book structure from CSV**
+## Development
 
-```bash
-python -m book_builder.create_book_structure \
-	--csv "textbook_info/Book Structure.csv" \
-	--source source \
-	--reference reference
-```
-
-2. **(If needed) export a CNXML TOC**
-
-```bash
-python -m book_builder.toc.create_stax_toc \
-	adapted-works/PREALG/collections/prealgebra.collection.xml \
-	--modules-root adapted-works/PREALG/modules \
-	--output-name stax-toc.csv
-```
-
-3. **(If needed) export a PreTeXt TOC**
-
-```bash
-python -m book_builder.toc.create_pretext_toc \
-	adapted-works/ORCCA/src/orcca.ptx \
-	--output-name orcca-toc.csv \
-	--resource-name ORCCA
-```
-
-4. **Run the population pipeline**
-
-```bash
-python -m book_builder.adapter.cli --source-format auto
-```
-
-Use `--source-format cnxml` or `--source-format pretext --resource ORCCA` when you want one specific flow.
-
-## Main CLI workflows
-
-### A) Generate structure only
-
-```bash
-python -m book_builder.create_book_structure --help
-```
-
-### B) Export TOC CSVs only
-
-```bash
-python -m book_builder.toc.create_stax_toc --help
-python -m book_builder.toc.create_pretext_toc --help
-```
-
-### C) Populate reference sections from sources
-
-```bash
-python -m book_builder.adapter.cli --help
-```
-
-Common options:
-
-- `--limit N` — process only the first `N` valid Book Structure rows (useful while testing).
-- `--dry-run` — run matching pipeline without writing content.
-- `--no-copy-images` — skip image copy operations.
-
-## Development commands
-
-Use the provided Makefile targets:
+Common Make targets:
 
 ```bash
 make run-checks   # isort, black, ruff, mypy, pytest
@@ -167,25 +220,14 @@ make docs         # local Sphinx autobuild
 make build        # package build artifacts
 ```
 
-## Documentation
+Documentation lives under [docs/source](docs/source).
 
-Project docs live in `docs/source/`.
+## Troubleshooting
 
-- Start page: `docs/source/index.md`
-- Installation: `docs/source/installation.md`
-- Overview: `docs/source/overview.md`
-
-To build docs locally:
-
-```bash
-make docs
-```
-
-## Notes and troubleshooting
-
-- If `source/` or `reference/` is missing, the adapter CLI can trigger structure generation first.
-- If PreTeXt TOC export fails on malformed XML comment closers (`-->`), the parser includes a minimal sanitization retry.
-- Keep `textbook_info/Open Textbooks.csv` up to date, especially source type and resource abbreviations used in Book Structure rows.
+- If commands cannot find `textbook_info/...`, make sure you are running from your project root.
+- If Google commands fail auth, confirm both `secret/credentials.json` and `secret/google_ids.json` exist.
+- `secret/token.pickle` is created automatically after OAuth; deleting it forces re-auth.
+- If `populate` has poor matches, verify `Book Structure.csv`, `Open Textbooks.csv`, and TOC CSVs are aligned.
 
 ## License
 
