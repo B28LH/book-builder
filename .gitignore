@@ -57,4 +57,7 @@ reference/
 assets/
 textbook_info/
 
+DEPLOYMENT_CHECKLIST.md
+RELEASE_PROCESS.md
+
 secret/
