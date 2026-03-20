@@ -10,7 +10,6 @@ Both functions operate on row data (list of dicts) and a base directory and
 produce a PTX string which the caller can write to a file.
 """
 from __future__ import annotations
-import os
 import csv
 from pathlib import Path
 from collections import OrderedDict

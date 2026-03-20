@@ -47,13 +47,13 @@ def load_open_textbooks_sheet(
     try:
         spreadsheet_id = ids["open_textbooks_spreadsheet_id"]
     except KeyError:
-        raise ValueError(f"Spreadsheet ID not found for open textbooks")
+        raise ValueError("Spreadsheet ID not found for open textbooks")
     
     print("load-open-textbooks-sheet: starting")
 
     open_textbook_values = _google._fetch_tab_values(spreadsheet_id=spreadsheet_id, tab_name="Open Textbooks")
 
-    open_textbook_csv = output_dir / f"Open Textbooks.csv"
+    open_textbook_csv = output_dir / "Open Textbooks.csv"
     _csvtools._write_values_to_csv(open_textbook_values, open_textbook_csv)
 
     print(f"load-open-textbooks-sheet: wrote {open_textbook_csv}")

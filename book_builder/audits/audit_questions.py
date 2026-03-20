@@ -237,11 +237,9 @@ def run_stack_catalogue() -> None:
     dest = write_stack_catalogue(output_rows)
     total = sum(int(r["Stack Count"]) for r in output_rows)
     sections_with = sum(1 for r in output_rows if int(r["Stack Count"]) > 0)
-    print(f"\n--- Stack-by-Section Catalogue ---")
+    print("\n--- Stack-by-Section Catalogue ---")
     print(f"Wrote {dest}")
     print(f"  {len(output_rows)} sections, {sections_with} with STACK questions, {total} questions total")
-    print(f"Exporting to Google Sheet")
-    write_validated_to_sheet(output_rows, sheet_name="STACK Audit Upload")
 
 
 def run_audit(output_folder) -> None:

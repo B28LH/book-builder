@@ -12,12 +12,10 @@ script) and will store OAUTH tokens in a local `token.pickle` if needed.
 
 from __future__ import annotations
 
-import os
-import csv
 import pickle
 import functools
 from pathlib import Path
-from typing import Iterable, Tuple, List, Dict, Any, Optional
+from typing import Iterable, Dict, Any
 
 from googleapiclient.errors import HttpError
 from google.auth.transport.requests import Request

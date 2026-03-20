@@ -10,7 +10,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import List, Dict
 
-from book_builder.utils._text import detect_newline, indent_of_line
+from book_builder.utils._text import detect_newline
 import pandas as pd
 from book_builder.utils import _csvtools
 
