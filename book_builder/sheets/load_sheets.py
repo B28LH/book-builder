@@ -8,13 +8,13 @@ from book_builder.utils import _google, _csvtools
 def load_textbook_sheet(
     grade: str,
     output_dir: Path,
-    structure_tab: str = "Book Structure",
-    syllabus_tab: str = "Learning Outcomes",
+    structure_tab: str,
+    syllabus_tab: str,
 ):
     """Download textbook tabs for *grade* and cache them as CSV files.
 
-    By default, CSVs are written to ``./textbook_info`` as
-    ``Book Structure.csv`` and ``Learning Outcomes.csv``.
+    By default, CSVs are written to ``<output_dir>`` as
+    ``<structure_tab>.csv`` and ``<syllabus_tab>.csv``.
     """
     ids = _google.load_ids_config()
     try:
@@ -41,8 +41,7 @@ def load_open_textbooks_sheet(
 ):
     """Download open resources spreadsheet
 
-    By default, CSVs are written to ``./textbook_info`` as
-    ``Book Structure.csv`` and ``Learning Outcomes.csv``.
+    CSVs are written to ``<output_dir>`` as ``Open Textbooks.csv``.
     """
     ids = _google.load_ids_config()
     try:

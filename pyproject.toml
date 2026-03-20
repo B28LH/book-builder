@@ -72,7 +72,12 @@ dev = [
 ]
 
 [tool.setuptools.packages.find]
+where = ["."]
+include = ["book_builder*"]
+namespaces = false
 exclude = [
+  "build*",
+  "dist*",
     "*.tests",
     "*.tests.*",
     "tests.*",

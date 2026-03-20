@@ -259,8 +259,8 @@ def build_sheets_parser(subparsers):
     )
     load_textbook_sheet.add_argument(
         "--syllabus-tab",
-        default="Learning Outcomes",
-        help="Spreadsheet tab name for the syllabus data (default: Learning Outcomes)",
+        default="Core Syllabus",
+        help="Spreadsheet tab name for the syllabus data (default: Core Syllabus)",
     )
     
     load_open_textbooks_sheet = subparsers.add_parser(
