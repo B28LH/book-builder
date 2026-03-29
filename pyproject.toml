@@ -53,7 +53,7 @@ book-builder = "book_builder.cli:main"
 dev = [
     "ruff",
     "mypy>=1.0,<2.0",
-    "black>=23.0,<26.0",
+    "black>=23.0,<27.0",
     "isort>=5.12,<5.14",
     "pytest",
     "pytest-sphinx",
